@@ -79,5 +79,22 @@ alongside any figures or observations you share.
   [License](https://github.com/m9h/jaxkineticmodel/blob/modern-jax-validation/LICENSE)
   · [fixture notices](https://github.com/m9h/jaxkineticmodel/blob/modern-jax-validation/tests/fixtures/conformance/README.md).
 
-There is no paradox-dynamics fork yet. The [project brief](docs/paradox-project.md)
-records the next proposed implementation rather than implying it already exists.
+## Original project: paradox dynamics
+
+[m9h/paradox-dynamics](https://github.com/m9h/paradox-dynamics) is a new MIT-licensed
+implementation of selected Mar–Grim equations. It is an original project, not a
+fork of an existing implementation. It provides nine maps, float32/float64 and
+exact rational arithmetic, explicit coupled update schedules, a CLI and an
+interactive notebook. The initial release contains 24 recorded experiments,
+seven original figures and 81 passing tests. The
+[Python 3.12/3.13 CI run](https://github.com/m9h/paradox-dynamics/actions/runs/42507008695)
+also regenerates the figures and executes the notebook.
+
+[Snapshot 1c3ab6a](https://github.com/m9h/paradox-dynamics/tree/1c3ab6ad40f0546d952e331c40b45ed0881f25ae)
+· [executed notebook](https://github.com/m9h/paradox-dynamics/blob/main/examples/paradox_lab.ipynb)
+· [results](https://github.com/m9h/paradox-dynamics/blob/main/docs/results.md)
+· [validation](https://github.com/m9h/paradox-dynamics/blob/main/docs/validation.md)
+· [MIT license](https://github.com/m9h/paradox-dynamics/blob/main/LICENSE).
+
+The [reading-group project guide](docs/paradox-project.md) links the equations,
+precision comparison and discussion questions.

@@ -39,6 +39,8 @@ with explicit controls and independent simulators. BibTeX: `biswas2023learning`.
 · [JSTOR record](https://www.jstor.org/stable/2215637).
 The foundation for the third project: infinite-valued semantics and iterated
 maps for self-referential statements. BibTeX: `mar1991pattern`.
+Our [Paradox dynamics implementation](https://github.com/m9h/paradox-dynamics)
+adds tested equations, exact-arithmetic comparisons and an executed notebook.
 
 ## Network computation and simulation tools
 

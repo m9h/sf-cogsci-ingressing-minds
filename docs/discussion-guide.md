@@ -52,15 +52,18 @@ adds a discussion of computation through state transitions.
 
 Read the introduction and initial examples of
 [Mar and Grim](https://pgrim.org/articles/patternandchaos.pdf), then the
-[paradox project brief](paradox-project.md).
+[paradox project guide](paradox-project.md) and
+[executed lab](https://github.com/m9h/paradox-dynamics/blob/main/examples/paradox_lab.ipynb).
 
 - Which assumptions turn a sentence into an update function?
 - Is an oscillation evidence of contradiction, revision, or a chosen semantics?
 - How would synchronous and sequential updates affect mutually referring statements?
 - What distinguishes a fixed point, a periodic orbit and chaos?
+- Why do exact rational and floating-point tent-map trajectories differ?
+- Can a fixed orbit have a positive local expansion rate?
 
-The deliverable for this session can be a precise specification of one map,
-several hand-computed trajectories and the plot we would want an explorer to show.
+Choose one map in the working explorer. Change its initial value, arithmetic or
+update schedule; export both runs and state which conclusions survive the change.
 
 ## Recording a discussion
 

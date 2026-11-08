@@ -1,7 +1,9 @@
 # Project 3 · Logical paradoxes as dynamical systems
 
-**Status: proposed.** This reading-group repository currently contains a project
-brief, not a completed simulator. The primary reading is Gary Mar and Patrick
+**Status: implemented.** Start with [Paradox dynamics](https://github.com/m9h/paradox-dynamics),
+our original MIT-licensed implementation, and its
+[executed notebook](https://github.com/m9h/paradox-dynamics/blob/main/examples/paradox_lab.ipynb).
+The primary reading is Gary Mar and Patrick
 Grim, [Pattern and Chaos: New Images in the Semantics of Paradox](https://pgrim.org/articles/patternandchaos.pdf),
 *Noûs* 25(5), 659–693 (1991).
 
@@ -20,28 +22,30 @@ The variable is a value within the chosen mathematical semantics. Interpreting
 it as a probability, a degree of belief or a third logical truth value would
 require a further modeling choice.
 
-## Proposed explorer
+## Working explorer
 
-1. Display time series and a cobweb plot for the one-variable liar map.
-2. Add coupled statements with an explicit mapping from each statement to its
-   update equation. Compare simultaneous and sequential revision.
-3. Add nonlinear examples from Mar and Grim, citing the precise equation and
-   passage before claiming to reproduce a published figure.
-4. Explore initial conditions and parameters, showing periodic behavior,
-   candidate attractors and finite-time sensitivity estimates.
-5. Export the equations, update order, precision, initial state and sampled
-   trajectory with every result.
+1. Follow the Liar time series and cobweb by hand.
+2. Compare two maps with the same fixed point `2/3`, one attracting and one repelling.
+3. Compare exact rational, float32 and float64 tent-map trajectories.
+4. Change the order in which two mutually referring statements are revised.
+5. Inspect the Curry variation and its equation/prose discrepancy at the parameter boundary.
 
-A small NumPy implementation is sufficient for the initial exact cases. JAX
-would become useful for batches of initial conditions and sensitivity analysis;
-the project does not require SBML or biochemical models.
+The project provides nine maps, 24 recorded runs, seven figures and 81 passing
+tests. A notebook widget lets readers change the settings using the same Python
+implementation as the CLI. No SBML or JAX installation is needed.
+
+Every exported result includes the equations, input values, parameters,
+arithmetic, schedule, complete trajectory, code hashes and diagnostic scope.
+[Mathematical guide](https://github.com/m9h/paradox-dynamics/blob/main/docs/mathematics.md)
+· [results](https://github.com/m9h/paradox-dynamics/blob/main/docs/results.md)
+· [validation](https://github.com/m9h/paradox-dynamics/blob/main/docs/validation.md).
 
 ## Checks and discussion
 
-For the basic map, verify the exact fixed point, period-two identity and range
-preservation. For more elaborate maps, compare numerical precision and longer
-runs, and distinguish finite-time numerical diagnostics from mathematical proofs
-of chaos. A complicated picture alone is insufficient evidence of sensitivity.
+The exact tent-map input `0.314` enters a 50-cycle, while float32 and float64
+representations eventually reach zero. A positive derivative-based expansion
+rate also occurs at the map's exact fixed point. These examples distinguish a
+model's mathematics, a selected orbit and the computer's representation.
 
 The learning objective is to connect self-reference to feedback, iteration and
 dynamical behavior. Which properties follow from the selected semantics, and

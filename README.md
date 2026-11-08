@@ -18,8 +18,8 @@ claims about intelligence and agency to specific models and measurements.
 - **Find sources:** [annotated references](REFERENCES.md)
   · [BibTeX bibliography](references.bib).
 
-You can start without installing anything: the sorting and network-memory forks
-contain executed notebooks and saved figures. Installation and reproduction
+You can start without installing anything: all three projects contain executed
+notebooks and saved figures. Installation and reproduction
 instructions live with each project's code.
 
 ## The three computational projects
@@ -28,7 +28,7 @@ instructions live with each project's code.
 |---|---|---|---|
 | **1. Self-sorting arrays** | How do local policies, damage and our choice of progress metric shape apparent problem-solving? | [Sorting fork](https://github.com/m9h/cell_research) · [three notebooks](https://github.com/m9h/cell_research/tree/main/examples) | Runnable examples, controls and replay |
 | **2. Regulatory-network memory** | How can fixed reaction equations produce responses that depend on stimulation history? | [Python replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication/python) · [executed notebook](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/examples/memory_lab.ipynb) | Five models, eight experiments, three validated simulators |
-| **3. Logical paradoxes as dynamical systems** | What behavior follows when truth-value revision becomes an iterated map? | [Mar and Grim paper](https://pgrim.org/articles/patternandchaos.pdf) · [project brief](docs/paradox-project.md) | Planned; no implementation or fork yet |
+| **3. Logical paradoxes as dynamical systems** | What behavior follows when truth-value revision becomes an iterated map? | [Paradox dynamics](https://github.com/m9h/paradox-dynamics) · [executed notebook](https://github.com/m9h/paradox-dynamics/blob/main/examples/paradox_lab.ipynb) | Nine maps, exact and floating arithmetic, 24 recorded experiments |
 
 ### 1. Self-sorting arrays
 
@@ -84,15 +84,20 @@ Start with the liar sentence represented by the revision rule
 $$x_{t+1}=1-x_t,\qquad x_t\in[0,1].$$
 
 The endpoints alternate; 0.5 is fixed. Other initial values have period two.
-This simple map is not chaotic. The proposed explorer would extend from this
-baseline to coupled and nonlinear rules, while stating the chosen semantics
-and update schedule explicitly. See the [project brief](docs/paradox-project.md).
+This simple map is not chaotic. Our [working explorer](https://github.com/m9h/paradox-dynamics)
+extends it to attracting and repelling fixed points, the tent map, a Curry
+variation and coupled revision rules. The notebook makes arithmetic and update
+order explicit: from the requested tent-map input `0.314`, float32 reaches zero
+after 24 revisions, float64 after 55, while exact rational arithmetic enters a
+50-cycle. See the [project guide](docs/paradox-project.md) and
+[mathematical explanations](https://github.com/m9h/paradox-dynamics/blob/main/docs/mathematics.md).
 
 ## Forks and reproducibility
 
-[FORKS.md](FORKS.md) records all four forks, upstream projects, working branches,
-review links and exact revisions. Some changes are on feature branches, so use
-the links above rather than assuming each fork's default branch contains them.
+[FORKS.md](FORKS.md) records all four forks and the original paradox project,
+with working branches, review links and exact revisions. Some changes are on
+feature branches, so use the links above rather than assuming each fork's
+default branch contains them.
 
 Status snapshot: **2026-11-08**. The Jaxkineticmodel update passes 36 tests and
 87 numerical comparisons; its CI passes on Python 3.12 and 3.13. The GRN suite
