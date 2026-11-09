@@ -27,7 +27,7 @@ The optional JAX backend is pinned to the Jaxkineticmodel revision above.
 · [three-engine validation](https://github.com/m9h/GRN_ODE/blob/cd566d80d8a9357d2b5a85f43067cf4eecde45fc/python/JAX_VALIDATION.md)
 · [35-model catalog guide](https://github.com/m9h/GRN_ODE/blob/cd566d80d8a9357d2b5a85f43067cf4eecde45fc/python/CATALOG_VALIDATION.md)
 · [catalog report](https://github.com/m9h/GRN_ODE/blob/cd566d80d8a9357d2b5a85f43067cf4eecde45fc/python/results/catalog/report.json)
-· [previous five-model Linux CI](https://github.com/m9h/GRN_ODE/actions/runs/42450113786).
+· [passing Linux CI, including all 35 baseline models](https://github.com/m9h/GRN_ODE/actions/runs/42656933161).
 The full 35-network memory survey and catalog-wide JAX validation remain in
 progress; baseline agreement does not establish the study's memory prevalence.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
