@@ -10,6 +10,13 @@ Read [Ingressing Minds](https://www.mdpi.com/2409-9287/11/5/161) and explore the
 and write down its observation, the proposed mechanism, and the philosophical
 claim it is used to support.
 
+The [figure-by-figure guide](figure-guide.md) covers all 15 figures and separates
+biological evidence, mathematical constructions, conceptual diagrams and
+philosophical analogies. Figures 8 and 14 directly connect to our existing
+paradox and sorting projects; the kinetics project follows cited network studies.
+For optional mathematical preparation, use the proposed
+[Figure 5–6 exercises](figure-guide.md#concrete-extensions-for-figures-5-and-6).
+
 Discuss what evidence would distinguish competing explanations. A working
 simulation can establish behavior under its specified rules; deciding what that
 behavior means for agency, cognition or the ontology of patterns requires

@@ -14,6 +14,8 @@ claims about intelligence and agency to specific models and measurements.
   made guide; its site states that it is not affiliated with Levin, his lab, or Tufts.
 - **Choose a project:** the three tracks below move from sorting to biochemical
   memory to self-reference.
+- **Follow the argument visually:** [all 15 figures explained](docs/figure-guide.md),
+  with their evidential role, links to our projects, and proposed Figure 5–6 experiments.
 - **Prepare for discussion:** [reading and discussion guide](docs/discussion-guide.md).
 - **Find sources:** [annotated references](REFERENCES.md)
   · [BibTeX bibliography](references.bib).
@@ -23,6 +25,12 @@ notebooks and saved figures. Installation and reproduction
 instructions live with each project's code.
 
 ## The three computational projects
+
+Figures **8** (logical dynamics) and **14** (sorting) directly anchor two tracks.
+The network-memory track follows studies cited in the text, especially reference
+212; Figure 10C connects learning to the proposed spectrum conceptually.
+Figures 5–6 motivate additional mathematical projects that are
+[proposed, not yet implemented](docs/figure-guide.md#concrete-extensions-for-figures-5-and-6).
 
 | Project | Central question | Start with | Status |
 |---|---|---|---|
@@ -62,6 +70,11 @@ The five models are **MAPK protein-signaling models**, despite the historical
 `GRN_ODE` repository name. Four are variants of the same Markevich model family.
 The [BioModels guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/models/README.md)
 explains their biology, equations, conserved pools, source papers and provenance.
+
+Our active goal is to extend the kinetics and memory computations to all **35
+BioModels** in the source study, with independent validation. The five-model
+suite remains the completed baseline; see the
+[scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
 Two supporting forks make the numerical work inspectable:
 

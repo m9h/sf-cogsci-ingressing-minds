@@ -14,6 +14,8 @@ Synthetic, and Hybrid Embodiments.** *Philosophies* 11(5), 161.
 The organizing reading: a proposal about patterns, embodiment and diverse minds.
 Use its concrete examples to identify which claims are observational,
 mathematical or interpretive. BibTeX: `levin2026ingressing`.
+Our [figure guide](docs/figure-guide.md) explains the role of all 15 figures and
+their relationship to the computational tracks.
 
 **Zhang, Goldstein and Levin — Classical sorting algorithms as a model of
 morphogenesis: Self-sorting arrays reveal unexpected competencies in a minimal
@@ -91,6 +93,28 @@ see the [model-by-model guide](https://github.com/m9h/GRN_ODE/blob/python-memory
 BibTeX: `markevich2004switches`.
 
 ## Guides and optional further exploration
+
+**Feigenbaum (1978) — Quantitative Universality for a Class of Nonlinear
+Transformations.** *Journal of Statistical Physics* 19, 25–52.
+[Original paper](https://sites.math.rutgers.edu/~zeilberg/Bio21/MF78.pdf)
+· [DOI](https://doi.org/10.1007/BF01020332).
+Primary background for a Figure 5 lab comparing period-doubling scaling in
+different maps. BibTeX: `feigenbaum1978universality`.
+
+**Levin (1994) — A Julia set model of field-directed morphogenesis:
+developmental biology and artificial life.** *Bioinformatics* 10(2).
+[Paper](https://academic.oup.com/bioinformatics/article/10/2/85/184543)
+· [DOI](https://doi.org/10.1093/bioinformatics/10.2.85).
+Source of Figure 6B–D, cited as reference 96 in *Ingressing Minds*.
+Includes formulas and parameters for conceptual developmental models, offering
+a specific replication project. BibTeX: `levin1994juliaset`.
+
+**Pickover (1986) — Biomorphs: Computer Displays of Biological Forms Generated
+from Mathematical Feedback Loops.** *Computer Graphics Forum* 5(4), 313–316.
+[Paper](https://doi.org/10.1111/j.1467-8659.1986.tb00317.x).
+Related complex-iteration background for Figure 6. We use the journal's
+publication year, 1986; reference 204 in *Ingressing Minds* lists 2007.
+BibTeX: `pickover1986biomorphs`.
 
 **Ingressing Minds: a galaxy and a tour.**
 [Website](https://ingressingminds.com/) · [tour](https://ingressingminds.com/tour/).
