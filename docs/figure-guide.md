@@ -331,15 +331,24 @@ Our current implementation follows selected protocols from
 (reference 212). Its own figures and supplemental model inventory, rather than
 Figures 4 or 10 of *Ingressing Minds*, are the sources for extending the
 [kinetics workflow](https://github.com/m9h/GRN_ODE/tree/python-memory-replication/python).
-The existing five models are MAPK protein-signaling models; four are variants
-from the Markevich family.
+The five models in our existing memory experiments are MAPK protein-signaling
+models; four are variants from the Markevich family.
 
 **Active goal, set 8 November 2026:** complete reproducible kinetics and memory
 computations for all 35 BioModels in that study, with independent numerical
-validation and documented deviations. This is work in progress, not a claim of
-35-model completion. Population-level conclusions must wait for the corresponding
-population-level computations. The original random-network comparisons are a
-further part of the evidence concerning capacities without specific selection.
+validation and documented deviations. **Completed milestone:** baseline kinetics
+for all 35 pass independent comparisons over 50 native time units, with 5,001
+samples per model and 380 observables across the catalog. RoadRunner and COPASI
+agree for 34 models; the remaining model requires a genuine delay equation,
+checked with a method-of-steps solver and JiTCDDE, including step refinement.
+The [catalog guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_VALIDATION.md)
+documents model biology, source files, tolerances and the delay-history assumption.
+
+Extending the memory interventions and JAX validation across the catalog remains
+in progress. Baseline agreement alone does not establish memory prevalence.
+Population-level conclusions must wait for the corresponding population-level
+computations. The original random-network comparisons are a further part of the
+evidence concerning capacities without specific selection.
 
 ## Concrete extensions for Figures 5 and 6
 

@@ -35,7 +35,7 @@ Figures 5–6 motivate additional mathematical projects that are
 | Project | Central question | Start with | Status |
 |---|---|---|---|
 | **1. Self-sorting arrays** | How do local policies, damage and our choice of progress metric shape apparent problem-solving? | [Sorting fork](https://github.com/m9h/cell_research) · [three notebooks](https://github.com/m9h/cell_research/tree/main/examples) | Runnable examples, controls and replay |
-| **2. Regulatory-network memory** | How can fixed reaction equations produce responses that depend on stimulation history? | [Python replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication/python) · [executed notebook](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/examples/memory_lab.ipynb) | Five models, eight experiments, three validated simulators |
+| **2. Regulatory-network memory** | How can fixed reaction equations produce responses that depend on stimulation history? | [Python replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication/python) · [executed notebook](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/examples/memory_lab.ipynb) | 35 baseline models; eight memory experiments on five models with three validated simulators |
 | **3. Logical paradoxes as dynamical systems** | What behavior follows when truth-value revision becomes an iterated map? | [Paradox dynamics](https://github.com/m9h/paradox-dynamics) · [executed notebook](https://github.com/m9h/paradox-dynamics/blob/main/examples/paradox_lab.ipynb) | Nine maps, exact and floating arithmetic, 24 recorded experiments |
 
 ### 1. Self-sorting arrays
@@ -72,8 +72,12 @@ The [BioModels guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replicat
 explains their biology, equations, conserved pools, source papers and provenance.
 
 Our active goal is to extend the kinetics and memory computations to all **35
-BioModels** in the source study, with independent validation. The five-model
-suite remains the completed baseline; see the
+BioModels** in the source study, with independent validation. Baseline kinetics
+now pass independent comparisons for all 35: RoadRunner versus COPASI for 34,
+and two delay-equation solvers for the delayed circadian-clock model. See the
+[catalog results and model descriptions](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_VALIDATION.md).
+Memory experiments and three-engine validation currently cover the five-model
+suite; extending those protocols across the catalog remains in progress. See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
 Two supporting forks make the numerical work inspectable:
