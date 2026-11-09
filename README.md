@@ -35,7 +35,7 @@ Figures 5–6 motivate additional mathematical projects that are
 | Project | Central question | Start with | Status |
 |---|---|---|---|
 | **1. Self-sorting arrays** | How do local policies, damage and our choice of progress metric shape apparent problem-solving? | [Sorting fork](https://github.com/m9h/cell_research) · [three notebooks](https://github.com/m9h/cell_research/tree/main/examples) | Runnable examples, controls and replay |
-| **2. Regulatory-network memory** | How can fixed reaction equations produce responses that depend on stimulation history? | [Python replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication/python) · [executed notebook](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/examples/memory_lab.ipynb) | 35 baseline models; eight memory experiments on five models with three validated simulators |
+| **2. Regulatory-network memory** | How can fixed reaction equations produce responses that depend on stimulation history? | [Python replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication/python) · [executed notebook](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/examples/memory_lab.ipynb) | 35 baseline models and 538 retention cases; eight broader demonstrations on five models with three simulators |
 | **3. Logical paradoxes as dynamical systems** | What behavior follows when truth-value revision becomes an iterated map? | [Paradox dynamics](https://github.com/m9h/paradox-dynamics) · [executed notebook](https://github.com/m9h/paradox-dynamics/blob/main/examples/paradox_lab.ipynb) | Nine maps, exact and floating arithmetic, 24 recorded experiments |
 
 ### 1. Self-sorting arrays
@@ -76,8 +76,11 @@ BioModels** in the source study, with independent validation. Baseline kinetics
 now pass independent comparisons for all 35: RoadRunner versus COPASI for 34,
 and two delay-equation solvers for the delayed circadian-clock model. See the
 [catalog results and model descriptions](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_VALIDATION.md).
-Memory experiments and three-engine validation currently cover the five-model
-suite; extending those protocols across the catalog remains in progress. See the
+[Single-input retention](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_MEMORY.md)
+now covers all 35 models: 538 stimulation cases pass independent numerical
+comparisons, with below-resolution response labels explicitly unresolved.
+Paired learning, repeated stimulation and catalog-wide JAX validation remain in
+progress; the five-model suite still supplies those broader demonstrations. See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
 Two supporting forks make the numerical work inspectable:

@@ -6,7 +6,7 @@ the code examined for this snapshot. Review status can change after this date.
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
-| [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [cd566d8](https://github.com/m9h/GRN_ODE/tree/cd566d80d8a9357d2b5a85f43067cf4eecde45fc) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
+| [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [10df8da](https://github.com/m9h/GRN_ODE/tree/10df8da567d8a6390938e8857281a4f410b4fad6) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [2a5b4c2](https://github.com/m9h/jaxkineticmodel/tree/2a5b4c255d2d250cdcd36d5abc2f7f992d3a24e6) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -18,18 +18,21 @@ notebooks. Start with [the README](https://github.com/m9h/cell_research/blob/397
 and [measurement definitions](https://github.com/m9h/cell_research/blob/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2/docs/methods.md).
 
 **GRN memory replication:** all 35 unchanged BioModels files, independently
-validated baseline kinetics for every model, and eight selected memory
-experiments on five models with explicit reset schedules, matched controls and
-saved results. Baseline comparisons use RoadRunner/COPASI for 34 models and
+validated baseline kinetics for every model, 538 validated single-input retention
+cases across all 35, and eight broader memory demonstrations on five models.
+The retention screen preserves complete state and delay history, uses untreated
+controls, and marks below-resolution labels as unresolved. Forty-seven tests pass
+locally. Baseline comparisons use RoadRunner/COPASI for 34 models and
 method-of-steps/JiTCDDE for the delayed circadian-clock model.
 The optional JAX backend is pinned to the Jaxkineticmodel revision above.
-[Memory results](https://github.com/m9h/GRN_ODE/blob/cd566d80d8a9357d2b5a85f43067cf4eecde45fc/python/RESULTS.md)
-· [three-engine validation](https://github.com/m9h/GRN_ODE/blob/cd566d80d8a9357d2b5a85f43067cf4eecde45fc/python/JAX_VALIDATION.md)
-· [35-model catalog guide](https://github.com/m9h/GRN_ODE/blob/cd566d80d8a9357d2b5a85f43067cf4eecde45fc/python/CATALOG_VALIDATION.md)
-· [catalog report](https://github.com/m9h/GRN_ODE/blob/cd566d80d8a9357d2b5a85f43067cf4eecde45fc/python/results/catalog/report.json)
+[Memory demonstrations](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/RESULTS.md)
+· [three-engine validation](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/JAX_VALIDATION.md)
+· [35-model baseline guide](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/CATALOG_VALIDATION.md)
+· [538-case retention guide and results](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/CATALOG_MEMORY.md)
 · [passing Linux CI, including all 35 baseline models](https://github.com/m9h/GRN_ODE/actions/runs/42656933161).
-The full 35-network memory survey and catalog-wide JAX validation remain in
-progress; baseline agreement does not establish the study's memory prevalence.
+The full 35-network paired/repeated-stimulation survey and catalog-wide JAX
+validation remain in progress; retention alone does not establish the study's
+eight-category memory prevalence.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
 
 **SBMLtoODEjax:** assignment rules are evaluated at each internal ODE solver

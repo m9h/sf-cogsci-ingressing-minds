@@ -344,11 +344,18 @@ checked with a method-of-steps solver and JiTCDDE, including step refinement.
 The [catalog guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_VALIDATION.md)
 documents model biology, source files, tolerances and the delay-history assumption.
 
-Extending the memory interventions and JAX validation across the catalog remains
-in progress. Baseline agreement alone does not establish memory prevalence.
-Population-level conclusions must wait for the corresponding population-level
-computations. The original random-network comparisons are a further part of the
-evidence concerning capacities without specific selection.
+A second milestone now covers [single-input retention across all 35 models](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_MEMORY.md):
+538 up/down stimulation cases pass independent numerical comparisons, preserving
+native events, rule variables and delay history. Time-matched controls separate
+retained treatment effects from untreated drift; below-resolution labels remain
+unresolved. These operational results do not by themselves identify a memory
+mechanism or demonstrate associative learning.
+
+Paired learning, repeated stimulation and JAX validation across the catalog
+remain in progress. The complete protocol coverage is needed before comparing
+the study's population frequencies. The original random-network comparisons
+are a further part of the evidence concerning capacities without specific
+selection.
 
 ## Concrete extensions for Figures 5 and 6
 
