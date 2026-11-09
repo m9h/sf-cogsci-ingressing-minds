@@ -22,14 +22,14 @@ validated baseline kinetics for every model, 538 validated single-input retentio
 cases across all 35, and eight broader memory demonstrations on five models.
 The retention screen preserves complete state and delay history, uses untreated
 controls, and marks below-resolution labels as unresolved. Forty-seven tests pass
-locally. Baseline comparisons use RoadRunner/COPASI for 34 models and
+locally, and Linux reproduces all 538 cases. Baseline comparisons use RoadRunner/COPASI for 34 models and
 method-of-steps/JiTCDDE for the delayed circadian-clock model.
 The optional JAX backend is pinned to the Jaxkineticmodel revision above.
 [Memory demonstrations](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/RESULTS.md)
 · [three-engine validation](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/JAX_VALIDATION.md)
 · [35-model baseline guide](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/CATALOG_VALIDATION.md)
 · [538-case retention guide and results](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/CATALOG_MEMORY.md)
-· [passing Linux CI, including all 35 baseline models](https://github.com/m9h/GRN_ODE/actions/runs/42656933161).
+· [passing Linux CI, including all 538 retention cases](https://github.com/m9h/GRN_ODE/actions/runs/42707874609).
 The full 35-network paired/repeated-stimulation survey and catalog-wide JAX
 validation remain in progress; retention alone does not establish the study's
 eight-category memory prevalence.
