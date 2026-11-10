@@ -363,8 +363,11 @@ labels and negative or unresolved responses remain separately visible.
 
 The [paired-learning screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_PAIRED.md)
 is running after successful pilots; it compares four training histories with
-shams and ordinary/delayed cues across 4,208 ordered input pairs. Catalog-wide
-breaking interventions remain pending. Complete protocol coverage is needed before comparing
+shams and ordinary/delayed cues across 4,208 ordered input pairs. The
+[three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_BREAKING.md)
+is also running after a validated pilot, using eight control arms and explicit
+differences between the MATLAB code and the paper's prose. Full results for
+both stages remain pending. Complete protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific
 selection.
