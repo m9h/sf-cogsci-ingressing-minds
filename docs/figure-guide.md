@@ -356,8 +356,15 @@ validates 32 original baselines against both reference engines; event, rate-rule
 and delay models are explicit unsupported imports. This is baseline coverage,
 not JAX memory-protocol validation across the entire catalog.
 
-Paired learning and repeated stimulation across the catalog remain in progress.
-The complete protocol coverage is needed before comparing
+The [repeated-stimulation screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_REPEATED.md)
+now also passes all 538 cases across all 35 models, with same-time isolated-pulse
+controls and agreement on every controlled pulse classification. Raw MATLAB
+labels and negative or unresolved responses remain separately visible.
+
+The [paired-learning screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_PAIRED.md)
+is running after successful pilots; it compares four training histories with
+shams and ordinary/delayed cues across 4,208 ordered input pairs. Catalog-wide
+breaking interventions remain pending. Complete protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific
 selection.
