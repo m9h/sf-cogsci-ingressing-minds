@@ -6,9 +6,9 @@ the code examined for this snapshot. Review status can change after this date.
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
-| [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [10df8da](https://github.com/m9h/GRN_ODE/tree/10df8da567d8a6390938e8857281a4f410b4fad6) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
+| [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [5d0c818](https://github.com/m9h/GRN_ODE/tree/5d0c818c6e518f9ce988b8048f2070ead53c7aca) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
-| [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [2a5b4c2](https://github.com/m9h/jaxkineticmodel/tree/2a5b4c255d2d250cdcd36d5abc2f7f992d3a24e6) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
+| [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
 ## What each fork contributes
 
@@ -21,18 +21,22 @@ and [measurement definitions](https://github.com/m9h/cell_research/blob/397e94c4
 validated baseline kinetics for every model, 538 validated single-input retention
 cases across all 35, and eight broader memory demonstrations on five models.
 The retention screen preserves complete state and delay history, uses untreated
-controls, and marks below-resolution labels as unresolved. Forty-seven tests pass
-locally, and Linux reproduces all 538 cases. Baseline comparisons use RoadRunner/COPASI for 34 models and
+controls, and marks below-resolution labels as unresolved. Linux reproduces all
+538 retention cases. Baseline comparisons use RoadRunner/COPASI for 34 models and
 method-of-steps/JiTCDDE for the delayed circadian-clock model.
 The optional JAX backend is pinned to the Jaxkineticmodel revision above.
-[Memory demonstrations](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/RESULTS.md)
-· [three-engine validation](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/JAX_VALIDATION.md)
-· [35-model baseline guide](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/CATALOG_VALIDATION.md)
-· [538-case retention guide and results](https://github.com/m9h/GRN_ODE/blob/10df8da567d8a6390938e8857281a4f410b4fad6/python/CATALOG_MEMORY.md)
+[Memory demonstrations](https://github.com/m9h/GRN_ODE/blob/5d0c818c6e518f9ce988b8048f2070ead53c7aca/python/RESULTS.md)
+· [three-engine validation](https://github.com/m9h/GRN_ODE/blob/5d0c818c6e518f9ce988b8048f2070ead53c7aca/python/JAX_VALIDATION.md)
+· [35-model baseline guide](https://github.com/m9h/GRN_ODE/blob/5d0c818c6e518f9ce988b8048f2070ead53c7aca/python/CATALOG_VALIDATION.md)
+· [538-case retention guide and results](https://github.com/m9h/GRN_ODE/blob/5d0c818c6e518f9ce988b8048f2070ead53c7aca/python/CATALOG_MEMORY.md)
 · [passing Linux CI, including all 538 retention cases](https://github.com/m9h/GRN_ODE/actions/runs/42707874609).
-The full 35-network paired/repeated-stimulation survey and catalog-wide JAX
-validation remain in progress; retention alone does not establish the study's
-eight-category memory prevalence.
+The [JAX catalog audit](https://github.com/m9h/GRN_ODE/blob/5d0c818c6e518f9ce988b8048f2070ead53c7aca/python/CATALOG_JAX.md)
+now validates 32 original baselines against both reference engines, with 96
+passing comparisons across 352 observables. The event, rate-rule and delay
+models are explicit unsupported imports, not passing JAX simulations. The
+five-model memory suite also passes all 88 comparisons after the importer update.
+The full 35-network paired/repeated-stimulation survey remains in progress;
+retention alone does not establish the study's eight-category memory prevalence.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
 
 **SBMLtoODEjax:** assignment rules are evaluated at each internal ODE solver
@@ -47,10 +51,15 @@ this snapshot. The fix does not add general event or algebraic-rule support.
 0.13.8 and Optax 0.2.8, with a lockfile. The shared cases exposed missing fixed
 enzymes, incorrect amount/concentration scaling and mutation of symbolic models;
 the fork corrects these and rejects unsupported rate/algebraic rules explicitly.
-[Migration guide](https://github.com/m9h/jaxkineticmodel/blob/2a5b4c255d2d250cdcd36d5abc2f7f992d3a24e6/validation/README.md)
-· [87-comparison report](https://github.com/m9h/jaxkineticmodel/blob/2a5b4c255d2d250cdcd36d5abc2f7f992d3a24e6/validation/results/report.json)
-· [MAPK optimization example](https://github.com/m9h/jaxkineticmodel/blob/2a5b4c255d2d250cdcd36d5abc2f7f992d3a24e6/validation/mapk_intervention.py)
-· [passing Python 3.12/3.13 CI](https://github.com/m9h/jaxkineticmodel/actions/runs/42450050764).
+The larger catalog exposed silent event omission, a delay translated as
+subtraction, truncated fractional stoichiometry and incorrect assigned-species
+states. The update rejects unsupported event/delay semantics and fixes
+stoichiometry, rule dependencies and assignment export. All 43 tests pass,
+including the Python 3.12 and 3.13 CI jobs linked below.
+[Migration guide](https://github.com/m9h/jaxkineticmodel/blob/0c16f6ea145862ea0a3d9b1ef4368745e18028a5/validation/README.md)
+· [87-comparison report](https://github.com/m9h/jaxkineticmodel/blob/0c16f6ea145862ea0a3d9b1ef4368745e18028a5/validation/results/report.json)
+· [MAPK optimization example](https://github.com/m9h/jaxkineticmodel/blob/0c16f6ea145862ea0a3d9b1ef4368745e18028a5/validation/mapk_intervention.py)
+· [passing Python 3.12/3.13 CI](https://github.com/m9h/jaxkineticmodel/actions/runs/42724072201).
 The DBTL tutorial uses a fixed seed and a documented, smaller sampling experiment
 after broad random perturbations produced solver failures. The checks establish
 CPU behavior for the selected cases; GPU performance has not been validated.

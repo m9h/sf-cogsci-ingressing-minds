@@ -351,8 +351,13 @@ retained treatment effects from untreated drift; below-resolution labels remain
 unresolved. These operational results do not by themselves identify a memory
 mechanism or demonstrate associative learning.
 
-Paired learning, repeated stimulation and JAX validation across the catalog
-remain in progress. The complete protocol coverage is needed before comparing
+The [JAX catalog audit](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_JAX.md)
+validates 32 original baselines against both reference engines; event, rate-rule
+and delay models are explicit unsupported imports. This is baseline coverage,
+not JAX memory-protocol validation across the entire catalog.
+
+Paired learning and repeated stimulation across the catalog remain in progress.
+The complete protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific
 selection.
