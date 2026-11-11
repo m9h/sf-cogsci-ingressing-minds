@@ -364,12 +364,15 @@ labels and negative or unresolved responses remain separately visible.
 The [paired-learning screen](https://github.com/m9h/GRN_ODE/blob/4108edeca8b2d6d5e454167454a8826319ff6046/python/CATALOG_PAIRED.md)
 has evaluated all 4,208 ordered input pairs and 22,578 distinct branches,
 comparing four training histories with shams and ordinary/delayed cues.
-**4,166 cases pass; 42 remain failed or numerically unresolved.** All original
+**The original run records 4,166 passes and 42 failures.** All original
 results and the complete coverage audit are published; failed integrations
-and trajectory mismatches remain explicit. The
+and trajectory mismatches remain explicit. A separate
+[complete François recovery](https://github.com/m9h/GRN_ODE/blob/650c3f71b76a0446552d6b7e84944e2602536950/python/results/catalog-paired-francois-full-recovery/audit.json)
+now passes all 44 cases and 275 branches for that model. Failures in Marhl,
+Vilar and Rohwer remain unresolved. The
 [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_BREAKING.md)
 is also running after a validated pilot, using eight control arms and explicit
-differences between the MATLAB code and the paper's prose. Paired-screen recovery
+differences between the MATLAB code and the paper's prose. Further paired-screen recovery
 and full breaking results remain pending. Complete validated protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific

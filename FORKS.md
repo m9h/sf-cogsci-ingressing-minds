@@ -1,6 +1,6 @@
 # Forks, contributions and reproducible revisions
 
-Kinetics evidence updated **2026-11-10**; other fork and review snapshots are
+Kinetics evidence updated **2026-11-11**; other fork and review snapshots are
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
 
@@ -8,7 +8,7 @@ preserve the code examined. Review status can change after these dates.
 |---|---|---|---|
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
-| [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [4108ede](https://github.com/m9h/GRN_ODE/tree/4108edeca8b2d6d5e454167454a8826319ff6046) | Published recovery and full paired-screen evidence; separate from the live breaking source |
+| [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [650c3f7](https://github.com/m9h/GRN_ODE/tree/650c3f71b76a0446552d6b7e84944e2602536950) | Complete François recovery, solver diagnostics and full paired-screen evidence; separate from the live breaking source |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -53,14 +53,24 @@ ordinary-cue and delayed-cue branches. **4,166 cases pass; 42 do not.** The
 checks the entire candidate inventory and recomputes recorded scores. It retains
 77 incomplete integrations and 20 completed trajectory mismatches across four
 models, rather than counting attempted coverage as successful validation.
+A separate [complete François recovery](https://github.com/m9h/GRN_ODE/blob/650c3f71b76a0446552d6b7e84944e2602536950/python/results/catalog-paired-francois-full-recovery/audit.json)
+now passes all 44 cases and 275 branches, with exactly one declared COPASI
+retry after incomplete output. Its failed attempt is preserved. The original
+full-screen totals above are unchanged; failures in Marhl, Vilar and Rohwer
+remain unresolved.
 The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/70a3afad61357e94873ff62a7300c099b4c7ae3e/python/CATALOG_BREAKING.md)
 is also running, with 7,324 initial input/breaker combinations. It follows the
 MATLAB conditional search, retains every prior rechallenge, and uses eight
 control arms to separate restoration from lingering or direct effects. A
 119-branch pilot passes, including a documented solver retry for one incomplete
 Rohwer trajectory. All 74 local tests pass at this revision.
-Paired-screen recovery and full breaking results remain pending; completed
+Further paired-screen recovery and full breaking results remain pending; completed
 screens do not establish the study's memory prevalence.
+The [Goldbeter domain diagnostic](https://github.com/m9h/GRN_ODE/blob/650c3f71b76a0446552d6b7e84944e2602536950/python/CATALOG_BREAKING.md#a-domain-limit-exposed-by-the-goldbeter-model)
+also identifies upward resets of active fractions beyond their biological
+0–1 range. Both native solvers stop on four selected breaking branches across
+three tolerance requests. Numerical agreement elsewhere does not certify the
+biological meaning of those interventions.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
 
 **SBMLtoODEjax:** assignment rules are evaluated at each internal ODE solver
