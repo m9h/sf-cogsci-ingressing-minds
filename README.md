@@ -79,8 +79,12 @@ and two delay-equation solvers for the delayed circadian-clock model. See the
 [Single-input retention](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_MEMORY.md)
 now covers all 35 models: 538 stimulation cases pass independent numerical
 comparisons, with below-resolution response labels explicitly unresolved.
-Paired learning, repeated stimulation and catalog-wide JAX validation remain in
-progress; the five-model suite still supplies those broader demonstrations. See the
+[Repeated stimulation](https://github.com/m9h/GRN_ODE/blob/4108edeca8b2d6d5e454167454a8826319ff6046/python/CATALOG_REPEATED.md)
+also passes all 538 cases on macOS and Linux. The JAX catalog audit validates
+32 baselines and explicitly identifies three unsupported models. The
+[paired screen](https://github.com/m9h/GRN_ODE/blob/4108edeca8b2d6d5e454167454a8826319ff6046/python/CATALOG_PAIRED.md)
+has evaluated all 4,208 cases: 4,166 pass and 42 remain failed or numerically
+unresolved. The conditional breaking screen is still running. See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
 Two supporting forks make the numerical work inspectable:
@@ -119,10 +123,10 @@ with working branches, review links and exact revisions. Some changes are on
 feature branches, so use the links above rather than assuming each fork's
 default branch contains them.
 
-Status snapshot: **2026-11-08**. The Jaxkineticmodel update passes 36 tests and
-87 numerical comparisons; its CI passes on Python 3.12 and 3.13. The GRN suite
-passes 28 tests with all three engines installed and 44 JAX/reference trajectory
-comparisons, alongside 44 RoadRunner/COPASI reference comparisons. These are
+Kinetics status updated **2026-11-10**. The documented Jaxkineticmodel revision
+passes 43 tests and its CI passes on Python 3.12 and 3.13. The GRN five-model
+suite passes all 88 trajectory comparisons after the importer update; the
+larger catalog's successes and unresolved cases are reported separately. These are
 checks of the selected implementations and examples, not general SBML
 certification or evidence for a metaphysical interpretation. Sources and scope
 are linked in the [fork inventory](FORKS.md).

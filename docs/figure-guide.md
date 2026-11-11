@@ -356,18 +356,21 @@ validates 32 original baselines against both reference engines; event, rate-rule
 and delay models are explicit unsupported imports. This is baseline coverage,
 not JAX memory-protocol validation across the entire catalog.
 
-The [repeated-stimulation screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_REPEATED.md)
-now also passes all 538 cases across all 35 models, with same-time isolated-pulse
+The [repeated-stimulation screen](https://github.com/m9h/GRN_ODE/blob/4108edeca8b2d6d5e454167454a8826319ff6046/python/CATALOG_REPEATED.md)
+now also passes all 538 cases across all 35 models on macOS and Linux, with same-time isolated-pulse
 controls and agreement on every controlled pulse classification. Raw MATLAB
 labels and negative or unresolved responses remain separately visible.
 
-The [paired-learning screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_PAIRED.md)
-is running after successful pilots; it compares four training histories with
-shams and ordinary/delayed cues across 4,208 ordered input pairs. The
+The [paired-learning screen](https://github.com/m9h/GRN_ODE/blob/4108edeca8b2d6d5e454167454a8826319ff6046/python/CATALOG_PAIRED.md)
+has evaluated all 4,208 ordered input pairs and 22,578 distinct branches,
+comparing four training histories with shams and ordinary/delayed cues.
+**4,166 cases pass; 42 remain failed or numerically unresolved.** All original
+results and the complete coverage audit are published; failed integrations
+and trajectory mismatches remain explicit. The
 [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_BREAKING.md)
 is also running after a validated pilot, using eight control arms and explicit
-differences between the MATLAB code and the paper's prose. Full results for
-both stages remain pending. Complete protocol coverage is needed before comparing
+differences between the MATLAB code and the paper's prose. Paired-screen recovery
+and full breaking results remain pending. Complete validated protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific
 selection.
