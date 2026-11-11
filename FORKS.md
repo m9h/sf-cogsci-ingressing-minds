@@ -9,7 +9,7 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [7cb0084](https://github.com/m9h/GRN_ODE/tree/7cb00845601721bbb461b210d9a3341960eb6d22) | Complete solver diagnostics, 13 audited original breaking reports and validated network 27 distributed evidence; further computations in progress |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [4a43d8d](https://github.com/m9h/GRN_ODE/tree/4a43d8d3ed3ad777aab173eaa672306691ce9d6d) | Complete Goldbeter recovery, audited networks 26/27 and Marhl precision diagnostics; further computations in progress |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -75,7 +75,9 @@ biological meaning of those interventions.
 For the separate explicit-pool Goldbeter model, all eight originally mismatched
 breaking branches pass [tighter native requests and a further refinement](https://github.com/m9h/GRN_ODE/blob/40ca8ff586220a5df573e7d383defa2c19ed829a/python/CATALOG_BREAKING.md#refinement-recovery-for-the-explicit-pool-goldbeter-model).
 The corresponding [Linux regression step](https://github.com/m9h/GRN_ODE/actions/runs/43094514253/job/130779779116)
-also passes; the complete 54-case recovery is still running.
+also passes. The [complete recovery](https://github.com/m9h/GRN_ODE/blob/4a43d8d3ed3ad777aab173eaa672306691ce9d6d/python/results/catalog-breaking-goldbeter4-full-recovery/audit.json)
+now passes all 54 cases, 323 conditional trials and 1,327 branches, including
+every required control and continuation.
 The new [JAX reset adapter](https://github.com/m9h/GRN_ODE/blob/3d88e0d56287e0f70276678c72e301ce3eeb31e2/python/grn_memory/jax_protocols.py)
 preserves full state, symbol units and absolute time and rejects unsupported
 semantics. Its Newton configuration is an explicit solver choice, not an
@@ -96,8 +98,15 @@ mismatches. Thirty-two branches remain unconfirmed by either tested JAX
 configuration. The [Marhl Radau diagnostic](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/results/catalog-paired-scipy-marhl/report.json)
 completes all 15 integrations but confirms none of its three branches; the late
 numerical convergence problem remains unresolved.
-All **138 local tests pass** with the full-model and partition audits in revision
-`7cb0084`.
+The [Marhl precision diagnostic](https://github.com/m9h/GRN_ODE/blob/4a43d8d3ed3ad777aab173eaa672306691ce9d6d/python/PRECISION_DIAGNOSTICS.md)
+now completes all three failed branches with Heyoka at 128-bit and 192-bit
+precision, preserving every original sample and reset. Both precisions agree
+throughout, but both still disagree with RoadRunner; no complete case is
+promoted to passing. The saved arrays are independently audited. The main
+environment passes **146 tests** with the optional Heyoka module skipped, and
+its separate environment passes **eight analytic adapter tests**. Python
+dependencies use uv; the documented macOS exception supplies Heyoka's compiled
+native libraries through an explicitly pinned conda-forge environment.
 The [restartable breaking runner](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/CATALOG_BREAKING.md#restartable-computation-in-complete-case-partitions)
 partitions whole cases, preserving their full conditional searches and controls.
 A [distributed batch for networks 26–35](https://github.com/m9h/GRN_ODE/actions/runs/43101294718)
@@ -109,12 +118,18 @@ recomputes classifications, and verifies full observation horizons and source
 hashes. Checkpoints permit resumption; a passing partition alone does not
 establish complete-model coverage. A downloaded five-case partition resumed
 locally using all 50 unchanged checkpoints without new integration.
+Network 26 also has [complete four-partition coverage](https://github.com/m9h/GRN_ODE/blob/4a43d8d3ed3ad777aab173eaa672306691ce9d6d/python/results/catalog-breaking-linux-26/audit.json):
+116 of 118 cases pass across 524 conditional trials and 2,168 branch records.
+Fourteen completed trajectory mismatches affect two cases; all required
+conditional decisions were evaluated. This is complete computation with
+remaining numerical discrepancies, rather than successful validation of every case.
 The [first 13 terminal reports from the original breaking run](https://github.com/m9h/GRN_ODE/blob/7cb00845601721bbb461b210d9a3341960eb6d22/python/results/catalog-breaking-original-completed/audit.json)
 are also published and audited: 11 models pass their checks, including three
 with no eligible cases and validated untreated controls. In total, 349 of 354
 initial cases pass across 7,711 branches. Four incomplete integrations leave
 two conditional decisions unresolved in reduced Goldbeter; eight completed
-mismatches affect the explicit-pool model, whose separate recovery continues.
+mismatches affect the explicit-pool model, whose separate recovery now passes
+all 54 cases as reported above.
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
 completion. Rohwer's paired-case recovery also requires 170 additional controls
