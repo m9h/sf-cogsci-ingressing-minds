@@ -8,7 +8,8 @@ preserve the code examined. Review status can change after these dates.
 |---|---|---|---|
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
-| [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [650c3f7](https://github.com/m9h/GRN_ODE/tree/650c3f71b76a0446552d6b7e84944e2602536950) | Complete François recovery, solver diagnostics and full paired-screen evidence; separate from the live breaking source |
+| [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [3d88e0d](https://github.com/m9h/GRN_ODE/tree/3d88e0d56287e0f70276678c72e301ce3eeb31e2) | Experimental JAX reset reference with explicit Newton solves; full failed-branch diagnostics in progress |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -71,6 +72,16 @@ also identifies upward resets of active fractions beyond their biological
 0–1 range. Both native solvers stop on four selected breaking branches across
 three tolerance requests. Numerical agreement elsewhere does not certify the
 biological meaning of those interventions.
+For the separate explicit-pool Goldbeter model, all eight originally mismatched
+breaking branches pass [tighter native requests and a further refinement](https://github.com/m9h/GRN_ODE/blob/40ca8ff586220a5df573e7d383defa2c19ed829a/python/CATALOG_BREAKING.md#refinement-recovery-for-the-explicit-pool-goldbeter-model).
+The corresponding [Linux regression step](https://github.com/m9h/GRN_ODE/actions/runs/43094514253/job/130779779116)
+also passes; the complete 54-case recovery is still running.
+The new [JAX reset adapter](https://github.com/m9h/GRN_ODE/blob/3d88e0d56287e0f70276678c72e301ce3eeb31e2/python/grn_memory/jax_protocols.py)
+preserves full state, symbol units and absolute time and rejects unsupported
+semantics. Its Newton configuration is an explicit solver choice, not an
+automatic fallback or a claim of complete memory-protocol coverage. All 93
+local tests pass at the Newton-reference revision; the broader Rohwer and Vilar
+diagnostics retain every failed or mismatched trajectory.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
 
 **SBMLtoODEjax:** assignment rules are evaluated at each internal ODE solver
