@@ -9,7 +9,7 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [f39d2e2](https://github.com/m9h/GRN_ODE/tree/f39d2e293066fc16e3ea00d27a0e779d2b0429e3) | Complete 118-case Muller recovery; three Vilar cases recovered; original and distributed breaking evidence retained separately |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [e5ff9bb](https://github.com/m9h/GRN_ODE/tree/e5ff9bb131b3a815feb584793b9f68dda53ce7a7) | Complete Muller breaking and Rohwer paired-exposure recoveries; combined paired validation reaches 4,203/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
@@ -58,8 +58,8 @@ models, rather than counting attempted coverage as successful validation.
 A separate [complete François recovery](https://github.com/m9h/GRN_ODE/blob/650c3f71b76a0446552d6b7e84944e2602536950/python/results/catalog-paired-francois-full-recovery/audit.json)
 now passes all 44 cases and 275 branches, with exactly one declared COPASI
 retry after incomplete output. Its failed attempt is preserved. The original
-full-screen totals above are unchanged; failures in Marhl, Vilar and Rohwer
-remain unresolved.
+full-screen totals above are unchanged; the later Vilar and Rohwer recovery
+audits are described below.
 The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/70a3afad61357e94873ff62a7300c099b4c7ae3e/python/CATALOG_BREAKING.md)
 is also running, with 7,324 initial input/breaker combinations. It follows the
 MATLAB conditional search, retains every prior rechallenge, and uses eight
@@ -98,8 +98,16 @@ the six failed cases recover, bringing Vilar to **139/142 validated cases**.
 The other three retain nine completed trajectory mismatches; no controls are
 missing. The [complete Rohwer Radau diagnostic](https://github.com/m9h/GRN_ODE/blob/29acc73fb017463add4a0973110b849328019d72/python/results/catalog-paired-scipy-rohwer/report.json)
 confirms all 77 originally failed branches across 385 completed integrations.
-Its additional 170 controls remain in progress, so these branch results do not
-yet establish recovery of all 33 failed cases.
+Its [170 additional controls](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-controls/report.json)
+also complete and pass. The [complete-case recovery audit](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
+confirms all 247 required branches and recovers all 33 failed cases, bringing
+Rohwer to **449/449 validated cases**. All 1,235 diagnostic integrations finish;
+the largest scaled discrepancy among the confirmation comparisons is 0.157145,
+below the acceptance limit of one. Every recovered case uses the same two
+refined engines across all twelve arms, with independently recomputed scores.
+Across the original screen and these separate recoveries, **4,203/4,208 cases
+now validate**, with complete passing case inventories in 33 of the 35 models.
+The remaining five cases are two Marhl cases and three Vilar cases.
 The [complete Rohwer Newton diagnostic](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/results/catalog-paired-jax-rohwer-newton/audit.json)
 confirms 35 of 77 branches, with 20 incomplete integrations and 22 completed
 mismatches. Thirty-two branches remain unconfirmed by either tested JAX
