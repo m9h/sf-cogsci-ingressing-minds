@@ -9,8 +9,8 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [85615d2](https://github.com/m9h/GRN_ODE/tree/85615d284dcba168b93670ad6215d67f0290a4a0) | Three Vilar cases recovered; 17 original breaking reports and distributed network 33 audited; sensitivity of literal search paths documented |
-| [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Full 118-case network 26 recovery using settings validated on all 14 original mismatches; computation in progress |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [f39d2e2](https://github.com/m9h/GRN_ODE/tree/f39d2e293066fc16e3ea00d27a0e779d2b0429e3) | Complete 118-case Muller recovery; three Vilar cases recovered; original and distributed breaking evidence retained separately |
+| [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -135,9 +135,14 @@ conditional decisions were evaluated. This is complete computation with
 remaining numerical discrepancies, rather than successful validation of every case.
 Its [14-branch refinement diagnostic](https://github.com/m9h/GRN_ODE/blob/29acc73fb017463add4a0973110b849328019d72/python/results/catalog-breaking-muller26-refinement/report.json)
 now passes all cross-engine and refinement gates over the complete 0–2210
-interval. A separate branch is recomputing all 118 cases with both tolerances
-tightened tenfold, including the original `1e-18` absolute tolerance.
-[Full recovery run](https://github.com/m9h/GRN_ODE/actions/runs/43158961987).
+interval. The [complete recovery audit](https://github.com/m9h/GRN_ODE/blob/f39d2e293066fc16e3ea00d27a0e779d2b0429e3/python/results/catalog-breaking-muller26-full-recovery/audit.json)
+now passes **all 118 cases**, across 573 conditional trials, 836 response-trials
+and 2,360 branch records. Both engines use `rtol=1e-13`, `atol=1e-19`; the largest
+scaled discrepancy is 0.51046 against an acceptance limit of one. Every required
+control and continuation is included. The original 116/118 results remain
+available, and the new trial count reflects the literal search rule's sensitivity
+to small residues. The [full recovery run](https://github.com/m9h/GRN_ODE/actions/runs/43158961987)
+preserves the original timed-drive encoding and reset schedule.
 The [network 30 distributed audit](https://github.com/m9h/GRN_ODE/blob/29acc73fb017463add4a0973110b849328019d72/python/results/catalog-breaking-linux-30/audit.json)
 also covers every required continuation: 26 of 38 cases pass across 171
 conditional trials and 783 branch records. Thirty completed mismatches affect
