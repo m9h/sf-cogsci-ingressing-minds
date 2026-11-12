@@ -84,9 +84,12 @@ also passes all 538 cases on macOS and Linux. The JAX catalog audit validates
 32 baselines and explicitly identifies three unsupported models. The
 [paired screen](https://github.com/m9h/GRN_ODE/blob/4108edeca8b2d6d5e454167454a8826319ff6046/python/CATALOG_PAIRED.md)
 has evaluated all 4,208 cases: the original run records 4,166 passes and 42
-failures. A separate [complete François recovery](https://github.com/m9h/GRN_ODE/blob/650c3f71b76a0446552d6b7e84944e2602536950/python/results/catalog-paired-francois-full-recovery/audit.json)
-now passes all 44 cases and 275 branches for that model; failures in three
-other models remain unresolved. The conditional breaking screen is still running. See the
+failures. Separate François, Vilar and [Rohwer recoveries](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
+bring combined validation to **4,203/4,208 cases**, with complete passing
+inventories in 33 models. Two Marhl cases and three Vilar cases remain unresolved.
+The conditional breaking screen has [published reports for 20 models](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/CATALOG_BREAKING.md),
+including the complete 360-case Marwan result; fifteen searches remain unfinished.
+See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
 Two supporting forks make the numerical work inspectable:

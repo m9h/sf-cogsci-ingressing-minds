@@ -368,12 +368,25 @@ comparing four training histories with shams and ordinary/delayed cues.
 results and the complete coverage audit are published; failed integrations
 and trajectory mismatches remain explicit. A separate
 [complete François recovery](https://github.com/m9h/GRN_ODE/blob/650c3f71b76a0446552d6b7e84944e2602536950/python/results/catalog-paired-francois-full-recovery/audit.json)
-now passes all 44 cases and 275 branches for that model. Failures in Marhl,
-Vilar and Rohwer remain unresolved. The
-[three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/CATALOG_BREAKING.md)
-is also running after a validated pilot, using eight control arms and explicit
-differences between the MATLAB code and the paper's prose. Further paired-screen recovery
-and full breaking results remain pending. Complete validated protocol coverage is needed before comparing
+now passes all 44 cases and 275 branches for that model. Subsequent Vilar and
+[complete Rohwer recovery](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
+bring combined validation to **4,203/4,208 cases, with 33 fully passing models**;
+two Marhl and three Vilar cases remain unresolved. Original results stay separate
+from these later recoveries.
+
+The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/CATALOG_BREAKING.md)
+uses eight control arms and records explicit differences between the MATLAB
+code and the paper's prose. Published terminal reports now cover 20 distinct
+models; 18 have passing full numerical validation after separate recoveries.
+Network 34, the Marwan regulatory-hierarchy model, passes all 360 initial cases
+and 3,254 conditional trials. Of its 6,509 response-trials, 6,397 have no
+resolved history effect at rechallenge and 21 meet the controlled
+half-restoration criterion. Successful integration does not imply that each
+intervention demonstrates memory. The conditional trials reuse species and
+histories, so they are not independent samples of a population.
+
+Fifteen searches remain unfinished, and completed failures are retained.
+Complete validated protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific
 selection.
