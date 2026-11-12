@@ -55,6 +55,40 @@ Jaxkineticmodel. Agreement tests the numerical implementation. It does not decid
 which definition of learning to adopt. The [RNM paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC12210318/)
 adds a discussion of computation through state transitions.
 
+### Worked example: a reversal near zero
+
+Our [network 26 comparison](https://github.com/m9h/GRN_ODE/blob/85615d284dcba168b93670ad6215d67f0290a4a0/python/CATALOG_BREAKING.md#tiny-residuals-change-literal-search-paths)
+provides a concrete measurement exercise. In the indicated trial, the literal
+MATLAB rule calls a response a downward reversal when
+
+$$\overline{Y}_{\mathrm{cue}} \leq \overline{Y}_{\mathrm{pre}}/1.5.$$
+
+Two otherwise matching simulation configurations produced these RoadRunner
+means for `MSH`:
+
+| Run | Pre-cue mean | Cue mean | Literal reversal |
+|---|---:|---:|---|
+| Local | −2.48124e-38 | −1.12648e-42 | No |
+| Distributed | 6.72825e-39 | 3.05462e-43 | Yes |
+
+Check the inequality by hand. The sign of a tiny residue changes its answer,
+although all four values are far below the comparison's `1e-7` absolute floor.
+The local case continues through eight trials; the distributed case stops
+after one. Both classify the response as having **no resolved history effect
+at rechallenge** when matched controls and numerical resolution are included.
+
+Across the full model, the runs differ in 210 raw reversal labels, all involving
+means below `1.35e-19`. Their controlled classification keys agree on all 1,440
+shared response/engine assessments. Some later trials occur in only one run,
+so this comparison does not establish equivalence of the complete search trees.
+
+- Which part of this result comes from the reaction dynamics, and which from the decision rule?
+- How should a ratio threshold treat values indistinguishable from zero?
+- What would count as evidence that a change in history affects a later response?
+
+This example concerns the interpretation of a simulation result. It does not
+settle the paper's broader philosophical argument.
+
 ## Session 3: self-reference and dynamics
 
 Read the introduction and initial examples of

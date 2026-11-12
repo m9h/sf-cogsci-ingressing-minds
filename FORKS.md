@@ -9,7 +9,7 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [29acc73](https://github.com/m9h/GRN_ODE/tree/29acc73fb017463add4a0973110b849328019d72) | Three Vilar cases recovered; all 77 Rohwer failure branches confirmed; 16 original breaking reports and distributed networks 26/27/30 audited |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [85615d2](https://github.com/m9h/GRN_ODE/tree/85615d284dcba168b93670ad6215d67f0290a4a0) | Three Vilar cases recovered; 17 original breaking reports and distributed network 33 audited; sensitivity of literal search paths documented |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Full 118-case network 26 recovery using settings validated on all 14 original mismatches; computation in progress |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
@@ -143,17 +143,28 @@ also covers every required continuation: 26 of 38 cases pass across 171
 conditional trials and 783 branch records. Thirty completed mismatches affect
 the remaining 12 cases. Networks 28/29 hit their five-hour limits with partial
 coverage and are [continuing from downloaded checkpoints](https://github.com/m9h/GRN_ODE/actions/runs/43155055643).
-The [16 terminal reports from the original breaking run](https://github.com/m9h/GRN_ODE/blob/29acc73fb017463add4a0973110b849328019d72/python/results/catalog-breaking-original-completed/audit.json)
+The [17 terminal reports from the original breaking run](https://github.com/m9h/GRN_ODE/blob/85615d284dcba168b93670ad6215d67f0290a4a0/python/results/catalog-breaking-original-completed/audit.json)
 are also published and audited: 14 models pass their checks, including three
-with no eligible cases and validated untreated controls. In total, 729 of 734
-initial cases pass across 25,723 branches. Four incomplete integrations leave
+with no eligible cases and validated untreated controls. In total, 845 of 852
+initial cases pass across 28,127 branches. Four incomplete integrations leave
 two conditional decisions unresolved in reduced Goldbeter; eight completed
 mismatches affect the explicit-pool model, whose separate recovery now passes
 all 54 cases as reported above.
+Fourteen additional mismatches affect network 26, whose local and distributed
+runs both validate 116/118 cases. The [comparison of these runs](https://github.com/m9h/GRN_ODE/blob/85615d284dcba168b93670ad6215d67f0290a4a0/python/CATALOG_BREAKING.md#tiny-residuals-change-literal-search-paths)
+finds different search paths in 38 cases. All 210 differing raw reversal labels
+involve means below `1.35e-19`; controlled classifications agree across all
+1,440 shared response/engine assessments. Unshared trials are not assumed
+equivalent. A worked example appears in the [discussion guide](docs/discussion-guide.md#worked-example-a-reversal-near-zero).
+Network 33's [untreated-control audit](https://github.com/m9h/GRN_ODE/blob/85615d284dcba168b93670ad6215d67f0290a4a0/python/results/catalog-breaking-linux-33/audit.json)
+also passes over the full 0–2210 interval. It has no eligible cases under this
+protocol. Published breaking reports now cover 19 distinct models; this does
+not establish successful numerical validation of every model or case. The
+comparison update passes **163 local tests**, with the optional Heyoka module
+skipped in the main environment.
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
-completion. Rohwer's paired-case recovery also requires 170 additional controls
-beyond its 77 original failed branches; both groups are now being computed.
+completion. Rohwer's 170 additional paired-case controls are still being computed.
 Further diagnostics retain every failed or mismatched trajectory.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
 
