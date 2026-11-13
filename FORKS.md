@@ -12,6 +12,7 @@ preserve the code examined. Review status can change after these dates.
 | [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [3a71ecb](https://github.com/m9h/GRN_ODE/tree/3a71ecb012a07957f09148625249e364b8c4676f) | Completed searches for 23 breaking models, full-array diagnostics and complete-case auditing; distributed jobs now cover all unfinished searches; paired validation remains 4,203/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Fresh complete network-12 search at independently supported refined settings; 39 targeted tests pass, computation pending |
+| [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [ec8ec7c](https://github.com/m9h/GRN_ODE/tree/ec8ec7cbadecd2a8c2067992011c88028eb5690f) | Exact precision checkpoints, verified artifact restoration and full-array audits; 73 local precision tests plus four collector tests pass; complete Vilar branch dispatch queued, no additional case recovery claimed |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -126,6 +127,16 @@ refinement update in `29acc73` passes **156 tests** in the main environment.
 Python
 dependencies use uv; the documented macOS exception supplies Heyoka's compiled
 native libraries through an explicitly pinned conda-forge environment.
+The newer [resumable precision workflow](https://github.com/m9h/GRN_ODE/blob/ec8ec7cbadecd2a8c2067992011c88028eb5690f/python/PRECISION_DIAGNOSTICS.md#linux-execution-and-artifact-restoration)
+preserves exact internal state across interruptions and validates completed
+arrays before reuse. Its Linux workers use uv throughout. All 16 original failed
+Vilar branches and the untreated baseline are included in the
+[17-partition plan](https://github.com/m9h/GRN_ODE/blob/ec8ec7cbadecd2a8c2067992011c88028eb5690f/python/results/catalog-paired-taylor-dispatch-vilar-20261113/plan.json);
+[run 43380180550](https://github.com/m9h/GRN_ODE/actions/runs/43380180550)
+was queued at its Linux test gate when dispatched. Both complete untreated
+Vilar and Marhl baseline probes pass independent full-array audits, but these
+checks add no stimulated-branch or complete-case coverage. The existing local
+precision and control computations continue with their frozen sources.
 The [restartable breaking runner](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/CATALOG_BREAKING.md#restartable-computation-in-complete-case-partitions)
 partitions whole cases, preserving their full conditional searches and controls.
 A [distributed batch for networks 26–35](https://github.com/m9h/GRN_ODE/actions/runs/43101294718)
