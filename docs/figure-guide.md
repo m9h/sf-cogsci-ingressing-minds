@@ -374,7 +374,7 @@ bring combined validation to **4,203/4,208 cases, with 33 fully passing models**
 two Marhl and three Vilar cases remain unresolved. Original results stay separate
 from these later recoveries.
 
-The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/CATALOG_BREAKING.md)
+The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
 code and the paper's prose. Published terminal reports now cover 23 distinct
 models; 19 have passing full numerical validation after separate recoveries.
@@ -391,6 +391,13 @@ Twelve searches remain unfinished. The newly completed Fuss and Leloup
 searches retain numerical mismatches, so finished coverage does not imply
 full validation. Complete Ciliberto branch arrays and the new recorded evidence
 are available in the [validation release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).
+The next [Ciliberto computation](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md#ciliberto-partition-zero-refinement)
+includes every control and possible continuation for two unresolved cases:
+214 distinct reset schedules plus the untreated baseline. Its independent
+auditor will reconstruct conditional trials and controlled classifications
+from the full arrays. The run remains unfinished. This distinction matters:
+agreement on an isolated stimulated trajectory cannot establish that the
+response depends on prior experience; the corresponding controls are needed.
 Complete validated protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific

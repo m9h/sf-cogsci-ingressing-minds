@@ -87,7 +87,7 @@ has evaluated all 4,208 cases: the original run records 4,166 passes and 42
 failures. Separate François, Vilar and [Rohwer recoveries](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
 bring combined validation to **4,203/4,208 cases**, with complete passing
 inventories in 33 models. Two Marhl cases and three Vilar cases remain unresolved.
-The conditional breaking screen has [published reports for 23 models](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/CATALOG_BREAKING.md),
+The conditional breaking screen has [published reports for 23 models](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md),
 with 19 fully passing numerical validations, including all 528 cases in the
 Edelstein acetylcholine-receptor model. The newly completed Fuss and Leloup
 searches retain mismatches; twelve searches remain unfinished.

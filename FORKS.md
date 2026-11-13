@@ -9,7 +9,7 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [058df6f](https://github.com/m9h/GRN_ODE/tree/058df6fe0f9d96874f604618afddcf64fde90bf8) | Completed searches for 23 breaking models, full-array Ciliberto and Marhl diagnostics; paired validation remains 4,203/4,208 cases |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [a0ea22a](https://github.com/m9h/GRN_ODE/tree/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93) | Completed searches for 23 breaking models, full-array Ciliberto and Marhl diagnostics, and complete-case control auditing; paired validation remains 4,203/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Fresh complete network-12 search at independently supported refined settings; 39 targeted tests pass, computation pending |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
@@ -191,8 +191,9 @@ preserves all sixteen partitions and checksummed archives.
 Published breaking reports now cover **23 distinct models**, of which 19 have
 passing full numerical validation after the separate recoveries. Twelve
 models still need their full searches completed; this does not establish
-all-35 completion. The current reference branch passes **249 local tests**,
-with the optional Heyoka adapter module skipped in the main environment.
+all-35 completion. The latest control-runner, branch-auditor and case-auditor
+checks pass **63 targeted tests** through uv. This checks the computation and
+audit code; it does not validate trajectories that are still being computed.
 
 The [Linux four-to-eight partition check](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-repartition-27-linux/verification.json)
 preserves all 22 network-27 case summaries and all 646 copied checkpoint files.
@@ -218,6 +219,15 @@ The [Ciliberto Radau audit](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d9687
 confirms ten previously incomplete branches from the first partition: all 40
 integrations and 60 full-array comparisons pass. This does not validate the two
 complete cases, which require their other controls and conditional continuation.
+The [complete-control computation and auditor](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md#ciliberto-partition-zero-refinement)
+now cover a planned inventory of 214 distinct reset schedules for those two
+cases, plus a full untreated control. All possible third interventions are
+included. The computation is running; the independent auditor is ready to
+check all saved observations, reconstruct each conditional path and recompute
+the controlled classifications. Every required control and the untreated
+baseline must pass before either case can be recovered. No additional case
+recovery is claimed yet.
+
 Leloup's twelve original mismatches also pass recorded native refinement checks.
 Its [full case recovery](https://github.com/m9h/GRN_ODE/actions/runs/43370464101)
 has been submitted as sixteen fresh partitions and remains pending.
