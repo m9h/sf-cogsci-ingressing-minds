@@ -9,7 +9,7 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [92ca969](https://github.com/m9h/GRN_ODE/tree/92ca96912effeba7886fb78e9bb64ab084babb82) | Terminal reports for 27 breaking models, 22 fully passing numerical validation; eight searches remain unfinished; paired validation remains 4,203/4,208 cases |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [e891478](https://github.com/m9h/GRN_ODE/tree/e891478b94fb732a3c4bd2e799eb7af35ace6f2a) | Terminal reports for 27 breaking models, 22 fully passing numerical validation; complete Ueda run comparison and native refinement audit; eight searches remain unfinished; paired validation remains 4,203/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
 | [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [26c5c42](https://github.com/m9h/GRN_ODE/tree/26c5c425cd9e5a1116d73bcca39e8884e036bb1e) | Exact precision checkpoints, verified restoration and full-array audits; 73 precision tests pass locally and on Linux, plus four local collector tests; Vilar continuation underway, no additional case recovery claimed |
@@ -245,6 +245,19 @@ continuation decisions. Its [evidence release](https://github.com/m9h/GRN_ODE/re
 preserves the full recorded search. The remaining eight unfinished models have
 distributed jobs running or queued. Dispatching work does not increase completed
 or validated coverage; artifact collection and whole-model audits follow execution.
+
+Ueda's [complete macOS/Linux comparison](https://github.com/m9h/GRN_ODE/blob/e891478b94fb732a3c4bd2e799eb7af35ace6f2a/python/results/catalog-breaking-ueda11-local/run-comparison.json)
+finds identical paths in all 302 cases and matching raw and controlled labels
+across all 10,726 shared response/engine assessments. Both runs retain the same
+four failed cases. Its [native refinement audit](https://github.com/m9h/GRN_ODE/blob/e891478b94fb732a3c4bd2e799eb7af35ace6f2a/python/results/catalog-breaking-ueda11-refinement/verification.json)
+confirms 16/24 branches after all 144 integrations finish; eight still disagree.
+The verifier checks provenance, full failure coverage and recorded comparisons;
+22 targeted checks pass. The producer did not save raw arrays, so this
+verification does not independently recompute pointwise errors.
+The [local evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-diagnostics-20261113)
+and [full-array Radau/RoadRunner plan](https://github.com/m9h/GRN_ODE/blob/e891478b94fb732a3c4bd2e799eb7af35ace6f2a/python/results/catalog-breaking-ueda11-diagnostic-plan-20261113/README.md)
+preserve the next validation step. That computation is running, and no complete
+Ueda cases have been recovered from these branch diagnostics.
 
 An [independently transcribed mpmath diagnostic](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/PRECISION_DIAGNOSTICS.md#independent-marhl-implementation)
 has completed all three failed Marhl branches at two arithmetic precisions.
