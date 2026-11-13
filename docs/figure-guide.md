@@ -374,9 +374,9 @@ bring combined validation to **4,203/4,208 cases, with 33 fully passing models**
 two Marhl and three Vilar cases remain unresolved. Original results stay separate
 from these later recoveries.
 
-The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/CATALOG_BREAKING.md)
+The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/92ca96912effeba7886fb78e9bb64ab084babb82/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
-code and the paper's prose. Published terminal reports now cover 26 distinct
+code and the paper's prose. Published terminal reports now cover 27 distinct
 models; 22 have passing full numerical validation after separate recoveries.
 Network 1, the Edelstein acetylcholine-receptor model, passes all 528 initial
 cases and 9,452 conditional trials.
@@ -387,11 +387,13 @@ half-restoration criterion. Successful integration does not imply that each
 intervention demonstrates memory. The conditional trials reuse species and
 histories, so they are not independent samples of a population.
 
-Nine searches remain unfinished. New complete audits pass all 216 Leloup cases,
+Eight searches remain unfinished. New complete audits pass all 216 Leloup cases,
 728 Martins cases and 112 Hoefnagel cases. Their evidence is available in the
 [three-model release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113)
 and [Hoefnagel release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113).
-Reduced Goldbeter, Fuss, Ciliberto and Marhl retain numerical failures; finished
+Ueda's [complete search](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-20261113)
+passes 298/302 cases, with four numerical failures and no unresolved conditional
+decisions. Reduced Goldbeter, Fuss, Ueda, Ciliberto and Marhl retain numerical failures; finished
 initial-case coverage does not imply full validation. Ciliberto's full search
 passes 548/622 cases, retaining 74 failures and 89 unresolved conditional
 decisions. Complete arrays for ten selected Ciliberto branches remain available

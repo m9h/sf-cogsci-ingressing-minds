@@ -9,7 +9,7 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [f55c9a6](https://github.com/m9h/GRN_ODE/tree/f55c9a62913f8ece85fc96096b22b27807cf94cf) | Terminal reports for 26 breaking models, 22 fully passing numerical validation; nine searches remain unfinished; paired validation remains 4,203/4,208 cases |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [92ca969](https://github.com/m9h/GRN_ODE/tree/92ca96912effeba7886fb78e9bb64ab084babb82) | Terminal reports for 27 breaking models, 22 fully passing numerical validation; eight searches remain unfinished; paired validation remains 4,203/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
 | [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [26c5c42](https://github.com/m9h/GRN_ODE/tree/26c5c425cd9e5a1116d73bcca39e8884e036bb1e) | Exact precision checkpoints, verified restoration and full-array audits; 73 precision tests pass locally and on Linux, plus four local collector tests; Vilar continuation underway, no additional case recovery claimed |
@@ -202,8 +202,8 @@ for the Edelstein acetylcholine-receptor model. Its
 [separate evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-network1-20261113)
 preserves all sixteen partitions and checksummed archives.
 
-Published breaking reports now cover **26 distinct models**, of which 22 have
-passing full numerical validation after the separate recoveries. Nine
+Published breaking reports now cover **27 distinct models**, of which 22 have
+passing full numerical validation after the separate recoveries. Eight
 models still need their full searches completed; this does not establish
 all-35 completion. The latest control-runner, branch-auditor and case-auditor
 checks pass **63 targeted tests** through uv. This checks the computation and
@@ -230,15 +230,19 @@ recorded. These are partial parent counts; complete-model validation awaits
 the resumed runs and their evidence audits.
 
 A [further Linux dispatch](https://github.com/m9h/GRN_ODE/actions/runs/43374603951)
-adds Hoefnagel, Ueda, Markevich, De Caluwé and François, whose original local
-searches are still running. Its
+adds Hoefnagel, Ueda, Markevich, De Caluwé and François. Its
 [verified inventory](https://github.com/m9h/GRN_ODE/blob/3a71ecb012a07957f09148625249e364b8c4676f/python/CATALOG_BREAKING.md#distributed-coverage-for-the-remaining-local-only-searches)
 assigns all 1,414 initial cases to 80 disjoint partitions, retaining each case's
 full conditional protocol. Hoefnagel now passes its
 [complete 112-case audit](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-10/audit.json):
 2,045 conditional trials, 4,741 response-trials and 8,158 distinct branches.
 Its [evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113)
-preserves all sixteen partitions. The remaining nine unfinished models have
+preserves all sixteen partitions. Ueda's
+[complete 302-case audit](https://github.com/m9h/GRN_ODE/blob/92ca96912effeba7886fb78e9bb64ab084babb82/python/results/catalog-breaking-linux-11/audit.json)
+now passes 298 cases and retains four numerical failures. It covers 3,354
+conditional trials and 13,315 distinct branches, with no unresolved
+continuation decisions. Its [evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-20261113)
+preserves the full recorded search. The remaining eight unfinished models have
 distributed jobs running or queued. Dispatching work does not increase completed
 or validated coverage; artifact collection and whole-model audits follow execution.
 

@@ -87,13 +87,14 @@ has evaluated all 4,208 cases: the original run records 4,166 passes and 42
 failures. Separate François, Vilar and [Rohwer recoveries](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
 bring combined validation to **4,203/4,208 cases**, with complete passing
 inventories in 33 models. Two Marhl cases and three Vilar cases remain unresolved.
-The conditional breaking screen has [published reports for 26 models](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/CATALOG_BREAKING.md),
+The conditional breaking screen has [published reports for 27 models](https://github.com/m9h/GRN_ODE/blob/92ca96912effeba7886fb78e9bb64ab084babb82/python/CATALOG_BREAKING.md),
 with 22 fully passing numerical validations. New complete audits pass all
 216 Leloup cases, 728 Martins cases and 112 Hoefnagel cases. Ciliberto reaches
-full initial-case coverage but retains 74 failures out of 622 cases; nine searches
-remain unfinished. Downloadable evidence accompanies the
+full initial-case coverage but retains 74 failures out of 622 cases. Ueda passes
+298/302 cases; eight searches remain unfinished. Downloadable evidence accompanies the
 [Leloup, Ciliberto and Martins audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113)
-and the [Hoefnagel audit](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113).
+and the [Hoefnagel](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113)
+and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-20261113).
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
