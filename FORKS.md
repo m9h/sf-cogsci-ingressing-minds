@@ -13,6 +13,7 @@ preserve the code examined. Review status can change after these dates.
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
 | [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [26c5c42](https://github.com/m9h/GRN_ODE/tree/26c5c425cd9e5a1116d73bcca39e8884e036bb1e) | Exact precision checkpoints, verified restoration and full-array audits; 73 precision tests pass locally and on Linux, plus four local collector tests; Vilar continuation underway, no additional case recovery claimed |
+| [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [4520cae](https://github.com/m9h/GRN_ODE/tree/4520caeda2315d23fbfc7f65263774dd655ddb67) | Two completed stimulated Vilar branches with full-array audits; 23 additional controls dispatched for the three unresolved paired cases; 102 local precision tests pass; no increase in validated cases |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -134,12 +135,27 @@ Vilar branches and the untreated baseline are included in the
 [17-partition plan](https://github.com/m9h/GRN_ODE/blob/ec8ec7cbadecd2a8c2067992011c88028eb5690f/python/results/catalog-paired-taylor-dispatch-vilar-20261113/plan.json);
 [run 43380180550](https://github.com/m9h/GRN_ODE/actions/runs/43380180550)
 passed all 73 precision tests and preserved all seventeen partition artifacts.
-Ten stimulated branches finished their first, 128-bit trajectory; none yet
-completed all required integrations. The [continuation](https://github.com/m9h/GRN_ODE/actions/runs/43483480217)
-resumes verified checkpoints and has passed its Linux test gate. Both complete
-untreated Vilar and Marhl baseline probes pass independent full-array audits.
-These results add no complete stimulated-branch or case validation. The existing local
-precision and control computations continue with their frozen sources.
+That initial run finished the first, 128-bit trajectory for ten stimulated
+branches without completing all required integrations for any of them. The
+[continuation](https://github.com/m9h/GRN_ODE/actions/runs/43483480217) has passed
+its Linux test gate and now has complete, independently audited arrays for the
+paired-normal and paired-sham arms of `DA__up--DR__up`. All three pairwise
+comparisons pass over all 30,001 samples in each branch. The
+[release preserves the original arrays and checkpoints](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-vilar-precision-20261113).
+Both arms belong to an already recovered case, so Vilar's validated count
+remains **139/142**. Complete untreated Vilar and Marhl baseline probes also
+pass independent full-array audits.
+
+The three remaining Vilar cases require 32 distinct full trajectories. Nine
+are in the ongoing failed-branch batch; a separate
+[23-control plan](https://github.com/m9h/GRN_ODE/blob/4520caeda2315d23fbfc7f65263774dd655ddb67/python/results/catalog-paired-taylor-vilar-controls-20261113/README.md)
+supplies the others, including the full 300-unit untreated sham. Its runner and
+case auditor passed 102 local precision tests. The
+[dispatched computation](https://github.com/m9h/GRN_ODE/actions/runs/43510523842)
+must pass its Linux test gate before computing controls. Case recovery requires
+the same solver pair in every arm, full-trajectory agreement and agreement in
+controlled memory classifications. The existing local computations continue
+with their frozen sources; no additional case recovery is claimed.
 The [restartable breaking runner](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/CATALOG_BREAKING.md#restartable-computation-in-complete-case-partitions)
 partitions whole cases, preserving their full conditional searches and controls.
 A [distributed batch for networks 26–35](https://github.com/m9h/GRN_ODE/actions/runs/43101294718)
