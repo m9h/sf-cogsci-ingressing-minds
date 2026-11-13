@@ -374,10 +374,12 @@ bring combined validation to **4,203/4,208 cases, with 33 fully passing models**
 two Marhl and three Vilar cases remain unresolved. Original results stay separate
 from these later recoveries.
 
-The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/CATALOG_BREAKING.md)
+The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
-code and the paper's prose. Published terminal reports now cover 20 distinct
-models; 18 have passing full numerical validation after separate recoveries.
+code and the paper's prose. Published terminal reports now cover 23 distinct
+models; 19 have passing full numerical validation after separate recoveries.
+Network 1, the Edelstein acetylcholine-receptor model, passes all 528 initial
+cases and 9,452 conditional trials.
 Network 34, the Marwan regulatory-hierarchy model, passes all 360 initial cases
 and 3,254 conditional trials. Of its 6,509 response-trials, 6,397 have no
 resolved history effect at rechallenge and 21 meet the controlled
@@ -385,7 +387,10 @@ half-restoration criterion. Successful integration does not imply that each
 intervention demonstrates memory. The conditional trials reuse species and
 histories, so they are not independent samples of a population.
 
-Fifteen searches remain unfinished, and completed failures are retained.
+Twelve searches remain unfinished. The newly completed Fuss and Leloup
+searches retain numerical mismatches, so finished coverage does not imply
+full validation. Complete Ciliberto branch arrays and the new recorded evidence
+are available in the [validation release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).
 Complete validated protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific

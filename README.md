@@ -87,8 +87,12 @@ has evaluated all 4,208 cases: the original run records 4,166 passes and 42
 failures. Separate François, Vilar and [Rohwer recoveries](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
 bring combined validation to **4,203/4,208 cases**, with complete passing
 inventories in 33 models. Two Marhl cases and three Vilar cases remain unresolved.
-The conditional breaking screen has [published reports for 20 models](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/CATALOG_BREAKING.md),
-including the complete 360-case Marwan result; fifteen searches remain unfinished.
+The conditional breaking screen has [published reports for 23 models](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/CATALOG_BREAKING.md),
+with 19 fully passing numerical validations, including all 528 cases in the
+Edelstein acetylcholine-receptor model. The newly completed Fuss and Leloup
+searches retain mismatches; twelve searches remain unfinished.
+[Downloadable evidence](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112)
+includes full Ciliberto diagnostic trajectories and the new original-run records.
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
@@ -128,7 +132,7 @@ with working branches, review links and exact revisions. Some changes are on
 feature branches, so use the links above rather than assuming each fork's
 default branch contains them.
 
-Kinetics status updated **2026-11-11**. The documented Jaxkineticmodel revision
+Kinetics status updated **2026-11-12**. The documented Jaxkineticmodel revision
 passes 43 tests and its CI passes on Python 3.12 and 3.13. The GRN five-model
 suite passes all 88 trajectory comparisons after the importer update; the
 larger catalog's successes and unresolved cases are reported separately. These are

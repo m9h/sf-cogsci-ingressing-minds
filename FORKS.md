@@ -1,6 +1,6 @@
 # Forks, contributions and reproducible revisions
 
-Kinetics evidence updated **2026-11-12 UTC**; other fork and review snapshots are
+Kinetics evidence updated **2026-11-13 UTC**; other fork and review snapshots are
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
 
@@ -9,8 +9,9 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [d956043](https://github.com/m9h/GRN_ODE/tree/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2) | Full Marwan breaking validation, Linux checkpoint preservation and Marhl array auditor; combined paired validation remains 4,203/4,208 cases |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [058df6f](https://github.com/m9h/GRN_ODE/tree/058df6fe0f9d96874f604618afddcf64fde90bf8) | Completed searches for 23 breaking models, full-array Ciliberto and Marhl diagnostics; paired validation remains 4,203/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
+| [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Fresh complete network-12 search at independently supported refined settings; 39 targeted tests pass, computation pending |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -171,27 +172,55 @@ involve means below `1.35e-19`; controlled classifications agree across all
 equivalent. A worked example appears in the [discussion guide](docs/discussion-guide.md#worked-example-a-reversal-near-zero).
 Network 33's [untreated-control audit](https://github.com/m9h/GRN_ODE/blob/85615d284dcba168b93670ad6215d67f0290a4a0/python/results/catalog-breaking-linux-33/audit.json)
 also passes over the full 0–2210 interval. It has no eligible cases under this
-protocol. Network 34's [complete Marwan audit](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/results/catalog-breaking-linux-34/audit.json)
+protocol. Network 34's [complete Marwan audit](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-linux-34/audit.json)
 passes all **360 cases, 3,254 conditional trials and 12,936 branch records**.
-Published breaking reports now cover **20 distinct models**, of which 18 have
-passing full numerical validation after the separate recoveries. Fifteen
+The [next original-run snapshot](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-original-completed-20261112/audit.json)
+adds full Fuss and Leloup searches: 314/332 and 212/216 cases pass, respectively.
+A separate local Marhl run passes 27/38. Its search paths and all raw and controlled
+labels match the Linux run's 171 trials; one case changes numerical validation
+status because its full trajectory comparison differs. Both reports remain
+available. The new snapshot's compressed evidence and complete Ciliberto arrays
+are in a [checksummed release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).
+
+The [complete network-1 audit](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-linux-1/audit.json)
+validates all **528 cases, 9,452 conditional trials and 38,024 branch records**
+for the Edelstein acetylcholine-receptor model. Its
+[separate evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-network1-20261113)
+preserves all sixteen partitions and checksummed archives.
+
+Published breaking reports now cover **23 distinct models**, of which 19 have
+passing full numerical validation after the separate recoveries. Twelve
 models still need their full searches completed; this does not establish
-all-35 completion. The current reference branch passes **206 local tests**,
+all-35 completion. The current reference branch passes **249 local tests**,
 with the optional Heyoka adapter module skipped in the main environment.
 
-The [Linux four-to-eight partition check](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/results/catalog-breaking-repartition-27-linux/verification.json)
+The [Linux four-to-eight partition check](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-repartition-27-linux/verification.json)
 preserves all 22 network-27 case summaries and all 646 copied checkpoint files.
-[Sixteen-partition continuations](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/CATALOG_BREAKING.md#checkpoint-continuations-dispatched-on-12-november)
-are dispatched for networks 1, 28, 29, 31, 32 and 35, retaining every control,
+[Sixteen-partition continuations](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/CATALOG_BREAKING.md#checkpoint-continuations-dispatched-on-12-november)
+are dispatched for networks 1, 2, 28, 29, 31, 32 and 35, retaining every control,
 observation and conditional continuation. Their documented partial counts
 describe parent worker reports, not full-model validation.
+The next [Ciliberto continuation](https://github.com/m9h/GRN_ODE/actions/runs/43370478631)
+starts from 537/622 recorded cases (463 passing); the next
+[network-31 continuation](https://github.com/m9h/GRN_ODE/actions/runs/43370565797)
+starts from 726/728, all recorded cases passing. Neither is yet a completed model.
 
-An [independently transcribed mpmath diagnostic](https://github.com/m9h/GRN_ODE/blob/d956043ea7d9ed34f0102d3bbd88fae1ea4e50c2/python/PRECISION_DIAGNOSTICS.md#independent-marhl-implementation)
-is computing the three failed Marhl branches at two arithmetic precisions.
-Its separate array auditor preserves the distinction between agreement with
-Heyoka, agreement with native solvers and complete case validation. Both
-high-precision implementations use Taylor methods; no additional case
-recovery is claimed from this work yet.
+An [independently transcribed mpmath diagnostic](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/PRECISION_DIAGNOSTICS.md#independent-marhl-implementation)
+has completed all three failed Marhl branches at two arithmetic precisions.
+The full-array audit confirms agreement with Heyoka on every sample, while
+all three branches still disagree with the recorded RoadRunner trajectory.
+The untreated baseline agrees across implementations. Fifteen remaining
+control branches are being computed before complete cases can be assessed.
+Both high-precision implementations use Taylor methods; no additional case
+recovery is claimed from this branch diagnostic.
+
+The [Ciliberto Radau audit](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-scipy-ciliberto28-shard0/audit.json)
+confirms ten previously incomplete branches from the first partition: all 40
+integrations and 60 full-array comparisons pass. This does not validate the two
+complete cases, which require their other controls and conditional continuation.
+Leloup's twelve original mismatches also pass recorded native refinement checks.
+Its [full case recovery](https://github.com/m9h/GRN_ODE/actions/runs/43370464101)
+has been submitted as sixteen fresh partitions and remains pending.
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
 completion. Rohwer's complete 170-control result is included in the recovery above.
