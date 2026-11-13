@@ -374,10 +374,10 @@ bring combined validation to **4,203/4,208 cases, with 33 fully passing models**
 two Marhl and three Vilar cases remain unresolved. Original results stay separate
 from these later recoveries.
 
-The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md)
+The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
-code and the paper's prose. Published terminal reports now cover 23 distinct
-models; 19 have passing full numerical validation after separate recoveries.
+code and the paper's prose. Published terminal reports now cover 26 distinct
+models; 22 have passing full numerical validation after separate recoveries.
 Network 1, the Edelstein acetylcholine-receptor model, passes all 528 initial
 cases and 9,452 conditional trials.
 Network 34, the Marwan regulatory-hierarchy model, passes all 360 initial cases
@@ -387,10 +387,15 @@ half-restoration criterion. Successful integration does not imply that each
 intervention demonstrates memory. The conditional trials reuse species and
 histories, so they are not independent samples of a population.
 
-Twelve searches remain unfinished. The newly completed Fuss and Leloup
-searches retain numerical mismatches, so finished coverage does not imply
-full validation. Complete Ciliberto branch arrays and the new recorded evidence
-are available in the [validation release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).
+Nine searches remain unfinished. New complete audits pass all 216 Leloup cases,
+728 Martins cases and 112 Hoefnagel cases. Their evidence is available in the
+[three-model release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113)
+and [Hoefnagel release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113).
+Reduced Goldbeter, Fuss, Ciliberto and Marhl retain numerical failures; finished
+initial-case coverage does not imply full validation. Ciliberto's full search
+passes 548/622 cases, retaining 74 failures and 89 unresolved conditional
+decisions. Complete arrays for ten selected Ciliberto branches remain available
+in the earlier [validation release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).
 The next [Ciliberto computation](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md#ciliberto-partition-zero-refinement)
 includes every control and possible continuation for two unresolved cases:
 214 distinct reset schedules plus the untreated baseline. Its independent

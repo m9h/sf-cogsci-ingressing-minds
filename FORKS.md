@@ -9,10 +9,10 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [3a71ecb](https://github.com/m9h/GRN_ODE/tree/3a71ecb012a07957f09148625249e364b8c4676f) | Completed searches for 23 breaking models, full-array diagnostics and complete-case auditing; distributed jobs now cover all unfinished searches; paired validation remains 4,203/4,208 cases |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [f55c9a6](https://github.com/m9h/GRN_ODE/tree/f55c9a62913f8ece85fc96096b22b27807cf94cf) | Terminal reports for 26 breaking models, 22 fully passing numerical validation; nine searches remain unfinished; paired validation remains 4,203/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
-| [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Fresh complete network-12 search at independently supported refined settings; 39 targeted tests pass, computation pending |
-| [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [ec8ec7c](https://github.com/m9h/GRN_ODE/tree/ec8ec7cbadecd2a8c2067992011c88028eb5690f) | Exact precision checkpoints, verified artifact restoration and full-array audits; 73 local precision tests plus four collector tests pass; complete Vilar branch dispatch queued, no additional case recovery claimed |
+| [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
+| [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [26c5c42](https://github.com/m9h/GRN_ODE/tree/26c5c425cd9e5a1116d73bcca39e8884e036bb1e) | Exact precision checkpoints, verified restoration and full-array audits; 73 precision tests pass locally and on Linux, plus four local collector tests; Vilar continuation underway, no additional case recovery claimed |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -127,15 +127,18 @@ refinement update in `29acc73` passes **156 tests** in the main environment.
 Python
 dependencies use uv; the documented macOS exception supplies Heyoka's compiled
 native libraries through an explicitly pinned conda-forge environment.
-The newer [resumable precision workflow](https://github.com/m9h/GRN_ODE/blob/ec8ec7cbadecd2a8c2067992011c88028eb5690f/python/PRECISION_DIAGNOSTICS.md#linux-execution-and-artifact-restoration)
+The newer [resumable precision workflow](https://github.com/m9h/GRN_ODE/blob/26c5c425cd9e5a1116d73bcca39e8884e036bb1e/python/PRECISION_DIAGNOSTICS.md#linux-execution-and-artifact-restoration)
 preserves exact internal state across interruptions and validates completed
 arrays before reuse. Its Linux workers use uv throughout. All 16 original failed
 Vilar branches and the untreated baseline are included in the
 [17-partition plan](https://github.com/m9h/GRN_ODE/blob/ec8ec7cbadecd2a8c2067992011c88028eb5690f/python/results/catalog-paired-taylor-dispatch-vilar-20261113/plan.json);
 [run 43380180550](https://github.com/m9h/GRN_ODE/actions/runs/43380180550)
-was queued at its Linux test gate when dispatched. Both complete untreated
-Vilar and Marhl baseline probes pass independent full-array audits, but these
-checks add no stimulated-branch or complete-case coverage. The existing local
+passed all 73 precision tests and preserved all seventeen partition artifacts.
+Ten stimulated branches finished their first, 128-bit trajectory; none yet
+completed all required integrations. The [continuation](https://github.com/m9h/GRN_ODE/actions/runs/43483480217)
+resumes verified checkpoints and has passed its Linux test gate. Both complete
+untreated Vilar and Marhl baseline probes pass independent full-array audits.
+These results add no complete stimulated-branch or case validation. The existing local
 precision and control computations continue with their frozen sources.
 The [restartable breaking runner](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/CATALOG_BREAKING.md#restartable-computation-in-complete-case-partitions)
 partitions whole cases, preserving their full conditional searches and controls.
@@ -199,8 +202,8 @@ for the Edelstein acetylcholine-receptor model. Its
 [separate evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-network1-20261113)
 preserves all sixteen partitions and checksummed archives.
 
-Published breaking reports now cover **23 distinct models**, of which 19 have
-passing full numerical validation after the separate recoveries. Twelve
+Published breaking reports now cover **26 distinct models**, of which 22 have
+passing full numerical validation after the separate recoveries. Nine
 models still need their full searches completed; this does not establish
 all-35 completion. The latest control-runner, branch-auditor and case-auditor
 checks pass **63 targeted tests** through uv. This checks the computation and
@@ -212,19 +215,32 @@ preserves all 22 network-27 case summaries and all 646 copied checkpoint files.
 are dispatched for networks 1, 2, 28, 29, 31, 32 and 35, retaining every control,
 observation and conditional continuation. Their documented partial counts
 describe parent worker reports, not full-model validation.
-The next [Ciliberto continuation](https://github.com/m9h/GRN_ODE/actions/runs/43370478631)
-starts from 537/622 recorded cases (463 passing); the next
-[network-31 continuation](https://github.com/m9h/GRN_ODE/actions/runs/43370565797)
-starts from 726/728, all recorded cases passing. Neither is yet a completed model.
+The [Ciliberto continuation](https://github.com/m9h/GRN_ODE/actions/runs/43370478631)
+now has complete initial-case coverage: [548/622 cases pass](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-28/audit.json),
+with 74 failed cases and 89 unresolved conditional decisions retained.
+The [Martins Amadori-degradation continuation](https://github.com/m9h/GRN_ODE/actions/runs/43370565797)
+passes [all 728 cases](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-31/audit.json).
+These complete reports and the Leloup recovery below have a
+[checksummed evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113).
+
+Four [further checkpoint continuations](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/CATALOG_BREAKING.md#further-checkpoint-continuations-on-13-november)
+preserve 519/624 recorded cases in network 2, 46/58 in network 5,
+643/1,088 in network 29 and 201/204 in network 32. All 64 job identities are
+recorded. These are partial parent counts; complete-model validation awaits
+the resumed runs and their evidence audits.
 
 A [further Linux dispatch](https://github.com/m9h/GRN_ODE/actions/runs/43374603951)
 adds Hoefnagel, Ueda, Markevich, De Caluwé and François, whose original local
 searches are still running. Its
 [verified inventory](https://github.com/m9h/GRN_ODE/blob/3a71ecb012a07957f09148625249e364b8c4676f/python/CATALOG_BREAKING.md#distributed-coverage-for-the-remaining-local-only-searches)
 assigns all 1,414 initial cases to 80 disjoint partitions, retaining each case's
-full conditional protocol. All twelve unfinished models now have distributed
-jobs running or queued. Dispatching work does not increase completed or
-validated coverage; artifact collection and whole-model audits follow execution.
+full conditional protocol. Hoefnagel now passes its
+[complete 112-case audit](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-10/audit.json):
+2,045 conditional trials, 4,741 response-trials and 8,158 distinct branches.
+Its [evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113)
+preserves all sixteen partitions. The remaining nine unfinished models have
+distributed jobs running or queued. Dispatching work does not increase completed
+or validated coverage; artifact collection and whole-model audits follow execution.
 
 An [independently transcribed mpmath diagnostic](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/PRECISION_DIAGNOSTICS.md#independent-marhl-implementation)
 has completed all three failed Marhl branches at two arithmetic precisions.
@@ -249,8 +265,11 @@ baseline must pass before either case can be recovered. No additional case
 recovery is claimed yet.
 
 Leloup's twelve original mismatches also pass recorded native refinement checks.
-Its [full case recovery](https://github.com/m9h/GRN_ODE/actions/runs/43370464101)
-has been submitted as sixteen fresh partitions and remains pending.
+Its [full case recovery](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-12/audit.json)
+now passes all 216 cases, 3,323 conditional trials and 13,230 distinct branches.
+This fresh sixteen-partition search uses refined solver tolerances while keeping
+the model, calibration, reset schedules, observations and acceptance thresholds
+fixed. The original 212/216 result remains available separately.
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
 completion. Rohwer's complete 170-control result is included in the recovery above.
