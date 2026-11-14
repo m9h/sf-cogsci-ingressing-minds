@@ -396,6 +396,10 @@ The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3
 uses eight control arms and records explicit differences between the MATLAB
 code and the paper's prose. Published terminal reports now cover 28 distinct
 models; 23 have passing full numerical validation after separate recoveries.
+The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad/python/results/catalog-breaking-coverage-20261114/README.md)
+lists each model and its complete-model audits. Four of the 23 passing models
+have no eligible breaking cases under the stated selection rule; that status
+does not demonstrate a learning response.
 The latest [De Caluwe circadian-clock audit](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/results/catalog-breaking-decaluwe20-local-20261114/README.md)
 passes all 484 cases, 4,704 conditional trials and 18,579 distinct branches.
 It verifies complete conditional coverage and recorded cross-engine comparisons,
@@ -416,7 +420,14 @@ Seven searches remain unfinished. New complete audits pass all 216 Leloup cases,
 and [Hoefnagel release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113).
 Ueda's [complete search](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-20261113)
 passes 298/302 cases, with four numerical failures and no unresolved conditional
-decisions. Reduced Goldbeter, Fuss, Ueda, Ciliberto and Marhl retain numerical failures; finished
+decisions. Its subsequent [full-array diagnostic](https://github.com/m9h/GRN_ODE/blob/ede1a69d3ea29c4388bb152704255370a57023ca/python/results/catalog-breaking-scipy-ueda11/README.md)
+confirms all 24 previously mismatched trajectories with Radau and RoadRunner,
+including a refinement of each. Complete-case validation still requires
+323 trajectories: 298 original case trajectories, 24 later candidates not
+reached by the original search, and the untreated control. That computation is
+underway. This shows why changing a numerical method requires checking the
+conditional search again: changed responses can select different later trials.
+Reduced Goldbeter, Fuss, Ueda, Ciliberto and Marhl retain numerical failures; finished
 initial-case coverage does not imply full validation. Ciliberto's full search
 passes 548/622 cases, retaining 74 failures and 89 unresolved conditional
 decisions. Complete arrays for ten selected Ciliberto branches remain available

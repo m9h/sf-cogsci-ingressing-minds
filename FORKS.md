@@ -9,13 +9,14 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [6cf3cdc](https://github.com/m9h/GRN_ODE/tree/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d) | Terminal reports for 28 breaking models, 23 fully passing numerical validation; complete Marhl paired-case recovery and Fuss/Ueda diagnostics; seven breaking searches remain unfinished; paired validation reaches 4,205/4,208 cases |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [95ef898](https://github.com/m9h/GRN_ODE/tree/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad) | All-35 evidence index: 28 complete initial inventories and 23 passing whole-model audits; all 24 Ueda mismatch trajectories now pass a full-array Radau/RoadRunner audit, with complete-case controls underway; seven breaking searches remain unfinished; paired validation stays 4,205/4,208 |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
-| [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [26c5c42](https://github.com/m9h/GRN_ODE/tree/26c5c425cd9e5a1116d73bcca39e8884e036bb1e) | Exact precision checkpoints, verified restoration and full-array audits; 73 precision tests pass locally and on Linux, plus four local collector tests; Vilar continuation underway, no additional case recovery claimed |
+| [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [3682181](https://github.com/m9h/GRN_ODE/tree/36821819b83b72d2ca08bc62da57625a8eeca3f5) | Exact precision checkpoints and full-array audits; new Vilar continuation restores all 17 terminal parent artifacts, with ten unfinished partitions; 73 precision tests plus four collector tests previously passed; no additional case recovery claimed |
 | [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [2e32e58](https://github.com/m9h/GRN_ODE/tree/2e32e584971d0b25ee2b747a986d94ba28b9ceb0) | All 23 additional Vilar controls complete and pass full-array audits; aggregate evidence covers 26/32 trajectories for three unresolved cases, with six missing and three native mismatches; reproducible uv audit and complete evidence release; no additional case recovery |
 | [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
 | [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [fa8ee59](https://github.com/m9h/GRN_ODE/tree/fa8ee594ffeb04d52a632d391a20c9f0093ab91d) | Explicit COPASI reference support for full-array Radau diagnostics; 81 tests pass, one fixture-specific skip; deterministic three-branch Fuss pilot underway, no numerical recovery result yet |
+| [GRN_ODE · kinetics-ueda-cases](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cases) | Same upstream | [aa1a49a](https://github.com/m9h/GRN_ODE/tree/aa1a49a212981dda484a5fb1529f337f7badb058) | Recovery inventories include later candidates skipped by the original conditional search; 67 tests pass; Ueda's complete 323-trajectory control run has started, with all four unresolved cases retained |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -147,6 +148,12 @@ comparisons pass over all 30,001 samples in each branch. The
 Both arms belong to an already recovered case, so Vilar's validated count
 remains **139/142**. Complete untreated Vilar and Marhl baseline probes also
 pass independent full-array audits.
+
+That continuation is now terminal: seven of its 17 partitions have complete
+arrays, while ten retain unfinished integrations. The [next continuation](https://github.com/m9h/GRN_ODE/actions/runs/43556371440)
+restores all 17 selections from verified artifacts, preserving exact checkpoints
+and completed results. Partial coverage and completed native mismatches remain
+explicit; no model or case completion is inferred from this dispatch.
 
 The three remaining Vilar cases require 32 distinct full trajectories. Nine
 are in the ongoing failed-branch batch; a separate
@@ -287,10 +294,25 @@ confirms 16/24 branches after all 144 integrations finish; eight still disagree.
 The verifier checks provenance, full failure coverage and recorded comparisons;
 22 targeted checks pass. The producer did not save raw arrays, so this
 verification does not independently recompute pointwise errors.
-The [local evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-diagnostics-20261113)
-and [full-array Radau/RoadRunner plan](https://github.com/m9h/GRN_ODE/blob/e891478b94fb732a3c4bd2e799eb7af35ace6f2a/python/results/catalog-breaking-ueda11-diagnostic-plan-20261113/README.md)
-preserve the next validation step. That computation is running, and no complete
-Ueda cases have been recovered from these branch diagnostics.
+The subsequent [full-array Radau/RoadRunner audit](https://github.com/m9h/GRN_ODE/blob/ede1a69d3ea29c4388bb152704255370a57023ca/python/results/catalog-breaking-scipy-ueda11/README.md)
+now confirms **all 24 trajectories** after 96 integrations and 144 independently
+recomputed comparisons. Every trajectory retains 221,001 samples, all observables
+and its original reset train. The [new release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-radau-20261114)
+preserves all 96 arrays and reproduction instructions.
+
+The [complete-case inventory](https://github.com/m9h/GRN_ODE/blob/aa1a49a212981dda484a5fb1529f337f7badb058/python/results/catalog-breaking-ueda11-case-plan-20261114/README.md)
+retains 298 original case trajectories, adds 24 later candidate trajectories
+that the original search did not reach, and includes the full untreated
+control. The 323-trajectory computation is running after 67 regression tests
+and a fresh capture from all original archives passed. The final case audit
+must replay conditional decisions from the new arrays. Ueda remains
+**298/302 validated cases**; no complete cases have been recovered yet.
+
+Network 2's [next continuation](https://github.com/m9h/GRN_ODE/actions/runs/43556602590)
+preserves its terminal parent's 611 recorded passing cases out of 624 and
+finishes the remaining 13. All sixteen parent artifacts were verified; three
+partitions require more work. Full model completion still requires the combined
+coverage and numerical audit.
 
 An [independently transcribed mpmath diagnostic](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/PRECISION_DIAGNOSTICS.md#independent-marhl-implementation)
 has completed all three failed Marhl branches at two arithmetic precisions.
@@ -349,6 +371,12 @@ branch inventory and complete-case validation to do.
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
 completion. Rohwer's complete 170-control result is included in the recovery above.
+The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad/python/results/catalog-breaking-coverage-20261114/README.md)
+checks the catalog and candidate counts against every included complete-model
+audit. It retains failed original runs alongside subsequent recoveries and
+excludes branch-only diagnostics. Four passing models have no eligible breaking
+cases under the declared selection, so their completion is not evidence of a
+learning response.
 Further diagnostics retain every failed or mismatched trajectory.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
 
