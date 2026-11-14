@@ -17,6 +17,7 @@ preserve the code examined. Review status can change after these dates.
 | [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
 | [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [fa8ee59](https://github.com/m9h/GRN_ODE/tree/fa8ee594ffeb04d52a632d391a20c9f0093ab91d) | Explicit COPASI reference support for full-array Radau diagnostics; 81 tests pass, one fixture-specific skip; deterministic three-branch Fuss pilot underway, no numerical recovery result yet |
 | [GRN_ODE · kinetics-ueda-cases](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cases) | Same upstream | [aa1a49a](https://github.com/m9h/GRN_ODE/tree/aa1a49a212981dda484a5fb1529f337f7badb058) | Recovery inventories include later candidates skipped by the original conditional search; 67 tests pass; Ueda's complete 323-trajectory control run has started, with all four unresolved cases retained |
+| [GRN_ODE · kinetics-resume-case-selection](https://github.com/m9h/GRN_ODE/tree/kinetics-resume-case-selection) | Same upstream | [eb666a1](https://github.com/m9h/GRN_ODE/tree/eb666a175caf4dbabafc5fb677f2d5962729d24f) | Vilar checkpoint restoration repair: strict validation of reusable selected cases, exact preservation of historical aggregates, 35 tests through uv and a real-artifact reproduction; targeted partition restart, with coverage counts unchanged |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -268,6 +269,16 @@ preserve 519/624 recorded cases in network 2, 46/58 in network 5,
 643/1,088 in network 29 and 201/204 in network 32. All 64 job identities are
 recorded. These are partial parent counts; complete-model validation awaits
 the resumed runs and their evidence audits.
+
+A [Vilar checkpoint repair](https://github.com/m9h/GRN_ODE/blob/eb666a175caf4dbabafc5fb677f2d5962729d24f/python/results/catalog-breaking-network32-resume-repair-20261114/README.md)
+addresses a restoration failure before simulation: five inherited failed case
+summaries outside partition 7 did not match the available branch snapshot.
+The repair strictly validates all 2,288 branch checkpoints and five reusable
+selected case summaries, preserving the other 43 summaries unchanged as history.
+The [original checkpoint ZIP](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-vilar-resume-repair-20261114)
+and reproduction script retain the discrepancy. A [targeted restart](https://github.com/m9h/GRN_ODE/actions/runs/43559717170)
+handles only partition 7 of the original sixteen. This is infrastructure repair;
+no case or model has gained validated status from it.
 
 A [further Linux dispatch](https://github.com/m9h/GRN_ODE/actions/runs/43374603951)
 adds Hoefnagel, Ueda, Markevich, De Caluwé and François. Its
