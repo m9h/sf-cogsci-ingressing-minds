@@ -384,10 +384,15 @@ The Marhl examples also separate numerical success from interpretation. The
 the numerical audit. The [full evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-marhl-paired-recovery-20261114)
 includes all controls and the mathematical definitions.
 
-The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/92ca96912effeba7886fb78e9bb64ab084babb82/python/CATALOG_BREAKING.md)
+The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
-code and the paper's prose. Published terminal reports now cover 27 distinct
-models; 22 have passing full numerical validation after separate recoveries.
+code and the paper's prose. Published terminal reports now cover 28 distinct
+models; 23 have passing full numerical validation after separate recoveries.
+The latest [De Caluwe circadian-clock audit](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/results/catalog-breaking-decaluwe20-local-20261114/README.md)
+passes all 484 cases, 4,704 conditional trials and 18,579 distinct branches.
+It verifies complete conditional coverage and recorded cross-engine comparisons,
+then recomputes classifications from saved window summaries; it does not
+independently recompute pointwise errors from raw arrays.
 Network 1, the Edelstein acetylcholine-receptor model, passes all 528 initial
 cases and 9,452 conditional trials.
 Network 34, the Marwan regulatory-hierarchy model, passes all 360 initial cases
@@ -397,7 +402,7 @@ half-restoration criterion. Successful integration does not imply that each
 intervention demonstrates memory. The conditional trials reuse species and
 histories, so they are not independent samples of a population.
 
-Eight searches remain unfinished. New complete audits pass all 216 Leloup cases,
+Seven searches remain unfinished. New complete audits pass all 216 Leloup cases,
 728 Martins cases and 112 Hoefnagel cases. Their evidence is available in the
 [three-model release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113)
 and [Hoefnagel release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113).

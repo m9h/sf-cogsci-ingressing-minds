@@ -90,11 +90,12 @@ bring combined validation to **4,205/4,208 cases**, with complete passing
 inventories in 34 models. Three Vilar cases remain unresolved. Marhl's full
 case audit uses independent high-precision Taylor implementations; its native
 solver disagreements remain documented.
-The conditional breaking screen has [published reports for 27 models](https://github.com/m9h/GRN_ODE/blob/92ca96912effeba7886fb78e9bb64ab084babb82/python/CATALOG_BREAKING.md),
-with 22 fully passing numerical validations. New complete audits pass all
+The conditional breaking screen has [published reports for 28 models](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/CATALOG_BREAKING.md),
+with 23 fully passing numerical validations. New complete audits pass all
 216 Leloup cases, 728 Martins cases and 112 Hoefnagel cases. Ciliberto reaches
 full initial-case coverage but retains 74 failures out of 622 cases. Ueda passes
-298/302 cases; eight searches remain unfinished. Downloadable evidence accompanies the
+298/302 cases. The [De Caluwe clock](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-decaluwe20-20261114)
+now passes all 484 cases and 18,579 branches; seven searches remain unfinished. Downloadable evidence accompanies the
 [Leloup, Ciliberto and Martins audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113)
 and the [Hoefnagel](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113)
 and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-20261113).
