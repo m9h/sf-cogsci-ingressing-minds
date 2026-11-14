@@ -17,7 +17,7 @@ preserve the code examined. Review status can change after these dates.
 | [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
 | [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [fa8ee59](https://github.com/m9h/GRN_ODE/tree/fa8ee594ffeb04d52a632d391a20c9f0093ab91d) | Explicit COPASI reference support for full-array Radau diagnostics; 81 tests pass, one fixture-specific skip; deterministic three-branch Fuss pilot underway, no numerical recovery result yet |
 | [GRN_ODE · kinetics-ueda-cases](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cases) | Same upstream | [aa1a49a](https://github.com/m9h/GRN_ODE/tree/aa1a49a212981dda484a5fb1529f337f7badb058) | Recovery inventories include later candidates skipped by the original conditional search; 67 tests pass; Ueda's complete 323-trajectory control run has started, with all four unresolved cases retained |
-| [GRN_ODE · kinetics-resume-case-selection](https://github.com/m9h/GRN_ODE/tree/kinetics-resume-case-selection) | Same upstream | [79f7795](https://github.com/m9h/GRN_ODE/tree/79f7795b80dd3c16686cbaa3935e612639f239f7) | Vilar checkpoint repair with 35 tests through uv; targeted Tyson continuations preserve 41 additional branch checkpoints from two stopped jobs; fresh artifact restoration checks pass, with model coverage unchanged |
+| [GRN_ODE · kinetics-resume-case-selection](https://github.com/m9h/GRN_ODE/tree/kinetics-resume-case-selection) | Same upstream | [cae38e9](https://github.com/m9h/GRN_ODE/tree/cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0) | Vilar checkpoint repair and targeted Tyson continuations; full-model audits now watch fixed selections across runs, with 46 tests and a real four-artifact reproduction; model coverage remains unchanged |
 | [GRN_ODE · kinetics-marhl-breaking](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-breaking) | Same upstream | [3461ace](https://github.com/m9h/GRN_ODE/tree/3461ace8f9947d3050a6bb0d9c319cdba24e60e7) | Full-horizon Radau/RoadRunner diagnostics running for all 30 failed Linux branch records across 12 Marhl cases; 22 tests pass through uv; 120 integrations planned, with no case recovery claimed |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
@@ -297,6 +297,15 @@ extractions pass strict restoration checks. The jobs retain all seven selected
 cases, six still unfinished, and the original sixteen-partition scheme.
 Other partitions continue in the original run; all 58 cases still require a
 complete-model audit.
+
+The [continuation auditor](https://github.com/m9h/GRN_ODE/blob/cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0/python/results/catalog-breaking-continuation-auditor-20261114/README.md)
+now watches the fixed sixteen-partition selections for both Tyson and Vilar.
+It verifies extracted files against the original artifact ZIPs before the
+full-model audit, retaining each partition's own branch records. Validation
+passes 46 tests and reproduces the existing network-27 result from four real
+artifacts, checking all 348 extracted files and historical Git objects. This
+verifies the assembly procedure; it adds no new scientific coverage. Missing
+or unfinished selections cannot be promoted to complete models.
 
 A [further Linux dispatch](https://github.com/m9h/GRN_ODE/actions/runs/43374603951)
 adds Hoefnagel, Ueda, Markevich, De Caluwé and François. Its
