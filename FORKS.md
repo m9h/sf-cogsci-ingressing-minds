@@ -1,6 +1,6 @@
 # Forks, contributions and reproducible revisions
 
-Kinetics evidence updated **2026-11-13 UTC**; other fork and review snapshots are
+Kinetics evidence updated **2026-11-14 UTC**; other fork and review snapshots are
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
 
@@ -9,11 +9,12 @@ preserve the code examined. Review status can change after these dates.
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
-| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [e891478](https://github.com/m9h/GRN_ODE/tree/e891478b94fb732a3c4bd2e799eb7af35ace6f2a) | Terminal reports for 27 breaking models, 22 fully passing numerical validation; complete Ueda run comparison and native refinement audit; eight searches remain unfinished; paired validation remains 4,203/4,208 cases |
+| [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [f8d4e26](https://github.com/m9h/GRN_ODE/tree/f8d4e26e62c6fd940f6e940c1c0d9b3439100622) | Terminal reports for 27 breaking models, 22 fully passing numerical validation; complete Marhl paired-case recovery and Ueda diagnostics; eight breaking searches remain unfinished; paired validation reaches 4,205/4,208 cases |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
 | [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [26c5c42](https://github.com/m9h/GRN_ODE/tree/26c5c425cd9e5a1116d73bcca39e8884e036bb1e) | Exact precision checkpoints, verified restoration and full-array audits; 73 precision tests pass locally and on Linux, plus four local collector tests; Vilar continuation underway, no additional case recovery claimed |
-| [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [4520cae](https://github.com/m9h/GRN_ODE/tree/4520caeda2315d23fbfc7f65263774dd655ddb67) | Two completed stimulated Vilar branches with full-array audits; 23 additional controls dispatched for the three unresolved paired cases; 102 local precision tests pass; no increase in validated cases |
+| [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [8c428bb](https://github.com/m9h/GRN_ODE/tree/8c428bbdd86b5c54e48c7f876583b982a9350944) | Two completed stimulated Vilar branches with full-array audits; 23 additional controls dispatched for the three unresolved paired cases; 102 precision tests pass locally and in the dispatched Linux gate, plus eight local collector tests; no Vilar case recovery claimed |
+| [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -108,20 +109,20 @@ Rohwer to **449/449 validated cases**. All 1,235 diagnostic integrations finish;
 the largest scaled discrepancy among the confirmation comparisons is 0.157145,
 below the acceptance limit of one. Every recovered case uses the same two
 refined engines across all twelve arms, with independently recomputed scores.
-Across the original screen and these separate recoveries, **4,203/4,208 cases
-now validate**, with complete passing case inventories in 33 of the 35 models.
-The remaining five cases are two Marhl cases and three Vilar cases.
+Including the complete Marhl recovery described below, **4,205/4,208 cases
+now validate**, with complete passing case inventories in 34 of the 35 models.
+The remaining three cases are Vilar cases.
 The [complete Rohwer Newton diagnostic](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/results/catalog-paired-jax-rohwer-newton/audit.json)
 confirms 35 of 77 branches, with 20 incomplete integrations and 22 completed
 mismatches. Thirty-two branches remain unconfirmed by either tested JAX
 configuration. The [Marhl Radau diagnostic](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/results/catalog-paired-scipy-marhl/report.json)
 completes all 15 integrations but confirms none of its three branches; the late
-numerical convergence problem remains unresolved.
+native-solver convergence problem remains unresolved in that diagnostic.
 The [Marhl precision diagnostic](https://github.com/m9h/GRN_ODE/blob/4a43d8d3ed3ad777aab173eaa672306691ce9d6d/python/PRECISION_DIAGNOSTICS.md)
 now completes all three failed branches with Heyoka at 128-bit and 192-bit
 precision, preserving every original sample and reset. Both precisions agree
-throughout, but both still disagree with RoadRunner; no complete case is
-promoted to passing. The saved arrays are independently audited. The main
+throughout, but both still disagree with RoadRunner; that three-branch
+diagnostic alone promotes no complete case. The saved arrays are independently audited. The main
 environment passes **146 tests** with the optional Heyoka module skipped, and
 its separate environment passes **eight analytic adapter tests**. The later
 refinement update in `29acc73` passes **156 tests** in the main environment.
@@ -150,12 +151,12 @@ The three remaining Vilar cases require 32 distinct full trajectories. Nine
 are in the ongoing failed-branch batch; a separate
 [23-control plan](https://github.com/m9h/GRN_ODE/blob/4520caeda2315d23fbfc7f65263774dd655ddb67/python/results/catalog-paired-taylor-vilar-controls-20261113/README.md)
 supplies the others, including the full 300-unit untreated sham. Its runner and
-case auditor passed 102 local precision tests. The
-[dispatched computation](https://github.com/m9h/GRN_ODE/actions/runs/43510523842)
-must pass its Linux test gate before computing controls. Case recovery requires
+case auditor passed 102 local precision tests; eight additional collector tests
+also pass. The [dispatched computation](https://github.com/m9h/GRN_ODE/actions/runs/43510523842)
+has passed its Linux test gate and is computing controls. Case recovery requires
 the same solver pair in every arm, full-trajectory agreement and agreement in
 controlled memory classifications. The existing local computations continue
-with their frozen sources; no additional case recovery is claimed.
+with their frozen sources; no additional Vilar case recovery is claimed.
 The [restartable breaking runner](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/CATALOG_BREAKING.md#restartable-computation-in-complete-case-partitions)
 partitions whole cases, preserving their full conditional searches and controls.
 A [distributed batch for networks 26–35](https://github.com/m9h/GRN_ODE/actions/runs/43101294718)
@@ -279,10 +280,16 @@ An [independently transcribed mpmath diagnostic](https://github.com/m9h/GRN_ODE/
 has completed all three failed Marhl branches at two arithmetic precisions.
 The full-array audit confirms agreement with Heyoka on every sample, while
 all three branches still disagree with the recorded RoadRunner trajectory.
-The untreated baseline agrees across implementations. Fifteen remaining
-control branches are being computed before complete cases can be assessed.
-Both high-precision implementations use Taylor methods; no additional case
-recovery is claimed from this branch diagnostic.
+The untreated baseline agrees across implementations. The subsequent
+[complete case audit](https://github.com/m9h/GRN_ODE/blob/f8d4e26e62c6fd940f6e940c1c0d9b3439100622/python/results/catalog-paired-marhl-case-recovery/README.md)
+now checks all fifteen additional controls and all 18 required trajectories.
+Both cases recover with matching controlled classifications, bringing Marhl
+to **26/26 validated paired cases**. No original passing case needs revalidation.
+Three arms retain their native-solver disagreement. Both high-precision
+implementations use Taylor methods; no different-integrator-family agreement
+is claimed. The [release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-marhl-paired-recovery-20261114)
+preserves every array and checksum. All 15 complete-case auditor tests pass,
+and the audit reproduces from the extracted release archive.
 
 The [Ciliberto Radau audit](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-scipy-ciliberto28-shard0/audit.json)
 confirms ten previously incomplete branches from the first partition: all 40
@@ -308,6 +315,24 @@ searches and numerical validation; selected models cannot establish all-35
 completion. Rohwer's complete 170-control result is included in the recovery above.
 Further diagnostics retain every failed or mismatched trajectory.
 The historical MATLAB checkout is incomplete, so this is not an exact rerun.
+
+Network 35's [Rohwer breaking continuation](https://github.com/m9h/GRN_ODE/blob/c3066a6d171ae7602d3699098ea811c3d3da4871/python/results/catalog-breaking-network35-continuation-20261113/README.md)
+retains the terminal parent's 249/260 evaluated cases, of which 131 pass.
+Only partitions 5 and 7 lack complete case coverage. The continuation restores
+all sixteen checkpoints and computes the missing cases while retaining existing
+numerical failures; it does not count partial coverage as model completion.
+
+The [Vilar short-output diagnostic](https://github.com/m9h/GRN_ODE/blob/30eb1e29442748c4fcf443777841537b71e5e8d9/python/results/catalog-breaking-vilar-short-output-logged-20261113/README.md)
+repeats three selected incomplete breaking trajectories at three solver
+tolerances. All nine COPASI runs exhaust the internal-step budget; saved logs
+also record clock-resolution warnings. RoadRunner completes all nine, but its
+refinement comparisons fail for one trajectory. No branch or case recovers.
+The independent audit verifies the full arrays, logs and original SBML's
+conserved promoter pools. Resetting only `DA` or `DR` can change the total pool,
+so a persistent response can reflect material added by the intervention.
+That interpretation check is distinct from identifying the solver's unique
+failure cause. The [release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-vilar-output-diagnostics-20261113)
+preserves both diagnostic attempts and all partial outputs.
 
 **SBMLtoODEjax:** assignment rules are evaluated at each internal ODE solver
 stage. Seven small SBML fixtures are checked against exact solutions and two

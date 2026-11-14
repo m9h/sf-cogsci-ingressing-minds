@@ -368,11 +368,21 @@ comparing four training histories with shams and ordinary/delayed cues.
 results and the complete coverage audit are published; failed integrations
 and trajectory mismatches remain explicit. A separate
 [complete François recovery](https://github.com/m9h/GRN_ODE/blob/650c3f71b76a0446552d6b7e84944e2602536950/python/results/catalog-paired-francois-full-recovery/audit.json)
-now passes all 44 cases and 275 branches for that model. Subsequent Vilar and
-[complete Rohwer recovery](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
-bring combined validation to **4,203/4,208 cases, with 33 fully passing models**;
-two Marhl and three Vilar cases remain unresolved. Original results stay separate
-from these later recoveries.
+now passes all 44 cases and 275 branches for that model. Subsequent Vilar,
+[Rohwer](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json) and
+[complete Marhl recovery](https://github.com/m9h/GRN_ODE/blob/f8d4e26e62c6fd940f6e940c1c0d9b3439100622/python/results/catalog-paired-marhl-case-recovery/README.md)
+bring combined validation to **4,205/4,208 cases, with 34 fully passing models**;
+three Vilar cases remain unresolved. Marhl's audit checks all 18 required
+trajectories across its two unresolved cases, using independent Heyoka and
+mpmath implementations at two precisions. Both use Taylor methods; native
+RoadRunner disagreements remain explicit. Original results stay separate from
+these later recoveries.
+
+The Marhl examples also separate numerical success from interpretation. The
+`CaM`-up/`CaER`-down case has a joint-exposure candidate response, whereas
+`Ca_cyt`-up/`CaER`-down has cue responses without joint specificity. Both pass
+the numerical audit. The [full evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-marhl-paired-recovery-20261114)
+includes all controls and the mathematical definitions.
 
 The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/92ca96912effeba7886fb78e9bb64ab084babb82/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
@@ -409,6 +419,14 @@ Complete validated protocol coverage is needed before comparing
 the study's population frequencies. The original random-network comparisons
 are a further part of the evidence concerning capacities without specific
 selection.
+
+The [Vilar intervention diagnostic](https://github.com/m9h/GRN_ODE/blob/30eb1e29442748c4fcf443777841537b71e5e8d9/python/results/catalog-breaking-vilar-short-output-logged-20261113/README.md)
+adds a mathematical interpretation check. The unforced model conserves
+`DA + DAp` and `DR + DRp`, but repeatedly resetting only one species can change
+those totals. Persistent responses can therefore reflect material added by
+the protocol. A separate experiment preserving the pools would help distinguish
+that explanation; it would be an additional control, not a replacement for
+the original replication. The diagnostic retains its numerical failures.
 
 ## Concrete extensions for Figures 5 and 6
 

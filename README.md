@@ -84,9 +84,12 @@ also passes all 538 cases on macOS and Linux. The JAX catalog audit validates
 32 baselines and explicitly identifies three unsupported models. The
 [paired screen](https://github.com/m9h/GRN_ODE/blob/4108edeca8b2d6d5e454167454a8826319ff6046/python/CATALOG_PAIRED.md)
 has evaluated all 4,208 cases: the original run records 4,166 passes and 42
-failures. Separate François, Vilar and [Rohwer recoveries](https://github.com/m9h/GRN_ODE/blob/e5ff9bb131b3a815feb584793b9f68dda53ce7a7/python/results/catalog-paired-scipy-rohwer-cases/audit.json)
-bring combined validation to **4,203/4,208 cases**, with complete passing
-inventories in 33 models. Two Marhl cases and three Vilar cases remain unresolved.
+failures. Separate François, Vilar, Rohwer and
+[Marhl recoveries](https://github.com/m9h/GRN_ODE/blob/f8d4e26e62c6fd940f6e940c1c0d9b3439100622/python/results/catalog-paired-marhl-case-recovery/README.md)
+bring combined validation to **4,205/4,208 cases**, with complete passing
+inventories in 34 models. Three Vilar cases remain unresolved. Marhl's full
+case audit uses independent high-precision Taylor implementations; its native
+solver disagreements remain documented.
 The conditional breaking screen has [published reports for 27 models](https://github.com/m9h/GRN_ODE/blob/92ca96912effeba7886fb78e9bb64ab084babb82/python/CATALOG_BREAKING.md),
 with 22 fully passing numerical validations. New complete audits pass all
 216 Leloup cases, 728 Martins cases and 112 Hoefnagel cases. Ciliberto reaches
