@@ -378,6 +378,14 @@ mpmath implementations at two precisions. Both use Taylor methods; native
 RoadRunner disagreements remain explicit. Original results stay separate from
 these later recoveries.
 
+The [completed Vilar control batch](https://github.com/m9h/GRN_ODE/blob/2e32e584971d0b25ee2b747a986d94ba28b9ceb0/python/results/catalog-paired-vilar-controls-complete-20261114/README.md)
+passes all 23 additional controls. Combined evidence covers 26 of the 32
+trajectories needed for its three remaining cases; six are missing, and three
+completed stimulated trajectories still disagree with RoadRunner. This does
+not increase the validated-case count. It illustrates why a result about
+learning or memory needs the complete intervention and control comparison,
+alongside numerical checks of every trajectory.
+
 The Marhl examples also separate numerical success from interpretation. The
 `CaM`-up/`CaER`-down case has a joint-exposure candidate response, whereas
 `Ca_cyt`-up/`CaER`-down has cue responses without joint specificity. Both pass

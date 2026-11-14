@@ -13,8 +13,9 @@ preserve the code examined. Review status can change after these dates.
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
 | [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [26c5c42](https://github.com/m9h/GRN_ODE/tree/26c5c425cd9e5a1116d73bcca39e8884e036bb1e) | Exact precision checkpoints, verified restoration and full-array audits; 73 precision tests pass locally and on Linux, plus four local collector tests; Vilar continuation underway, no additional case recovery claimed |
-| [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [8c428bb](https://github.com/m9h/GRN_ODE/tree/8c428bbdd86b5c54e48c7f876583b982a9350944) | Two completed stimulated Vilar branches with full-array audits; 23 additional controls dispatched for the three unresolved paired cases; 102 precision tests pass locally and in the dispatched Linux gate, plus eight local collector tests; no Vilar case recovery claimed |
+| [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [2e32e58](https://github.com/m9h/GRN_ODE/tree/2e32e584971d0b25ee2b747a986d94ba28b9ceb0) | All 23 additional Vilar controls complete and pass full-array audits; aggregate evidence covers 26/32 trajectories for three unresolved cases, with six missing and three native mismatches; reproducible uv audit and complete evidence release; no additional case recovery |
 | [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
+| [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [fa8ee59](https://github.com/m9h/GRN_ODE/tree/fa8ee594ffeb04d52a632d391a20c9f0093ab91d) | Explicit COPASI reference support for full-array Radau diagnostics; 81 tests pass, one fixture-specific skip; deterministic three-branch Fuss pilot underway, no numerical recovery result yet |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -153,10 +154,17 @@ are in the ongoing failed-branch batch; a separate
 supplies the others, including the full 300-unit untreated sham. Its runner and
 case auditor passed 102 local precision tests; eight additional collector tests
 also pass. The [dispatched computation](https://github.com/m9h/GRN_ODE/actions/runs/43510523842)
-has passed its Linux test gate and is computing controls. Case recovery requires
-the same solver pair in every arm, full-trajectory agreement and agreement in
-controlled memory classifications. The existing local computations continue
-with their frozen sources; no additional Vilar case recovery is claimed.
+has completed all 23 controls and its Linux test gate. Every control passes
+fresh comparisons of the full RoadRunner, 128-bit Taylor and 192-bit Taylor
+arrays. The [aggregate partial audit](https://github.com/m9h/GRN_ODE/blob/2e32e584971d0b25ee2b747a986d94ba28b9ceb0/python/results/catalog-paired-vilar-controls-complete-20261114/README.md)
+also includes three completed stimulated trajectories: it covers **26/32**
+required trajectories, with six still missing. Those three stimulated
+trajectories retain RoadRunner mismatches despite Taylor precision convergence.
+The [evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-vilar-controls-20261114)
+preserves all arrays and a uv command that reproduces the audit. Case recovery
+requires the same declared integrations in every arm, full-trajectory agreement
+and agreement in controlled memory classifications. Vilar remains **139/142**;
+all three remaining cases are incomplete, and no additional recovery is claimed.
 The [restartable breaking runner](https://github.com/m9h/GRN_ODE/blob/2e7327b0d273f4b33bdd8aa37601c1a497854a2a/python/CATALOG_BREAKING.md#restartable-computation-in-complete-case-partitions)
 partitions whole cases, preserving their full conditional searches and controls.
 A [distributed batch for networks 26–35](https://github.com/m9h/GRN_ODE/actions/runs/43101294718)
@@ -327,6 +335,16 @@ breaking cases**. The [release](https://github.com/m9h/GRN_ODE/releases/tag/kine
 preserves all records and the complete source evidence. Its independent
 verification checks provenance and recorded comparisons; the producer saved
 no raw arrays, so no independent pointwise recomputation is claimed.
+
+A separate [Fuss Radau pilot](https://github.com/m9h/GRN_ODE/blob/fa8ee594ffeb04d52a632d391a20c9f0093ab91d/python/results/catalog-breaking-fuss-radau-plan-20261114/README.md)
+now compares COPASI with SciPy's Radau implementation, with a refinement of each
+solver and all arrays retained. Three branches are selected deterministically
+from the lowest, middle and highest tightest native-comparison errors. Each
+retains all 221,001 samples and its complete reset train. The runner and auditor
+pass 81 tests, with one fixture-specific skip; those tests are software checks,
+not evidence of model agreement. The pilot is running and has not recovered any
+Fuss cases. Even a successful three-branch pilot would leave the full failed
+branch inventory and complete-case validation to do.
 
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
