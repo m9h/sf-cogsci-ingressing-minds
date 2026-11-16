@@ -107,6 +107,11 @@ and [Marhl breaking diagnostic](https://github.com/m9h/GRN_ODE/releases/tag/kine
 publish 132 full trajectories with checksums and reproducible array audits.
 Fuss confirms its three selected branches; Marhl confirms only 3/30 records
 (two distinct specifications). Neither result recovers a complete case.
+The [full Fuss execution plan](https://github.com/m9h/GRN_ODE/blob/4c0f97adcf1e54019792f5eaf57963efb62cedf1/python/results/catalog-breaking-fuss-full-case-plan-20261116/README.md)
+now requires all 18 failed cases and 1,309 control trajectories, with 5,236
+COPASI/Radau integrations in 32 fixed partitions. Its
+[cloud dispatch](https://github.com/m9h/GRN_ODE/actions/runs/43925538098)
+must pass the Linux test gate before computation; no additional recovery is claimed.
 Earlier audits pass all 216 Leloup cases, 728 Martins cases and 112 Hoefnagel
 cases. The [De Caluwe clock](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-decaluwe20-20261114)
 passes all 484 cases and 18,579 branches. Downloadable evidence accompanies the

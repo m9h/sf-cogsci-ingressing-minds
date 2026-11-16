@@ -29,6 +29,7 @@ Paired validation remains 4,205/4,208 cases; no additional case recovery is clai
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
 | [GRN_ODE · kinetics-celliere-complete](https://github.com/m9h/GRN_ODE/tree/kinetics-celliere-complete) | Same upstream | [f45fed3](https://github.com/m9h/GRN_ODE/tree/f45fed315f63c19f66690dffe676caf1681fe011) | Current index: 34 complete initial inventories, 26 passing model audits; Cellière passes all 1,088 cases and 34,816 conditional trials; all sixteen original ZIPs reproduce the audit; Tyson alone has an unfinished initial inventory |
+| [GRN_ODE · kinetics-fuss-case-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-case-controls) | Same upstream | [4c0f97a](https://github.com/m9h/GRN_ODE/tree/4c0f97adcf1e54019792f5eaf57963efb62cedf1) | Full Fuss execution plan: all 18 failed cases, 1,309 trajectories and 5,236 integrations; 32 immutable partitions, complete-array resume verification and independent case audit; 375 local tests pass, two skip; no new case recovery claimed |
 | [GRN_ODE · kinetics-coverage-20261116](https://github.com/m9h/GRN_ODE/tree/kinetics-coverage-20261116) | Same upstream | [c7808bc](https://github.com/m9h/GRN_ODE/tree/c7808bc29fdd33f75d04699441ab349feba1e5e7) | Earlier index: 33 complete initial inventories, 25 passing model audits; five evidence packages reproduce; fifteen targeted continuations retain the original full-model scope |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
 | [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [95ef898](https://github.com/m9h/GRN_ODE/tree/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad) | All-35 evidence index: 28 complete initial inventories and 23 passing whole-model audits; all 24 Ueda mismatch trajectories now pass a full-array Radau/RoadRunner audit, with complete-case controls underway; seven breaking searches remain unfinished; paired validation stays 4,205/4,208 |
@@ -434,6 +435,17 @@ independent audit reproduces byte-for-byte from a fresh extraction in a clean
 uv environment. Only 3/330 originally unresolved branches were selected; the
 full failed-branch inventory and complete-case validation remain to do.
 No Fuss case has been recovered, so the original 314/332 result is unchanged.
+
+The [full Fuss case-control plan](https://github.com/m9h/GRN_ODE/blob/4c0f97adcf1e54019792f5eaf57963efb62cedf1/python/results/catalog-breaking-fuss-full-case-plan-20261116/README.md)
+extends that pilot to every originally failed case. It preserves all 1,308
+case-control trajectories plus the full untreated baseline and computes each
+with COPASI and Radau at two tolerances. The independent auditor requires all
+32 partitions, recomputes all six comparisons per trajectory, and replays both
+conditional searches. Missing later controls, source changes, corrupted arrays
+or a failed baseline prevent recovery. The
+[cloud run](https://github.com/m9h/GRN_ODE/actions/runs/43925538098)
+is gated by the full Linux test suite. The original passing cases remain
+separate; dispatching the 5,236 integrations does not change model coverage.
 
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
