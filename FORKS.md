@@ -4,26 +4,32 @@ Kinetics evidence updated **2026-11-16 UTC**; other fork and review snapshots ar
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
 
-The latest [35-model coverage report](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-coverage-20261116/README.md)
-records **33 complete initial-case inventories and 25 passing whole-model audits**.
-Tyson (5) and Cellière (29) remain unfinished. Ten Cellière partitions, three
-Tyson partitions and two François Linux partitions have [verified continuations](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-continuations-20261116/README.md).
-The [release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
-preserves all source artifacts for the new audits and has been reproduced from
-fresh extractions. The dated results below retain the earlier evidence history.
+The latest [35-model coverage report](https://github.com/m9h/GRN_ODE/blob/f45fed315f63c19f66690dffe676caf1681fe011/python/results/catalog-breaking-celliere29-20261116/README.md)
+records **34 complete initial-case inventories and 26 passing whole-model audits**.
+Cellière (29) passes all 1,088 cases and 34,816 conditional trials. Its
+[release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-celliere-20261116)
+preserves all sixteen original artifact ZIPs; a fresh extraction reproduces
+the full audit. Tyson (5) is the only unfinished initial inventory. Its two
+remaining partitions and two separate François Linux partitions have verified
+cloud continuations. Nine local numerical workers and their coordinator remain
+stopped at the user's request. The dated results below retain the earlier
+evidence history.
 
-The separate [Vilar precision inspection](https://github.com/m9h/GRN_ODE/blob/80c982c7dd02150285782b0f37842650b67b00db/python/results/catalog-paired-taylor-vilar-continuation-20261116/README.md)
-now has complete arrays for eleven of seventeen partitions. Five advancing
-partitions have a [targeted continuation](https://github.com/m9h/GRN_ODE/actions/runs/43809455427);
-one retains an identical checkpoint after another five-hour job and needs a way
-to preserve work within long integration segments. All seventeen remain in the
-required inventory. Paired validation remains 4,205/4,208 cases.
+The separate Vilar precision work now has complete arrays for twelve of
+seventeen partitions. The [latest completed partition](https://github.com/m9h/GRN_ODE/actions/runs/43809455427)
+agrees between 128- and 192-bit Taylor calculations but retains a native solver
+mismatch. A [checkpoint continuation](https://github.com/m9h/GRN_ODE/actions/runs/43907356005)
+preserves progress inside long segments for partition 6;
+[four other partitions](https://github.com/m9h/GRN_ODE/actions/runs/43907358618)
+continue from verified migrated checkpoints. All seventeen remain required.
+Paired validation remains 4,205/4,208 cases; no additional case recovery is claimed.
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
-| [GRN_ODE · kinetics-coverage-20261116](https://github.com/m9h/GRN_ODE/tree/kinetics-coverage-20261116) | Same upstream | [c7808bc](https://github.com/m9h/GRN_ODE/tree/c7808bc29fdd33f75d04699441ab349feba1e5e7) | Current index: 33 complete initial inventories, 25 passing model audits; five evidence packages reproduce; fifteen targeted continuations retain the original full-model scope |
+| [GRN_ODE · kinetics-celliere-complete](https://github.com/m9h/GRN_ODE/tree/kinetics-celliere-complete) | Same upstream | [f45fed3](https://github.com/m9h/GRN_ODE/tree/f45fed315f63c19f66690dffe676caf1681fe011) | Current index: 34 complete initial inventories, 26 passing model audits; Cellière passes all 1,088 cases and 34,816 conditional trials; all sixteen original ZIPs reproduce the audit; Tyson alone has an unfinished initial inventory |
+| [GRN_ODE · kinetics-coverage-20261116](https://github.com/m9h/GRN_ODE/tree/kinetics-coverage-20261116) | Same upstream | [c7808bc](https://github.com/m9h/GRN_ODE/tree/c7808bc29fdd33f75d04699441ab349feba1e5e7) | Earlier index: 33 complete initial inventories, 25 passing model audits; five evidence packages reproduce; fifteen targeted continuations retain the original full-model scope |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
 | [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [95ef898](https://github.com/m9h/GRN_ODE/tree/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad) | All-35 evidence index: 28 complete initial inventories and 23 passing whole-model audits; all 24 Ueda mismatch trajectories now pass a full-array Radau/RoadRunner audit, with complete-case controls underway; seven breaking searches remain unfinished; paired validation stays 4,205/4,208 |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
@@ -275,7 +281,7 @@ records; the producer did not save full trajectories for this catalog run.
 
 The **14 November snapshot** covered 28 distinct models, of which 23 had
 passing full numerical validation after separate recoveries. Seven
-models then needed their full searches completed; the current 33/25 counts are
+models then needed their full searches completed; the current 34/26 counts are
 linked at the top of this page. The control-runner, branch-auditor and case-auditor
 checks pass **63 targeted tests** through uv. This checks the computation and
 audit code; it does not validate trajectories that are still being computed.
@@ -432,7 +438,7 @@ No Fuss case has been recovered, so the original 314/332 result is unchanged.
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
 completion. Rohwer's complete 170-control result is included in the recovery above.
-The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-coverage-20261116/README.md)
+The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/f45fed315f63c19f66690dffe676caf1681fe011/python/results/catalog-breaking-celliere29-20261116/README.md)
 checks the catalog and candidate counts against every included complete-model
 audit. It retains failed original runs alongside subsequent recoveries and
 excludes branch-only diagnostics. Four passing models have no eligible breaking

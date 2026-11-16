@@ -91,11 +91,14 @@ inventories in 34 models. Three Vilar cases remain unresolved. Marhl's full
 case audit uses independent high-precision Taylor implementations; its native
 solver disagreements remain documented.
 As of **16 November 2026 UTC**, the conditional breaking screen has
-[complete initial-case inventories for 33 models and passing whole-model audits for 25](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-coverage-20261116/README.md).
+[complete initial-case inventories for 34 models and passing whole-model audits for 26](https://github.com/m9h/GRN_ODE/blob/f45fed315f63c19f66690dffe676caf1681fe011/python/results/catalog-breaking-celliere29-20261116/README.md).
+The [complete Cellière TGF-β audit](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-celliere-20261116)
+passes all 1,088 cases and 34,816 conditional trials; its sixteen original
+evidence packages reproduce the audit from fresh extraction.
 New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
-with failures retained. **Tyson and Cellière remain unfinished**; their verified
-checkpoints are continuing. The [new evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
+with failures retained. **Tyson is the only unfinished initial inventory**;
+its verified cloud checkpoints are continuing. The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
 preserves 64 original Linux artifacts and three complete local model reports;
 fresh extractions reproduce all five package audits. Four passing models have
 no eligible breaking cases, so this status is not evidence of learning.

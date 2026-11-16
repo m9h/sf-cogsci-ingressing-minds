@@ -395,9 +395,9 @@ includes all controls and the mathematical definitions.
 The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
 code and the paper's prose. As of 16 November 2026 UTC, published terminal
-reports cover **33 distinct models; 25 have passing whole-model numerical audits**.
-The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-coverage-20261116/README.md)
-lists each model and its complete-model audits. Four of the 25 passing models
+reports cover **34 distinct models; 26 have passing whole-model numerical audits**.
+The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/f45fed315f63c19f66690dffe676caf1681fe011/python/results/catalog-breaking-celliere29-20261116/README.md)
+lists each model and its complete-model audits. Four of the 26 passing models
 have no eligible breaking cases under the stated selection rule; that status
 does not demonstrate a learning response.
 The [De Caluwe circadian-clock audit](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/results/catalog-breaking-decaluwe20-local-20261114/README.md)
@@ -414,8 +414,17 @@ half-restoration criterion. Successful integration does not imply that each
 intervention demonstrates memory. The conditional trials reuse species and
 histories, so they are not independent samples of a population.
 
-Tyson (network 5) and Cellière (29) remain unfinished. The
-[new evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
+The [Cellière TGF-β model](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-celliere-20261116)
+now passes all 1,088 cases and 34,816 conditional trials. Of 297,063
+response-trials, 178,088 show no resolved history effect, 20,796 meet the
+controlled half-restoration criterion and 6,964 reverse the history effect.
+Its CoSmad example and control equations are explained in the linked report.
+The sixteen original evidence packages reproduce the full audit from a fresh
+extraction; the original producers saved comparison records and window
+summaries rather than full trajectory arrays.
+
+Tyson (network 5) is the only unfinished initial inventory. The
+[earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
 validates all 624 Edelstein species-model cases and 398 Markevich cases. It also
 preserves completed François, Vilar and Rohwer inventories with numerical
 failures and unresolved conditional decisions. All five evidence packages
