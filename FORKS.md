@@ -32,10 +32,10 @@ required inventory. Paired validation remains 4,205/4,208 cases.
 | [GRN_ODE · precision-targeted-resume](https://github.com/m9h/GRN_ODE/tree/precision-targeted-resume) | Same upstream | [5074077](https://github.com/m9h/GRN_ODE/tree/50740779287606d05eae34b2197fc9cb27394fe6) | Five advancing original partitions dispatched without changing their definitions or numerical code; fourteen selection checks and actionlint pass; stalled partition remains explicitly outstanding |
 | [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [2e32e58](https://github.com/m9h/GRN_ODE/tree/2e32e584971d0b25ee2b747a986d94ba28b9ceb0) | All 23 additional Vilar controls complete and pass full-array audits; aggregate evidence covers 26/32 trajectories for three unresolved cases, with six missing and three native mismatches; reproducible uv audit and complete evidence release; no additional case recovery |
 | [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
-| [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [fa8ee59](https://github.com/m9h/GRN_ODE/tree/fa8ee594ffeb04d52a632d391a20c9f0093ab91d) | Explicit COPASI reference support for full-array Radau diagnostics; 81 tests pass, one fixture-specific skip; deterministic three-branch Fuss pilot underway, no numerical recovery result yet |
+| [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [edb538d](https://github.com/m9h/GRN_ODE/tree/edb538d9a91910eb2b04c49e058599c23d6b6f70) | Published full-array COPASI/Radau pilot: 3/3 selected branches pass all six comparisons; 12 trajectories and a byte-identical reproduced audit; complete-case validation remains pending |
 | [GRN_ODE · kinetics-ueda-cases](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cases) | Same upstream | [aa1a49a](https://github.com/m9h/GRN_ODE/tree/aa1a49a212981dda484a5fb1529f337f7badb058) | Recovery inventories include later candidates skipped by the original conditional search; 67 tests pass; Ueda's complete 323-trajectory control run has started, with all four unresolved cases retained |
 | [GRN_ODE · kinetics-resume-case-selection](https://github.com/m9h/GRN_ODE/tree/kinetics-resume-case-selection) | Same upstream | [cae38e9](https://github.com/m9h/GRN_ODE/tree/cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0) | Vilar checkpoint repair and targeted Tyson continuations; full-model audits now watch fixed selections across runs, with 46 tests and a real four-artifact reproduction; model coverage remains unchanged |
-| [GRN_ODE · kinetics-marhl-breaking](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-breaking) | Same upstream | [3461ace](https://github.com/m9h/GRN_ODE/tree/3461ace8f9947d3050a6bb0d9c319cdba24e60e7) | Full-horizon Radau/RoadRunner diagnostics running for all 30 failed Linux branch records across 12 Marhl cases; 22 tests pass through uv; 120 integrations planned, with no case recovery claimed |
+| [GRN_ODE · kinetics-marhl-breaking](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-breaking) | Same upstream | [079e35d](https://github.com/m9h/GRN_ODE/tree/079e35d8bc0795f427b6cb5b8514f35830f01909) | Published all 120 full-horizon Radau/RoadRunner trajectories for 30 failed records; 3 records pass (2 distinct specifications), 27 retain mismatches; four byte-identical reproduced audits, no complete-case recovery |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
@@ -247,13 +247,17 @@ status because its full trajectory comparison differs. Both reports remain
 available. The new snapshot's compressed evidence and complete Ciliberto arrays
 are in a [checksummed release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).
 
-The [Marhl breaking diagnostic](https://github.com/m9h/GRN_ODE/blob/3461ace8f9947d3050a6bb0d9c319cdba24e60e7/python/results/catalog-breaking-marhl30-radau-20261114/README.md)
-now covers every failed Linux branch record: 30 records, 29 distinct trajectories
-and 12 cases. It runs RoadRunner and Radau at two tolerances each, preserving
-the full original grids and intervention schedules. All four original partition
-inventories reproduce, and 22 diagnostic/auditor tests pass. The 120-integration
-computation is running; neither case recovery nor complete-model validation
-has yet been established from it.
+The [Marhl breaking diagnostic](https://github.com/m9h/GRN_ODE/blob/079e35d8bc0795f427b6cb5b8514f35830f01909/python/results/catalog-breaking-marhl30-radau-20261114/README.md)
+has finished all 120 integrations for every failed Linux branch record: 30
+records, 29 distinct specifications and 12 cases. Three records pass all six
+comparisons among RoadRunner, Radau and their refinements. A shared control
+appears twice, leaving two distinct confirmed specifications. All 27 mismatching
+records remain in the [full-array release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-marhl-breaking-radau-20261116).
+Radau self-refinement passes on 25/30 records, RoadRunner on 3/30, and the refined
+solvers agree on 5/30; those partial checks cannot replace the full acceptance
+rule. Every archived file was checksum-verified after fresh extraction, and all
+four audits reproduced byte-for-byte in a clean uv environment. No complete
+case has been recovered, and the original Linux result remains 26/38.
 
 The [complete network-1 audit](https://github.com/m9h/GRN_ODE/blob/058df6fe0f9d96874f604618afddcf64fde90bf8/python/results/catalog-breaking-linux-1/audit.json)
 validates all **528 cases, 9,452 conditional trials and 38,024 branch records**
@@ -413,15 +417,17 @@ preserves all records and the complete source evidence. Its independent
 verification checks provenance and recorded comparisons; the producer saved
 no raw arrays, so no independent pointwise recomputation is claimed.
 
-A separate [Fuss Radau pilot](https://github.com/m9h/GRN_ODE/blob/fa8ee594ffeb04d52a632d391a20c9f0093ab91d/python/results/catalog-breaking-fuss-radau-plan-20261114/README.md)
-now compares COPASI with SciPy's Radau implementation, with a refinement of each
-solver and all arrays retained. Three branches are selected deterministically
-from the lowest, middle and highest tightest native-comparison errors. Each
-retains all 221,001 samples and its complete reset train. The runner and auditor
-pass 81 tests, with one fixture-specific skip; those tests are software checks,
-not evidence of model agreement. The pilot is running and has not recovered any
-Fuss cases. Even a successful three-branch pilot would leave the full failed
-branch inventory and complete-case validation to do.
+A separate [Fuss Radau pilot](https://github.com/m9h/GRN_ODE/blob/edb538d9a91910eb2b04c49e058599c23d6b6f70/python/results/catalog-breaking-fuss-radau-plan-20261114/README.md)
+confirms all three predeclared branches with COPASI, Radau and a refinement of
+each: 18/18 pairwise comparisons pass. The branches were selected from the
+lowest, middle and highest tightest native-comparison errors. Each retains all
+221,001 samples and its complete reset train. The
+[release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-fuss-radau-20261116)
+contains all 12 arrays, original records, source evidence and checksums. The
+independent audit reproduces byte-for-byte from a fresh extraction in a clean
+uv environment. Only 3/330 originally unresolved branches were selected; the
+full failed-branch inventory and complete-case validation remain to do.
+No Fuss case has been recovered, so the original 314/332 result is unchanged.
 
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35

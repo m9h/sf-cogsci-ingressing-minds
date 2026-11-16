@@ -431,9 +431,23 @@ decisions. Its subsequent [full-array diagnostic](https://github.com/m9h/GRN_ODE
 confirms all 24 previously mismatched trajectories with Radau and RoadRunner,
 including a refinement of each. Complete-case validation still requires
 323 trajectories: 298 original case trajectories, 24 later candidates not
-reached by the original search, and the untreated control. That computation is
-underway. This shows why changing a numerical method requires checking the
+reached by the original search, and the untreated control. Complete control
+validation remains pending. This shows why changing a numerical method requires checking the
 conditional search again: changed responses can select different later trials.
+
+Two additional releases make the numerical limits inspectable. The
+[Fuss pilot](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-fuss-radau-20261116)
+confirms three predeclared branches with COPASI and Radau, including a
+refinement of each. All 12 complete trajectories are available, but these are
+only 3/330 originally unresolved branch records. The
+[Marhl breaking diagnostic](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-marhl-breaking-radau-20261116)
+includes all 120 trajectories for its 30 failed branch records; only three
+records pass every comparison, representing two distinct specifications because
+one control is duplicated. All five saved audits reproduce byte-for-byte from
+fresh archive extractions in a clean uv environment. Neither result recovers a
+complete case. For the paper's argument, this separates a candidate history
+effect from a numerically validated demonstration under the full control set.
+
 Reduced Goldbeter, Fuss, Ueda, François, Ciliberto, Marhl, Vilar and Rohwer retain numerical failures; finished
 initial-case coverage does not imply full validation. Ciliberto's full search
 passes 548/622 cases, retaining 74 failures and 89 unresolved conditional

@@ -99,6 +99,11 @@ checkpoints are continuing. The [new evidence release](https://github.com/m9h/GR
 preserves 64 original Linux artifacts and three complete local model reports;
 fresh extractions reproduce all five package audits. Four passing models have
 no eligible breaking cases, so this status is not evidence of learning.
+The completed [Fuss pilot](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-fuss-radau-20261116)
+and [Marhl breaking diagnostic](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-marhl-breaking-radau-20261116)
+publish 132 full trajectories with checksums and reproducible array audits.
+Fuss confirms its three selected branches; Marhl confirms only 3/30 records
+(two distinct specifications). Neither result recovers a complete case.
 Earlier audits pass all 216 Leloup cases, 728 Martins cases and 112 Hoefnagel
 cases. The [De Caluwe clock](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-decaluwe20-20261114)
 passes all 484 cases and 18,579 branches. Downloadable evidence accompanies the
