@@ -394,13 +394,13 @@ includes all controls and the mathematical definitions.
 
 The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
-code and the paper's prose. Published terminal reports now cover 28 distinct
-models; 23 have passing full numerical validation after separate recoveries.
-The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad/python/results/catalog-breaking-coverage-20261114/README.md)
-lists each model and its complete-model audits. Four of the 23 passing models
+code and the paper's prose. As of 16 November 2026 UTC, published terminal
+reports cover **33 distinct models; 25 have passing whole-model numerical audits**.
+The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-coverage-20261116/README.md)
+lists each model and its complete-model audits. Four of the 25 passing models
 have no eligible breaking cases under the stated selection rule; that status
 does not demonstrate a learning response.
-The latest [De Caluwe circadian-clock audit](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/results/catalog-breaking-decaluwe20-local-20261114/README.md)
+The [De Caluwe circadian-clock audit](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/results/catalog-breaking-decaluwe20-local-20261114/README.md)
 passes all 484 cases, 4,704 conditional trials and 18,579 distinct branches.
 It verifies complete conditional coverage and recorded cross-engine comparisons,
 then recomputes classifications from saved window summaries; it does not
@@ -414,7 +414,14 @@ half-restoration criterion. Successful integration does not imply that each
 intervention demonstrates memory. The conditional trials reuse species and
 histories, so they are not independent samples of a population.
 
-Seven searches remain unfinished. New complete audits pass all 216 Leloup cases,
+Tyson (network 5) and Cellière (29) remain unfinished. The
+[new evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
+validates all 624 Edelstein species-model cases and 398 Markevich cases. It also
+preserves completed François, Vilar and Rohwer inventories with numerical
+failures and unresolved conditional decisions. All five evidence packages
+reproduce their full audits from fresh extractions; completed initial
+inventories are not automatically validated conditional searches.
+Earlier complete audits pass all 216 Leloup cases,
 728 Martins cases and 112 Hoefnagel cases. Their evidence is available in the
 [three-model release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113)
 and [Hoefnagel release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113).
@@ -427,16 +434,17 @@ including a refinement of each. Complete-case validation still requires
 reached by the original search, and the untreated control. That computation is
 underway. This shows why changing a numerical method requires checking the
 conditional search again: changed responses can select different later trials.
-Reduced Goldbeter, Fuss, Ueda, Ciliberto and Marhl retain numerical failures; finished
+Reduced Goldbeter, Fuss, Ueda, François, Ciliberto, Marhl, Vilar and Rohwer retain numerical failures; finished
 initial-case coverage does not imply full validation. Ciliberto's full search
 passes 548/622 cases, retaining 74 failures and 89 unresolved conditional
 decisions. Complete arrays for ten selected Ciliberto branches remain available
 in the earlier [validation release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).
-The next [Ciliberto computation](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md#ciliberto-partition-zero-refinement)
+The selected-case [Ciliberto computation](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md#ciliberto-partition-zero-refinement)
 includes every control and possible continuation for two unresolved cases:
 214 distinct reset schedules plus the untreated baseline. Its independent
-auditor will reconstruct conditional trials and controlled classifications
-from the full arrays. The run remains unfinished. This distinction matters:
+auditor reconstructs conditional trials and controlled classifications
+from the full arrays. Selected-case recovery cannot establish whole-model
+validation. This distinction matters:
 agreement on an isolated stimulated trajectory cannot establish that the
 response depends on prior experience; the corresponding controls are needed.
 Complete validated protocol coverage is needed before comparing

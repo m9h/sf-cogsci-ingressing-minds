@@ -1,18 +1,35 @@
 # Forks, contributions and reproducible revisions
 
-Kinetics evidence updated **2026-11-14 UTC**; other fork and review snapshots are
+Kinetics evidence updated **2026-11-16 UTC**; other fork and review snapshots are
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
+
+The latest [35-model coverage report](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-coverage-20261116/README.md)
+records **33 complete initial-case inventories and 25 passing whole-model audits**.
+Tyson (5) and Cellière (29) remain unfinished. Ten Cellière partitions, three
+Tyson partitions and two François Linux partitions have [verified continuations](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-continuations-20261116/README.md).
+The [release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
+preserves all source artifacts for the new audits and has been reproduced from
+fresh extractions. The dated results below retain the earlier evidence history.
+
+The separate [Vilar precision inspection](https://github.com/m9h/GRN_ODE/blob/80c982c7dd02150285782b0f37842650b67b00db/python/results/catalog-paired-taylor-vilar-continuation-20261116/README.md)
+now has complete arrays for eleven of seventeen partitions. Five advancing
+partitions have a [targeted continuation](https://github.com/m9h/GRN_ODE/actions/runs/43809455427);
+one retains an identical checkpoint after another five-hour job and needs a way
+to preserve work within long integration segments. All seventeen remain in the
+required inventory. Paired validation remains 4,205/4,208 cases.
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
+| [GRN_ODE · kinetics-coverage-20261116](https://github.com/m9h/GRN_ODE/tree/kinetics-coverage-20261116) | Same upstream | [c7808bc](https://github.com/m9h/GRN_ODE/tree/c7808bc29fdd33f75d04699441ab349feba1e5e7) | Current index: 33 complete initial inventories, 25 passing model audits; five evidence packages reproduce; fifteen targeted continuations retain the original full-model scope |
 | [GRN_ODE · kinetics-solver-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-solver-recovery) | Same upstream | [40ca8ff](https://github.com/m9h/GRN_ODE/tree/40ca8ff586220a5df573e7d383defa2c19ed829a) | Complete François recovery, Goldbeter refinement evidence and full original paired screen; separate from the live breaking source |
 | [GRN_ODE · kinetics-newton-reference](https://github.com/m9h/GRN_ODE/tree/kinetics-newton-reference) | Same upstream | [95ef898](https://github.com/m9h/GRN_ODE/tree/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad) | All-35 evidence index: 28 complete initial inventories and 23 passing whole-model audits; all 24 Ueda mismatch trajectories now pass a full-array Radau/RoadRunner audit, with complete-case controls underway; seven breaking searches remain unfinished; paired validation stays 4,205/4,208 |
 | [GRN_ODE · kinetics-muller-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-muller-recovery) | Same upstream | [b089186](https://github.com/m9h/GRN_ODE/tree/b0891863ffd90b3dfb5c944720f0512d81584167) | Producer revision for the complete, passing 118-case network 26 recovery; evidence published on the reference branch above |
 | [GRN_ODE · kinetics-leloup-recovery](https://github.com/m9h/GRN_ODE/tree/kinetics-leloup-recovery) | Same upstream | [daed478](https://github.com/m9h/GRN_ODE/tree/daed47882d2d20fa81b193a21c1934a5d83e64dd) | Complete network-12 recovery passes all 216 cases at independently supported refined settings; original evidence remains separate |
-| [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [3682181](https://github.com/m9h/GRN_ODE/tree/36821819b83b72d2ca08bc62da57625a8eeca3f5) | Exact precision checkpoints and full-array audits; new Vilar continuation restores all 17 terminal parent artifacts, with ten unfinished partitions; 73 precision tests plus four collector tests previously passed; no additional case recovery claimed |
+| [GRN_ODE · precision-checkpoint-resume](https://github.com/m9h/GRN_ODE/tree/precision-checkpoint-resume) | Same upstream | [80c982c](https://github.com/m9h/GRN_ODE/tree/80c982c7dd02150285782b0f37842650b67b00db) | Eleven Vilar partitions complete; six incomplete, including one unchanged checkpoint; full artifact and saved-state progress inspection, no additional case recovery |
+| [GRN_ODE · precision-targeted-resume](https://github.com/m9h/GRN_ODE/tree/precision-targeted-resume) | Same upstream | [5074077](https://github.com/m9h/GRN_ODE/tree/50740779287606d05eae34b2197fc9cb27394fe6) | Five advancing original partitions dispatched without changing their definitions or numerical code; fourteen selection checks and actionlint pass; stalled partition remains explicitly outstanding |
 | [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [2e32e58](https://github.com/m9h/GRN_ODE/tree/2e32e584971d0b25ee2b747a986d94ba28b9ceb0) | All 23 additional Vilar controls complete and pass full-array audits; aggregate evidence covers 26/32 trajectories for three unresolved cases, with six missing and three native mismatches; reproducible uv audit and complete evidence release; no additional case recovery |
 | [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
 | [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [fa8ee59](https://github.com/m9h/GRN_ODE/tree/fa8ee594ffeb04d52a632d391a20c9f0093ab91d) | Explicit COPASI reference support for full-array Radau diagnostics; 81 tests pass, one fixture-specific skip; deterministic three-branch Fuss pilot underway, no numerical recovery result yet |
@@ -252,10 +269,10 @@ preserves all 191 compressed evidence archives. The audit recomputes case scores
 from saved window summaries and verifies the original pointwise-comparison
 records; the producer did not save full trajectories for this catalog run.
 
-Published breaking reports now cover **28 distinct models**, of which 23 have
-passing full numerical validation after the separate recoveries. Seven
-models still need their full searches completed; this does not establish
-all-35 completion. The latest control-runner, branch-auditor and case-auditor
+The **14 November snapshot** covered 28 distinct models, of which 23 had
+passing full numerical validation after separate recoveries. Seven
+models then needed their full searches completed; the current 33/25 counts are
+linked at the top of this page. The control-runner, branch-auditor and case-auditor
 checks pass **63 targeted tests** through uv. This checks the computation and
 audit code; it does not validate trajectories that are still being computed.
 
@@ -409,7 +426,7 @@ branch inventory and complete-case validation to do.
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
 completion. Rohwer's complete 170-control result is included in the recovery above.
-The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/95ef898b05b2c67dd5c2745a3f8a0f8b71c4c4ad/python/results/catalog-breaking-coverage-20261114/README.md)
+The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/c7808bc29fdd33f75d04699441ab349feba1e5e7/python/results/catalog-breaking-coverage-20261116/README.md)
 checks the catalog and candidate counts against every included complete-model
 audit. It retains failed original runs alongside subsequent recoveries and
 excludes branch-only diagnostics. Four passing models have no eligible breaking
