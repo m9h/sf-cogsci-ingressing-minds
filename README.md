@@ -131,7 +131,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 21:16 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 21:24 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
@@ -149,6 +149,14 @@ requires no new ODE integrations; the four unresolved cases remain outstanding.
 The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
 inventories, Vilar precision diagnostics and Fuss case controls. Four local
 collection and audit watchers remain active; they do not run ODE integrations.
+
+Rohwer's phosphotransferase model (network 35, BioModel 38) now has a fixed
+[cloud diagnostic run](https://github.com/m9h/GRN_ODE/actions/runs/44401097371)
+for all 750 originally failed breaking branches, queued behind Linux validation.
+Its [source audit and plan](https://github.com/m9h/GRN_ODE/blob/40fe82344d8dacb2d79ebdc4087ee52beb90a091/python/results/catalog-breaking-rohwer-diagnostics-20261118/README.md)
+retain all 123 failed cases and their original protocols. The planned 3,000
+trajectories use two Radau and two RoadRunner requests per branch. Complete
+matched controls and conditional replay remain necessary before case recovery.
 
 Two supporting forks make the numerical work inspectable:
 

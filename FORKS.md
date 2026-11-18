@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 21:16 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 21:24 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -32,6 +32,7 @@ horizons and acceptance criteria; an active job does not add validated coverage.
 | Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44384045755) | Four integration jobs running; checkpoint validation passed |
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Fourteen integration jobs running, eighteen queued; validation passed |
 | Ueda complete case controls | [153 remaining branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Linux validation queued; simulation jobs require that gate to pass |
+| Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Linux validation queued; 3,000 trajectories requested after the gate passes |
 
 Ueda's 323-trajectory case-control computation remains stopped locally. Its
 [new cloud plan](https://github.com/m9h/GRN_ODE/blob/b585ee97de7000c2ec1afe5454216629601eee87/python/results/catalog-breaking-ueda-continuation-20261118/README.md)
@@ -57,6 +58,15 @@ tests pass locally. No complete Ueda case recovery is claimed.
 The four active local watchers collect cloud artifacts and audit the fixed
 Tyson/François selections; they perform no numerical integrations. The stopped
 workers' source trees and environments remain unchanged.
+
+The new [Rohwer source audit and fixed selection](https://github.com/m9h/GRN_ODE/blob/40fe82344d8dacb2d79ebdc4087ee52beb90a091/python/results/catalog-breaking-rohwer-diagnostics-20261118/README.md)
+reproduce the original 137/260 whole-model result from all sixteen partitions.
+All 750 failed branches remain selected: 466 completed solver disagreements and
+284 COPASI output-shape errors. Each branch will retain four full trajectories
+and undergo all six pairwise comparisons at unchanged acceptance tolerances.
+Forty-four targeted tests, the complete real input check and workflow lint pass
+locally; Linux validation is pending. The 123 failed cases still require their
+full controls and conditional replay. No new whole-model pass is claimed.
 
 Two older workflow runs from 11 November
 ([43096519740](https://github.com/m9h/GRN_ODE/actions/runs/43096519740) and
@@ -84,6 +94,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
+| [GRN_ODE · kinetics-rohwer-breaking-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [40fe823](https://github.com/m9h/GRN_ODE/tree/40fe82344d8dacb2d79ebdc4087ee52beb90a091) | All 750 original failed branches selected for 3,000 complete trajectories; 44 targeted tests pass; Linux validation queued; original 137/260 result retained |
 | [GRN_ODE · kinetics-ueda-evidence-release](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-evidence-release) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0756819](https://github.com/m9h/GRN_ODE/tree/07568199b113fee32f99d3feefed38e6d845b01c) | Published raw snapshot and diagnostic archive; fresh downloads reproduce the full preparation byte for byte; 11 transport tests pass; 153 branches and four cases still require computation and audit |
 | [GRN_ODE · kinetics-ueda-cloud-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0c3c315](https://github.com/m9h/GRN_ODE/tree/0c3c315dd34391abd4c38bfe93a358e78779451e) | Offline collection and full 323-branch assembly; 48 targeted local tests and one full real-branch comparison reproduction pass; Linux tests queued; no new case recovery |
 | [GRN_ODE · kinetics-ueda-cloud-continuation](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-continuation) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [b585ee9](https://github.com/m9h/GRN_ODE/tree/b585ee97de7000c2ec1afe5454216629601eee87) | Complete 323-branch/four-case scope retained; 170 branches backed by verified evidence, 153 selected for cloud computation; 77 local tests pass, Linux validation queued; local worker remains stopped |
