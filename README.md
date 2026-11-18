@@ -109,6 +109,11 @@ and [Marhl breaking diagnostic](https://github.com/m9h/GRN_ODE/releases/tag/kine
 publish 132 full trajectories with checksums and reproducible array audits.
 Fuss confirms its three selected branches; Marhl confirms only 3/30 records
 (two distinct specifications). Neither result recovers a complete case.
+The [complete Marhl recovery inventory](https://github.com/m9h/GRN_ODE/blob/7dd0beeac23571795e277770623f13b70f3766a7/python/results/catalog-breaking-marhl-full-controls-20261118/README.md)
+now identifies all 380 trajectories needed for its twelve failed cases,
+including 88 potential controls never reached by the original conditional
+search. It reproduces the original evidence and passes 66 targeted tests;
+no new integrations or case recoveries are claimed.
 The [full Fuss execution plan](https://github.com/m9h/GRN_ODE/blob/4c0f97adcf1e54019792f5eaf57963efb62cedf1/python/results/catalog-breaking-fuss-full-case-plan-20261116/README.md)
 requires all 18 failed cases and 1,309 control trajectories, with 5,236 COPASI/Radau
 integrations in 32 fixed partitions. The [latest complete checkpoint collection](https://github.com/m9h/GRN_ODE/blob/80fec615376378c01f674ea597bea3cc41834a7f/python/results/catalog-breaking-fuss-full-case-plan-20261116/COLLECTION.md)
@@ -167,7 +172,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 23:39 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 23:49 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now

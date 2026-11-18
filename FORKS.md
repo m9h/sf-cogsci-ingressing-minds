@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 23:39 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 23:49 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -75,6 +75,19 @@ tests pass locally. No complete Ueda case recovery is claimed.
 The four active local watchers collect cloud artifacts and audit the fixed
 Tyson/François selections; they perform no numerical integrations. The stopped
 workers' source trees and environments remain unchanged.
+
+The new [complete Marhl recovery inventory](https://github.com/m9h/GRN_ODE/blob/7dd0beeac23571795e277770623f13b70f3766a7/python/results/catalog-breaking-marhl-full-controls-20261118/README.md)
+reproduces all 783 original branch records and all 38 original cases before
+reconstructing the full scope for its twelve failed cases: **380 distinct
+trajectories, including 88 potential controls absent from the original search**.
+It retains all 29 failed diagnostic specifications, both original records of
+the shared failed control, every possible later trial and the untreated 0–2210
+control. [Verification](docs/evidence/marhl-full-controls-20261118.json) records
+25 new tests and 66 combined tests passing, also with optional numerical imports
+blocked. Its [Linux validation](https://github.com/m9h/GRN_ODE/actions/runs/44423932643)
+is queued. Extending the two independent high-precision implementations to
+these full horizons is the next numerical step; this change starts no new
+integrations and leaves the original result at **26/38 validated cases**.
 
 The new [Rohwer source audit and fixed selection](https://github.com/m9h/GRN_ODE/blob/40fe82344d8dacb2d79ebdc4087ee52beb90a091/python/results/catalog-breaking-rohwer-diagnostics-20261118/README.md)
 reproduce the original 137/260 whole-model result from all sixteen partitions.
@@ -286,6 +299,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 | [GRN_ODE · kinetics-ueda-cases](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cases) | Same upstream | [aa1a49a](https://github.com/m9h/GRN_ODE/tree/aa1a49a212981dda484a5fb1529f337f7badb058) | Recovery inventories include later candidates skipped by the original conditional search; 67 tests pass; Ueda's 323-trajectory control run is stopped locally, with all four unresolved cases retained |
 | [GRN_ODE · kinetics-resume-case-selection](https://github.com/m9h/GRN_ODE/tree/kinetics-resume-case-selection) | Same upstream | [cae38e9](https://github.com/m9h/GRN_ODE/tree/cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0) | Vilar checkpoint repair and targeted Tyson continuations; full-model audits now watch fixed selections across runs, with 46 tests and a real four-artifact reproduction; model coverage remains unchanged |
 | [GRN_ODE · kinetics-marhl-breaking](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-breaking) | Same upstream | [079e35d](https://github.com/m9h/GRN_ODE/tree/079e35d8bc0795f427b6cb5b8514f35830f01909) | Published all 120 full-horizon Radau/RoadRunner trajectories for 30 failed records; 3 records pass (2 distinct specifications), 27 retain mismatches; four byte-identical reproduced audits, no complete-case recovery |
+| [GRN_ODE · kinetics-marhl-full-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-full-controls) | Same upstream | [7dd0bee](https://github.com/m9h/GRN_ODE/tree/7dd0beeac23571795e277770623f13b70f3766a7) | Complete 380-trajectory scope for all twelve failed cases, including 88 unreached controls and the full untreated baseline; original audit reproduced; 66 targeted tests pass; no new numerical result |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 
