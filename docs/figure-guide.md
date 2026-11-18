@@ -470,8 +470,11 @@ from the full arrays. Selected-case recovery cannot establish whole-model
 validation. A [fresh evidence check on 18 November](https://github.com/m9h/GRN_ODE/blob/843fbd136ce0301f475818524ae9c7d3e2280819/python/results/catalog-breaking-ciliberto-case-recovery-20261118/README.md)
 found missing files in the completed local computation. The surviving data have
 been preserved, one branch restored exactly from the published release, and
-18 affected branches scheduled for cloud recomputation. Recovery of the two
-complete cases remains unverified until all saved arrays pass the full audit.
+18 affected branches recomputed in the cloud. The
+[completed independent audit](https://github.com/m9h/GRN_ODE/blob/1450da263000a0d5cf43ef8be55ef88e56843a29/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
+now recovers both selected cases from all 215 branches and 860 full trajectories,
+including the untreated baseline. The separate 548/622 whole-model result is
+unchanged; release of the complete trajectory package is still pending.
 This distinction matters:
 agreement on an isolated stimulated trajectory cannot establish that the
 response depends on prior experience; the corresponding controls are needed.

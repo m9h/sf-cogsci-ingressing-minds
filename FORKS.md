@@ -11,24 +11,23 @@ Cellière (29) passes all 1,088 cases and 34,816 conditional trials. Its
 preserves all sixteen original artifact ZIPs; a fresh extraction reproduces
 the full audit. Tyson (5) is the only unfinished initial inventory. Its
 [partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44118517338) has completed
-all four cases; only [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44247126362)
+all four cases; only [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44383931943)
 remains unfinished, with two of its four cases complete. François partition 14 completed all seven cases, with three
 numerical failures retained; its separate Linux inventory still needs
-[partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44247021390).
+[partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44383935036).
 Nine local numerical workers and their coordinator remain
 stopped at the user's request. The dated results below retain the earlier
 evidence history.
 
-The separate Vilar precision work now has complete arrays for twelve of
-seventeen partitions. The [latest completed partition](https://github.com/m9h/GRN_ODE/actions/runs/43809455427)
-agrees between 128- and 192-bit Taylor calculations but retains a native solver
-mismatch. Partition 6 has completed its 30,001-observation 128-bit trajectory and
-saved 25,013 observations in the 192-bit check; its
-[continuation](https://github.com/m9h/GRN_ODE/actions/runs/44247017097)
-retains those checkpoints. [Four other partitions](https://github.com/m9h/GRN_ODE/actions/runs/44247019381)
-continue from verified migrated checkpoints, with their original observation
-prefixes preserved. All seventeen remain required.
-Paired validation remains 4,205/4,208 cases; no additional case recovery is claimed.
+The separate Vilar precision work now has complete arrays for thirteen of
+seventeen partitions. [Partition 6](https://github.com/m9h/GRN_ODE/actions/runs/44247017097)
+finished both 30,001-observation Taylor trajectories. Its 128- and 192-bit
+results agree at every saved point, while RoadRunner still exceeds the fixed
+comparison tolerance (maximum scaled error 2.055). The four remaining
+partitions preserved every previous observation exactly and
+[continue from their latest checkpoints](https://github.com/m9h/GRN_ODE/actions/runs/44384045755).
+All seventeen remain required. Paired validation remains 4,205/4,208 cases;
+no additional paired-case recovery is claimed.
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
@@ -406,22 +405,21 @@ confirms ten previously incomplete branches from the first partition: all 40
 integrations and 60 full-array comparisons pass. This does not validate the two
 complete cases, which require their other controls and conditional continuation.
 The [complete-control computation and auditor](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md#ciliberto-partition-zero-refinement)
-now cover a planned inventory of 214 distinct reset schedules for those two
-cases, plus a full untreated control. All possible third interventions are
-included. The producer reported all 215 branches complete, but a fresh audit on
-18 November could not reproduce a full case recovery because saved files were
-missing. The [evidence-repair record](https://github.com/m9h/GRN_ODE/blob/843fbd136ce0301f475818524ae9c7d3e2280819/python/results/catalog-breaking-ciliberto-case-recovery-20261118/README.md)
-preserves 17.6 GB of surviving data with matching checksums and restores one
-missing branch exactly from the earlier release. A
-[fixed cloud computation](https://github.com/m9h/GRN_ODE/actions/runs/44250781579)
-recomputes the other 18 affected branches with the original code and requests,
-after its Linux validation gate. Every original control and the untreated
-baseline must then pass the complete independent case audit. No additional
-case recovery or change to the separate 548/622 whole-model result is claimed.
-The [offline collector and complete-case assembly](https://github.com/m9h/GRN_ODE/blob/7b92b82c43f609259d08d7447fffb7ab2b275149/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COLLECTION.md)
-verify original ZIPs, retain every fixed replacement and re-audit all 215
-branches. All 45 targeted tests pass locally; the initial real-data smoke check
-correctly reports an incomplete inventory without a recovery claim.
+cover 214 distinct reset schedules for two cases, plus the full untreated
+baseline. An 18 November audit found missing files despite the earlier producer
+report. The surviving data were preserved with matching checksums, one branch
+was restored exactly from a published archive, and all 18 other affected branches
+were recomputed under the fixed original requests.
+
+The [completed Ciliberto case audit](https://github.com/m9h/GRN_ODE/blob/1450da263000a0d5cf43ef8be55ef88e56843a29/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
+now recovers **both selected cases** from all **215 branches and 860 full
+trajectories**, including the untreated baseline. All 18 replacement artifacts,
+72 new arrays and 108 replacement comparisons passed verification; the unchanged
+case auditor then reconstructed all controls, conditional paths and classifications.
+The full audit and provenance are published. A downloadable package of all
+trajectory arrays and its fresh-download reproduction remain pending. The separate
+original full-model result remains **548/622**; selected recoveries are not added
+ad hoc to that total.
 
 Leloup's twelve original mismatches also pass recorded native refinement checks.
 Its [full case recovery](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-12/audit.json)
@@ -475,6 +473,16 @@ arrays remain byte-identical and 137 additional arrays are complete. Their 58
 complete trajectories pass all 348 pairwise comparisons. The other sixteen
 partitions remain pending in this snapshot; the fixed selection still requires
 all 32, so these partial counts do not recover any of the 18 cases.
+
+The [completed continuation collection](https://github.com/m9h/GRN_ODE/blob/80fec615376378c01f674ea597bea3cc41834a7f/python/results/catalog-breaking-fuss-full-case-plan-20261116/COLLECTION.md)
+now verifies all 32 artifacts: 528 complete arrays, including all 274 original
+arrays unchanged and 254 new completions. All 112 complete branches pass all
+672 comparisons. Three producers stopped cleanly and 29 hit an execution limit
+during an integration. All partitions remain incomplete. The
+[next continuation](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) preserves
+these checkpoints and the unchanged numerical requests, using the validated
+scheduling revision with sixteen concurrent partitions and forty more minutes
+per job. No selected Fuss case or whole-model count has changed.
 
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35

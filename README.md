@@ -99,7 +99,7 @@ New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
 with failures retained. **Tyson is the only unfinished initial inventory**;
 partition 15 has now completed all four cases, leaving only
-[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44247126362)
+[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44383931943)
 continuing from two completed cases out of four. The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
 preserves 64 original Linux artifacts and three complete local model reports;
 fresh extractions reproduce all five package audits. Four passing models have
@@ -110,17 +110,18 @@ publish 132 full trajectories with checksums and reproducible array audits.
 Fuss confirms its three selected branches; Marhl confirms only 3/30 records
 (two distinct specifications). Neither result recovers a complete case.
 The [full Fuss execution plan](https://github.com/m9h/GRN_ODE/blob/4c0f97adcf1e54019792f5eaf57963efb62cedf1/python/results/catalog-breaking-fuss-full-case-plan-20261116/README.md)
-now requires all 18 failed cases and 1,309 control trajectories, with 5,236
-COPASI/Radau integrations in 32 fixed partitions. The
-[first checkpoint audit](https://github.com/m9h/GRN_ODE/blob/a94ceb467cf7f6a858e8df4b01db0cdcd154bf90/python/results/catalog-breaking-fuss-full-case-plan-20261116/COLLECTION.md)
-verifies 274 saved arrays and all six comparisons for 49 complete trajectories,
-including the untreated baseline. Every partition remains incomplete and has a
-[cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44142019165);
-no additional case recovery is claimed.
-The [first sixteen resumed partitions](https://github.com/m9h/GRN_ODE/blob/a31b0ce30ca142fbf5300f9b909c7058c73de2cb/python/results/catalog-breaking-fuss-full-case-plan-20261116/COLLECTION.md)
-have added 137 complete arrays while preserving all 137 previously saved arrays
-in those partitions. Their 58 completed trajectories pass all six comparisons;
-the full case inventory remains unfinished.
+requires all 18 failed cases and 1,309 control trajectories, with 5,236 COPASI/Radau
+integrations in 32 fixed partitions. The [latest complete checkpoint collection](https://github.com/m9h/GRN_ODE/blob/80fec615376378c01f674ea597bea3cc41834a7f/python/results/catalog-breaking-fuss-full-case-plan-20261116/COLLECTION.md)
+verifies 528 completed arrays, including all 274 earlier arrays unchanged.
+Its 112 complete branches pass all 672 pairwise comparisons, including the
+untreated baseline. All partitions still need work and
+[continue from those checkpoints](https://github.com/m9h/GRN_ODE/actions/runs/44385665111).
+No additional Fuss case recovery is claimed.
+The [complete Ciliberto case audit](https://github.com/m9h/GRN_ODE/blob/1450da263000a0d5cf43ef8be55ef88e56843a29/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
+now recovers both selected cases from all 215 branches and 860 saved trajectories,
+including the untreated baseline. Its audit and provenance are published;
+the full trajectory release is pending. This does not change the separate
+548/622 whole-model result.
 Earlier audits pass all 216 Leloup cases, 728 Martins cases and 112 Hoefnagel
 cases. The [De Caluwe clock](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-decaluwe20-20261114)
 passes all 484 cases and 18,579 branches. Downloadable evidence accompanies the
