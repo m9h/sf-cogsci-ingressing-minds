@@ -386,6 +386,13 @@ not increase the validated-case count. It illustrates why a result about
 learning or memory needs the complete intervention and control comparison,
 alongside numerical checks of every trajectory.
 
+A separate [18 November Vilar precision diagnostic](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-vilar-partition6-20261118)
+publishes one complete branch whose 128- and 192-bit Taylor runs agree at every
+saved observation while both disagree with RoadRunner beyond the fixed tolerance.
+Fresh download reproduces that finding. Precision convergence and agreement
+between implementations are distinct checks; neither substitutes for all the
+controls needed to classify a memory case.
+
 The Marhl examples also separate numerical success from interpretation. The
 `CaM`-up/`CaER`-down case has a joint-exposure candidate response, whereas
 `Ca_cyt`-up/`CaER`-down has cue responses without joint specificity. Both pass
