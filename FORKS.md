@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 21:35 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 21:42 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -33,6 +33,20 @@ horizons and acceptance criteria; an active job does not add validated coverage.
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Fourteen integration jobs running, eighteen queued; validation passed |
 | Ueda complete case controls | [153 remaining branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Linux validation queued; simulation jobs require that gate to pass |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Linux validation queued; 3,000 trajectories requested after the gate passes |
+
+A read-only [Tyson checkpoint audit](docs/evidence/tyson-checkpoint-progress-20261118.json)
+compares the last two terminal partition-14 runs,
+[44118514341](https://github.com/m9h/GRN_ODE/actions/runs/44118514341) and
+[44247126362](https://github.com/m9h/GRN_ODE/actions/runs/44247126362).
+Their saved branch inventories grew from **59 to 71**, adding twelve passing
+branch records while preserving every previously passing checkpoint byte for
+byte. Both runs still had two of four complete cases. One branch retained the
+same solver disagreement. Thus the last continuation advanced through the
+conditional search despite the unchanged case count; the currently running
+job's internal progress is not yet available. The audit verifies both original
+ZIPs against GitHub's checksums, checks the internal consistency of comparison
+and window summaries, and replays completed-case decisions. Those artifacts contain no raw
+trajectories, so this is not a fresh numerical comparison or a model recovery.
 
 Ueda's 323-trajectory case-control computation remains stopped locally. Its
 [new cloud plan](https://github.com/m9h/GRN_ODE/blob/b585ee97de7000c2ec1afe5454216629601eee87/python/results/catalog-breaking-ueda-continuation-20261118/README.md)

@@ -131,7 +131,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 21:35 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 21:42 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
