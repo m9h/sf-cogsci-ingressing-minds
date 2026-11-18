@@ -167,7 +167,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 23:31 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 23:39 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
@@ -212,6 +212,11 @@ The [two-batch collector](https://github.com/m9h/GRN_ODE/blob/b1643064668f559024
 checks passing. It requires all 512 partitions, preserves original ZIPs and API
 snapshots, rechecks full arrays, and retains failures and unfinished work.
 Both queued gates correctly prevent premature job binding; Linux validation is pending.
+The [complete Rohwer case auditor](https://github.com/m9h/GRN_ODE/blob/602c34a0db23b2a75ee5a1a9aefe6caf8524d992/python/results/catalog-breaking-rohwer-full-case-audit-20261118/README.md) is also implemented: it requires
+all 11,674 branch outcomes before replaying all 123 cases through the unchanged
+rules. All 235 targeted tests pass. The real input scope verifies, while an audit
+with unavailable cloud evidence correctly leaves all branches pending and recovers
+zero cases. Actual complete-case results remain outstanding.
 
 Two supporting forks make the numerical work inspectable:
 
