@@ -418,6 +418,10 @@ recomputes the other 18 affected branches with the original code and requests,
 after its Linux validation gate. Every original control and the untreated
 baseline must then pass the complete independent case audit. No additional
 case recovery or change to the separate 548/622 whole-model result is claimed.
+The [offline collector and complete-case assembly](https://github.com/m9h/GRN_ODE/blob/7b92b82c43f609259d08d7447fffb7ab2b275149/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COLLECTION.md)
+verify original ZIPs, retain every fixed replacement and re-audit all 215
+branches. All 45 targeted tests pass locally; the initial real-data smoke check
+correctly reports an incomplete inventory without a recovery claim.
 
 Leloup's twelve original mismatches also pass recorded native refinement checks.
 Its [full case recovery](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-12/audit.json)
