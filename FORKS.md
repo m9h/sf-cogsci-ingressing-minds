@@ -408,11 +408,16 @@ complete cases, which require their other controls and conditional continuation.
 The [complete-control computation and auditor](https://github.com/m9h/GRN_ODE/blob/a0ea22a0b7c24cee52bec3e5bab7f5bd3d602e93/python/CATALOG_BREAKING.md#ciliberto-partition-zero-refinement)
 now cover a planned inventory of 214 distinct reset schedules for those two
 cases, plus a full untreated control. All possible third interventions are
-included. The computation is running; the independent auditor is ready to
-check all saved observations, reconstruct each conditional path and recompute
-the controlled classifications. Every required control and the untreated
-baseline must pass before either case can be recovered. No additional case
-recovery is claimed yet.
+included. The producer reported all 215 branches complete, but a fresh audit on
+18 November could not reproduce a full case recovery because saved files were
+missing. The [evidence-repair record](https://github.com/m9h/GRN_ODE/blob/843fbd136ce0301f475818524ae9c7d3e2280819/python/results/catalog-breaking-ciliberto-case-recovery-20261118/README.md)
+preserves 17.6 GB of surviving data with matching checksums and restores one
+missing branch exactly from the earlier release. A
+[fixed cloud computation](https://github.com/m9h/GRN_ODE/actions/runs/44250781579)
+recomputes the other 18 affected branches with the original code and requests,
+after its Linux validation gate. Every original control and the untreated
+baseline must then pass the complete independent case audit. No additional
+case recovery or change to the separate 548/622 whole-model result is claimed.
 
 Leloup's twelve original mismatches also pass recorded native refinement checks.
 Its [full case recovery](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-12/audit.json)

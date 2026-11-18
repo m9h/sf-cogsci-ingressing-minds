@@ -467,7 +467,12 @@ includes every control and possible continuation for two unresolved cases:
 214 distinct reset schedules plus the untreated baseline. Its independent
 auditor reconstructs conditional trials and controlled classifications
 from the full arrays. Selected-case recovery cannot establish whole-model
-validation. This distinction matters:
+validation. A [fresh evidence check on 18 November](https://github.com/m9h/GRN_ODE/blob/843fbd136ce0301f475818524ae9c7d3e2280819/python/results/catalog-breaking-ciliberto-case-recovery-20261118/README.md)
+found missing files in the completed local computation. The surviving data have
+been preserved, one branch restored exactly from the published release, and
+18 affected branches scheduled for cloud recomputation. Recovery of the two
+complete cases remains unverified until all saved arrays pass the full audit.
+This distinction matters:
 agreement on an isolated stimulated trajectory cannot establish that the
 response depends on prior experience; the corresponding controls are needed.
 Complete validated protocol coverage is needed before comparing
