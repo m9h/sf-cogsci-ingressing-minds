@@ -135,6 +135,12 @@ now covers all 260 diagnostics, including interrupted checkpoints and retained
 solver failures. Its 43 collector tests and 90 combined targeted tests pass
 locally; Linux validation is queued. These are validation results, with no new
 numerical coverage claimed.
+The [full-control input adapter](https://github.com/m9h/GRN_ODE/blob/6dd9bd20b2b03620373f86277de0c0657c04b1e4/python/results/catalog-breaking-ciliberto-full-controls-20261118/README.md)
+now preserves all 74 original case records and 7,666 original branch records,
+while marking the 200 unsaved potential controls explicitly. All 58 targeted
+tests pass. A fresh download of the [input release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-full-controls-20261118)
+reproduces complete input validation. The later control computations and
+full-array case audit remain required.
 Earlier audits pass all 216 Leloup cases, 728 Martins cases and 112 Hoefnagel
 cases. The [De Caluwe clock](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-decaluwe20-20261114)
 passes all 484 cases and 18,579 branches. Downloadable evidence accompanies the
@@ -144,7 +150,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 22:12 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 22:22 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now

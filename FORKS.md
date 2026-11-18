@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 22:12 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 22:22 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -104,8 +104,8 @@ queues every remaining original failure across 32 fixed partitions, requesting
 All 85 targeted local tests, the complete real input/runtime check and workflow
 lint pass. Ten originally failed branches are excluded only because their full
 arrays already passed the published audit. Failures, mismatches and timeouts
-are retained. The later controls, artifact assembly and extended case-audit
-input handling remain required; no case or whole-model count has changed.
+are retained. The later controls, artifact assembly and full-array case audit
+remain required; no case or whole-model count has changed.
 
 The separate [Ciliberto collector](https://github.com/m9h/GRN_ODE/blob/3d633d2f0b91c94cb947042032dc25224947322f/python/results/catalog-breaking-ciliberto-full-diagnostics-20261118/COLLECTION.md)
 binds all 32 job identities only after the fixed Linux gate passes. It verifies
@@ -114,6 +114,19 @@ temporary checkpoints as unverified evidence. All 43 collector tests and 90
 combined targeted tests pass locally. The actual queued gate correctly prevents
 binding a compute selection. Its own Linux validation is queued; the computation
 producer remains frozen at `4c58f79`.
+
+The [complete control-input adapter](https://github.com/m9h/GRN_ODE/blob/6dd9bd20b2b03620373f86277de0c0657c04b1e4/python/results/catalog-breaking-ciliberto-full-controls-20261118/README.md)
+resolves the input-format gap for the 200 unsaved potential branches. It retains
+all 74 original case records and 7,666 branch records for 7,134 observed
+specifications, preserving separate partition occurrences. All 7,334 potential
+specifications remain required. Generated controls have no invented result or
+pass flag. The legacy input checks, integrators and case mathematics are unchanged.
+All 58 targeted tests pass, including 20 new scope/provenance tests; Linux
+validation is queued. The [130 MB input release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-full-controls-20261118)
+reproduces all 74 original case audits from fresh downloads, and all 20 published
+asset sizes and digests verify. The [verification record](docs/evidence/ciliberto-full-control-inputs-20261118.json)
+documents the result. This is input validation, with zero new integrations and no
+case recovery; the 6,859 later controls and full-array case audit are still needed.
 
 Two older workflow runs from 11 November
 ([43096519740](https://github.com/m9h/GRN_ODE/actions/runs/43096519740) and
@@ -148,6 +161,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 | [GRN_ODE · kinetics-ueda-cloud-continuation](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-continuation) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [b585ee9](https://github.com/m9h/GRN_ODE/tree/b585ee97de7000c2ec1afe5454216629601eee87) | Complete 323-branch/four-case scope retained; 170 branches backed by verified evidence, 153 selected for cloud computation; 77 local tests pass, Linux validation queued; local worker remains stopped |
 | [GRN_ODE · kinetics-ciliberto-full-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [4c58f79](https://github.com/m9h/GRN_ODE/tree/4c58f7969373f447cbb64e6390fceac92548dd31) | All 260 remaining original failed branches queued behind Linux validation; 1,040 full trajectories, 32 fixed partitions, unchanged numerical code; 85 targeted tests pass; later 6,859 controls and full-case audit retained |
 | [GRN_ODE · kinetics-ciliberto-full-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [3d633d2](https://github.com/m9h/GRN_ODE/tree/3d633d2f0b91c94cb947042032dc25224947322f) | Fixed 260-branch collection with original ZIP verification, full-array auditing and explicit interrupted evidence; 43 collector/90 combined tests pass; Linux validation queued; no case recovery claimed |
+| [GRN_ODE · kinetics-ciliberto-full-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-controls) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [6dd9bd2](https://github.com/m9h/GRN_ODE/tree/6dd9bd20b2b03620373f86277de0c0657c04b1e4) | Complete 74-case inputs, 7,334 potential controls and explicit provenance for 200 unsaved branches; 58 tests pass; input release validates from fresh downloads; later computation and array audit remain |
 | [GRN_ODE · kinetics-ciliberto-full-inventory](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-inventory) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [de23184](https://github.com/m9h/GRN_ODE/tree/de23184d6149473a6ce4533f72ea8d32cc337085) | All 74 failed cases and 7,334 potential branches inventoried; 215 published branches re-audited, 7,119 remain; 200 previously absent controls retained; 38 tests pass; preparation adds no scientific coverage |
 | [GRN_ODE · kinetics-ciliberto-case-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-case-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [8ab39fd](https://github.com/m9h/GRN_ODE/tree/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf) | Both selected Ciliberto cases pass from 215 branches and 860 trajectories; complete evidence release reproduces from fresh downloads; 55 targeted tests pass; whole-model count unchanged |
 | [GRN_ODE · kinetics-vilar-partition6-publication](https://github.com/m9h/GRN_ODE/tree/kinetics-vilar-partition6-publication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [6efb484](https://github.com/m9h/GRN_ODE/tree/6efb48467a8eaca45a8f990e77325ec7d3dfe060) | Complete partition 6: three full arrays, Taylor precision agreement and retained RoadRunner mismatch; original ZIP and fresh-download audit reproduction published; no case recovery |
