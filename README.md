@@ -167,7 +167,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 22:57 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 23:10 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
@@ -196,6 +196,12 @@ matched controls and conditional replay remain necessary before case recovery.
 The [offline collection guide](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/results/catalog-breaking-rohwer-diagnostics-20261118/COLLECTION.md)
 requires all 750 branches, rechecks downloaded arrays and preserves interrupted
 work. All 78 combined local checks pass; Linux validation remains queued.
+The [complete Rohwer input bundle](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-rohwer-full-controls-20261118) now preserves all 123 failed cases
+and 11,674 required branch specifications. This includes 848 potential controls
+absent from the original saved paths, marked explicitly without invented results.
+The [input adapter and guide](https://github.com/m9h/GRN_ODE/blob/c5be7556d38832a88e695a3559cedee2ab139521/python/results/catalog-breaking-rohwer-full-controls-20261118/README.md) pass 70 targeted tests; a fresh download
+reproduces full validation. The queued 750 diagnostics leave 10,924 additional
+controls to compute before complete-case replay; whole-model coverage is unchanged.
 
 Two supporting forks make the numerical work inspectable:
 
