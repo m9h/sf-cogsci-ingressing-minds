@@ -131,6 +131,13 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
+Execution checked **18 November 2026, 20:32 UTC**: nine local numerical workers
+and their coordinator are stopped at the user's request. This includes Ueda's
+unfinished 323-trajectory case-control run; it has no active cloud replacement.
+The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
+inventories, Vilar precision diagnostics and Fuss case controls. Four local
+collection and audit watchers remain active; they do not run ODE integrations.
+
 Two supporting forks make the numerical work inspectable:
 
 - [SBMLtoODEjax](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules):

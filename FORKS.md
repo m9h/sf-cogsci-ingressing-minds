@@ -19,6 +19,33 @@ Nine local numerical workers and their coordinator remain
 stopped at the user's request. The dated results below retain the earlier
 evidence history.
 
+## Current execution
+
+Checked **2026-11-18 at 20:32 UTC** against individual GitHub jobs and local
+process states. These jobs preserve the original cases, controls, simulation
+horizons and acceptance criteria; an active job does not add validated coverage.
+
+| Computation | Current cloud run | Observed state |
+|---|---|---|
+| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44383931943) | One integration job running; two of four cases complete in its parent checkpoint |
+| François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44383935036) | One integration job running |
+| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44384045755) | Four integration jobs running; checkpoint validation passed |
+| Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Fourteen integration jobs running, eighteen queued; validation passed |
+
+Ueda's 323-trajectory case-control computation is stopped locally and has no
+active cloud replacement. Its four unresolved cases remain outstanding.
+The four active local watchers collect cloud artifacts and audit the fixed
+Tyson/François selections; they perform no numerical integrations. The stopped
+workers' source trees and environments remain unchanged.
+
+Two older workflow runs from 11 November
+([43096519740](https://github.com/m9h/GRN_ODE/actions/runs/43096519740) and
+[43097937653](https://github.com/m9h/GRN_ODE/actions/runs/43097937653)) still report
+`queued`, with no jobs returned by GitHub. They are separate from the active
+computations above and provide no additional completion evidence.
+
+## Latest precision evidence
+
 The separate Vilar precision work now has complete arrays for thirteen of
 seventeen partitions. [Partition 6](https://github.com/m9h/GRN_ODE/actions/runs/44247017097)
 finished both 30,001-observation Taylor trajectories. Its 128- and 192-bit
@@ -53,7 +80,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 | [GRN_ODE · precision-case-controls](https://github.com/m9h/GRN_ODE/tree/precision-case-controls) | Same upstream | [2e32e58](https://github.com/m9h/GRN_ODE/tree/2e32e584971d0b25ee2b747a986d94ba28b9ceb0) | All 23 additional Vilar controls complete and pass full-array audits; aggregate evidence covers 26/32 trajectories for three unresolved cases, with six missing and three native mismatches; reproducible uv audit and complete evidence release; no additional case recovery |
 | [GRN_ODE · kinetics-copasi-output-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-copasi-output-diagnostics) | Same upstream | [30eb1e2](https://github.com/m9h/GRN_ODE/tree/30eb1e29442748c4fcf443777841537b71e5e8d9) | Full-array audit and preserved solver logs for three Vilar breaking branches; all nine COPASI runs stop early; conserved-pool analysis explains how resets change material totals; no case recovery claimed |
 | [GRN_ODE · kinetics-fuss-radau](https://github.com/m9h/GRN_ODE/tree/kinetics-fuss-radau) | Same upstream | [edb538d](https://github.com/m9h/GRN_ODE/tree/edb538d9a91910eb2b04c49e058599c23d6b6f70) | Published full-array COPASI/Radau pilot: 3/3 selected branches pass all six comparisons; 12 trajectories and a byte-identical reproduced audit; complete-case validation remains pending |
-| [GRN_ODE · kinetics-ueda-cases](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cases) | Same upstream | [aa1a49a](https://github.com/m9h/GRN_ODE/tree/aa1a49a212981dda484a5fb1529f337f7badb058) | Recovery inventories include later candidates skipped by the original conditional search; 67 tests pass; Ueda's complete 323-trajectory control run has started, with all four unresolved cases retained |
+| [GRN_ODE · kinetics-ueda-cases](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cases) | Same upstream | [aa1a49a](https://github.com/m9h/GRN_ODE/tree/aa1a49a212981dda484a5fb1529f337f7badb058) | Recovery inventories include later candidates skipped by the original conditional search; 67 tests pass; Ueda's 323-trajectory control run is stopped locally, with all four unresolved cases retained |
 | [GRN_ODE · kinetics-resume-case-selection](https://github.com/m9h/GRN_ODE/tree/kinetics-resume-case-selection) | Same upstream | [cae38e9](https://github.com/m9h/GRN_ODE/tree/cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0) | Vilar checkpoint repair and targeted Tyson continuations; full-model audits now watch fixed selections across runs, with 46 tests and a real four-artifact reproduction; model coverage remains unchanged |
 | [GRN_ODE · kinetics-marhl-breaking](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-breaking) | Same upstream | [079e35d](https://github.com/m9h/GRN_ODE/tree/079e35d8bc0795f427b6cb5b8514f35830f01909) | Published all 120 full-horizon Radau/RoadRunner trajectories for 30 failed records; 3 records pass (2 distinct specifications), 27 retain mismatches; four byte-identical reproduced audits, no complete-case recovery |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
@@ -382,8 +409,9 @@ preserves all 96 arrays and reproduction instructions.
 The [complete-case inventory](https://github.com/m9h/GRN_ODE/blob/aa1a49a212981dda484a5fb1529f337f7badb058/python/results/catalog-breaking-ueda11-case-plan-20261114/README.md)
 retains 298 original case trajectories, adds 24 later candidate trajectories
 that the original search did not reach, and includes the full untreated
-control. The 323-trajectory computation is running after 67 regression tests
-and a fresh capture from all original archives passed. The final case audit
+control. The 323-trajectory computation started after 67 regression tests
+and a fresh capture from all original archives passed. It is now stopped
+locally at the user's request and has no active cloud replacement. The final case audit
 must replay conditional decisions from the new arrays. Ueda remains
 **298/302 validated cases**; no complete cases have been recovered yet.
 
