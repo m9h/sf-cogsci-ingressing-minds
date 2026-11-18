@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 20:32 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 20:41 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -31,9 +31,15 @@ horizons and acceptance criteria; an active job does not add validated coverage.
 | François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44383935036) | One integration job running |
 | Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44384045755) | Four integration jobs running; checkpoint validation passed |
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Fourteen integration jobs running, eighteen queued; validation passed |
+| Ueda complete case controls | [153 remaining branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Linux validation queued; simulation jobs require that gate to pass |
 
-Ueda's 323-trajectory case-control computation is stopped locally and has no
-active cloud replacement. Its four unresolved cases remain outstanding.
+Ueda's 323-trajectory case-control computation remains stopped locally. Its
+[new cloud plan](https://github.com/m9h/GRN_ODE/blob/b585ee97de7000c2ec1afe5454216629601eee87/python/results/catalog-breaking-ueda-continuation-20261118/README.md)
+preserves 628 available arrays, independently verifies 156 complete branches,
+and restores 24 published diagnostic branches (ten overlap). All 153 branches
+without complete evidence remain selected for computation. Local validation
+passes 77 targeted tests; the Linux gate is pending. Its four unresolved cases
+remain outstanding.
 The four active local watchers collect cloud artifacts and audit the fixed
 Tyson/François selections; they perform no numerical integrations. The stopped
 workers' source trees and environments remain unchanged.
@@ -64,6 +70,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
+| [GRN_ODE · kinetics-ueda-cloud-continuation](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-continuation) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [b585ee9](https://github.com/m9h/GRN_ODE/tree/b585ee97de7000c2ec1afe5454216629601eee87) | Complete 323-branch/four-case scope retained; 170 branches backed by verified evidence, 153 selected for cloud computation; 77 local tests pass, Linux validation queued; local worker remains stopped |
 | [GRN_ODE · kinetics-ciliberto-case-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-case-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [8ab39fd](https://github.com/m9h/GRN_ODE/tree/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf) | Both selected Ciliberto cases pass from 215 branches and 860 trajectories; complete evidence release reproduces from fresh downloads; 55 targeted tests pass; whole-model count unchanged |
 | [GRN_ODE · kinetics-vilar-partition6-publication](https://github.com/m9h/GRN_ODE/tree/kinetics-vilar-partition6-publication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [6efb484](https://github.com/m9h/GRN_ODE/tree/6efb48467a8eaca45a8f990e77325ec7d3dfe060) | Complete partition 6: three full arrays, Taylor precision agreement and retained RoadRunner mismatch; original ZIP and fresh-download audit reproduction published; no case recovery |
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
@@ -410,8 +417,11 @@ The [complete-case inventory](https://github.com/m9h/GRN_ODE/blob/aa1a49a212981d
 retains 298 original case trajectories, adds 24 later candidate trajectories
 that the original search did not reach, and includes the full untreated
 control. The 323-trajectory computation started after 67 regression tests
-and a fresh capture from all original archives passed. It is now stopped
-locally at the user's request and has no active cloud replacement. The final case audit
+and a fresh capture from all original archives passed. It remains stopped
+locally at the user's request. Its
+[cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is queued
+behind Linux validation after all available arrays and published imports were
+checked. The fixed plan retains all four cases and all 323 branches. The final case audit
 must replay conditional decisions from the new arrays. Ueda remains
 **298/302 validated cases**; no complete cases have been recovered yet.
 
