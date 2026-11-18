@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 21:54 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 22:02 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -33,6 +33,7 @@ horizons and acceptance criteria; an active job does not add validated coverage.
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Fourteen integration jobs running, eighteen queued; validation passed |
 | Ueda complete case controls | [153 remaining branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Linux validation queued; simulation jobs require that gate to pass |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Linux validation queued; 3,000 trajectories requested after the gate passes |
+| Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Linux validation queued; 1,040 trajectories in 32 fixed partitions requested after the gate passes |
 
 A read-only [Tyson checkpoint audit](docs/evidence/tyson-checkpoint-progress-20261118.json)
 compares the last two terminal partition-14 runs,
@@ -96,10 +97,15 @@ A fresh download of the original archive reproduces the 548/622 audit, and all
 860 published recovery arrays pass re-audit. Those 215 verified branches leave
 7,119 branches uncomputed. The fixed plan first diagnoses 260 remaining original
 failures, then completes 6,859 remaining controls before a full 74-case audit.
-All 38 targeted local tests and workflow lint pass. The execution wrapper and
-extended case-audit input handling are still required; no new numerical jobs
-have been dispatched. Its [Linux validation](https://github.com/m9h/GRN_ODE/actions/runs/44406216296)
-is queued, and no case or whole-model count has changed.
+The new [execution wrapper](https://github.com/m9h/GRN_ODE/blob/4c58f7969373f447cbb64e6390fceac92548dd31/python/results/catalog-breaking-ciliberto-full-diagnostics-20261118/README.md)
+queues every remaining original failure across 32 fixed partitions, requesting
+1,040 full trajectories after its
+[Linux gate](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) passes.
+All 85 targeted local tests, the complete real input/runtime check and workflow
+lint pass. Ten originally failed branches are excluded only because their full
+arrays already passed the published audit. Failures, mismatches and timeouts
+are retained. The later controls, artifact assembly and extended case-audit
+input handling remain required; no case or whole-model count has changed.
 
 Two older workflow runs from 11 November
 ([43096519740](https://github.com/m9h/GRN_ODE/actions/runs/43096519740) and
@@ -132,7 +138,8 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 | [GRN_ODE · kinetics-ueda-evidence-release](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-evidence-release) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0756819](https://github.com/m9h/GRN_ODE/tree/07568199b113fee32f99d3feefed38e6d845b01c) | Published raw snapshot and diagnostic archive; fresh downloads reproduce the full preparation byte for byte; 11 transport tests pass; 153 branches and four cases still require computation and audit |
 | [GRN_ODE · kinetics-ueda-cloud-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0c3c315](https://github.com/m9h/GRN_ODE/tree/0c3c315dd34391abd4c38bfe93a358e78779451e) | Offline collection and full 323-branch assembly; 48 targeted local tests and one full real-branch comparison reproduction pass; Linux tests queued; no new case recovery |
 | [GRN_ODE · kinetics-ueda-cloud-continuation](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-continuation) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [b585ee9](https://github.com/m9h/GRN_ODE/tree/b585ee97de7000c2ec1afe5454216629601eee87) | Complete 323-branch/four-case scope retained; 170 branches backed by verified evidence, 153 selected for cloud computation; 77 local tests pass, Linux validation queued; local worker remains stopped |
-| [GRN_ODE · kinetics-ciliberto-full-inventory](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-inventory) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [de23184](https://github.com/m9h/GRN_ODE/tree/de23184d6149473a6ce4533f72ea8d32cc337085) | All 74 failed cases and 7,334 potential branches inventoried; 215 published branches re-audited, 7,119 remain; 200 previously absent controls retained; 38 tests pass; computation not dispatched |
+| [GRN_ODE · kinetics-ciliberto-full-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [4c58f79](https://github.com/m9h/GRN_ODE/tree/4c58f7969373f447cbb64e6390fceac92548dd31) | All 260 remaining original failed branches queued behind Linux validation; 1,040 full trajectories, 32 fixed partitions, unchanged numerical code; 85 targeted tests pass; later 6,859 controls and full-case audit retained |
+| [GRN_ODE · kinetics-ciliberto-full-inventory](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-inventory) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [de23184](https://github.com/m9h/GRN_ODE/tree/de23184d6149473a6ce4533f72ea8d32cc337085) | All 74 failed cases and 7,334 potential branches inventoried; 215 published branches re-audited, 7,119 remain; 200 previously absent controls retained; 38 tests pass; preparation adds no scientific coverage |
 | [GRN_ODE · kinetics-ciliberto-case-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-case-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [8ab39fd](https://github.com/m9h/GRN_ODE/tree/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf) | Both selected Ciliberto cases pass from 215 branches and 860 trajectories; complete evidence release reproduces from fresh downloads; 55 targeted tests pass; whole-model count unchanged |
 | [GRN_ODE · kinetics-vilar-partition6-publication](https://github.com/m9h/GRN_ODE/tree/kinetics-vilar-partition6-publication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [6efb484](https://github.com/m9h/GRN_ODE/tree/6efb48467a8eaca45a8f990e77325ec7d3dfe060) | Complete partition 6: three full arrays, Taylor precision agreement and retained RoadRunner mismatch; original ZIP and fresh-download audit reproduction published; no case recovery |
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
