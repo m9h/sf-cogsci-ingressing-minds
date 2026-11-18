@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 23:10 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 23:22 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -35,6 +35,7 @@ horizons and acceptance criteria; an active job does not add validated coverage.
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Linux validation queued; 3,000 trajectories requested after the gate passes |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Linux validation queued; 1,040 trajectories in 32 fixed partitions requested after the gate passes |
 | Ciliberto complete later controls, network 28 / BioModel 697 | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Linux validation queued; 27,436 trajectories in 256 fixed partitions requested after the gate passes |
+| Rohwer complete later controls, network 35 / BioModel 38 | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both Linux validation gates queued; all 10,924 controls and 43,696 trajectories in 512 fixed partitions requested |
 
 A read-only [Tyson checkpoint audit](docs/evidence/tyson-checkpoint-progress-20261118.json)
 compares the last two terminal partition-14 runs,
@@ -103,6 +104,23 @@ optional JAX imports. The [public input release](https://github.com/m9h/GRN_ODE/
 matches the original bytes and server checksum; complete input/runtime validation
 reproduces exactly. See the [download verification](docs/evidence/rohwer-full-control-inputs-20261118.json).
 Linux validation is queued. No new ODE integrations or case recoveries are claimed.
+
+The [later-control runner and independent auditor](https://github.com/m9h/GRN_ODE/blob/0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda/python/results/catalog-breaking-rohwer-later-controls-20261118/README.md) now
+select all 10,924 remaining controls in two disjoint fixed batches. Batch 0
+contains 5,548 branches, and batch 1 contains 5,376. All 848 generated controls
+and the untreated baseline are included. Each branch retains all 17 observables,
+the complete original grid and four solver outcomes; all six comparisons and
+window summaries are recomputed from saved arrays. The original numerical
+producer, reset schedules and acceptance criteria are unchanged. Cross-batch or
+cross-partition records, changed requests and truncated arrays are rejected;
+honest failures, time/disk stops and unfinished work remain explicit.
+All 118 targeted tests pass, including 53 new tests that also pass with optional
+JAX imports blocked. The released complete inputs and actual numerical runtime
+validate. Both cloud batches are queued behind their Linux gates. The
+[dispatch and local validation record](docs/evidence/rohwer-later-control-dispatch-20261118.json)
+records exact run IDs and source. Compute job IDs will be bound only after all
+jobs exist. The independent 123-case replay still needs all 11,674 outcomes;
+branch counts cannot establish recovered cases or change whole-model coverage.
 
 Ciliberto's [complete failure inventory](https://github.com/m9h/GRN_ODE/blob/de23184d6149473a6ce4533f72ea8d32cc337085/python/results/catalog-breaking-ciliberto-full-inventory-20261118/README.md)
 now retains all 74 failed cases and all 7,334 potential control branches. Four
@@ -206,6 +224,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
 | [GRN_ODE · kinetics-rohwer-full-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-full-controls) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [c5be755](https://github.com/m9h/GRN_ODE/tree/c5be7556d38832a88e695a3559cedee2ab139521) | All 123 failed cases and 11,674 potential controls preserved, including 848 unsaved specifications; 70 tests pass; public inputs validate from fresh downloads; 10,924 later controls remain to compute |
+| [GRN_ODE · kinetics-rohwer-later-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-later-controls) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0dc31af](https://github.com/m9h/GRN_ODE/tree/0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda) | All 10,924 remaining controls and 43,696 integrations in two fixed batches; 118 tests pass; both Linux gates queued; complete-case replay remains required |
 | [GRN_ODE · kinetics-rohwer-breaking-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [12c0693](https://github.com/m9h/GRN_ODE/tree/12c0693df1d68d1736b274a9364e1ef7b2533b06) | Fixed 750-branch collection, complete-array verification and explicit partial evidence; 78 combined local checks pass; real queued gate rejected; Linux tests queued |
 | [GRN_ODE · kinetics-rohwer-breaking-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [40fe823](https://github.com/m9h/GRN_ODE/tree/40fe82344d8dacb2d79ebdc4087ee52beb90a091) | All 750 original failed branches selected for 3,000 complete trajectories; 44 targeted tests pass; Linux validation queued; original 137/260 result retained |
 | [GRN_ODE · kinetics-ueda-evidence-release](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-evidence-release) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0756819](https://github.com/m9h/GRN_ODE/tree/07568199b113fee32f99d3feefed38e6d845b01c) | Published raw snapshot and diagnostic archive; fresh downloads reproduce the full preparation byte for byte; 11 transport tests pass; 153 branches and four cases still require computation and audit |

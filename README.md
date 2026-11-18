@@ -167,7 +167,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 23:10 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 23:22 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
@@ -200,8 +200,14 @@ The [complete Rohwer input bundle](https://github.com/m9h/GRN_ODE/releases/tag/k
 and 11,674 required branch specifications. This includes 848 potential controls
 absent from the original saved paths, marked explicitly without invented results.
 The [input adapter and guide](https://github.com/m9h/GRN_ODE/blob/c5be7556d38832a88e695a3559cedee2ab139521/python/results/catalog-breaking-rohwer-full-controls-20261118/README.md) pass 70 targeted tests; a fresh download
-reproduces full validation. The queued 750 diagnostics leave 10,924 additional
-controls to compute before complete-case replay; whole-model coverage is unchanged.
+reproduces full validation. All 10,924 additional controls now have a
+[fixed execution plan](https://github.com/m9h/GRN_ODE/blob/0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda/python/results/catalog-breaking-rohwer-later-controls-20261118/README.md), including the untreated baseline and
+all 848 generated controls. [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278)
+and [batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) are queued
+behind Linux validation: 43,696 integrations across 512 fixed partitions.
+All 118 targeted local tests pass, including 53 new tests; the released inputs
+and actual numerical runtime validate. Saved arrays will be independently
+audited. Full 123-case replay remains required, and whole-model coverage is unchanged.
 
 Two supporting forks make the numerical work inspectable:
 
