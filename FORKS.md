@@ -1,6 +1,6 @@
 # Forks, contributions and reproducible revisions
 
-Kinetics evidence updated **2026-11-17 UTC**; other fork and review snapshots are
+Kinetics evidence updated **2026-11-18 UTC**; other fork and review snapshots are
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
 
@@ -11,10 +11,10 @@ Cellière (29) passes all 1,088 cases and 34,816 conditional trials. Its
 preserves all sixteen original artifact ZIPs; a fresh extraction reproduces
 the full audit. Tyson (5) is the only unfinished initial inventory. Its
 [partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44118517338) has completed
-all four cases; only [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44118514341)
-remains unfinished. François partition 14 completed all seven cases, with three
+all four cases; only [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44247126362)
+remains unfinished, with two of its four cases complete. François partition 14 completed all seven cases, with three
 numerical failures retained; its separate Linux inventory still needs
-[partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44118520523).
+[partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44247021390).
 Nine local numerical workers and their coordinator remain
 stopped at the user's request. The dated results below retain the earlier
 evidence history.
@@ -23,9 +23,9 @@ The separate Vilar precision work now has complete arrays for twelve of
 seventeen partitions. The [latest completed partition](https://github.com/m9h/GRN_ODE/actions/runs/43809455427)
 agrees between 128- and 192-bit Taylor calculations but retains a native solver
 mismatch. Partition 6 has completed its 30,001-observation 128-bit trajectory and
-saved 14,274 observations in the 192-bit check; its
-[continuation](https://github.com/m9h/GRN_ODE/actions/runs/44118714267)
-retains those checkpoints. [Four other partitions](https://github.com/m9h/GRN_ODE/actions/runs/44118719643)
+saved 25,013 observations in the 192-bit check; its
+[continuation](https://github.com/m9h/GRN_ODE/actions/runs/44247017097)
+retains those checkpoints. [Four other partitions](https://github.com/m9h/GRN_ODE/actions/runs/44247019381)
 continue from verified migrated checkpoints, with their original observation
 prefixes preserved. All seventeen remain required.
 Paired validation remains 4,205/4,208 cases; no additional case recovery is claimed.
@@ -459,6 +459,13 @@ during long integrations. All partitions remain incomplete and
 [continue with unchanged source and settings](https://github.com/m9h/GRN_ODE/actions/runs/44142019165).
 The original passing cases remain separate; these checkpoints do not recover a
 case or change model coverage.
+
+The [18 November continuation check](https://github.com/m9h/GRN_ODE/blob/a31b0ce30ca142fbf5300f9b909c7058c73de2cb/python/results/catalog-breaking-fuss-full-case-plan-20261116/continuation-progress-20261118.json)
+verifies the first sixteen resumed partitions. All 137 previously completed
+arrays remain byte-identical and 137 additional arrays are complete. Their 58
+complete trajectories pass all 348 pairwise comparisons. The other sixteen
+partitions remain pending in this snapshot; the fixed selection still requires
+all 32, so these partial counts do not recover any of the 18 cases.
 
 The audit distinguishes attempted initial coverage, resolved conditional
 searches and numerical validation; selected models cannot establish all-35
