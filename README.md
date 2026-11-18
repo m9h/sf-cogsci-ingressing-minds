@@ -138,6 +138,8 @@ unfinished 323-trajectory case-control run. Its
 queued behind Linux validation: 170 branches have complete verified evidence,
 and all 153 remaining branches are assigned to 32 fixed partitions. No Ueda
 case recovery is claimed until the complete 323-branch audit passes.
+The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
+explains fixed job selection, artifact checks and the complete-case audit.
 The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
 inventories, Vilar precision diagnostics and Fuss case controls. Four local
 collection and audit watchers remain active; they do not run ODE integrations.

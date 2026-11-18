@@ -40,6 +40,12 @@ and restores 24 published diagnostic branches (ten overlap). All 153 branches
 without complete evidence remain selected for computation. Local validation
 passes 77 targeted tests; the Linux gate is pending. Its four unresolved cases
 remain outstanding.
+The separate [offline collector](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
+requires all 32 fixed jobs and replays the unchanged full case audit only after
+every selected attempt finishes. Forty-eight targeted local tests pass, including
+retained mismatches and failed integrations. A real preserved branch reproduces
+all six comparisons over 221,001 observations and 13 observables. This verifies
+collection behavior and adds no scientific coverage; its Linux tests are queued.
 The four active local watchers collect cloud artifacts and audit the fixed
 Tyson/François selections; they perform no numerical integrations. The stopped
 workers' source trees and environments remain unchanged.
@@ -70,6 +76,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
+| [GRN_ODE · kinetics-ueda-cloud-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0c3c315](https://github.com/m9h/GRN_ODE/tree/0c3c315dd34391abd4c38bfe93a358e78779451e) | Offline collection and full 323-branch assembly; 48 targeted local tests and one full real-branch comparison reproduction pass; Linux tests queued; no new case recovery |
 | [GRN_ODE · kinetics-ueda-cloud-continuation](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-continuation) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [b585ee9](https://github.com/m9h/GRN_ODE/tree/b585ee97de7000c2ec1afe5454216629601eee87) | Complete 323-branch/four-case scope retained; 170 branches backed by verified evidence, 153 selected for cloud computation; 77 local tests pass, Linux validation queued; local worker remains stopped |
 | [GRN_ODE · kinetics-ciliberto-case-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-case-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [8ab39fd](https://github.com/m9h/GRN_ODE/tree/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf) | Both selected Ciliberto cases pass from 215 branches and 860 trajectories; complete evidence release reproduces from fresh downloads; 55 targeted tests pass; whole-model count unchanged |
 | [GRN_ODE · kinetics-vilar-partition6-publication](https://github.com/m9h/GRN_ODE/tree/kinetics-vilar-partition6-publication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [6efb484](https://github.com/m9h/GRN_ODE/tree/6efb48467a8eaca45a8f990e77325ec7d3dfe060) | Complete partition 6: three full arrays, Taylor precision agreement and retained RoadRunner mismatch; original ZIP and fresh-download audit reproduction published; no case recovery |
