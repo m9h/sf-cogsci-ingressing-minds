@@ -37,6 +37,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
+| [GRN_ODE · kinetics-ciliberto-case-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-case-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [8ab39fd](https://github.com/m9h/GRN_ODE/tree/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf) | Both selected Ciliberto cases pass from 215 branches and 860 trajectories; complete evidence release reproduces from fresh downloads; 55 targeted tests pass; whole-model count unchanged |
 | [GRN_ODE · kinetics-vilar-partition6-publication](https://github.com/m9h/GRN_ODE/tree/kinetics-vilar-partition6-publication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [6efb484](https://github.com/m9h/GRN_ODE/tree/6efb48467a8eaca45a8f990e77325ec7d3dfe060) | Complete partition 6: three full arrays, Taylor precision agreement and retained RoadRunner mismatch; original ZIP and fresh-download audit reproduction published; no case recovery |
 | [cell_research · main](https://github.com/m9h/cell_research/tree/main) | [Zhangtaining/cell_research](https://github.com/Zhangtaining/cell_research) | [397e94c](https://github.com/m9h/cell_research/tree/397e94c4c1f5b7c6367c2c4cb603eab4fdd274a2) | Changes available on fork main |
 | [GRN_ODE · python-memory-replication](https://github.com/m9h/GRN_ODE/tree/python-memory-replication) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [70a3afa](https://github.com/m9h/GRN_ODE/tree/70a3afad61357e94873ff62a7300c099b4c7ae3e) | [Draft PR in our fork](https://github.com/m9h/GRN_ODE/pull/1) |
@@ -418,15 +419,18 @@ report. The surviving data were preserved with matching checksums, one branch
 was restored exactly from a published archive, and all 18 other affected branches
 were recomputed under the fixed original requests.
 
-The [completed Ciliberto case audit](https://github.com/m9h/GRN_ODE/blob/1450da263000a0d5cf43ef8be55ef88e56843a29/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
+The [completed Ciliberto case audit](https://github.com/m9h/GRN_ODE/blob/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
 now recovers **both selected cases** from all **215 branches and 860 full
 trajectories**, including the untreated baseline. All 18 replacement artifacts,
 72 new arrays and 108 replacement comparisons passed verification; the unchanged
 case auditor then reconstructed all controls, conditional paths and classifications.
-The full audit and provenance are published. A downloadable package of all
-trajectory arrays and its fresh-download reproduction remain pending. The separate
-original full-model result remains **548/622**; selected recoveries are not added
-ad hoc to that total.
+The [complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-cases-20261118)
+preserves 37 evidence assets plus their manifest, totaling 19.3 GB. Every uploaded
+size and checksum matches, and a fresh download reconstructs all 215 branches
+and 860 arrays. The full audit JSON reproduces after accounting only for the new
+assembly timestamp and its report checksum. All 55 targeted tests pass locally.
+The separate original full-model result remains **548/622**; selected recoveries
+are not added ad hoc to that total.
 
 Leloup's twelve original mismatches also pass recorded native refinement checks.
 Its [full case recovery](https://github.com/m9h/GRN_ODE/blob/f55c9a62913f8ece85fc96096b22b27807cf94cf/python/results/catalog-breaking-linux-12/audit.json)

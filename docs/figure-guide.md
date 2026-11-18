@@ -478,10 +478,11 @@ validation. A [fresh evidence check on 18 November](https://github.com/m9h/GRN_O
 found missing files in the completed local computation. The surviving data have
 been preserved, one branch restored exactly from the published release, and
 18 affected branches recomputed in the cloud. The
-[completed independent audit](https://github.com/m9h/GRN_ODE/blob/1450da263000a0d5cf43ef8be55ef88e56843a29/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
+[completed independent audit](https://github.com/m9h/GRN_ODE/blob/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
 now recovers both selected cases from all 215 branches and 860 full trajectories,
 including the untreated baseline. The separate 548/622 whole-model result is
-unchanged; release of the complete trajectory package is still pending.
+unchanged. The [complete trajectory release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-cases-20261118)
+now reproduces the full audit from fresh downloads.
 This distinction matters:
 agreement on an isolated stimulated trajectory cannot establish that the
 response depends on prior experience; the corresponding controls are needed.

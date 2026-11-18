@@ -117,11 +117,11 @@ Its 112 complete branches pass all 672 pairwise comparisons, including the
 untreated baseline. All partitions still need work and
 [continue from those checkpoints](https://github.com/m9h/GRN_ODE/actions/runs/44385665111).
 No additional Fuss case recovery is claimed.
-The [complete Ciliberto case audit](https://github.com/m9h/GRN_ODE/blob/1450da263000a0d5cf43ef8be55ef88e56843a29/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
+The [complete Ciliberto case audit](https://github.com/m9h/GRN_ODE/blob/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
 now recovers both selected cases from all 215 branches and 860 saved trajectories,
-including the untreated baseline. Its audit and provenance are published;
-the full trajectory release is pending. This does not change the separate
-548/622 whole-model result.
+including the untreated baseline. The [complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-cases-20261118)
+preserves the original data and all replacement ZIPs. A fresh download reproduces
+the full case audit. This does not change the separate 548/622 whole-model result.
 Earlier audits pass all 216 Leloup cases, 728 Martins cases and 112 Hoefnagel
 cases. The [De Caluwe clock](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-decaluwe20-20261114)
 passes all 484 cases and 18,579 branches. Downloadable evidence accompanies the
