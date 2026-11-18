@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 21:24 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 21:35 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -67,6 +67,12 @@ and undergo all six pairwise comparisons at unchanged acceptance tolerances.
 Forty-four targeted tests, the complete real input check and workflow lint pass
 locally; Linux validation is pending. The 123 failed cases still require their
 full controls and conditional replay. No new whole-model pass is claimed.
+The separate [Rohwer collector](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/results/catalog-breaking-rohwer-diagnostics-20261118/COLLECTION.md)
+binds the fixed jobs only after validation, verifies original ZIPs and every
+available complete array, and retains mismatches and interrupted diagnostics.
+Its 34 tests and all 78 combined targeted tests pass locally. A check against
+the actual queued gate correctly rejects binding. Linux collector validation
+is queued; these checks add no scientific coverage.
 
 Two older workflow runs from 11 November
 ([43096519740](https://github.com/m9h/GRN_ODE/actions/runs/43096519740) and
@@ -94,6 +100,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 
 | Fork / working branch | Upstream | Snapshot revision | Review status |
 |---|---|---|---|
+| [GRN_ODE · kinetics-rohwer-breaking-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [12c0693](https://github.com/m9h/GRN_ODE/tree/12c0693df1d68d1736b274a9364e1ef7b2533b06) | Fixed 750-branch collection, complete-array verification and explicit partial evidence; 78 combined local checks pass; real queued gate rejected; Linux tests queued |
 | [GRN_ODE · kinetics-rohwer-breaking-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [40fe823](https://github.com/m9h/GRN_ODE/tree/40fe82344d8dacb2d79ebdc4087ee52beb90a091) | All 750 original failed branches selected for 3,000 complete trajectories; 44 targeted tests pass; Linux validation queued; original 137/260 result retained |
 | [GRN_ODE · kinetics-ueda-evidence-release](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-evidence-release) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0756819](https://github.com/m9h/GRN_ODE/tree/07568199b113fee32f99d3feefed38e6d845b01c) | Published raw snapshot and diagnostic archive; fresh downloads reproduce the full preparation byte for byte; 11 transport tests pass; 153 branches and four cases still require computation and audit |
 | [GRN_ODE · kinetics-ueda-cloud-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0c3c315](https://github.com/m9h/GRN_ODE/tree/0c3c315dd34391abd4c38bfe93a358e78779451e) | Offline collection and full 323-branch assembly; 48 targeted local tests and one full real-branch comparison reproduction pass; Linux tests queued; no new case recovery |

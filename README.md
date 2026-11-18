@@ -131,7 +131,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 21:24 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 21:35 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
@@ -157,6 +157,9 @@ Its [source audit and plan](https://github.com/m9h/GRN_ODE/blob/40fe82344d8dacb2
 retain all 123 failed cases and their original protocols. The planned 3,000
 trajectories use two Radau and two RoadRunner requests per branch. Complete
 matched controls and conditional replay remain necessary before case recovery.
+The [offline collection guide](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/results/catalog-breaking-rohwer-diagnostics-20261118/COLLECTION.md)
+requires all 750 branches, rechecks downloaded arrays and preserves interrupted
+work. All 78 combined local checks pass; Linux validation remains queued.
 
 Two supporting forks make the numerical work inspectable:
 
