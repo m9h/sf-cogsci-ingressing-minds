@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-18 at 23:22 UTC** against individual GitHub jobs and local
+Checked **2026-11-18 at 23:31 UTC** against individual GitHub jobs and local
 process states. These jobs preserve the original cases, controls, simulation
 horizons and acceptance criteria; an active job does not add validated coverage.
 
@@ -121,6 +121,19 @@ validate. Both cloud batches are queued behind their Linux gates. The
 records exact run IDs and source. Compute job IDs will be bound only after all
 jobs exist. The independent 123-case replay still needs all 11,674 outcomes;
 branch counts cannot establish recovered cases or change whole-model coverage.
+
+The [two-batch collection guide](https://github.com/m9h/GRN_ODE/blob/b1643064668f559024c11acc84c196e06b7d2526/python/results/catalog-breaking-rohwer-later-controls-20261118/COLLECTION.md) now documents exact
+selection of all 512 computation jobs and 10,924 controls from both fixed runs.
+The collector preserves original ZIPs and all six API responses, rechecks every
+extracted byte and independently audits complete trajectories. Partial children,
+orphan arrays, temporary checkpoints, solver failures and parent timeouts stay
+explicit. Both batches and their complete job inventories are required; artifacts
+cannot move between batches, partitions or attempts. All 173 targeted local tests
+pass, including 86 new collector tests that also pass with optional JAX imports
+blocked. Real plan/model/runtime verification passes, and both queued gates
+correctly prevent binding. See the [validation evidence](docs/evidence/rohwer-later-collection-20261118.json).
+Linux validation is queued. No new integrations, case recoveries or whole-model
+coverage are claimed.
 
 Ciliberto's [complete failure inventory](https://github.com/m9h/GRN_ODE/blob/de23184d6149473a6ce4533f72ea8d32cc337085/python/results/catalog-breaking-ciliberto-full-inventory-20261118/README.md)
 now retains all 74 failed cases and all 7,334 potential control branches. Four
@@ -225,6 +238,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 |---|---|---|---|
 | [GRN_ODE · kinetics-rohwer-full-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-full-controls) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [c5be755](https://github.com/m9h/GRN_ODE/tree/c5be7556d38832a88e695a3559cedee2ab139521) | All 123 failed cases and 11,674 potential controls preserved, including 848 unsaved specifications; 70 tests pass; public inputs validate from fresh downloads; 10,924 later controls remain to compute |
 | [GRN_ODE · kinetics-rohwer-later-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-later-controls) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0dc31af](https://github.com/m9h/GRN_ODE/tree/0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda) | All 10,924 remaining controls and 43,696 integrations in two fixed batches; 118 tests pass; both Linux gates queued; complete-case replay remains required |
+| [GRN_ODE · kinetics-rohwer-later-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-later-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [b164306](https://github.com/m9h/GRN_ODE/tree/b1643064668f559024c11acc84c196e06b7d2526) | Exact two-run collection for all 10,924 controls; full-array and partial-evidence verification; 173 targeted tests pass; Linux validation queued |
 | [GRN_ODE · kinetics-rohwer-breaking-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [12c0693](https://github.com/m9h/GRN_ODE/tree/12c0693df1d68d1736b274a9364e1ef7b2533b06) | Fixed 750-branch collection, complete-array verification and explicit partial evidence; 78 combined local checks pass; real queued gate rejected; Linux tests queued |
 | [GRN_ODE · kinetics-rohwer-breaking-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [40fe823](https://github.com/m9h/GRN_ODE/tree/40fe82344d8dacb2d79ebdc4087ee52beb90a091) | All 750 original failed branches selected for 3,000 complete trajectories; 44 targeted tests pass; Linux validation queued; original 137/260 result retained |
 | [GRN_ODE · kinetics-ueda-evidence-release](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-evidence-release) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0756819](https://github.com/m9h/GRN_ODE/tree/07568199b113fee32f99d3feefed38e6d845b01c) | Published raw snapshot and diagnostic archive; fresh downloads reproduce the full preparation byte for byte; 11 transport tests pass; 153 branches and four cases still require computation and audit |
