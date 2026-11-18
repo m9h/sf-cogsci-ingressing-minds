@@ -131,7 +131,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 20:41 UTC**: nine local numerical workers
+Execution checked **18 November 2026, 21:16 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
@@ -140,6 +140,12 @@ and all 153 remaining branches are assigned to 32 fixed partitions. No Ueda
 case recovery is claimed until the complete 323-branch audit passes.
 The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
 explains fixed job selection, artifact checks and the complete-case audit.
+The [preserved evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-preservation-20261118)
+contains all 787 available snapshot files and the original diagnostic archive.
+A fresh download verifies all 628 preserved arrays and reproduces the complete
+preparation audit, import restoration proof and continuation plan byte for byte.
+Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee32f99d3feefed38e6d845b01c/python/results/catalog-breaking-ueda-continuation-20261118/RELEASE.md)
+requires no new ODE integrations; the four unresolved cases remain outstanding.
 The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
 inventories, Vilar precision diagnostics and Fuss case controls. Four local
 collection and audit watchers remain active; they do not run ODE integrations.
