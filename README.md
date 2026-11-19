@@ -99,8 +99,8 @@ New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
 with failures retained. **Tyson is the only unfinished initial inventory**;
 partition 15 has now completed all four cases, leaving only
-[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44383931943)
-continuing from two completed cases out of four. The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
+[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44448634325)
+queued to continue from three recorded cases out of four (two passing). The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
 preserves 64 original Linux artifacts and three complete local model reports;
 fresh extractions reproduce all five package audits. Four passing models have
 no eligible breaking cases, so this status is not evidence of learning.
@@ -113,7 +113,7 @@ The [complete Marhl recovery inventory](https://github.com/m9h/GRN_ODE/blob/7dd0
 now identifies all 380 trajectories needed for its twelve failed cases,
 including 88 potential controls never reached by the original conditional
 search. It reproduces the original evidence and passes 66 targeted tests;
-no new integrations or case recoveries are claimed.
+Linux validation has also passed; no new integrations or case recoveries are claimed.
 The [full Fuss execution plan](https://github.com/m9h/GRN_ODE/blob/4c0f97adcf1e54019792f5eaf57963efb62cedf1/python/results/catalog-breaking-fuss-full-case-plan-20261116/README.md)
 requires all 18 failed cases and 1,309 control trajectories, with 5,236 COPASI/Radau
 integrations in 32 fixed partitions. The [latest complete checkpoint collection](https://github.com/m9h/GRN_ODE/blob/80fec615376378c01f674ea597bea3cc41834a7f/python/results/catalog-breaking-fuss-full-case-plan-20261116/COLLECTION.md)
@@ -132,13 +132,13 @@ covers all 74 failed cases and includes 200 potential control branches missing
 from the original paths. After re-auditing the 215 published branches, 7,119
 branches remain selected for computation. The first
 [260-branch diagnostic run](https://github.com/m9h/GRN_ODE/actions/runs/44407336593)
-is queued behind Linux validation, with 1,040 complete trajectories requested.
+has passed Linux validation, with 1,040 complete trajectories requested.
 All 85 targeted local execution/inventory/audit tests pass. The later 6,859
 controls and full 74-case audit remain required; coverage is unchanged.
 The [fixed-run collection guide](https://github.com/m9h/GRN_ODE/blob/3d633d2f0b91c94cb947042032dc25224947322f/python/results/catalog-breaking-ciliberto-full-diagnostics-20261118/COLLECTION.md)
 now covers all 260 diagnostics, including interrupted checkpoints and retained
 solver failures. Its 43 collector tests and 90 combined targeted tests pass
-locally; Linux validation is queued. These are validation results, with no new
+locally; Linux validation has passed. These are validation results, with no new
 numerical coverage claimed.
 The [full-control input adapter](https://github.com/m9h/GRN_ODE/blob/6dd9bd20b2b03620373f86277de0c0657c04b1e4/python/results/catalog-breaking-ciliberto-full-controls-20261118/README.md)
 now preserves all 74 original case records and 7,666 original branch records,
@@ -147,14 +147,14 @@ tests pass. A fresh download of the [input release](https://github.com/m9h/GRN_O
 reproduces complete input validation. The later control computations and
 full-array case audit remain required.
 The [complete later-control run](https://github.com/m9h/GRN_ODE/actions/runs/44412503884)
-is now queued behind Linux validation: all 6,859 remaining controls, including
+has passed Linux validation: all 6,859 remaining controls, including
 the 200 generated continuations, are assigned to 256 fixed partitions for 27,436
 requested trajectories. The [runner and independent branch audit](https://github.com/m9h/GRN_ODE/blob/05232fa83c4be917455dc2d143a11253cb7773e6/python/results/catalog-breaking-ciliberto-later-controls-20261118/README.md)
 pass 96 targeted tests and the real input/runtime check. Original numerical code,
 thresholds and case scoring are unchanged; whole-case recovery remains unproven.
 The [later-control collector](https://github.com/m9h/GRN_ODE/blob/f34fcc07086734db2d1f193acaea6549784c7211/python/results/catalog-breaking-ciliberto-later-controls-20261118/COLLECTION.md) now verifies fixed job identities, original
 ZIPs and saved arrays across all 256 partitions. Its 39 new checks and 117
-combined targeted tests pass locally; Linux validation is queued. Interrupted
+combined targeted tests pass locally; Linux validation has passed. Interrupted
 work and numerical failures remain explicit, and the full 74-case replay is
 still required.
 The [complete 74-case auditor](https://github.com/m9h/GRN_ODE/blob/9e9b96994278cc50713738c3b43618c5d1f4422c/python/results/catalog-breaking-ciliberto-full-case-audit-20261118/README.md) is now implemented and passes 137 targeted
@@ -172,11 +172,11 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **18 November 2026, 23:49 UTC**: nine local numerical workers
+Execution checked **19 November 2026, 03:00–03:05 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
-queued behind Linux validation: 170 branches have complete verified evidence,
+running after Linux validation passed: 170 branches have complete verified evidence,
 and all 153 remaining branches are assigned to 32 fixed partitions. No Ueda
 case recovery is claimed until the complete 323-branch audit passes.
 The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
@@ -188,19 +188,21 @@ preparation audit, import restoration proof and continuation plan byte for byte.
 Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee32f99d3feefed38e6d845b01c/python/results/catalog-breaking-ueda-continuation-20261118/RELEASE.md)
 requires no new ODE integrations; the four unresolved cases remain outstanding.
 The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
-inventories, Vilar precision diagnostics and Fuss case controls. Four local
-collection and audit watchers remain active; they do not run ODE integrations.
+inventories, Vilar precision diagnostics and Fuss case controls. The four earlier
+local collection and audit watchers have finished. New Tyson, François and Vilar
+continuations are queued from verified terminal checkpoints; all nine local
+numerical workers remain stopped.
 
 Rohwer's phosphotransferase model (network 35, BioModel 38) now has a fixed
 [cloud diagnostic run](https://github.com/m9h/GRN_ODE/actions/runs/44401097371)
-for all 750 originally failed breaking branches, queued behind Linux validation.
+for all 750 originally failed breaking branches; Linux validation has passed.
 Its [source audit and plan](https://github.com/m9h/GRN_ODE/blob/40fe82344d8dacb2d79ebdc4087ee52beb90a091/python/results/catalog-breaking-rohwer-diagnostics-20261118/README.md)
 retain all 123 failed cases and their original protocols. The planned 3,000
 trajectories use two Radau and two RoadRunner requests per branch. Complete
 matched controls and conditional replay remain necessary before case recovery.
 The [offline collection guide](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/results/catalog-breaking-rohwer-diagnostics-20261118/COLLECTION.md)
 requires all 750 branches, rechecks downloaded arrays and preserves interrupted
-work. All 78 combined local checks pass; Linux validation remains queued.
+work. All 78 combined local checks and Linux validation pass.
 The [complete Rohwer input bundle](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-rohwer-full-controls-20261118) now preserves all 123 failed cases
 and 11,674 required branch specifications. This includes 848 potential controls
 absent from the original saved paths, marked explicitly without invented results.
@@ -208,15 +210,16 @@ The [input adapter and guide](https://github.com/m9h/GRN_ODE/blob/c5be7556d38832
 reproduces full validation. All 10,924 additional controls now have a
 [fixed execution plan](https://github.com/m9h/GRN_ODE/blob/0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda/python/results/catalog-breaking-rohwer-later-controls-20261118/README.md), including the untreated baseline and
 all 848 generated controls. [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278)
-and [batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) are queued
-behind Linux validation: 43,696 integrations across 512 fixed partitions.
+and [batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) have passed
+Linux validation: 43,696 integrations across 512 fixed partitions.
 All 118 targeted local tests pass, including 53 new tests; the released inputs
 and actual numerical runtime validate. Saved arrays will be independently
 audited. Full 123-case replay remains required, and whole-model coverage is unchanged.
 The [two-batch collector](https://github.com/m9h/GRN_ODE/blob/b1643064668f559024c11acc84c196e06b7d2526/python/results/catalog-breaking-rohwer-later-controls-20261118/COLLECTION.md) is now implemented, with 173 targeted local
 checks passing. It requires all 512 partitions, preserves original ZIPs and API
 snapshots, rechecks full arrays, and retains failures and unfinished work.
-Both queued gates correctly prevent premature job binding; Linux validation is pending.
+The earlier queued-gate checks correctly prevented premature binding; Linux
+collector validation has now passed.
 The [complete Rohwer case auditor](https://github.com/m9h/GRN_ODE/blob/602c34a0db23b2a75ee5a1a9aefe6caf8524d992/python/results/catalog-breaking-rohwer-full-case-audit-20261118/README.md) is also implemented: it requires
 all 11,674 branch outcomes before replaying all 123 cases through the unchanged
 rules. All 235 targeted tests pass. The real input scope verifies, while an audit

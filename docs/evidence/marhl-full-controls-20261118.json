@@ -26,7 +26,7 @@
   "source_data_already_tracked_in_git": true,
   "new_numerical_dispatches": 0,
   "local_worker_signals_sent": [],
-  "linux_validation": "pending",
+  "linux_validation": "passed",
   "sha256": {
     "scripts/prepare_marhl_full_controls.py": "c6a6fa54c53573f96c99da0a71bea63241e830cc6aacc5e161b644fa485e4450",
     "tests/test_marhl_full_controls.py": "217b7a3f414c4dc8c14ebbe4eafa01ef25805505620ec9f606e6971a24a77fbe",
@@ -65,8 +65,10 @@
   "linux_validation_run": 44423932643,
   "linux_validation_job": 135223754086,
   "linux_workflow_id": 423233422,
-  "linux_validation_status": "queued",
+  "linux_validation_status": "completed",
   "ordinary_ci_run": 44423932548,
   "ordinary_ci_status": "nine queued, one skipped",
-  "remaining_work": "Implement full-horizon independent precision producer and full-array auditor, then execute and validate all necessary controls and conditional searches. No precision integrations dispatched by this change."
+  "remaining_work": "Implement full-horizon independent precision producer and full-array auditor, then execute and validate all necessary controls and conditional searches. No precision integrations dispatched by this change.",
+  "linux_validation_conclusion": "success",
+  "linux_status_checked_at": "2026-11-19T03:04:15Z"
 }

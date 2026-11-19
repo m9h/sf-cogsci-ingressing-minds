@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-11-19T03:00:11.293096+00:00",
+  "run_id": 44384045755,
+  "parent_run_id": 44247019381,
+  "source_revision": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+  "collection_sha256": "d899c58de617f985e3424a13358e0cdc42f15954f2070ad7f5453eeba3ffc026",
+  "parent_collection_sha256": "c5adcd22408d785fc1cfb123d03815b6b3c1606f6439fb26346435503187c765",
+  "all_selected_jobs_terminal": true,
+  "all_selected_original_zips_and_extracted_bytes_verified": true,
+  "partitions": [
+    {
+      "partition": 8,
+      "artifact_id": 14483865369,
+      "archive_sha256": "sha256:7718316b8a390fafae3fb3731864d3572358524ebd96642691a91363e9007931",
+      "report_sha256": "e84c950a50ef171447bd55e8a03409cb45b225ea3828786d4c01c763dd8c27e2",
+      "checkpoint_sha256": "fc47801675d79a3ab258f947ea0d5dd7cbc52bff036ce851a7f9c3f611753e36",
+      "parent_checkpoint_sha256": "aa64b4fa1a3657fbdb07dd271d2cc6f79ac42924adadeae7e3c231aae7b3e3ac",
+      "parent_samples": 10852,
+      "saved_samples": 11244,
+      "new_samples": 392,
+      "original_prefix_bitwise_equal": true,
+      "completed_segments": 499,
+      "parent_steps": 546842296,
+      "steps": 612842296,
+      "active_time": [
+        "1.124321504341288888385779885625362682535e+2",
+        "-1.827105055644495049732558479366874172825e-37"
+      ],
+      "status": "checkpointed",
+      "seconds_this_attempt": 14425.731500075,
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 9,
+      "artifact_id": 14483357130,
+      "archive_sha256": "sha256:746c2b91d34174c2e422b4be7093661487185a21da7242a1b23f7c076b04cea1",
+      "report_sha256": "ebaca918ac717bdfccd7ec37d290de17cb47c0ec2747bf1ff606cd127972f419",
+      "checkpoint_sha256": "e43f89e19998c7efc90abf63cd255fabbfa36350e8b55e318e1067ca64a298e8",
+      "parent_checkpoint_sha256": "9a1c04c1bc871e0b6b6e08350724aa10082dcd7b57bda0b4e42044187cecd7ce",
+      "parent_samples": 10900,
+      "saved_samples": 11374,
+      "new_samples": 474,
+      "original_prefix_bitwise_equal": true,
+      "completed_segments": 499,
+      "parent_steps": 554842296,
+      "steps": 634842296,
+      "active_time": [
+        "1.137364188679322342197314681444269368788e+2",
+        "4.187503949415242921927045834721891675630e-38"
+      ],
+      "status": "checkpointed",
+      "seconds_this_attempt": 14463.178045823,
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 11,
+      "artifact_id": 14482069928,
+      "archive_sha256": "sha256:f0e07f42a7e654d453bbb47d0aa0f66e46307dd009063c5af8f8110bd7cf0243",
+      "report_sha256": "2c34a7a89ebcc837d1a6a6da871fc352bd96d5daf6a8ef080ed0db1224c41b91",
+      "checkpoint_sha256": "dc30c8a2629c30391ae831c99f70e58dd7eb496727cc901bbe55ced343f86150",
+      "parent_checkpoint_sha256": "c7638b6eebb833fc87fd5e99db2809931b070ebbf7278924c8fb1287bbd9b31e",
+      "parent_samples": 10882,
+      "saved_samples": 11398,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "completed_segments": 499,
+      "parent_steps": 551842296,
+      "steps": 638842296,
+      "active_time": [
+        "1.139735593097155511315581332687534438073e+2",
+        "-1.653770976168097414142971666421741553069e-37"
+      ],
+      "status": "checkpointed",
+      "seconds_this_attempt": 14517.564201966,
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 16,
+      "artifact_id": 14483386492,
+      "archive_sha256": "sha256:3574bf618ed36bf13c336831e3727f2c2da0a66e1bf30ccc516c32118350b200",
+      "report_sha256": "278fd2ea80bd860c4ced7ac31752a35e196cbba58acd40ae7b3e00576d739457",
+      "checkpoint_sha256": "11a302d52bc6ff44a57323656b9e986cd7dfef4e5bcf1d93c457fedd418c77ac",
+      "parent_checkpoint_sha256": "8f4d11975d42215b2835655ca3222e6222f72ae5c014f1630df1a2bda98b19a0",
+      "parent_samples": 10627,
+      "saved_samples": 11131,
+      "new_samples": 504,
+      "original_prefix_bitwise_equal": true,
+      "completed_segments": 499,
+      "parent_steps": 508842296,
+      "steps": 593842296,
+      "active_time": [
+        "1.113057421534263902534823846293182323848e+2",
+        "3.212397100679407877362594828758562281476e-38"
+      ],
+      "status": "checkpointed",
+      "seconds_this_attempt": 14418.925583809001,
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    }
+  ],
+  "integrations_performed_locally": 0,
+  "new_complete_trajectories": 0,
+  "case_recovery_claimed": false,
+  "selected_for_next_continuation": [
+    8,
+    9,
+    11,
+    16
+  ],
+  "local_worker_signals_sent": [],
+  "continuation_run": 44448366489,
+  "validation_gate_job": 135305954513,
+  "validation_status": "queued"
+}

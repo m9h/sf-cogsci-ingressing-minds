@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-11-19T03:02:47.370450+00:00",
+  "source_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+  "terminal_snapshots": [
+    {
+      "run_id": 44383931943,
+      "network": 5,
+      "partition": 14,
+      "artifact_id": 14485963518,
+      "archive_sha256": "sha256:d89d9f31ebebc7ccd767c848a89a86dd8ac5f32ec2241475c47b9a593dcb7a02",
+      "report_sha256": "c10faef2ef3b45c0164aaa13934581875488191326338b85f086f822cdc70d7d",
+      "branch_records": 87,
+      "branch_outcomes": {
+        "true": 86,
+        "false": 1
+      },
+      "recorded_cases": 3,
+      "selected_cases": 4,
+      "passing_cases": 2,
+      "pending_cases": [
+        "pM__up--M__up"
+      ],
+      "unresolved_conditional_decisions_retained": [],
+      "all_recorded_case_summaries_independently_replayed": true,
+      "raw_trajectory_arrays_available": false,
+      "numerical_integrations_performed": 0,
+      "case_recovery_claimed": false
+    },
+    {
+      "run_id": 44383935036,
+      "network": 25,
+      "partition": 15,
+      "artifact_id": 14485859854,
+      "archive_sha256": "sha256:e99a90974e3a473d2ba06d196cf32b26e81a899766ad7aee532fcf7c06655e5c",
+      "report_sha256": "99062e8beb318c37acac4cf96868d79e06c6dccc51c1949858ab646acb186b6d",
+      "branch_records": 304,
+      "branch_outcomes": {
+        "true": 250,
+        "false": 54
+      },
+      "recorded_cases": 7,
+      "selected_cases": 8,
+      "passing_cases": 1,
+      "pending_cases": [
+        "rB__up--gB__up"
+      ],
+      "unresolved_conditional_decisions_retained": [
+        {
+          "case": "rB__up--AgB__up",
+          "trial": "third__A__up"
+        }
+      ],
+      "all_recorded_case_summaries_independently_replayed": true,
+      "raw_trajectory_arrays_available": false,
+      "numerical_integrations_performed": 0,
+      "case_recovery_claimed": false
+    }
+  ],
+  "local_worker_signals_sent": [],
+  "purpose": "Verify two terminal original-inventory checkpoints before unchanged selected continuations; unresolved conditional decisions remain failures.",
+  "continuation_runs": {
+    "5": 44448634325,
+    "25": 44448645976
+  }
+}
