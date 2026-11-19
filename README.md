@@ -180,10 +180,10 @@ Execution checked **19 November 2026, 04:39–04:40 UTC**: nine local numerical 
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
-running after Linux validation passed. Its first completed partition passes the
-independent audit: five branches, twenty complete trajectories and all thirty
-pairwise comparisons. Together with the 170 previously preserved branches,
-175 of 323 now have complete evidence; 148 remain. All 153 continuation branches
+running after Linux validation passed. The [latest independent audit](docs/evidence/ueda-continuation-20261119-evening.json)
+verifies fourteen partitions: seventy branches, 280 complete trajectories and
+all 420 pairwise comparisons. Together with the 170 previously preserved branches,
+240 of 323 now have complete evidence; 83 remain. All 153 continuation branches
 stay assigned to their original 32 fixed partitions. No Ueda
 case recovery is claimed until the complete 323-branch audit passes.
 The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
@@ -206,8 +206,16 @@ their original plans, attempts and source revisions. The [latest array audits](d
 verify 60 Ciliberto diagnostic branches (240 arrays), its first 81 later controls
 (324 arrays), and ten Ueda continuation branches (40 arrays). All 906 pairwise
 comparisons pass over the complete original grids. The remaining 200 Ciliberto
-diagnostics, 6,778 later controls, 143 Ueda continuation branches and full case
-replay are still required. No additional case or whole-model recovery is claimed.
+diagnostics and 6,778 later controls still require verification. The subsequent
+[Ueda collection](docs/evidence/ueda-continuation-20261119-evening.json) reduces its
+remaining scope to 83 branches. Full case replay remains required. No additional
+case or whole-model recovery is claimed.
+
+The [complete Fuss continuation checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261119.json)
+now verifies all 32 original ZIPs, totalling 6.61 GB, and 794 complete arrays.
+All 528 parent arrays remain byte-identical, with 266 additional arrays. Its
+180 complete branches pass all 1,080 comparisons. Every partition still needs
+continuation; the full 1,309-branch, eighteen-case scope remains required.
 
 Marhl now has an [exact mpmath checkpoint adapter](https://github.com/m9h/GRN_ODE/blob/8888e2bd03bba4f9010a288e9b355c2c7c2316c1/python/results/catalog-breaking-marhl-checkpoints-20261119/README.md)
 for its long breaking protocols. It preserves internal precision across stops
@@ -217,9 +225,16 @@ validation has passed. The [full Marhl precision runner](https://github.com/m9h/
 now fixes all 1,520 tasks: 380 original trajectories in two implementations at
 128 and 192 bits. Its independent auditor checks every saved sample and all six
 pairwise comparisons. Local validation passes 124 tests, with four
-Heyoka-dependent checks reserved for queued Linux CI. Full cloud execution,
-authenticated checkpoint transfer and complete case replay remain outstanding;
-these implementation tests do not establish long-horizon convergence.
+Heyoka-dependent checks initially reserved for Linux CI. The [published cloud
+runner](https://github.com/m9h/GRN_ODE/blob/a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022/python/results/catalog-breaking-marhl-full-precision-20261119/README.md)
+adds authenticated checkpoint transfer, and its [full-precision Linux gate](https://github.com/m9h/GRN_ODE/actions/runs/44593959589)
+now passes all 234 tests without skips. Four of the six full batches are queued;
+the final two submissions are pending connection recovery. The offline collector
+and twelve-case replay are implemented locally with 47 passing tests; their
+publication is also pending connection recovery. No full-precision scientific
+result is claimed. A separate inherited workflow reports source-fingerprint
+errors when it applies older published-evidence checks to the new Taylor adapter;
+that evidence must continue to use its original frozen source.
 
 Rohwer's phosphotransferase model (network 35, BioModel 38) now has a fixed
 [cloud diagnostic run](https://github.com/m9h/GRN_ODE/actions/runs/44401097371)

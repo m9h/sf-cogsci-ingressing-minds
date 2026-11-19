@@ -21,8 +21,8 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-19 at 18:31–18:35 UTC** against individual GitHub jobs and the
-latest stopped local process states. The three new continuations below were dispatched once, after
+The original job snapshot below was checked **2026-11-19 at 18:31–18:35 UTC**.
+Fuss, Ueda and Marhl have the later verified updates described below. The three new continuations below were dispatched once, after
 verifying their terminal parent artifacts. No local numerical worker was resumed.
 
 | Computation | Current cloud run | Observed state |
@@ -30,8 +30,8 @@ verifying their terminal parent artifacts. No local numerical worker was resumed
 | Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44589141810) | Queued continuation; parent saved eight new passing branch records, still three of four cases recorded |
 | François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44589146957) | Queued continuation; parent saved twenty new passing branch records, still seven of eight cases recorded |
 | Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44589152244) | Validation queued; verified parent checkpoints each added 510–516 samples but remain incomplete |
-| Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Two jobs running; thirty terminal artifacts, fourteen audited and sixteen awaiting audit |
-| Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Two partitions verified: ten branches, forty arrays; twelve further artifacts await audit; eighteen jobs queued |
+| Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | All 32 jobs terminal and all original ZIPs audited: 794 complete arrays, 180 complete branches; all partitions need continuation |
+| Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Fourteen partitions verified: seventy branches, 280 arrays; eighteen partitions still required |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Ten terminal artifacts await audit; five jobs running, seventeen queued |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Seven partitions verified: sixty branches, 240 arrays; thirteen further artifacts await audit; one job running, eleven queued |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Three partitions verified: 81 branches, 324 arrays; five further artifacts await audit; three jobs running, 245 queued |
@@ -53,6 +53,11 @@ diagnostics, 0.03387 for its later controls, and 0.04998 for Ueda, against the
 unchanged acceptance threshold of 1. These results add no recovered cases or
 whole-model passes; every unfinished partition remains required.
 
+The [later Ueda audit](docs/evidence/ueda-continuation-20261119-evening.json) covers
+partitions 0 through 13: seventy branches, 280 arrays and 420 passing comparisons.
+The maximum scaled error is 0.05435. Combined with 170 preserved branches, this
+provides 240 of 323 required branches; 83 and the full case replay remain.
+
 The earlier [Fuss checkpoint audit](docs/evidence/fuss-checkpoint-progress-20261119.json)
 verifies all fourteen available original ZIPs (3,001,628,740 bytes), extracted
 files and 359 completed trajectories. All 253 previously completed arrays in
@@ -60,10 +65,11 @@ these same partitions remain byte-identical, with 106 newly completed arrays.
 Their 82 complete branches pass all 492 pairwise comparisons. Three producers
 recorded clean checkpoint stops; eleven artifacts retain a running status after
 their jobs ended. In that audit, all fourteen inventories remained incomplete,
-and eighteen partitions stayed pending. Sixteen further terminal artifacts now
-await verification, while two jobs remain running. These partial counts
-do not replace the earlier all-32 checkpoint audit or recover any of the
-eighteen selected cases.
+and eighteen partitions stayed pending. The [subsequent all-32 audit](docs/evidence/fuss-complete-checkpoint-20261119.json)
+now verifies 794 complete arrays, all 528 parent arrays unchanged, and 266
+additions. Its 180 complete branches pass all 1,080 pairwise comparisons. All
+32 inventories remain incomplete and require continuation; no selected case is
+recovered. The attempted next dispatch failed before connecting and is not counted.
 
 The [new terminal-checkpoint audit](docs/evidence/cloud-progress-20261119-evening.json)
 replays all recorded cases and checks all 95 Tyson and 324 François branch
@@ -86,10 +92,17 @@ The [full Marhl precision runner](https://github.com/m9h/GRN_ODE/blob/a09ed95826
 implements the complete 1,520-task inventory and per-branch six-pair full-array
 audits. Its local validation passes 124 tests; four Heyoka-dependent checks
 await [Linux CI](https://github.com/m9h/GRN_ODE/actions/runs/44590810828).
-Cloud computation, authenticated checkpoint transfer and collection, and the
-full twelve-case replay remain to be connected. The preceding mpmath checkpoint
-adapter's corrected Linux validation has passed. No new long-horizon Marhl
-result is claimed.
+The [cloud producer and authenticated checkpoint transfer](https://github.com/m9h/GRN_ODE/tree/a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022)
+now pass the [complete Linux validation gate](https://github.com/m9h/GRN_ODE/actions/runs/44593959589):
+234 tests, no failures or skips. Batches [0](https://github.com/m9h/GRN_ODE/actions/runs/44608641889),
+[1](https://github.com/m9h/GRN_ODE/actions/runs/44608843472),
+[2](https://github.com/m9h/GRN_ODE/actions/runs/44625023792) and
+[3](https://github.com/m9h/GRN_ODE/actions/runs/44625203552) are confirmed queued.
+Batches 4 and 5 remain required and are not counted as dispatched. The offline
+collector and full twelve-case replay pass 47 local tests at local revision
+`f95c155a968e15c30bdd39d6ac843f7b961c2930`; publication remains pending because
+Git connections fail and the connector lacks Git write permission. The complete
+1,520-task scope is unchanged. No long-horizon Marhl result is claimed.
 
 A read-only [Tyson checkpoint audit](docs/evidence/tyson-checkpoint-progress-20261118.json)
 compares the last two terminal partition-14 runs,
