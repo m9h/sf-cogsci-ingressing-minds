@@ -113,5 +113,30 @@
   "local_worker_signals_sent": [],
   "continuation_run": 44448366489,
   "validation_gate_job": 135305954513,
-  "validation_status": "queued"
+  "validation_status": "completed",
+  "validation_conclusion": "success",
+  "continuation_jobs": [
+    {
+      "index": 8,
+      "job_id": 135313739823,
+      "status": "queued"
+    },
+    {
+      "index": 9,
+      "job_id": 135313739842,
+      "status": "queued"
+    },
+    {
+      "index": 11,
+      "job_id": 135313739799,
+      "status": "queued"
+    },
+    {
+      "index": 16,
+      "job_id": 135313739812,
+      "status": "queued"
+    }
+  ],
+  "continuation_job_snapshot_window_utc": "2026-11-19 03:34\u201303:38",
+  "continuation_jobs_snapshot_sha256": "96f3d90ec17e30201846aaf18f41ebef406c0744fdd47b296e846de3f4e897b9"
 }

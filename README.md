@@ -121,7 +121,11 @@ verifies 528 completed arrays, including all 274 earlier arrays unchanged.
 Its 112 complete branches pass all 672 pairwise comparisons, including the
 untreated baseline. All partitions still need work and
 [continue from those checkpoints](https://github.com/m9h/GRN_ODE/actions/runs/44385665111).
-No additional Fuss case recovery is claimed.
+The [first fourteen audited continuation checkpoints](docs/evidence/fuss-checkpoint-progress-20261119.json)
+contain 359 complete arrays: all 253 parent arrays in those same partitions
+remain byte-identical, and 106 are newly completed. Their 82 completed branches
+pass all 492 comparisons. These are partial-run counts; the other eighteen
+partitions remain required. No additional Fuss case recovery is claimed.
 The [complete Ciliberto case audit](https://github.com/m9h/GRN_ODE/blob/8ab39fd55fe4252e7cc87d41e66b33f391b4dfcf/python/results/catalog-breaking-ciliberto-case-recovery-20261118/COMPLETED_AUDIT.md)
 now recovers both selected cases from all 215 branches and 860 saved trajectories,
 including the untreated baseline. The [complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-cases-20261118)
@@ -172,12 +176,15 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **19 November 2026, 03:00–03:05 UTC**: nine local numerical workers
+Execution checked **19 November 2026, 03:34–03:38 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
-running after Linux validation passed: 170 branches have complete verified evidence,
-and all 153 remaining branches are assigned to 32 fixed partitions. No Ueda
+running after Linux validation passed. Its first completed partition passes the
+independent audit: five branches, twenty complete trajectories and all thirty
+pairwise comparisons. Together with the 170 previously preserved branches,
+175 of 323 now have complete evidence; 148 remain. All 153 continuation branches
+stay assigned to their original 32 fixed partitions. No Ueda
 case recovery is claimed until the complete 323-branch audit passes.
 The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
 explains fixed job selection, artifact checks and the complete-case audit.
@@ -192,6 +199,15 @@ inventories, Vilar precision diagnostics and Fuss case controls. The four earlie
 local collection and audit watchers have finished. New Tyson, François and Vilar
 continuations are queued from verified terminal checkpoints; all nine local
 numerical workers remain stopped.
+
+The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)
+binds all 864 computation jobs across the Ueda, Ciliberto and Rohwer stages to
+their original plans, attempts and source revisions. Three completed Ciliberto
+diagnostic partitions pass independent checks of their original ZIPs, all 100
+complete trajectories and all 150 pairwise comparisons across 25 branches.
+These branches previously lacked complete solver output. The remaining 235
+diagnostics, 6,859 later controls and full case replay are still required;
+no additional case or whole-model recovery is claimed.
 
 Rohwer's phosphotransferase model (network 35, BioModel 38) now has a fixed
 [cloud diagnostic run](https://github.com/m9h/GRN_ODE/actions/runs/44401097371)
@@ -219,12 +235,13 @@ The [two-batch collector](https://github.com/m9h/GRN_ODE/blob/b1643064668f559024
 checks passing. It requires all 512 partitions, preserves original ZIPs and API
 snapshots, rechecks full arrays, and retains failures and unfinished work.
 The earlier queued-gate checks correctly prevented premature binding; Linux
-collector validation has now passed.
+collector validation has now passed, and all 512 computation jobs are bound.
 The [complete Rohwer case auditor](https://github.com/m9h/GRN_ODE/blob/602c34a0db23b2a75ee5a1a9aefe6caf8524d992/python/results/catalog-breaking-rohwer-full-case-audit-20261118/README.md) is also implemented: it requires
 all 11,674 branch outcomes before replaying all 123 cases through the unchanged
 rules. All 235 targeted tests pass. The real input scope verifies, while an audit
 with unavailable cloud evidence correctly leaves all branches pending and recovers
-zero cases. Actual complete-case results remain outstanding.
+zero cases. Linux validation has also passed. Actual complete-case results
+remain outstanding.
 
 Two supporting forks make the numerical work inspectable:
 

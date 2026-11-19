@@ -91,10 +91,12 @@
   "numerical_integrations_performed": 0,
   "case_recovery_claimed": false,
   "full_model_coverage_claimed": false,
-  "linux_validation": "pending",
+  "linux_validation": "passed",
   "synthetic_tests_are_not_numerical_convergence_evidence": true,
   "audit_revision": "602c34a0db23b2a75ee5a1a9aefe6caf8524d992",
   "linux_validation_run": 44422500036,
   "linux_validation_job": 135218794946,
-  "linux_validation_status": "queued"
+  "linux_validation_status": "completed",
+  "linux_validation_conclusion": "success",
+  "linux_validation_completed_at": "2026-11-19T03:18:35Z"
 }

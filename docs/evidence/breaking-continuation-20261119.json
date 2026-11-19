@@ -61,5 +61,27 @@
   "continuation_runs": {
     "5": 44448634325,
     "25": 44448645976
-  }
+  },
+  "combined_audit_plan_bindings": [
+    {
+      "network": 5,
+      "parent_plan_sha256": "4ec0400dc099c75670afccc2dff4e95fbe0da4484159aaf9a354d2659090eaaa",
+      "plan_sha256": "f2ed9eb1c8a52c18d43e4135ce3611db01d7b77d3c8ed8e8d350eb84ea0c5027",
+      "changed_partition": 14,
+      "all_other_15_partitions_unchanged": true,
+      "new_run": 44448634325,
+      "new_job": 135306842177,
+      "expected_model_cases": 58
+    },
+    {
+      "network": 25,
+      "parent_plan_sha256": "991e9a85ef0666d3a115ca93d394146a1625fe4a99b044a0641e8298dee83bf5",
+      "plan_sha256": "235e58b2c589c6a3ff5de36d605f68facc405f18792e6b6910ff7cb7d1da4fb3",
+      "changed_partition": 15,
+      "all_other_15_partitions_unchanged": true,
+      "new_run": 44448645976,
+      "new_job": 135306877720,
+      "expected_model_cases": 118
+    }
+  ]
 }

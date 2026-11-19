@@ -21,7 +21,7 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-19 at 03:00–03:05 UTC** against individual GitHub jobs and local
+Checked **2026-11-19 at 03:34–03:38 UTC** against individual GitHub jobs and local
 process states. The three new continuations below were dispatched once, after
 verifying their terminal parent artifacts. No local numerical worker was resumed.
 
@@ -29,13 +29,37 @@ verifying their terminal parent artifacts. No local numerical worker was resumed
 |---|---|---|
 | Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44448634325) | Continuation queued; parent has three of four cases recorded, two passing |
 | François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44448645976) | Continuation queued; parent has seven of eight cases recorded, one passing |
-| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44448366489) | New validation gate queued; all four parent checkpoints advanced and remain incomplete |
-| Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Five jobs running, thirteen queued, fourteen terminal failures awaiting checkpoint analysis; validation passed |
-| Ueda complete case controls | [153 remaining branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Validation passed; three jobs running, twenty-nine queued |
+| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44448366489) | New validation gate passed; four computations queued; all parent checkpoints remain incomplete |
+| Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Seven jobs running, eleven queued; fourteen terminal checkpoints verified, all still incomplete |
+| Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | First partition independently verified: five branches, twenty arrays; three jobs running, twenty-eight queued |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Validation passed; one job running, thirty-one queued |
-| Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Validation passed; three jobs succeeded pending array audits, one running, twenty-eight queued |
-| Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Validation passed; two jobs running, 254 queued |
-| Rohwer complete later controls | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both validation gates passed; one computation running and 511 queued across both batches |
+| Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Three partitions independently verified: 25 branches, 100 arrays; two jobs running, twenty-seven queued |
+| Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Validation passed; three jobs running, 253 queued |
+| Rohwer complete later controls | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both validation gates passed; two computations running and 510 queued across both batches |
+
+All **864 computation jobs** across the five Ueda, Ciliberto and Rohwer
+selections are now bound to their fixed plans, actual job IDs, attempts and
+source revisions. The [collection evidence](docs/evidence/cloud-collection-20261119.json)
+retains those identities, API snapshot hashes and the first array-audit results.
+Ciliberto partitions 3, 4 and 6 confirm all 25 selected branches: all 100
+trajectories and 150 pairwise comparisons pass over the full grids and twenty
+observables. Ueda partition 0 confirms five branches, twenty trajectories and
+thirty comparisons over thirteen observables. Original ZIPs, every extracted
+byte, reset protocols and complete arrays verify without collection errors.
+The largest scaled errors are 0.04587 and 0.04468, respectively, against the
+unchanged acceptance threshold of 1. These results add no recovered cases or
+whole-model passes; every unfinished partition remains required.
+
+The [Fuss checkpoint audit](docs/evidence/fuss-checkpoint-progress-20261119.json)
+verifies all fourteen available original ZIPs (3,001,628,740 bytes), extracted
+files and 359 completed trajectories. All 253 previously completed arrays in
+these same partitions remain byte-identical, with 106 newly completed arrays.
+Their 82 complete branches pass all 492 pairwise comparisons. Three producers
+recorded clean checkpoint stops; eleven artifacts retain a running status after
+their jobs ended. All fourteen inventories remain incomplete, and the other
+eighteen partitions stay pending in the fixed selection. These partial counts
+do not replace the earlier all-32 checkpoint audit or recover any of the
+eighteen selected cases.
 
 The [new terminal-checkpoint audit](docs/evidence/breaking-continuation-20261119.json)
 replays all recorded cases and checks all 87 Tyson and 304 François branch
@@ -69,9 +93,10 @@ Ueda's 323-trajectory case-control computation remains stopped locally. Its
 [new cloud plan](https://github.com/m9h/GRN_ODE/blob/b585ee97de7000c2ec1afe5454216629601eee87/python/results/catalog-breaking-ueda-continuation-20261118/README.md)
 preserves 628 available arrays, independently verifies 156 complete branches,
 and restores 24 published diagnostic branches (ten overlap). All 153 branches
-without complete evidence remain selected for computation. Local validation
-passes 77 targeted tests; the Linux gate has passed. Its four unresolved cases
-remain outstanding.
+initially lacking complete evidence remain in the fixed selection. Local validation
+passes 77 targeted tests; the Linux gate has passed. The first independently
+verified cloud partition brings complete branch evidence to 175/323, with 148
+still required. Its four unresolved cases remain outstanding.
 The separate [offline collector](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
 requires all 32 fixed jobs and replays the unchanged full case audit only after
 every selected attempt finishes. Forty-eight targeted local tests pass, including
@@ -145,8 +170,9 @@ All 118 targeted tests pass, including 53 new tests that also pass with optional
 JAX imports blocked. The released complete inputs and actual numerical runtime
 validate. Both cloud batches have passed their Linux gates. The
 [dispatch and local validation record](docs/evidence/rohwer-later-control-dispatch-20261118.json)
-records exact run IDs and source. Compute job IDs will be bound only after all
-jobs exist. The independent 123-case replay still needs all 11,674 outcomes;
+records exact run IDs and source. All 512 compute job IDs are now bound in the
+[collection evidence](docs/evidence/cloud-collection-20261119.json).
+The independent 123-case replay still needs all 11,674 outcomes;
 branch counts cannot establish recovered cases or change whole-model coverage.
 
 The [two-batch collection guide](https://github.com/m9h/GRN_ODE/blob/b1643064668f559024c11acc84c196e06b7d2526/python/results/catalog-breaking-rohwer-later-controls-20261118/COLLECTION.md) now documents exact
@@ -174,8 +200,8 @@ pass with optional JAX imports blocked. The real input/model/runtime check
 verifies the complete scope. With cloud sources explicitly unavailable, the audit
 correctly leaves all 11,674 branches pending and recovers zero cases. See the
 [validation evidence](docs/evidence/rohwer-full-case-audit-20261118.json).
-Linux validation and actual complete-case results remain pending; the original
-137/260 whole-model result is unchanged.
+Linux validation has passed. Actual complete-case results remain pending; the
+original 137/260 whole-model result is unchanged.
 
 Ciliberto's [complete failure inventory](https://github.com/m9h/GRN_ODE/blob/de23184d6149473a6ce4533f72ea8d32cc337085/python/results/catalog-breaking-ciliberto-full-inventory-20261118/README.md)
 now retains all 74 failed cases and all 7,334 potential control branches. Four
@@ -191,7 +217,9 @@ queues every remaining original failure across 32 fixed partitions, requesting
 [Linux gate](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) has passed.
 All 85 targeted local tests, the complete real input/runtime check and workflow
 lint pass. Ten originally failed branches are excluded only because their full
-arrays already passed the published audit. Failures, mismatches and timeouts
+arrays already passed the published audit. The first three diagnostic partitions
+now add 25 independently confirmed branches and 100 verified arrays; 235
+diagnostic branches remain. Failures, mismatches and timeouts
 are retained. The later controls, artifact assembly and full-array case audit
 remain required; no case or whole-model count has changed.
 
@@ -234,7 +262,8 @@ API snapshots, original ZIPs, verified full arrays, numerical failures and
 unverified interrupted checkpoints. All 39 collector tests and 117 combined
 targeted tests pass locally. The real plan/model/runtime check and workflow lint
 also pass; [Linux validation](https://github.com/m9h/GRN_ODE/actions/runs/44414949767)
-has passed. Full job binding and artifact collection are now required.
+has passed. All 256 computation jobs are now bound; artifact collection remains
+outstanding.
 Full-case assembly still requires all 7,334 branches and replay of all
 74 cases; this collector does not change scientific coverage.
 
