@@ -197,25 +197,29 @@ requires no new ODE integrations; the four unresolved cases remain outstanding.
 The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
 inventories, Vilar precision diagnostics and Fuss case controls. The four earlier
 local collection and audit watchers have finished. New Tyson, François and Vilar
-continuations are running from verified terminal checkpoints; all nine local
+continuations are queued from verified terminal checkpoints; all nine local
 numerical workers remain stopped.
 
 The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)
 binds all 864 computation jobs across the Ueda, Ciliberto and Rohwer stages to
-their original plans, attempts and source revisions. The [latest Ciliberto audit](docs/evidence/ciliberto-diagnostic-progress-20261119.json)
-verifies five diagnostic partitions, all 168 complete trajectories and all 252
-pairwise comparisons across 42 branches. Forty previously had incomplete solver
-output and two had completed disagreements. The remaining 218
-diagnostics, 6,859 later controls and full case replay are still required;
-no additional case or whole-model recovery is claimed.
+their original plans, attempts and source revisions. The [latest array audits](docs/evidence/cloud-progress-20261119-evening.json)
+verify 60 Ciliberto diagnostic branches (240 arrays), its first 81 later controls
+(324 arrays), and ten Ueda continuation branches (40 arrays). All 906 pairwise
+comparisons pass over the complete original grids. The remaining 200 Ciliberto
+diagnostics, 6,778 later controls, 143 Ueda continuation branches and full case
+replay are still required. No additional case or whole-model recovery is claimed.
 
 Marhl now has an [exact mpmath checkpoint adapter](https://github.com/m9h/GRN_ODE/blob/8888e2bd03bba4f9010a288e9b355c2c7c2316c1/python/results/catalog-breaking-marhl-checkpoints-20261119/README.md)
 for its long breaking protocols. It preserves internal precision across stops
 and retains the original grids and resets for all 380 required trajectories.
-All 122 targeted tests pass, including a clean checkout. Corrected Linux
-validation is queued after fixing missing historical source revisions in CI.
-The full two-implementation precision computation and complete case audit remain
-outstanding; checkpoint tests do not establish long-horizon convergence.
+All 122 targeted tests pass, including a clean checkout, and corrected Linux
+validation has passed. The [full Marhl precision runner](https://github.com/m9h/GRN_ODE/blob/a09ed95826191b3b652a22e432b1e85212884e99/python/results/catalog-breaking-marhl-full-precision-20261119/README.md)
+now fixes all 1,520 tasks: 380 original trajectories in two implementations at
+128 and 192 bits. Its independent auditor checks every saved sample and all six
+pairwise comparisons. Local validation passes 124 tests, with four
+Heyoka-dependent checks reserved for queued Linux CI. Full cloud execution,
+authenticated checkpoint transfer and complete case replay remain outstanding;
+these implementation tests do not establish long-horizon convergence.
 
 Rohwer's phosphotransferase model (network 35, BioModel 38) now has a fixed
 [cloud diagnostic run](https://github.com/m9h/GRN_ODE/actions/runs/44401097371)
