@@ -21,32 +21,36 @@ evidence history.
 
 ## Current execution
 
-Checked **2026-11-19 at 03:34–03:38 UTC** against individual GitHub jobs and local
+Checked **2026-11-19 at 04:39–04:40 UTC** against individual GitHub jobs and local
 process states. The three new continuations below were dispatched once, after
 verifying their terminal parent artifacts. No local numerical worker was resumed.
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44448634325) | Continuation queued; parent has three of four cases recorded, two passing |
-| François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44448645976) | Continuation queued; parent has seven of eight cases recorded, one passing |
-| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44448366489) | New validation gate passed; four computations queued; all parent checkpoints remain incomplete |
+| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44448634325) | Continuation running; parent has three of four cases recorded, two passing |
+| François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44448645976) | Continuation running; parent has seven of eight cases recorded, one passing |
+| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44448366489) | Validation passed; two computations running, two queued; parent checkpoints remain incomplete |
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | Seven jobs running, eleven queued; fourteen terminal checkpoints verified, all still incomplete |
-| Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | First partition independently verified: five branches, twenty arrays; three jobs running, twenty-eight queued |
+| Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | First partition verified: five branches, twenty arrays; second artifact awaits audit; three jobs running, twenty-seven queued |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Validation passed; one job running, thirty-one queued |
-| Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Three partitions independently verified: 25 branches, 100 arrays; two jobs running, twenty-seven queued |
-| Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Validation passed; three jobs running, 253 queued |
+| Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Five partitions verified: 42 branches, 168 arrays; two more artifacts await audit; one job running, twenty-four queued |
+| Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Three artifacts await array audits; two jobs running, 251 queued |
 | Rohwer complete later controls | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both validation gates passed; two computations running and 510 queued across both batches |
 
 All **864 computation jobs** across the five Ueda, Ciliberto and Rohwer
 selections are now bound to their fixed plans, actual job IDs, attempts and
 source revisions. The [collection evidence](docs/evidence/cloud-collection-20261119.json)
 retains those identities, API snapshot hashes and the first array-audit results.
-Ciliberto partitions 3, 4 and 6 confirm all 25 selected branches: all 100
-trajectories and 150 pairwise comparisons pass over the full grids and twenty
+Ciliberto partitions 2, 3, 4, 6 and 7 now confirm all 42 selected branches: all
+168 trajectories and 252 pairwise comparisons pass over the full grids and twenty
 observables. Ueda partition 0 confirms five branches, twenty trajectories and
 thirty comparisons over thirteen observables. Original ZIPs, every extracted
 byte, reset protocols and complete arrays verify without collection errors.
-The largest scaled errors are 0.04587 and 0.04468, respectively, against the
+The [latest Ciliberto evidence](docs/evidence/ciliberto-diagnostic-progress-20261119.json)
+adds seventeen branches and preserves all twenty-five earlier audits unchanged.
+Forty of the 42 branches originally lacked complete output, while two retained
+completed solver disagreements. The largest scaled errors are now 0.73991 and
+0.04468, respectively, against the
 unchanged acceptance threshold of 1. These results add no recovered cases or
 whole-model passes; every unfinished partition remains required.
 
@@ -127,6 +131,20 @@ blocked. Its [Linux validation](https://github.com/m9h/GRN_ODE/actions/runs/4442
 has passed. Extending the two independent high-precision implementations to
 these full horizons is the next numerical step; this change starts no new
 integrations and leaves the original result at **26/38 validated cases**.
+
+The [Marhl checkpoint adapter](https://github.com/m9h/GRN_ODE/blob/8888e2bd03bba4f9010a288e9b355c2c7c2316c1/python/results/catalog-breaking-marhl-checkpoints-20261119/README.md)
+now preserves exact internal mpmath state across interrupted long protocols.
+Deterministic integration chunks retain every physical reset and original
+observation. The [verification record](docs/evidence/marhl-checkpoints-20261119.json)
+records 55 new tests and 122 combined tests passing, including a clean shallow
+checkout after fetching all three pinned source revisions. Tests cover both
+precisions, state below binary64 resolution, repeated restarts, real reset
+dynamics, published short-horizon observations and all 380 protocol grids.
+The first Linux run passed the checkpoint tests but failed provenance checks
+because its shallow checkout lacked historical commits. That workflow is fixed;
+[corrected validation](https://github.com/m9h/GRN_ODE/actions/runs/44460158089) is queued.
+The full Heyoka/mpmath breaking producer, complete arrays and twelve-case replay
+remain required. No long-horizon convergence or new recovered case is claimed.
 
 The new [Rohwer source audit and fixed selection](https://github.com/m9h/GRN_ODE/blob/40fe82344d8dacb2d79ebdc4087ee52beb90a091/python/results/catalog-breaking-rohwer-diagnostics-20261118/README.md)
 reproduce the original 137/260 whole-model result from all sixteen partitions.
@@ -217,8 +235,8 @@ queues every remaining original failure across 32 fixed partitions, requesting
 [Linux gate](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) has passed.
 All 85 targeted local tests, the complete real input/runtime check and workflow
 lint pass. Ten originally failed branches are excluded only because their full
-arrays already passed the published audit. The first three diagnostic partitions
-now add 25 independently confirmed branches and 100 verified arrays; 235
+arrays already passed the published audit. The first five diagnostic partitions
+now add 42 independently confirmed branches and 168 verified arrays; 218
 diagnostic branches remain. Failures, mismatches and timeouts
 are retained. The later controls, artifact assembly and full-array case audit
 remain required; no case or whole-model count has changed.
@@ -343,6 +361,7 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 | [GRN_ODE · kinetics-resume-case-selection](https://github.com/m9h/GRN_ODE/tree/kinetics-resume-case-selection) | Same upstream | [cae38e9](https://github.com/m9h/GRN_ODE/tree/cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0) | Vilar checkpoint repair and targeted Tyson continuations; full-model audits now watch fixed selections across runs, with 46 tests and a real four-artifact reproduction; model coverage remains unchanged |
 | [GRN_ODE · kinetics-marhl-breaking](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-breaking) | Same upstream | [079e35d](https://github.com/m9h/GRN_ODE/tree/079e35d8bc0795f427b6cb5b8514f35830f01909) | Published all 120 full-horizon Radau/RoadRunner trajectories for 30 failed records; 3 records pass (2 distinct specifications), 27 retain mismatches; four byte-identical reproduced audits, no complete-case recovery |
 | [GRN_ODE · kinetics-marhl-full-controls](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-full-controls) | Same upstream | [7dd0bee](https://github.com/m9h/GRN_ODE/tree/7dd0beeac23571795e277770623f13b70f3766a7) | Complete 380-trajectory scope for all twelve failed cases, including 88 unreached controls and the full untreated baseline; original audit reproduced; 66 targeted tests pass; no new numerical result |
+| [GRN_ODE · kinetics-marhl-breaking-precision](https://github.com/m9h/GRN_ODE/tree/kinetics-marhl-breaking-precision) | Same upstream | [8888e2b](https://github.com/m9h/GRN_ODE/tree/8888e2bd03bba4f9010a288e9b355c2c7c2316c1) | Exact mpmath checkpoints for long breaking protocols; 55 new and 122 combined tests pass; all 380 grids retained; corrected Linux validation queued; full precision computation still required |
 | [sbmltoodejax · fix-continuous-assignment-rules](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules) | [flowersteam/sbmltoodejax](https://github.com/flowersteam/sbmltoodejax) | [af646fc](https://github.com/m9h/sbmltoodejax/tree/af646fcf4142734e8836be692478325cfec2c49b) | [FLOWERS upstream PR #9](https://github.com/flowersteam/sbmltoodejax/pull/9), open and unmerged; [fork draft](https://github.com/m9h/sbmltoodejax/pull/1) |
 | [jaxkineticmodel · modern-jax-validation](https://github.com/m9h/jaxkineticmodel/tree/modern-jax-validation) | [AbeelLab/jaxkineticmodel](https://github.com/AbeelLab/jaxkineticmodel) | [0c16f6e](https://github.com/m9h/jaxkineticmodel/tree/0c16f6ea145862ea0a3d9b1ef4368745e18028a5) | [Draft PR in our fork](https://github.com/m9h/jaxkineticmodel/pull/1) |
 

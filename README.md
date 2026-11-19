@@ -176,7 +176,7 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **19 November 2026, 03:34–03:38 UTC**: nine local numerical workers
+Execution checked **19 November 2026, 04:39–04:40 UTC**: nine local numerical workers
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
@@ -197,17 +197,25 @@ requires no new ODE integrations; the four unresolved cases remain outstanding.
 The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
 inventories, Vilar precision diagnostics and Fuss case controls. The four earlier
 local collection and audit watchers have finished. New Tyson, François and Vilar
-continuations are queued from verified terminal checkpoints; all nine local
+continuations are running from verified terminal checkpoints; all nine local
 numerical workers remain stopped.
 
 The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)
 binds all 864 computation jobs across the Ueda, Ciliberto and Rohwer stages to
-their original plans, attempts and source revisions. Three completed Ciliberto
-diagnostic partitions pass independent checks of their original ZIPs, all 100
-complete trajectories and all 150 pairwise comparisons across 25 branches.
-These branches previously lacked complete solver output. The remaining 235
+their original plans, attempts and source revisions. The [latest Ciliberto audit](docs/evidence/ciliberto-diagnostic-progress-20261119.json)
+verifies five diagnostic partitions, all 168 complete trajectories and all 252
+pairwise comparisons across 42 branches. Forty previously had incomplete solver
+output and two had completed disagreements. The remaining 218
 diagnostics, 6,859 later controls and full case replay are still required;
 no additional case or whole-model recovery is claimed.
+
+Marhl now has an [exact mpmath checkpoint adapter](https://github.com/m9h/GRN_ODE/blob/8888e2bd03bba4f9010a288e9b355c2c7c2316c1/python/results/catalog-breaking-marhl-checkpoints-20261119/README.md)
+for its long breaking protocols. It preserves internal precision across stops
+and retains the original grids and resets for all 380 required trajectories.
+All 122 targeted tests pass, including a clean checkout. Corrected Linux
+validation is queued after fixing missing historical source revisions in CI.
+The full two-implementation precision computation and complete case audit remain
+outstanding; checkpoint tests do not establish long-horizon convergence.
 
 Rohwer's phosphotransferase model (network 35, BioModel 38) now has a fixed
 [cloud diagnostic run](https://github.com/m9h/GRN_ODE/actions/runs/44401097371)
