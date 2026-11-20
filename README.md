@@ -71,7 +71,22 @@ The five models are **MAPK protein-signaling models**, despite the historical
 The [BioModels guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/models/README.md)
 explains their biology, equations, conserved pools, source papers and provenance.
 
-Our active goal is to extend the kinetics and memory computations to all **35
+**Completion status, 20 November 2026 UTC:** the basic all-35-model simulations
+are finished; the full memory-validation goal remains open.
+
+| Validation stage | Verified result | Remaining work |
+|---|---|---|
+| Baseline kinetics | 35/35 models pass independent comparisons | Complete |
+| Single-input retention | 538/538 stimulation cases pass numerical comparisons | Below-resolution response labels remain unresolved |
+| Repeated stimulation | 538/538 cases pass on macOS and Linux | Complete numerical comparison |
+| Paired stimulation | 4,205/4,208 cases pass | Three Vilar cases unresolved |
+| Conditional breaking | 34/35 initial inventories complete; 26/35 whole-model audits pass | Finish Tyson's inventory and resolve or document remaining validation failures |
+
+These counts measure numerical validation, not proof that every network learns.
+Completed jobs, software tests and partially verified trajectories do not add
+whole-model passes. The evidence links and outstanding work follow below.
+
+Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics
 now pass independent comparisons for all 35: RoadRunner versus COPASI for 34,
 and two delay-equation solvers for the delayed circadian-clock model. See the
@@ -99,8 +114,9 @@ New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
 with failures retained. **Tyson is the only unfinished initial inventory**;
 partition 15 has now completed all four cases, leaving only
-[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44448634325)
-queued to continue from three recorded cases out of four (two passing). The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
+[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44589141810).
+Its latest five-hour continuation ended incomplete; the new checkpoint still
+needs collection and audit. The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
 preserves 64 original Linux artifacts and three complete local model reports;
 fresh extractions reproduce all five package audits. Four passing models have
 no eligible breaking cases, so this status is not evidence of learning.
@@ -194,11 +210,11 @@ A fresh download verifies all 628 preserved arrays and reproduces the complete
 preparation audit, import restoration proof and continuation plan byte for byte.
 Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee32f99d3feefed38e6d845b01c/python/results/catalog-breaking-ueda-continuation-20261118/RELEASE.md)
 requires no new ODE integrations; the four unresolved cases remain outstanding.
-The [current cloud runs](FORKS.md#current-execution) continue Tyson and François
-inventories, Vilar precision diagnostics and Fuss case controls. The four earlier
-local collection and audit watchers have finished. New Tyson, François and Vilar
-continuations are queued from verified terminal checkpoints; all nine local
-numerical workers remain stopped.
+The [current cloud runs](FORKS.md#current-execution) include Vilar precision
+diagnostics and Fuss case controls. The latest Tyson and François jobs have
+ended; their new checkpoints await collection and audit. The four earlier
+local collection and audit watchers have finished. No local numerical worker
+has been resumed.
 
 The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)
 binds all 864 computation jobs across the Ueda, Ciliberto and Rohwer stages to
@@ -215,7 +231,9 @@ The [complete Fuss continuation checkpoint audit](docs/evidence/fuss-complete-ch
 now verifies all 32 original ZIPs, totalling 6.61 GB, and 794 complete arrays.
 All 528 parent arrays remain byte-identical, with 266 additional arrays. Its
 180 complete branches pass all 1,080 comparisons. Every partition still needs
-continuation; the full 1,309-branch, eighteen-case scope remains required.
+continuation; the [next complete continuation](https://github.com/m9h/GRN_ODE/actions/runs/44657363724)
+is queued from these verified parent checkpoints. The full 1,309-branch,
+eighteen-case scope remains required.
 
 Marhl now has an [exact mpmath checkpoint adapter](https://github.com/m9h/GRN_ODE/blob/8888e2bd03bba4f9010a288e9b355c2c7c2316c1/python/results/catalog-breaking-marhl-checkpoints-20261119/README.md)
 for its long breaking protocols. It preserves internal precision across stops
@@ -228,11 +246,11 @@ pairwise comparisons. Local validation passes 124 tests, with four
 Heyoka-dependent checks initially reserved for Linux CI. The [published cloud
 runner](https://github.com/m9h/GRN_ODE/blob/a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022/python/results/catalog-breaking-marhl-full-precision-20261119/README.md)
 adds authenticated checkpoint transfer, and its [full-precision Linux gate](https://github.com/m9h/GRN_ODE/actions/runs/44593959589)
-now passes all 234 tests without skips. Four of the six full batches are queued;
-the final two submissions are pending connection recovery. The offline collector
-and twelve-case replay are implemented locally with 47 passing tests; their
-publication is also pending connection recovery. No full-precision scientific
-result is claimed. A separate inherited workflow reports source-fingerprint
+now passes all 234 tests without skips. [All six original batches are submitted](docs/evidence/marhl-complete-execution-20261120.json),
+covering the full 1,520 tasks. The [published collector and twelve-case auditor](https://github.com/m9h/GRN_ODE/blob/f95c155a968e15c30bdd39d6ac843f7b961c2930/python/results/catalog-breaking-marhl-full-precision-20261119/COLLECTION.md)
+also pass all 47 Linux tests without skips. Full scientific computations,
+artifact audits and case outcomes remain outstanding; implementation tests do
+not count as full-precision scientific results. A separate inherited workflow reports source-fingerprint
 errors when it applies older published-evidence checks to the new Taylor adapter;
 that evidence must continue to use its original frozen source.
 

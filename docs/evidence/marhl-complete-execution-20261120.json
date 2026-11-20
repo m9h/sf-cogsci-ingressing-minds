@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-11-20T02:00:06.625325+00:00",
+  "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+  "collector_revision": "f95c155a968e15c30bdd39d6ac843f7b961c2930",
+  "required_tasks": 1520,
+  "required_branches": 380,
+  "selected_cases": 12,
+  "batch_counts": [
+    256,
+    256,
+    256,
+    256,
+    256,
+    240
+  ],
+  "plan_sha256": "d5589646d0f6393eaf7a76635276e6ac585d949cc2718e52c1ccc7e3df83abb3",
+  "batches": [
+    {
+      "batch": 0,
+      "run_id": 44608641889,
+      "run_attempt": 1
+    },
+    {
+      "batch": 1,
+      "run_id": 44608843472,
+      "run_attempt": 1
+    },
+    {
+      "batch": 2,
+      "run_id": 44625023792,
+      "run_attempt": 1
+    },
+    {
+      "batch": 3,
+      "run_id": 44625203552,
+      "run_attempt": 1
+    },
+    {
+      "batch": 4,
+      "run_id": 44657098734,
+      "run_attempt": 1
+    },
+    {
+      "batch": 5,
+      "run_id": 44657261295,
+      "run_attempt": 1
+    }
+  ],
+  "producer_linux_validation": {
+    "run_id": 44593959589,
+    "job_id": 135807133051,
+    "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+    "conclusion": "success",
+    "artifact_id": 14569844930,
+    "archive_bytes": 3826,
+    "archive_sha256": "9edd727b995536228651c46f6de5f96345e3f5fa0fc8871df7a60a9845b8e134",
+    "junit_sha256": "f0d60c512848667923d6821e9689d99eb097b64a9075578aa34b73ab0de2f646",
+    "tests": 234,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 207.185
+  },
+  "collector_linux_validation": {
+    "run_id": 44636509380,
+    "job_id": 135956294778,
+    "head_sha": "f95c155a968e15c30bdd39d6ac843f7b961c2930",
+    "conclusion": "success",
+    "artifact_id": 14591282468,
+    "archive_bytes": 1307,
+    "archive_sha256": "605416bbaefc3345d85b7e8751bc18135b060af99cc28b3b0aca015ea0410953",
+    "junit_sha256": "af5698729de7087a2f56a35217eb3d16f1cfcec7b45cfe787eef6f2fa9dbb7f7",
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 38.508
+  },
+  "fuss_continuation": {
+    "run_id": 44657363724,
+    "parent_run": 44385665111,
+    "source_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+    "partition_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "observed_status": "queued"
+  },
+  "task_job_bindings_pending_compute_gates": true,
+  "scientific_case_recovery_claimed": false,
+  "full_model_coverage_claimed": false,
+  "numerical_integrations_performed_locally": 0,
+  "historical_validation_note": {
+    "run_id": 44593959603,
+    "job_id": 135807132786,
+    "passed": 96,
+    "errors": 26,
+    "reason": "Older published-evidence tests require their original Taylor source fingerprint; the new adapter changes that source hash. These failures are retained separately from the passing full-precision gate."
+  }
+}

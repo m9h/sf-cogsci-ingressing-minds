@@ -1,6 +1,6 @@
 # Forks, contributions and reproducible revisions
 
-Kinetics evidence updated **2026-11-19 UTC**; other fork and review snapshots are
+Kinetics evidence updated **2026-11-20 UTC**; other fork and review snapshots are
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
 
@@ -22,14 +22,15 @@ evidence history.
 ## Current execution
 
 The original job snapshot below was checked **2026-11-19 at 18:31–18:35 UTC**.
-Fuss, Ueda and Marhl have the later verified updates described below. The three new continuations below were dispatched once, after
+Tyson, François and Vilar were checked again **2026-11-20 at 02:03 UTC**;
+Fuss, Ueda and Marhl have the later verified updates described below. The three continuations below were dispatched once, after
 verifying their terminal parent artifacts. No local numerical worker was resumed.
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44589141810) | Queued continuation; parent saved eight new passing branch records, still three of four cases recorded |
-| François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44589146957) | Queued continuation; parent saved twenty new passing branch records, still seven of eight cases recorded |
-| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44589152244) | Validation queued; verified parent checkpoints each added 510–516 samples but remain incomplete |
+| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44589141810) | Latest five-hour continuation ended incomplete; new checkpoint awaits collection and audit |
+| François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44589146957) | Producer reports complete selected coverage, one of eight cases passing; archive collection and independent replay remain pending |
+| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44589152244) | Run in progress; verified parent checkpoints remain incomplete |
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | All 32 jobs terminal and all original ZIPs audited: 794 complete arrays, 180 complete branches; all partitions need continuation |
 | Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Fourteen partitions verified: seventy branches, 280 arrays; eighteen partitions still required |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Ten terminal artifacts await audit; five jobs running, seventeen queued |
@@ -69,7 +70,8 @@ and eighteen partitions stayed pending. The [subsequent all-32 audit](docs/evide
 now verifies 794 complete arrays, all 528 parent arrays unchanged, and 266
 additions. Its 180 complete branches pass all 1,080 pairwise comparisons. All
 32 inventories remain incomplete and require continuation; no selected case is
-recovered. The attempted next dispatch failed before connecting and is not counted.
+recovered. The [next continuation](https://github.com/m9h/GRN_ODE/actions/runs/44657363724)
+is now confirmed queued for all 32 original partitions, from this verified parent.
 
 The [new terminal-checkpoint audit](docs/evidence/cloud-progress-20261119-evening.json)
 replays all recorded cases and checks all 95 Tyson and 324 François branch
@@ -96,13 +98,16 @@ The [cloud producer and authenticated checkpoint transfer](https://github.com/m9
 now pass the [complete Linux validation gate](https://github.com/m9h/GRN_ODE/actions/runs/44593959589):
 234 tests, no failures or skips. Batches [0](https://github.com/m9h/GRN_ODE/actions/runs/44608641889),
 [1](https://github.com/m9h/GRN_ODE/actions/runs/44608843472),
-[2](https://github.com/m9h/GRN_ODE/actions/runs/44625023792) and
-[3](https://github.com/m9h/GRN_ODE/actions/runs/44625203552) are confirmed queued.
-Batches 4 and 5 remain required and are not counted as dispatched. The offline
-collector and full twelve-case replay pass 47 local tests at local revision
-`f95c155a968e15c30bdd39d6ac843f7b961c2930`; publication remains pending because
-Git connections fail and the connector lacks Git write permission. The complete
-1,520-task scope is unchanged. No long-horizon Marhl result is claimed.
+[2](https://github.com/m9h/GRN_ODE/actions/runs/44625023792),
+[3](https://github.com/m9h/GRN_ODE/actions/runs/44625203552),
+[4](https://github.com/m9h/GRN_ODE/actions/runs/44657098734) and
+[5](https://github.com/m9h/GRN_ODE/actions/runs/44657261295) are all confirmed submitted.
+The [published offline collector and full twelve-case replay](https://github.com/m9h/GRN_ODE/blob/f95c155a968e15c30bdd39d6ac843f7b961c2930/python/results/catalog-breaking-marhl-full-precision-20261119/COLLECTION.md)
+pass [all 47 Linux tests](https://github.com/m9h/GRN_ODE/actions/runs/44636509380), without skips.
+The [execution evidence](docs/evidence/marhl-complete-execution-20261120.json) records
+all six run IDs, both original CI artifacts, exact source revisions and the
+unchanged complete 1,520-task scope. Computation job bindings still await each
+run's validation gate. No long-horizon Marhl result is claimed.
 
 A read-only [Tyson checkpoint audit](docs/evidence/tyson-checkpoint-progress-20261118.json)
 compares the last two terminal partition-14 runs,
