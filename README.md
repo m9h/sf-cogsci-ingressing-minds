@@ -114,9 +114,14 @@ New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
 with failures retained. **Tyson is the only unfinished initial inventory**;
 partition 15 has now completed all four cases, leaving only
-[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44589141810).
-Its latest five-hour continuation ended incomplete; the new checkpoint still
-needs collection and audit. The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
+[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44679920877).
+Its latest audited checkpoint adds thirteen passing branch records; one case
+remains pending, and the next continuation is queued from those exact bytes.
+The [complete separate François Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
+now covers all 118 cases: 80 pass and 38 retain numerical failures. All sixteen
+original ZIPs and all 4,121 partition-local branch records verify; six conditional
+decisions remain unresolved. This adds no passing whole-model audit.
+The [earlier evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-coverage-20261116)
 preserves 64 original Linux artifacts and three complete local model reports;
 fresh extractions reproduce all five package audits. Four passing models have
 no eligible breaking cases, so this status is not evidence of learning.
@@ -196,10 +201,10 @@ Execution checked **19 November 2026, 04:39–04:40 UTC**: nine local numerical 
 and their coordinator are stopped at the user's request. This includes Ueda's
 unfinished 323-trajectory case-control run. Its
 [cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
-running after Linux validation passed. The [latest independent audit](docs/evidence/ueda-continuation-20261119-evening.json)
-verifies fourteen partitions: seventy branches, 280 complete trajectories and
-all 420 pairwise comparisons. Together with the 170 previously preserved branches,
-240 of 323 now have complete evidence; 83 remain. All 153 continuation branches
+running after Linux validation passed. The [latest independent audit](docs/evidence/ueda-continuation-20261120.json)
+verifies twenty-five partitions: 125 branches, 500 complete trajectories and
+all 750 pairwise comparisons. Together with the 170 previously preserved branches,
+295 of 323 now have complete evidence; 28 remain. All 153 continuation branches
 stay assigned to their original 32 fixed partitions. No Ueda
 case recovery is claimed until the complete 323-branch audit passes.
 The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
@@ -211,20 +216,20 @@ preparation audit, import restoration proof and continuation plan byte for byte.
 Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee32f99d3feefed38e6d845b01c/python/results/catalog-breaking-ueda-continuation-20261118/RELEASE.md)
 requires no new ODE integrations; the four unresolved cases remain outstanding.
 The [current cloud runs](FORKS.md#current-execution) include Vilar precision
-diagnostics and Fuss case controls. The latest Tyson and François jobs have
-ended; their new checkpoints await collection and audit. The four earlier
+diagnostics, Fuss case controls and Tyson's next continuation. The latest terminal
+Tyson and François checkpoints are now audited. The four earlier
 local collection and audit watchers have finished. No local numerical worker
 has been resumed.
 
 The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)
 binds all 864 computation jobs across the Ueda, Ciliberto and Rohwer stages to
-their original plans, attempts and source revisions. The [latest array audits](docs/evidence/cloud-progress-20261119-evening.json)
+their original plans, attempts and source revisions. The [19 November array audits](docs/evidence/cloud-progress-20261119-evening.json)
 verify 60 Ciliberto diagnostic branches (240 arrays), its first 81 later controls
 (324 arrays), and ten Ueda continuation branches (40 arrays). All 906 pairwise
 comparisons pass over the complete original grids. The remaining 200 Ciliberto
 diagnostics and 6,778 later controls still require verification. The subsequent
-[Ueda collection](docs/evidence/ueda-continuation-20261119-evening.json) reduces its
-remaining scope to 83 branches. Full case replay remains required. No additional
+[Ueda collection](docs/evidence/ueda-continuation-20261120.json) reduces its
+remaining scope to 28 branches. Full case replay remains required. No additional
 case or whole-model recovery is claimed.
 
 The [complete Fuss continuation checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261119.json)
@@ -232,7 +237,8 @@ now verifies all 32 original ZIPs, totalling 6.61 GB, and 794 complete arrays.
 All 528 parent arrays remain byte-identical, with 266 additional arrays. Its
 180 complete branches pass all 1,080 comparisons. Every partition still needs
 continuation; the [next complete continuation](https://github.com/m9h/GRN_ODE/actions/runs/44657363724)
-is queued from these verified parent checkpoints. The full 1,309-branch,
+has all [32 actual computation jobs bound to the fixed plan](docs/evidence/continuation-bindings-20261120.json)
+and resumes from these verified parent checkpoints. The full 1,309-branch,
 eighteen-case scope remains required.
 
 Marhl now has an [exact mpmath checkpoint adapter](https://github.com/m9h/GRN_ODE/blob/8888e2bd03bba4f9010a288e9b355c2c7c2316c1/python/results/catalog-breaking-marhl-checkpoints-20261119/README.md)

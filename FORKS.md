@@ -12,9 +12,10 @@ preserves all sixteen original artifact ZIPs; a fresh extraction reproduces
 the full audit. Tyson (5) is the only unfinished initial inventory. Its
 [partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44118517338) has completed
 all four cases; only [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44448634325)
-remains unfinished, with three of its four cases recorded (two passing). François partition 14 completed all seven cases, with three
-numerical failures retained; its separate Linux inventory still needs
-[partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44448645976).
+remains unfinished, with three of its four cases recorded (two passing). François's
+[separate Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
+now covers all 118 cases across sixteen partitions: eighty pass and thirty-eight
+retain failures. Six conditional decisions remain unresolved.
 Nine local numerical workers and their coordinator remain
 stopped at the user's request. The dated results below retain the earlier
 evidence history.
@@ -28,11 +29,11 @@ verifying their terminal parent artifacts. No local numerical worker was resumed
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44589141810) | Latest five-hour continuation ended incomplete; new checkpoint awaits collection and audit |
-| François separate Linux inventory | [Partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44589146957) | Producer reports complete selected coverage, one of eight cases passing; archive collection and independent replay remain pending |
+| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44679920877) | Next continuation queued from verified parent; thirteen additional passing branch records, one initial case still pending |
+| François separate Linux inventory | [Completed full audit](docs/evidence/francois-linux-inventory-20261120.json) | All 118 cases covered; 80 pass, 38 retain failures; all sixteen original ZIPs verified |
 | Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44589152244) | Run in progress; verified parent checkpoints remain incomplete |
-| Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44385665111) | All 32 jobs terminal and all original ZIPs audited: 794 complete arrays, 180 complete branches; all partitions need continuation |
-| Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Fourteen partitions verified: seventy branches, 280 arrays; eighteen partitions still required |
+| Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44657363724) | Actual continuation jobs bound after Linux validation; parent audit preserves 794 arrays and 180 complete branches |
+| Ueda complete case controls | [153 continuation branches in 32 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) | Twenty-five partitions verified: 125 branches, 500 arrays; seven partitions still required |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Ten terminal artifacts await audit; five jobs running, seventeen queued |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | Seven partitions verified: sixty branches, 240 arrays; thirteen further artifacts await audit; one job running, eleven queued |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Three partitions verified: 81 branches, 324 arrays; five further artifacts await audit; three jobs running, 245 queued |
@@ -54,10 +55,10 @@ diagnostics, 0.03387 for its later controls, and 0.04998 for Ueda, against the
 unchanged acceptance threshold of 1. These results add no recovered cases or
 whole-model passes; every unfinished partition remains required.
 
-The [later Ueda audit](docs/evidence/ueda-continuation-20261119-evening.json) covers
-partitions 0 through 13: seventy branches, 280 arrays and 420 passing comparisons.
+The [latest Ueda audit](docs/evidence/ueda-continuation-20261120.json) covers
+partitions 0 through 24: 125 branches, 500 arrays and 750 passing comparisons.
 The maximum scaled error is 0.05435. Combined with 170 preserved branches, this
-provides 240 of 323 required branches; 83 and the full case replay remain.
+provides 295 of 323 required branches; 28 and the full case replay remain.
 
 The earlier [Fuss checkpoint audit](docs/evidence/fuss-checkpoint-progress-20261119.json)
 verifies all fourteen available original ZIPs (3,001,628,740 bytes), extracted
@@ -71,16 +72,23 @@ now verifies 794 complete arrays, all 528 parent arrays unchanged, and 266
 additions. Its 180 complete branches pass all 1,080 pairwise comparisons. All
 32 inventories remain incomplete and require continuation; no selected case is
 recovered. The [next continuation](https://github.com/m9h/GRN_ODE/actions/runs/44657363724)
-is now confirmed queued for all 32 original partitions, from this verified parent.
+has all 32 actual jobs bound to their original partition indices, from this
+verified parent. The [binding record](docs/evidence/continuation-bindings-20261120.json)
+also retains Tyson's new job identity and complete unchanged model partition scope.
 
-The [new terminal-checkpoint audit](docs/evidence/cloud-progress-20261119-evening.json)
+The [earlier terminal-checkpoint audit](docs/evidence/cloud-progress-20261119-evening.json)
 replays all recorded cases and checks all 95 Tyson and 324 François branch
 records against their original archived bytes. Eight and twenty new passing
 branch records were saved respectively, and all previously passing checkpoint
 bytes were preserved. Both jobs reached their five-hour limits. Tyson has one pending case,
 `pM__up--M__up`. François has one pending case, `rB__up--gB__up`, and retains an
 unresolved conditional decision in a previously recorded failed case. A finished
-job or recorded case does not imply numerical validation.
+job or recorded case does not imply numerical validation. The [subsequent audit](docs/evidence/francois-linux-inventory-20261120.json)
+adds thirteen passing Tyson branch records and one passing François branch record,
+preserving all previously passing bytes. François's final pending case is now
+recorded, and the complete 118-case Linux audit verifies 4,121 branch records.
+The separate Linux inventory is finished with numerical disagreements retained;
+the whole-model passing count remains 26.
 
 The [Vilar checkpoint comparison](docs/evidence/cloud-progress-20261119-evening.json)
 verifies all four original artifact ZIPs and every extracted file. Each 128-bit

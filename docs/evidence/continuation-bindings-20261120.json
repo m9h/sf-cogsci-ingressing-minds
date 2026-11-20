@@ -1,0 +1,432 @@
+{
+  "checked_at": "2026-11-20T05:18:01.149297+00:00",
+  "fuss": {
+    "selection": {
+      "schema_version": 1,
+      "purpose": "Fixed selection of all 32 original partitions in the verified continuation; no outcome selection.",
+      "model_id": "BIOMD0000000069",
+      "execution_plan_sha256": "918d38aa4e44ec1f82651da381bebbe3b24af109ebb889183301a5d55acab568",
+      "partition_count": 32,
+      "partitions": [
+        {
+          "shard_index": 0,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322821,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 1,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322886,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 2,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322796,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 3,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322942,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 4,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322877,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 5,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322925,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 6,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322828,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 7,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322835,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 8,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322898,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 9,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046323373,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 10,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046323000,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 11,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322897,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 12,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322883,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 13,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046323019,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 14,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322918,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 15,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046323043,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 16,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322823,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 17,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322885,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 18,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322924,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 19,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322888,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 20,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322906,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 21,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322941,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 22,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046323238,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 23,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322908,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 24,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046322965,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 25,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046323076,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 26,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046324304,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 27,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046324566,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 28,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046324468,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 29,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046324603,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 30,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046324630,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        },
+        {
+          "shard_index": 31,
+          "run_id": 44657363724,
+          "run_attempt": 1,
+          "job_id": 136046324577,
+          "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026"
+        }
+      ],
+      "parent_run_id": 44385665111
+    },
+    "selection_sha256": "20cafd48a8a6b6ba11cb9af35d2ff1e69bc3c556ce91e1dd14c2be0783b6e1c2"
+  },
+  "tyson": {
+    "selection": {
+      "schema_version": 1,
+      "purpose": "Complete predetermined partition inventory with only terminal incomplete partitions continued. Every partition retains its own evidence.",
+      "network": 5,
+      "model_id": "BIOMD0000000005",
+      "expected_model_cases": 58,
+      "shard_count": 16,
+      "partitions": [
+        {
+          "shard_index": 0,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339059,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 1,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339802,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 2,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339482,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 3,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339835,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 4,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339473,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 5,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339431,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 6,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339423,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 7,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339421,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 8,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339944,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 9,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339477,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 10,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339593,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 11,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339309,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 12,
+          "run_id": 43485099563,
+          "run_attempt": 1,
+          "job_id": 132091339573,
+          "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+        },
+        {
+          "shard_index": 13,
+          "run_id": 43808017634,
+          "run_attempt": 1,
+          "job_id": 133103137786,
+          "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+        },
+        {
+          "shard_index": 14,
+          "run_id": 44679920877,
+          "run_attempt": 1,
+          "job_id": 136100579312,
+          "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+        },
+        {
+          "shard_index": 15,
+          "run_id": 44118517338,
+          "run_attempt": 1,
+          "job_id": 134163140860,
+          "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+        }
+      ]
+    },
+    "selection_sha256": "36c4d3676d1e9f60c83efa2b72d5e18dcc04a02329cb8cf0dda922dc720ea777",
+    "dispatch_receipt": {
+      "repository": "m9h/GRN_ODE",
+      "workflow_id": 410775433,
+      "ref": "kinetics-resume-case-selection",
+      "source_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+      "inputs": {
+        "breaking_networks": "[5]",
+        "breaking_resume_run": "44589141810",
+        "breaking_shard_count": "16",
+        "breaking_resume_shard_count": "16",
+        "breaking_only_shard": "14"
+      },
+      "state": "bound",
+      "started_at": "2026-11-20T05:16:20.447727+00:00",
+      "before_run_ids": [
+        43559717170,
+        43560384864,
+        43560386302,
+        43808017634,
+        43808027224,
+        43808036256,
+        43808045813,
+        43808055546,
+        43808123233,
+        43808132794,
+        43808140318,
+        43808151273,
+        43808161767,
+        43808172212,
+        43808179372,
+        43808186657,
+        43808196887,
+        43808207156,
+        43907657248,
+        43907660865,
+        43907665080,
+        43907668110,
+        44118514341,
+        44118517338,
+        44118520523,
+        44247021390,
+        44247126362,
+        44383931943,
+        44383935036,
+        44448634325,
+        44448645976,
+        44589141810,
+        44589146957
+      ],
+      "route": "140.82.114.6",
+      "normal_tls_verification": true,
+      "post_attempts": 1,
+      "transport": {
+        "http_status": 204,
+        "uploaded_bytes": 215,
+        "remote_ip": "140.82.114.6",
+        "ssl_verify_result": 0,
+        "curl_exit": 0
+      },
+      "run_id": 44679920877,
+      "run_attempt": 1,
+      "status": "queued",
+      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44679920877"
+    }
+  },
+  "numerical_integrations_performed_locally": 0,
+  "local_worker_signals_sent": [],
+  "scientific_case_recovery_claimed": false
+}

@@ -1,0 +1,186 @@
+{
+  "checked_at": "2026-11-20T03:27:37.030148+00:00",
+  "run_id": 44393623529,
+  "collector_revision": "0c3c315dd34391abd4c38bfe93a358e78779451e",
+  "selection_sha256": "993b2731d4ac6f64be7dd0f75cb6e6d652ffb3611ba4719162821599a2ed7a14",
+  "source_snapshot_sha256": {
+    "run.json": "bec5790dd5d5a43e16548463421da1fac0822a9d76dc5a801472d41a0cc69739",
+    "jobs.json": "43e0d9661173759555d25bab0be492dff091301a8281a25f9c37b6b872ef5879",
+    "artifacts.json": "59d10235e776b800fc29211456a9389d5428d92e400e305da73ae9fcc41ffcf2"
+  },
+  "status_sha256": "9096979015d4b386499b200bd95af7091d039f9d87443014a49f3c5e3b1356ab",
+  "verified_branches": 125,
+  "verified_arrays": 500,
+  "pairwise_comparisons": 750,
+  "all_comparisons_passed": true,
+  "max_scaled_error": 0.054341364516011646,
+  "pending_partitions": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "missing_artifacts": [],
+  "collection_errors": [],
+  "preserved_and_new_branches": 295,
+  "required_branches": 323,
+  "remaining_branches": 28,
+  "new_branches_this_collection": 55,
+  "case_recovery_claimed": false,
+  "original_artifacts": [
+    {
+      "id": 14593080663,
+      "name": "ueda-cases-BIOMD0000000022-partition-24-attempt-1",
+      "size_in_bytes": 319781266,
+      "digest": "sha256:caec289eba242ca749bd324b0a05cf60db9f00557e98ea167a5e423e3422d69c"
+    },
+    {
+      "id": 14592666435,
+      "name": "ueda-cases-BIOMD0000000022-partition-23-attempt-1",
+      "size_in_bytes": 288425330,
+      "digest": "sha256:b605c32e2a6b378ea76afe70e7ecd95497339ca8f4554f1f2f10b9fd55e2bbb9"
+    },
+    {
+      "id": 14592452578,
+      "name": "ueda-cases-BIOMD0000000022-partition-22-attempt-1",
+      "size_in_bytes": 338704811,
+      "digest": "sha256:72eb56d212975c0cddcbd651cd3d1b4e58c0facdb1ce3df493bc8b2875d6db25"
+    },
+    {
+      "id": 14592166084,
+      "name": "ueda-cases-BIOMD0000000022-partition-20-attempt-1",
+      "size_in_bytes": 337585268,
+      "digest": "sha256:e5e32da7a14a062e04753690c5c032353ef0234e7a9e949a0c443a337935f3fb"
+    },
+    {
+      "id": 14589860505,
+      "name": "ueda-cases-BIOMD0000000022-partition-21-attempt-1",
+      "size_in_bytes": 337902075,
+      "digest": "sha256:4550115df4ee791cd2a70cc8fda73b1ec1ee01a5a70a926e933a4993ae5c9577"
+    },
+    {
+      "id": 14585967700,
+      "name": "ueda-cases-BIOMD0000000022-partition-19-attempt-1",
+      "size_in_bytes": 337001979,
+      "digest": "sha256:c755af75b32d4fdea3bb8370ee4660b2227214c3d11e533b66d6dbddc7096118"
+    },
+    {
+      "id": 14584721497,
+      "name": "ueda-cases-BIOMD0000000022-partition-18-attempt-1",
+      "size_in_bytes": 324430804,
+      "digest": "sha256:c51a29ae5fc009d465e32c172aed9f450065f1efe9f3ea63eefcab399bb17b72"
+    },
+    {
+      "id": 14583225621,
+      "name": "ueda-cases-BIOMD0000000022-partition-15-attempt-1",
+      "size_in_bytes": 335764430,
+      "digest": "sha256:0a127d81054c2fad997f717fa7605c4acdc36ac886be8f168972600f78a86fe0"
+    },
+    {
+      "id": 14581582105,
+      "name": "ueda-cases-BIOMD0000000022-partition-17-attempt-1",
+      "size_in_bytes": 337622777,
+      "digest": "sha256:23fb9f950565708417a1714760969864f6bc72a50e4f3cb4ec1cea3b7c392400"
+    },
+    {
+      "id": 14581387388,
+      "name": "ueda-cases-BIOMD0000000022-partition-14-attempt-1",
+      "size_in_bytes": 299241594,
+      "digest": "sha256:2a60caea0ccc52095104e6e8047bfdf1efbef09d2ab0276f8a514535fb74a837"
+    },
+    {
+      "id": 14576561599,
+      "name": "ueda-cases-BIOMD0000000022-partition-16-attempt-1",
+      "size_in_bytes": 338234189,
+      "digest": "sha256:4004ed55ea222cb6f4d5e615fc9187e8914ebe7b14a59a08e3ee0ea177473864"
+    },
+    {
+      "id": 14561421744,
+      "name": "ueda-cases-BIOMD0000000022-partition-13-attempt-1",
+      "size_in_bytes": 325758964,
+      "digest": "sha256:81057c71d495ca10c6489b0455ff4bb6e67d82e12dae15cd4dc0f99c69706f11"
+    },
+    {
+      "id": 14550592503,
+      "name": "ueda-cases-BIOMD0000000022-partition-12-attempt-1",
+      "size_in_bytes": 289692639,
+      "digest": "sha256:558c04e98e4b869ca296107ec5ba4646bf1030e6b6dc51654a71a97f259980cc"
+    },
+    {
+      "id": 14544607025,
+      "name": "ueda-cases-BIOMD0000000022-partition-11-attempt-1",
+      "size_in_bytes": 339422169,
+      "digest": "sha256:3d91dd20cca073ca59fc76f3bbfe3e5fde9e071c4998c4084598fd03cae59d57"
+    },
+    {
+      "id": 14536575618,
+      "name": "ueda-cases-BIOMD0000000022-partition-10-attempt-1",
+      "size_in_bytes": 308797064,
+      "digest": "sha256:cff8372e726c3628dd5deb06de8fcb3ac88bb21a410a4bb8ecb2f4234690f017"
+    },
+    {
+      "id": 14533501761,
+      "name": "ueda-cases-BIOMD0000000022-partition-9-attempt-1",
+      "size_in_bytes": 324205458,
+      "digest": "sha256:d03202501e05c75f76ec0b1a9b0cfd1fbda1ebadb5bb8601604f6e385ba36b00"
+    },
+    {
+      "id": 14532148037,
+      "name": "ueda-cases-BIOMD0000000022-partition-8-attempt-1",
+      "size_in_bytes": 302045331,
+      "digest": "sha256:f264e2a00afef33164c4ba73d22d3c1a55677f4db5b4f00ba59e360a5e19b8ca"
+    },
+    {
+      "id": 14524247531,
+      "name": "ueda-cases-BIOMD0000000022-partition-3-attempt-1",
+      "size_in_bytes": 301062888,
+      "digest": "sha256:765ee6d9ae6856bf44b194eb97ec7e6594414d6228aa434d25378d48fadd2b6a"
+    },
+    {
+      "id": 14518926069,
+      "name": "ueda-cases-BIOMD0000000022-partition-6-attempt-1",
+      "size_in_bytes": 336824225,
+      "digest": "sha256:d4c562b80993d9395025f9bd827b9389732960765cf4ba5e5daeb5d6b55f2083"
+    },
+    {
+      "id": 14517657138,
+      "name": "ueda-cases-BIOMD0000000022-partition-5-attempt-1",
+      "size_in_bytes": 334983936,
+      "digest": "sha256:f0fc6e31ce76ab7348a5afe30d13cf0bb13a040d3ff1bb80a65efc823f858a1b"
+    },
+    {
+      "id": 14502329249,
+      "name": "ueda-cases-BIOMD0000000022-partition-2-attempt-1",
+      "size_in_bytes": 299323478,
+      "digest": "sha256:38a4230a36a1c3d98530ece192f110f16c62d28f1e1dbaa0d6a7b910a676feeb"
+    },
+    {
+      "id": 14500758999,
+      "name": "ueda-cases-BIOMD0000000022-partition-7-attempt-1",
+      "size_in_bytes": 311758324,
+      "digest": "sha256:7a674a67e5811a99fca40a09ae01ed33a763ebad6b4bd4fe0c107142a666640e"
+    },
+    {
+      "id": 14499522509,
+      "name": "ueda-cases-BIOMD0000000022-partition-4-attempt-1",
+      "size_in_bytes": 334375320,
+      "digest": "sha256:a1710c1050bd1614ff89d048f19d9166ea6bb4067892809f72d28bc7076dcbc9"
+    },
+    {
+      "id": 14498835712,
+      "name": "ueda-cases-BIOMD0000000022-partition-1-attempt-1",
+      "size_in_bytes": 333885790,
+      "digest": "sha256:c2188c23aaab7708829fbbc35cd1f97e5512bb26ed45f5ad444a1c9a489bb871"
+    },
+    {
+      "id": 14495256522,
+      "name": "ueda-cases-BIOMD0000000022-partition-0-attempt-1",
+      "size_in_bytes": 298201234,
+      "digest": "sha256:81d7c65040a19054bd2a99c91c95eb0346b915b6c50732f6e68f884eba59ba27"
+    }
+  ],
+  "local_numerical_integrations_performed": 0
+}
