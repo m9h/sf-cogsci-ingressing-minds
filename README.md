@@ -86,6 +86,20 @@ These counts measure numerical validation, not proof that every network learns.
 Completed jobs, software tests and partially verified trajectories do not add
 whole-model passes. The evidence links and outstanding work follow below.
 
+The eight models without a passing whole-model breaking audit have different
+remaining issues:
+
+| Model | Current gap |
+|---|---|
+| [Reduced Goldbeter (3)](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/CATALOG_BREAKING.md#a-domain-limit-exposed-by-the-goldbeter-model) | Four integration failures affect two of eight cases; all 24 dedicated diagnostic attempts also stop before the required endpoint. |
+| Tyson (5) | One initial case remains unfinished; its verified cloud continuation is running. |
+| Fuss (8) | [1,050 trajectories are retained and verified](docs/evidence/fuss-checkpoint-audit-20261121.json) across the latest 31 checkpoints and the older retained partition 11; complete controls and replay remain open for eighteen cases. |
+| François (25) | The separate Linux inventory covers all 118 cases, with 38 failures and six unresolved conditional decisions. |
+| Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. |
+| Marhl (30) | The fixed high-precision computation covers 380 branches for twelve cases; collection and complete-case validation remain open. |
+| Vilar (32) | Breaking validation remains unresolved, alongside three paired cases; four precision checkpoints remain incomplete. |
+| Rohwer (35) | [All 750 first-stage branches are accounted for](docs/evidence/rohwer-checkpoint-audit-20261121.json), but 584 diagnostics remain unfinished; later controls and complete-case replay are also required. |
+
 Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics
 now pass independent comparisons for all 35: RoadRunner versus COPASI for 34,
@@ -228,14 +242,26 @@ preparation audit, import restoration proof and continuation plan byte for byte.
 Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee32f99d3feefed38e6d845b01c/python/results/catalog-breaking-ueda-continuation-20261118/RELEASE.md)
 requires no new ODE integrations; the complete recovery above builds on these
 preserved inputs.
-The [current cloud runs](FORKS.md#current-execution) include Vilar precision
-diagnostics and Fuss case controls. Tyson's next continuation is queued. The
+The [current execution table](FORKS.md#current-execution) records the next Fuss
+case-control continuations and Vilar precision checkpoints. Tyson's continuation
+is running. The
 four latest Vilar checkpoints are collected and verified: they add 373–409
 samples each with every old sample preserved bit-for-bit, but no integration
 has yet finished in those four partitions. François's full
 Linux inventory is audited. The four earlier
 local collection and audit watchers have finished. No local numerical worker
 has been resumed.
+
+The [latest Fuss audit](docs/evidence/fuss-checkpoint-audit-20261121.json)
+checks all 31 available original ZIPs and 1,016 complete trajectories. All
+760 parent trajectories remain unchanged, with 256 new ones; 234 complete
+branches pass all 1,404 comparisons. Partition 11 lost its hosted runner's
+connection and produced no artifact. Its older retained checkpoint has been
+reaudited separately, preserving 34 trajectories. The
+[two new continuation scopes](docs/evidence/fuss-continuations-20261121.json)
+cover all 32 original partitions exactly once, using the appropriate verified
+parent for each. Their validation gates are queued; actual computation job
+IDs still need binding. No complete case or whole-model recovery is claimed.
 
 The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)
 binds all 864 computation jobs across the Ueda, Ciliberto and Rohwer stages to

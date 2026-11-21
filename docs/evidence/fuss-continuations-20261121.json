@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-11-21T18:18:27.574719+00:00",
+  "model_id": "BIOMD0000000069",
+  "full_required_partitions": 32,
+  "full_required_control_branches": 1309,
+  "full_required_trajectories": 5236,
+  "selected_cases": 18,
+  "all_original_partition_indices_covered_once": true,
+  "compute_jobs_bound": false,
+  "reason_job_binding_pending": "Both Linux validation gates are queued; compute jobs have not been created yet. Actual job IDs must be bound before collecting outcomes.",
+  "verified_parent_summary_sha256": "6b6d5a61baaff2c64b6589903cc96af4898bced4617d9a6783a5a898e7852eba",
+  "continuations": [
+    {
+      "repository": "m9h/GRN_ODE",
+      "workflow_id": 420439895,
+      "ref": "kinetics-fuss-continuation-scheduling",
+      "source_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+      "state": "bound",
+      "post_attempts": 1,
+      "before_run_ids": [
+        44657363724,
+        44385665111
+      ],
+      "inputs": {
+        "operation": "compute",
+        "partition_indices": "[11]",
+        "resume_run": "44385665111"
+      },
+      "full_required_partition_count": 32,
+      "retained_parent_verification": "../partition11-last-retained-parent-audit.json",
+      "missing_attempt": {
+        "run_id": 44657363724,
+        "job_id": 136046322897,
+        "artifact_missing": true,
+        "logs_unavailable": true
+      },
+      "verified_parent_arrays": 34,
+      "case_recovery_claimed": false,
+      "run_id": 44933648891,
+      "run_attempt": 1,
+      "status": "queued",
+      "created_at": "2026-11-21T18:06:06Z",
+      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44933648891"
+    },
+    {
+      "repository": "m9h/GRN_ODE",
+      "workflow_id": 420439895,
+      "ref": "kinetics-fuss-continuation-scheduling",
+      "source_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+      "state": "bound",
+      "post_attempts": 1,
+      "before_run_ids": [
+        44933648891,
+        44657363724,
+        44385665111
+      ],
+      "inputs": {
+        "operation": "compute",
+        "partition_indices": "[0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]",
+        "resume_run": "44657363724"
+      },
+      "full_required_partition_count": 32,
+      "complementary_partition11_run": 44933648891,
+      "verified_parent_summary_sha256": "6b6d5a61baaff2c64b6589903cc96af4898bced4617d9a6783a5a898e7852eba",
+      "verified_parent_arrays": 1016,
+      "parent_arrays_preserved_byte_identical": 760,
+      "case_recovery_claimed": false,
+      "run_id": 44934673699,
+      "run_attempt": 1,
+      "status": "queued",
+      "created_at": "2026-11-21T18:17:07Z",
+      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44934673699",
+      "actual_compute_jobs_bound": false
+    }
+  ],
+  "validation_jobs": [
+    {
+      "run_id": 44933648891,
+      "job_id": 136935485284,
+      "status": "queued"
+    },
+    {
+      "run_id": 44934673699,
+      "job_id": 136938599322,
+      "status": "queued"
+    }
+  ],
+  "case_recovery_claimed": false
+}
