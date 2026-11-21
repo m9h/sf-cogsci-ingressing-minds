@@ -15,13 +15,13 @@ Cellière (29) passes all 1,088 cases and 34,816 conditional trials. Its
 preserves all sixteen original artifact ZIPs; a fresh extraction reproduces
 the full audit. Tyson (5) is the only unfinished initial inventory. Its
 [partition 15](https://github.com/m9h/GRN_ODE/actions/runs/44118517338) has completed
-all four cases; only [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44448634325)
+all four cases; only [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44930974577)
 remains unfinished, with three of its four cases recorded (two passing). François's
 [separate Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
 now covers all 118 cases across sixteen partitions: eighty pass and thirty-eight
 retain failures. Six conditional decisions remain unresolved.
-Nine local numerical workers and their coordinator remain
-stopped at the user's request. The dated results below retain the earlier
+No local numerical worker has been resumed; the user's instruction to leave
+them stopped remains in force. The dated results below retain the earlier
 evidence history.
 
 ## Current execution
@@ -34,11 +34,11 @@ verifying their terminal parent artifacts. No local numerical worker was resumed
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44679920877) | Latest continuation ended incomplete; checkpoint collection pending; prior audited parent added thirteen passing branch records |
+| Tyson initial inventory | [Partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44930974577) | Next continuation queued from verified parent; latest audit adds seven passing branches and preserves all 107 prior passing records; one initial case remains |
 | François separate Linux inventory | [Completed full audit](docs/evidence/francois-linux-inventory-20261120.json) | All 118 cases covered; 80 pass, 38 retain failures; all sixteen original ZIPs verified |
-| Vilar precision diagnostics | [Partitions 8, 9, 11 and 16](https://github.com/m9h/GRN_ODE/actions/runs/44589152244) | All four computation jobs ended; latest checkpoints await collection |
+| Vilar precision diagnostics | [Checkpoint audit](docs/evidence/terminal-checkpoints-20261121.json) | All four original ZIPs verified; checkpoints add 373–409 samples each with old prefixes bitwise unchanged; all four integrations remain incomplete |
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44657363724) | Actual continuation jobs bound after Linux validation; parent audit preserves 794 arrays and 180 complete branches |
-| Ueda complete case controls | [Complete 302-case audit](docs/evidence/ueda-complete-model-20261121.json) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; new raw-evidence release still pending |
+| Ueda complete case controls | [Complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; original ZIPs and offline reproduction guide published |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Run has ended with failures retained; original checkpoint collection and full array audit remain pending |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
@@ -76,7 +76,13 @@ provided 295 of 323 required branches. The [completed audit](docs/evidence/ueda-
 now checks all 323 branches and recovers the four selected cases. The original
 298 passing cases were freshly reaudited from their published evidence;
 the combined result passes all 302. No previously passing branch requires
-revalidation. The new raw-array release remains pending.
+revalidation. The [complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121)
+now preserves all 32 original cloud ZIPs and the original 302-case archive:
+33 evidence assets totaling 9,864,801,068 bytes. Its separately published
+preservation dependency is pinned by checksum. The
+[publication proof](docs/evidence/ueda-evidence-release-20261121.json) verifies
+every uploaded size and SHA-256 digest, and eleven compatibility tests pass
+for the unchanged preservation reproducer in the complete-release checkout.
 
 The earlier [Fuss checkpoint audit](docs/evidence/fuss-checkpoint-progress-20261119.json)
 verifies all fourteen available original ZIPs (3,001,628,740 bytes), extracted
@@ -107,6 +113,16 @@ preserving all previously passing bytes. François's final pending case is now
 recorded, and the complete 118-case Linux audit verifies 4,121 branch records.
 The separate Linux inventory is finished with numerical disagreements retained;
 this François result adds no passing whole-model audit.
+
+The [21 November checkpoint audit](docs/evidence/terminal-checkpoints-20261121.json)
+adds seven further passing Tyson branch records, preserving all 107 parent
+passing records exactly. Its 115 records include one retained mismatch;
+`pM__up--M__up` remains unfinished. The next continuation is bound to run
+44930974577 and job 136927296250, with the other fifteen model partitions
+unchanged. The same audit verifies all four latest Vilar ZIPs and checkpoint
+checksums. Each saved prefix grows by 373–409 samples with the original bytes
+unchanged; exact MPFR-state validation remains a prerequisite in the matching
+Linux runtime before continuation. No new case or model passes are claimed.
 
 The [Vilar checkpoint comparison](docs/evidence/cloud-progress-20261119-evening.json)
 verifies all four original artifact ZIPs and every extracted file. Each 128-bit
@@ -392,7 +408,8 @@ explains the scaled-error formula and uses uv without a local Heyoka installatio
 | [GRN_ODE · kinetics-rohwer-breaking-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-rohwer-breaking-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [40fe823](https://github.com/m9h/GRN_ODE/tree/40fe82344d8dacb2d79ebdc4087ee52beb90a091) | All 750 original failed branches selected for 3,000 complete trajectories; 44 targeted tests pass; Linux validation passed; original 137/260 result retained |
 | [GRN_ODE · kinetics-ueda-evidence-release](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-evidence-release) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0756819](https://github.com/m9h/GRN_ODE/tree/07568199b113fee32f99d3feefed38e6d845b01c) | Published raw snapshot and diagnostic archive; fresh downloads reproduce the full preparation byte for byte; 11 transport tests pass; 153 branches and four cases still require computation and audit |
 | [GRN_ODE · kinetics-ueda-cloud-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [0c3c315](https://github.com/m9h/GRN_ODE/tree/0c3c315dd34391abd4c38bfe93a358e78779451e) | Offline collection and full 323-branch assembly; 48 targeted local tests and one full real-branch comparison reproduction pass; Linux validation passed; no new case recovery |
-| [GRN_ODE · kinetics-ueda-complete-audit](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-complete-audit) | Same upstream | [649df7f](https://github.com/m9h/GRN_ODE/tree/649df7f5e8f89563078b4349275e60331193d57a) | Complete 302/302 combined case validation: original evidence freshly reaudited, four recovered cases, 1,292 full trajectories and 1,938 passing comparisons; new raw-evidence release pending |
+| [GRN_ODE · kinetics-ueda-complete-audit](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-complete-audit) | Same upstream | [649df7f](https://github.com/m9h/GRN_ODE/tree/649df7f5e8f89563078b4349275e60331193d57a) | Complete 302/302 combined case validation: original evidence freshly reaudited, four recovered cases, 1,292 full trajectories and 1,938 passing comparisons |
+| [GRN_ODE · kinetics-ueda-complete-release](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-complete-release) | Same upstream | [70d57e0](https://github.com/m9h/GRN_ODE/tree/70d57e0fe672485a9ae9274c7494fdecfaa21ad7) | Published all 32 original cloud ZIPs and original whole-model archive; every server checksum verified; pinned preservation dependency and full offline reproduction guide |
 | [GRN_ODE · kinetics-ueda-cloud-continuation](https://github.com/m9h/GRN_ODE/tree/kinetics-ueda-cloud-continuation) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [b585ee9](https://github.com/m9h/GRN_ODE/tree/b585ee97de7000c2ec1afe5454216629601eee87) | Complete 323-branch/four-case scope retained; 170 branches backed by verified evidence, 153 selected for cloud computation; 77 local tests pass, Linux validation passed; local worker remains stopped |
 | [GRN_ODE · kinetics-ciliberto-full-diagnostics](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-diagnostics) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [4c58f79](https://github.com/m9h/GRN_ODE/tree/4c58f7969373f447cbb64e6390fceac92548dd31) | All 260 remaining original failed branches selected; Linux validation passed; 1,040 full trajectories, 32 fixed partitions, unchanged numerical code; 85 targeted tests pass; later 6,859 controls and full-case audit retained |
 | [GRN_ODE · kinetics-ciliberto-full-collection](https://github.com/m9h/GRN_ODE/tree/kinetics-ciliberto-full-collection) | [wesleypclawson/GRN_ODE](https://github.com/wesleypclawson/GRN_ODE) | [3d633d2](https://github.com/m9h/GRN_ODE/tree/3d633d2f0b91c94cb947042032dc25224947322f) | Fixed 260-branch collection with original ZIP verification, full-array auditing and explicit interrupted evidence; 43 collector/90 combined tests pass; Linux validation passed; no case recovery claimed |
@@ -757,7 +774,9 @@ checked. The fixed plan retained all four cases and all 323 branches. The
 [completed audit](https://github.com/m9h/GRN_ODE/blob/649df7f5e8f89563078b4349275e60331193d57a/python/results/catalog-breaking-ueda-complete-20261121/README.md)
 now replays every conditional decision from the full arrays and recovers all
 four cases. Combined with the freshly reaudited original passes, Ueda validates
-**302/302 cases**; publication of the new raw evidence remains pending.
+**302/302 cases**. The [complete release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121)
+now provides the original cloud ZIPs and an offline reproduction guide, with
+the earlier preservation release as a checksum-pinned dependency.
 
 Network 2's [next continuation](https://github.com/m9h/GRN_ODE/actions/runs/43556602590)
 preserves its terminal parent's 611 recorded passing cases out of 624 and

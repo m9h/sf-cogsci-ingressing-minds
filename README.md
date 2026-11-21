@@ -117,10 +117,11 @@ New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
 with failures retained. **Tyson is the only unfinished initial inventory**;
 partition 15 has now completed all four cases, leaving only
-[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44679920877).
-Its latest audited checkpoint adds thirteen passing branch records; one case
-remains pending. Its subsequent continuation also ended incomplete; that latest
-checkpoint still needs collection and audit.
+[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44930974577).
+Its [latest audited checkpoint](docs/evidence/terminal-checkpoints-20261121.json)
+adds seven passing branch records and preserves all 107 previous passing
+records byte-for-byte. One case remains pending; its next cloud continuation
+is bound to the same partition and verified parent.
 The [complete separate François Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
 now covers all 118 cases: 80 pass and 38 retain numerical failures. All sixteen
 original ZIPs and all 4,121 partition-local branch records verify; six conditional
@@ -209,9 +210,15 @@ combines all 153 new branches with preserved evidence, verifying 323 branches,
 passes, all four selected cases recover, and both conditional searches match
 the original paths. A fresh audit of the published original evidence reproduces
 the earlier 298/302 result; together the results validate **302/302 cases**.
-No previously passing branch is flagged for revalidation. All original ZIPs and
-arrays are preserved locally; durable publication of the new raw evidence is
-still pending.
+No previously passing branch is flagged for revalidation. The
+[complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121)
+now preserves all 32 original cloud ZIPs and the original 302-case archive.
+All 35 release assets, including the manifest and checksum list, match their
+[verified sizes and server checksums](docs/evidence/ueda-evidence-release-20261121.json).
+The [offline reproduction guide](https://github.com/m9h/GRN_ODE/blob/70d57e0fe672485a9ae9274c7494fdecfaa21ad7/python/results/catalog-breaking-ueda-complete-20261121/REPRODUCE.md)
+uses this release and the preserved inputs below. Recovery evidence contains
+full arrays; the original 298 passes are reaudited from saved comparison
+records and window summaries.
 The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
 explains fixed job selection, artifact checks and the complete-case audit.
 The [preserved evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-preservation-20261118)
@@ -222,8 +229,10 @@ Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee3
 requires no new ODE integrations; the complete recovery above builds on these
 preserved inputs.
 The [current cloud runs](FORKS.md#current-execution) include Vilar precision
-diagnostics and Fuss case controls. Tyson's latest continuation and the four
-latest Vilar jobs have ended and await checkpoint collection. François's full
+diagnostics and Fuss case controls. Tyson's next continuation is queued. The
+four latest Vilar checkpoints are collected and verified: they add 373–409
+samples each with every old sample preserved bit-for-bit, but no integration
+has yet finished in those four partitions. François's full
 Linux inventory is audited. The four earlier
 local collection and audit watchers have finished. No local numerical worker
 has been resumed.

@@ -1,0 +1,232 @@
+{
+  "checked_at": "2026-11-21 17:45:45 UTC",
+  "repository": "m9h/GRN_ODE",
+  "release_tag": "kinetics-ueda-complete-20261121",
+  "release_node_id": "RE_kwDOVmo1l84bDWD9",
+  "revision": "70d57e0fe672485a9ae9274c7494fdecfaa21ad7",
+  "all_35_asset_sizes_and_server_sha256_match": true,
+  "evidence_assets": 33,
+  "evidence_bytes": 9864801068,
+  "original_cloud_zips": 32,
+  "cloud_archive_bytes": 9781886357,
+  "original_302_case_archive_bytes": 82914711,
+  "preservation_dependency": "kinetics-ueda-preservation-20261118",
+  "numerical_integrations_performed": 0,
+  "compatibility_tests_passed": 11,
+  "publication_state": "published",
+  "assets": [
+    {
+      "name": "artifact-14495256522.zip",
+      "bytes": 298201234,
+      "sha256": "81d7c65040a19054bd2a99c91c95eb0346b915b6c50732f6e68f884eba59ba27",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776335482"
+    },
+    {
+      "name": "artifact-14498835712.zip",
+      "bytes": 333885790,
+      "sha256": "c2188c23aaab7708829fbbc35cd1f97e5512bb26ed45f5ad444a1c9a489bb871",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776335477"
+    },
+    {
+      "name": "artifact-14499522509.zip",
+      "bytes": 334375320,
+      "sha256": "a1710c1050bd1614ff89d048f19d9166ea6bb4067892809f72d28bc7076dcbc9",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776335475"
+    },
+    {
+      "name": "artifact-14500758999.zip",
+      "bytes": 311758324,
+      "sha256": "7a674a67e5811a99fca40a09ae01ed33a763ebad6b4bd4fe0c107142a666640e",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776335479"
+    },
+    {
+      "name": "artifact-14502329249.zip",
+      "bytes": 299323478,
+      "sha256": "38a4230a36a1c3d98530ece192f110f16c62d28f1e1dbaa0d6a7b910a676feeb",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776335476"
+    },
+    {
+      "name": "artifact-14517657138.zip",
+      "bytes": 334983936,
+      "sha256": "f0fc6e31ce76ab7348a5afe30d13cf0bb13a040d3ff1bb80a65efc823f858a1b",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776337852"
+    },
+    {
+      "name": "artifact-14518926069.zip",
+      "bytes": 336824225,
+      "sha256": "d4c562b80993d9395025f9bd827b9389732960765cf4ba5e5daeb5d6b55f2083",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776337874"
+    },
+    {
+      "name": "artifact-14524247531.zip",
+      "bytes": 301062888,
+      "sha256": "765ee6d9ae6856bf44b194eb97ec7e6594414d6228aa434d25378d48fadd2b6a",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776337883"
+    },
+    {
+      "name": "artifact-14532148037.zip",
+      "bytes": 302045331,
+      "sha256": "f264e2a00afef33164c4ba73d22d3c1a55677f4db5b4f00ba59e360a5e19b8ca",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776337940"
+    },
+    {
+      "name": "artifact-14533501761.zip",
+      "bytes": 324205458,
+      "sha256": "d03202501e05c75f76ec0b1a9b0cfd1fbda1ebadb5bb8601604f6e385ba36b00",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776338052"
+    },
+    {
+      "name": "artifact-14536575618.zip",
+      "bytes": 308797064,
+      "sha256": "cff8372e726c3628dd5deb06de8fcb3ac88bb21a410a4bb8ecb2f4234690f017",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776340231"
+    },
+    {
+      "name": "artifact-14544607025.zip",
+      "bytes": 339422169,
+      "sha256": "3d91dd20cca073ca59fc76f3bbfe3e5fde9e071c4998c4084598fd03cae59d57",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776340290"
+    },
+    {
+      "name": "artifact-14550592503.zip",
+      "bytes": 289692639,
+      "sha256": "558c04e98e4b869ca296107ec5ba4646bf1030e6b6dc51654a71a97f259980cc",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776340312"
+    },
+    {
+      "name": "artifact-14561421744.zip",
+      "bytes": 325758964,
+      "sha256": "81057c71d495ca10c6489b0455ff4bb6e67d82e12dae15cd4dc0f99c69706f11",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776340467"
+    },
+    {
+      "name": "artifact-14576561599.zip",
+      "bytes": 338234189,
+      "sha256": "4004ed55ea222cb6f4d5e615fc9187e8914ebe7b14a59a08e3ee0ea177473864",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776340491"
+    },
+    {
+      "name": "artifact-14581387388.zip",
+      "bytes": 299241594,
+      "sha256": "2a60caea0ccc52095104e6e8047bfdf1efbef09d2ab0276f8a514535fb74a837",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776341901"
+    },
+    {
+      "name": "artifact-14581582105.zip",
+      "bytes": 337622777,
+      "sha256": "23fb9f950565708417a1714760969864f6bc72a50e4f3cb4ec1cea3b7c392400",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776342040"
+    },
+    {
+      "name": "artifact-14583225621.zip",
+      "bytes": 335764430,
+      "sha256": "0a127d81054c2fad997f717fa7605c4acdc36ac886be8f168972600f78a86fe0",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776342384"
+    },
+    {
+      "name": "artifact-14584721497.zip",
+      "bytes": 324430804,
+      "sha256": "c51a29ae5fc009d465e32c172aed9f450065f1efe9f3ea63eefcab399bb17b72",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776342387"
+    },
+    {
+      "name": "artifact-14585967700.zip",
+      "bytes": 337001979,
+      "sha256": "c755af75b32d4fdea3bb8370ee4660b2227214c3d11e533b66d6dbddc7096118",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776342630"
+    },
+    {
+      "name": "artifact-14589860505.zip",
+      "bytes": 337902075,
+      "sha256": "4550115df4ee791cd2a70cc8fda73b1ec1ee01a5a70a926e933a4993ae5c9577",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776343370"
+    },
+    {
+      "name": "artifact-14592166084.zip",
+      "bytes": 337585268,
+      "sha256": "e5e32da7a14a062e04753690c5c032353ef0234e7a9e949a0c443a337935f3fb",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776343914"
+    },
+    {
+      "name": "artifact-14592452578.zip",
+      "bytes": 338704811,
+      "sha256": "72eb56d212975c0cddcbd651cd3d1b4e58c0facdb1ce3df493bc8b2875d6db25",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776344670"
+    },
+    {
+      "name": "artifact-14592666435.zip",
+      "bytes": 288425330,
+      "sha256": "b605c32e2a6b378ea76afe70e7ecd95497339ca8f4554f1f2f10b9fd55e2bbb9",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776344757"
+    },
+    {
+      "name": "artifact-14593080663.zip",
+      "bytes": 319781266,
+      "sha256": "caec289eba242ca749bd324b0a05cf60db9f00557e98ea167a5e423e3422d69c",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776345022"
+    },
+    {
+      "name": "artifact-14595395925.zip",
+      "bytes": 197705654,
+      "sha256": "a26a8aba92214d41c372894948d4f8e8793885e6f71f4f7eecd326afc0351edc",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776345824"
+    },
+    {
+      "name": "artifact-14600210744.zip",
+      "bytes": 258054180,
+      "sha256": "b2fcc26dcde1757a2db8c61a90f700338573a892e1ea40892d5c8d22604cba9d",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776346491"
+    },
+    {
+      "name": "artifact-14601347658.zip",
+      "bytes": 248491018,
+      "sha256": "aafb627686f0747f9a74994dda986b16568724c6c6a2ddf5f49f1e9e6f6be5f6",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776347025"
+    },
+    {
+      "name": "artifact-14601631646.zip",
+      "bytes": 246835956,
+      "sha256": "6c4dd8dadf05581419ca86545cd4fa40de0ca2854b4f0821e9914a27aa2a90f7",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776347169"
+    },
+    {
+      "name": "artifact-14612896413.zip",
+      "bytes": 268565796,
+      "sha256": "1710b17f0685eaa3040330a56e1bc79bee898c13c9fc8034a67e0ad9b2c0982a",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776347191"
+    },
+    {
+      "name": "artifact-14619233417.zip",
+      "bytes": 268594039,
+      "sha256": "85387213bb6252f8625672ee4550521e0783a0fa72bf44b12e09941be7bb3106",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776347269"
+    },
+    {
+      "name": "artifact-14620037266.zip",
+      "bytes": 258608371,
+      "sha256": "007161d3e6c7b1c8c75265856b382c372fc53faa096625a8e2bb38d2f3a9356e",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776347967"
+    },
+    {
+      "name": "breaking-network11-local-20261113.tar.gz",
+      "bytes": 82914711,
+      "sha256": "d8c4cc37037e2afd5cbcf093e4313cf0677e34021edb06d90e160fdaec07147f",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776348482"
+    },
+    {
+      "name": "release-manifest.json",
+      "bytes": 11921,
+      "sha256": "1d9edcf9a464e51a0b125c82f6e66c59463cd75836d9e295489478ac16c35947",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776348816"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 3107,
+      "sha256": "35c0f3e389c3ddfde8368999dd194299029499e9082ec3fdbd1ebe9934b4b00e",
+      "api_url": "https://api.github.com/repos/m9h/GRN_ODE/releases/assets/776348849"
+    }
+  ],
+  "release_id": 453861629,
+  "published_at": "2026-11-21T17:45:46Z",
+  "release_url": "https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121"
+}

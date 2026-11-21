@@ -453,7 +453,11 @@ reached by the original search, and the untreated control. The
 now validates all 323 branches, 1,292 full trajectories and 1,938 comparisons.
 All four cases recover with matching conditional paths, giving a combined
 **302/302 validated cases** and raising the whole-model passing count to 27.
-The new raw-evidence release remains pending. This shows why changing a
+The [complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121)
+now provides every original cloud ZIP and the offline reproduction procedure,
+with the preservation release as a pinned dependency. Recovery evidence
+contains full trajectories; original passing cases are reaudited from saved
+comparisons and window summaries. This shows why changing a
 numerical method requires checking the conditional search again: changed
 responses can select different later trials.
 
@@ -470,8 +474,9 @@ fresh archive extractions in a clean uv environment. Neither result recovers a
 complete case. For the paper's argument, this separates a candidate history
 effect from a numerically validated demonstration under the full control set.
 
-Reduced Goldbeter, Fuss, Ueda, François, Ciliberto, Marhl, Vilar and Rohwer retain numerical failures; finished
-initial-case coverage does not imply full validation. Ciliberto's full search
+Reduced Goldbeter, Fuss, François, Ciliberto, Marhl, Vilar and Rohwer retain
+unresolved numerical failures; Tyson also has an unfinished initial inventory.
+Finished initial-case coverage does not imply full validation. Ciliberto's full search
 passes 548/622 cases, retaining 74 failures and 89 unresolved conditional
 decisions. Complete arrays for ten selected Ciliberto branches remain available
 in the earlier [validation release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-validation-20261112).

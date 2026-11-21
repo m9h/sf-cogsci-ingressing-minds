@@ -1,0 +1,326 @@
+{
+  "checked_at": "2026-11-21T17:35:43.899495+00:00",
+  "breaking": [
+    {
+      "run_id": 44679920877,
+      "parent_run_id": 44589141810,
+      "network": 5,
+      "partition": 14,
+      "producer_status": "incomplete",
+      "selected_coverage_complete": false,
+      "selected_cases_passed": 2,
+      "new_recorded_case_ids": [],
+      "artifact_id": 14622323345,
+      "archive_sha256": "sha256:c8110bed2745dbe97a6fcba00db1ecee574a3623eab56548f5789be79b5ff121",
+      "report_sha256": "23cb534efc2f7e089d6f20c185bf05cdd78e74daa651abd821f33fd8ec2bfb9f",
+      "all_zip_members_verified": 124,
+      "parent_branch_records": 108,
+      "branch_records": 115,
+      "new_branches": 7,
+      "new_branch_ids": [
+        "07c01d2bf58cf02eee81f8dcb690e64d0dbbee06e63eed5372466f8e7490c3b6",
+        "2a91cd667826afc45f3c1225805fd7f4dccb543abf9a2f5ba76cdf068233eda2",
+        "309119283f9332d19e2f4330c2733156ed4fb9eda8f3e25125efe8f03343d076",
+        "335500ae4ef6b7ca5684d5dd40d4e1ad49ec429db0e4ac5598e7cf8afa3e6509",
+        "36c011a576300173824bc65afb4ee35129558ec9438336a97d22fcd81dc3b98d",
+        "3aef0b48efc9b0311613d74a72ef027ccc95679b7b1e700b8de9f62f51720dcd",
+        "940271552afec6391b01cd4a36028089194ef0897a00c8a16cdb695012c53b66"
+      ],
+      "all_new_branches_pass": true,
+      "branch_outcomes": {
+        "true": 114,
+        "false": 1
+      },
+      "preserved_parent_passing_branch_bytes": 107,
+      "recorded_cases": 3,
+      "pending_cases": [
+        "pM__up--M__up"
+      ],
+      "all_recorded_case_summaries_independently_replayed": true,
+      "unresolved_conditional_decisions_retained": [],
+      "raw_trajectory_arrays_available": false,
+      "time_budget_seconds": 18000.0
+    }
+  ],
+  "numerical_integrations_performed_locally": 0,
+  "local_worker_signals_sent": [],
+  "new_complete_cases": 0,
+  "new_complete_models": 0,
+  "vilar": [
+    {
+      "partition": 8,
+      "artifact_id": 14596742091,
+      "archive_sha256": "sha256:b8ff153a436ec76967714b67cfb0061ab1838106e78bb9229567ecd85a20fd18",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "aa58b9b5c4b75df8d7f7d3cd3e1a8f82a04db61989e2e4b013edb00d4ff3b3ae",
+      "parent_checkpoint_sha256": "838fa16e1fe90ce895d872fbb4a7c91d8cf26f939363fc7cc005e5d28c58429a",
+      "parent_samples": 11754,
+      "saved_samples": 12157,
+      "new_samples": 403,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 698842296,
+      "steps": 766842296,
+      "active_time": [
+        "1.215621723822474929232008531100551442844e+2",
+        "1.716963273105011132109324841556879464665e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 9,
+      "artifact_id": 14596119586,
+      "archive_sha256": "sha256:9730f003ac7614fa0f78d08bc4fc54f8377d06a7de6591c74cfd4551bc93b737",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "a121d68fd51444a084e583a457a720c800e5d51c42983e25ac96a9163f0e8e16",
+      "parent_checkpoint_sha256": "87b7f604b82cc10ae376465ba1a70dc8b218df4625115bcba92f64418ca423ae",
+      "parent_samples": 11890,
+      "saved_samples": 12299,
+      "new_samples": 409,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 721842296,
+      "steps": 790842296,
+      "active_time": [
+        "1.229850630397088793364982334481936800717e+2",
+        "-1.226316252914473042954239841759383014004e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 11,
+      "artifact_id": 14592499765,
+      "archive_sha256": "sha256:8ab509d48307b249ea2f70455e6d8b67958f06fc90f9756fae5af24640629d40",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "be7fca987d5431d1cd6b62da56415a6898967d7c5c350022b06b360e58a9ca49",
+      "parent_checkpoint_sha256": "237c35d82f834f42e2b0351c80780514db9e979cbc7b1f0aea9377016bc95a77",
+      "parent_samples": 11908,
+      "saved_samples": 12281,
+      "new_samples": 373,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 724842296,
+      "steps": 787842296,
+      "active_time": [
+        "1.228072012635103980444321770058860608150e+2",
+        "-9.488322905833519953560490990625439940933e-38"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 16,
+      "artifact_id": 14588603972,
+      "archive_sha256": "sha256:e005494d682bcf95de9eedfa0439f44ff8aa7aed02f5e3cf5bc4892f4d04d3c1",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "42083bf735bdeb4fb2dd2877cf283a47f3212c6bd1b8d6b8556a9ca712329f27",
+      "parent_checkpoint_sha256": "1e85354dec64f36aa1ea56592ee090cdc646c4b0ce818c8ab6375ec679e49ab1",
+      "parent_samples": 11641,
+      "saved_samples": 12044,
+      "new_samples": 403,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 679842296,
+      "steps": 747842296,
+      "active_time": [
+        "1.204357230364709290819888720267379523731e+2",
+        "-1.844325561675513394942521371230726557903e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    }
+  ],
+  "vilar_run_id": 44589152244,
+  "vilar_parent_run_id": 44448366489,
+  "source_verification_sha256": {
+    "progress-verification.json": "18a768dab2be39c5bfa51146034a5d43d9e9abaa329963113d2edce10ff9daa8",
+    "vilar-progress-verification.json": "81ac6017c236e61a7615e59da506877f1094cce5c705788093a9cf8806092f1d"
+  },
+  "tyson_continuation": {
+    "repository": "m9h/GRN_ODE",
+    "workflow_id": 410775433,
+    "ref": "kinetics-resume-case-selection",
+    "source_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+    "parent_run_id": 44679920877,
+    "parent_artifact_id": 14622323345,
+    "parent_archive_sha256": "c8110bed2745dbe97a6fcba00db1ecee574a3623eab56548f5789be79b5ff121",
+    "parent_verification": "../progress-verification.json",
+    "state": "bound",
+    "post_attempts": 1,
+    "before_run_ids": [
+      43559717170,
+      43560384864,
+      43560386302,
+      43808017634,
+      43808027224,
+      43808036256,
+      43808045813,
+      43808055546,
+      43808123233,
+      43808132794,
+      43808140318,
+      43808151273,
+      43808161767,
+      43808172212,
+      43808179372,
+      43808186657,
+      43808196887,
+      43808207156,
+      43907657248,
+      43907660865,
+      43907665080,
+      43907668110,
+      44118514341,
+      44118517338,
+      44118520523,
+      44247021390,
+      44247126362,
+      44383931943,
+      44383935036,
+      44448634325,
+      44448645976,
+      44589141810,
+      44589146957,
+      44679920877
+    ],
+    "inputs": {
+      "breaking_networks": "[5]",
+      "breaking_resume_run": "44679920877",
+      "breaking_shard_count": "16",
+      "breaking_resume_shard_count": "16",
+      "breaking_only_shard": "14"
+    },
+    "run_id": 44930974577,
+    "run_attempt": 1,
+    "status": "queued",
+    "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44930974577",
+    "created_at": "2026-11-21T17:36:27Z",
+    "job_id": 136927296250
+  },
+  "tyson_complete_partition_selection": {
+    "schema_version": 1,
+    "purpose": "Complete predetermined partition inventory with only terminal incomplete partitions continued. Every partition retains its own evidence.",
+    "network": 5,
+    "model_id": "BIOMD0000000005",
+    "expected_model_cases": 58,
+    "shard_count": 16,
+    "partitions": [
+      {
+        "shard_index": 0,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339059,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 1,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339802,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 2,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339482,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 3,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339835,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 4,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339473,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 5,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339431,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 6,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339423,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 7,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339421,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 8,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339944,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 9,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339477,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 10,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339593,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 11,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339309,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 12,
+        "run_id": 43485099563,
+        "run_attempt": 1,
+        "job_id": 132091339573,
+        "producer_revision": "83c78cd367b42ceee894c6b32f979b2faad0ecbb"
+      },
+      {
+        "shard_index": 13,
+        "run_id": 43808017634,
+        "run_attempt": 1,
+        "job_id": 133103137786,
+        "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "shard_index": 14,
+        "run_id": 44930974577,
+        "run_attempt": 1,
+        "job_id": 136927296250,
+        "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "shard_index": 15,
+        "run_id": 44118517338,
+        "run_attempt": 1,
+        "job_id": 134163140860,
+        "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      }
+    ]
+  },
+  "tyson_selection_sha256": "3382fbe9d57baf7d8557b60c5b5396b7ea22326ee611c007f62009e32595b86c",
+  "vilar_continuation_not_yet_submitted": true
+}
