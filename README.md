@@ -71,7 +71,7 @@ The five models are **MAPK protein-signaling models**, despite the historical
 The [BioModels guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/models/README.md)
 explains their biology, equations, conserved pools, source papers and provenance.
 
-**Completion status, 20 November 2026 UTC:** the basic all-35-model simulations
+**Completion status, 21 November 2026 UTC:** the basic all-35-model simulations
 are finished; the full memory-validation goal remains open.
 
 | Validation stage | Verified result | Remaining work |
@@ -80,7 +80,7 @@ are finished; the full memory-validation goal remains open.
 | Single-input retention | 538/538 stimulation cases pass numerical comparisons | Below-resolution response labels remain unresolved |
 | Repeated stimulation | 538/538 cases pass on macOS and Linux | Complete numerical comparison |
 | Paired stimulation | 4,205/4,208 cases pass | Three Vilar cases unresolved |
-| Conditional breaking | 34/35 initial inventories complete; 26/35 whole-model audits pass | Finish Tyson's inventory and resolve or document remaining validation failures |
+| Conditional breaking | 34/35 initial inventories complete; 27/35 whole-model audits pass | Finish Tyson's inventory and resolve or document remaining validation failures |
 
 These counts measure numerical validation, not proof that every network learns.
 Completed jobs, software tests and partially verified trajectories do not add
@@ -107,6 +107,9 @@ case audit uses independent high-precision Taylor implementations; its native
 solver disagreements remain documented.
 As of **18 November 2026 UTC**, the conditional breaking screen has
 [complete initial-case inventories for 34 models and passing whole-model audits for 26](https://github.com/m9h/GRN_ODE/blob/f45fed315f63c19f66690dffe676caf1681fe011/python/results/catalog-breaking-celliere29-20261116/README.md).
+The [complete Ueda recovery](https://github.com/m9h/GRN_ODE/blob/649df7f5e8f89563078b4349275e60331193d57a/python/results/catalog-breaking-ueda-complete-20261121/README.md)
+now raises the passing whole-model count to **27**: all 302 Ueda cases validate,
+combining 298 original passes with four complete-control recoveries.
 The [complete Cellière TGF-β audit](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-celliere-20261116)
 passes all 1,088 cases and 34,816 conditional trials; its sixteen original
 evidence packages reproduce the audit from fresh extraction.
@@ -116,7 +119,8 @@ with failures retained. **Tyson is the only unfinished initial inventory**;
 partition 15 has now completed all four cases, leaving only
 [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44679920877).
 Its latest audited checkpoint adds thirteen passing branch records; one case
-remains pending, and the next continuation is queued from those exact bytes.
+remains pending. Its subsequent continuation also ended incomplete; that latest
+checkpoint still needs collection and audit.
 The [complete separate François Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
 now covers all 118 cases: 80 pass and 38 retain numerical failures. All sixteen
 original ZIPs and all 4,121 partition-local branch records verify; six conditional
@@ -197,16 +201,17 @@ and [Ueda audits](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-2026
 See the
 [scope and status](docs/figure-guide.md#where-the-35-model-kinetics-project-fits).
 
-Execution checked **19 November 2026, 04:39–04:40 UTC**: nine local numerical workers
-and their coordinator are stopped at the user's request. This includes Ueda's
-unfinished 323-trajectory case-control run. Its
-[cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) is now
-running after Linux validation passed. The [latest independent audit](docs/evidence/ueda-continuation-20261120.json)
-verifies twenty-five partitions: 125 branches, 500 complete trajectories and
-all 750 pairwise comparisons. Together with the 170 previously preserved branches,
-295 of 323 now have complete evidence; 28 remain. All 153 continuation branches
-stay assigned to their original 32 fixed partitions. No Ueda
-case recovery is claimed until the complete 323-branch audit passes.
+No local numerical workers have been resumed. Ueda's
+[cloud continuation](https://github.com/m9h/GRN_ODE/actions/runs/44393623529) has
+finished all 32 fixed partitions. The [complete model accounting](docs/evidence/ueda-complete-model-20261121.json)
+combines all 153 new branches with preserved evidence, verifying 323 branches,
+1,292 full trajectories and 1,938 passing comparisons. The untreated baseline
+passes, all four selected cases recover, and both conditional searches match
+the original paths. A fresh audit of the published original evidence reproduces
+the earlier 298/302 result; together the results validate **302/302 cases**.
+No previously passing branch is flagged for revalidation. All original ZIPs and
+arrays are preserved locally; durable publication of the new raw evidence is
+still pending.
 The [collection guide](https://github.com/m9h/GRN_ODE/blob/0c3c315dd34391abd4c38bfe93a358e78779451e/python/results/catalog-breaking-ueda-continuation-20261118/COLLECTION.md)
 explains fixed job selection, artifact checks and the complete-case audit.
 The [preserved evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-preservation-20261118)
@@ -214,10 +219,12 @@ contains all 787 available snapshot files and the original diagnostic archive.
 A fresh download verifies all 628 preserved arrays and reproduces the complete
 preparation audit, import restoration proof and continuation plan byte for byte.
 Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee32f99d3feefed38e6d845b01c/python/results/catalog-breaking-ueda-continuation-20261118/RELEASE.md)
-requires no new ODE integrations; the four unresolved cases remain outstanding.
+requires no new ODE integrations; the complete recovery above builds on these
+preserved inputs.
 The [current cloud runs](FORKS.md#current-execution) include Vilar precision
-diagnostics, Fuss case controls and Tyson's next continuation. The latest terminal
-Tyson and François checkpoints are now audited. The four earlier
+diagnostics and Fuss case controls. Tyson's latest continuation and the four
+latest Vilar jobs have ended and await checkpoint collection. François's full
+Linux inventory is audited. The four earlier
 local collection and audit watchers have finished. No local numerical worker
 has been resumed.
 
@@ -228,9 +235,9 @@ verify 60 Ciliberto diagnostic branches (240 arrays), its first 81 later control
 (324 arrays), and ten Ueda continuation branches (40 arrays). All 906 pairwise
 comparisons pass over the complete original grids. The remaining 200 Ciliberto
 diagnostics and 6,778 later controls still require verification. The subsequent
-[Ueda collection](docs/evidence/ueda-continuation-20261120.json) reduces its
-remaining scope to 28 branches. Full case replay remains required. No additional
-case or whole-model recovery is claimed.
+[complete Ueda audit](docs/evidence/ueda-complete-model-20261121.json) now recovers
+all four selected cases and adds one passing whole-model audit. Ciliberto's
+complete first diagnostic run is being audited from all 32 original archives.
 
 The [complete Fuss continuation checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261119.json)
 now verifies all 32 original ZIPs, totalling 6.61 GB, and 794 complete arrays.

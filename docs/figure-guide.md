@@ -401,10 +401,11 @@ includes all controls and the mathematical definitions.
 
 The [three-trial breaking screen](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/CATALOG_BREAKING.md)
 uses eight control arms and records explicit differences between the MATLAB
-code and the paper's prose. As of 16 November 2026 UTC, published terminal
-reports cover **34 distinct models; 26 have passing whole-model numerical audits**.
-The [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/f45fed315f63c19f66690dffe676caf1681fe011/python/results/catalog-breaking-celliere29-20261116/README.md)
-lists each model and its complete-model audits. Four of the 26 passing models
+code and the paper's prose. As of 21 November 2026 UTC, published terminal
+reports cover **34 distinct models; 27 have passing whole-model numerical audits**.
+The earlier [all-35 evidence index](https://github.com/m9h/GRN_ODE/blob/f45fed315f63c19f66690dffe676caf1681fe011/python/results/catalog-breaking-celliere29-20261116/README.md)
+lists the first 26 passing models; the complete Ueda recovery below adds the
+twenty-seventh. Four passing models
 have no eligible breaking cases under the stated selection rule; that status
 does not demonstrate a learning response.
 The [De Caluwe circadian-clock audit](https://github.com/m9h/GRN_ODE/blob/6cf3cdcfe3bd04d677c2fbedfb3d30ce3e1bbe2d/python/results/catalog-breaking-decaluwe20-local-20261114/README.md)
@@ -441,15 +442,20 @@ Earlier complete audits pass all 216 Leloup cases,
 728 Martins cases and 112 Hoefnagel cases. Their evidence is available in the
 [three-model release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-breaking-12-28-31-20261113)
 and [Hoefnagel release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-hoefnagel-20261113).
-Ueda's [complete search](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-20261113)
+Ueda's original [complete search](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-20261113)
 passes 298/302 cases, with four numerical failures and no unresolved conditional
 decisions. Its subsequent [full-array diagnostic](https://github.com/m9h/GRN_ODE/blob/ede1a69d3ea29c4388bb152704255370a57023ca/python/results/catalog-breaking-scipy-ueda11/README.md)
 confirms all 24 previously mismatched trajectories with Radau and RoadRunner,
-including a refinement of each. Complete-case validation still requires
+including a refinement of each. Complete-case validation requires
 323 trajectories: 298 original case trajectories, 24 later candidates not
-reached by the original search, and the untreated control. Complete control
-validation remains pending. This shows why changing a numerical method requires checking the
-conditional search again: changed responses can select different later trials.
+reached by the original search, and the untreated control. The
+[completed control audit](https://github.com/m9h/GRN_ODE/blob/649df7f5e8f89563078b4349275e60331193d57a/python/results/catalog-breaking-ueda-complete-20261121/README.md)
+now validates all 323 branches, 1,292 full trajectories and 1,938 comparisons.
+All four cases recover with matching conditional paths, giving a combined
+**302/302 validated cases** and raising the whole-model passing count to 27.
+The new raw-evidence release remains pending. This shows why changing a
+numerical method requires checking the conditional search again: changed
+responses can select different later trials.
 
 Two additional releases make the numerical limits inspectable. The
 [Fuss pilot](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-fuss-radau-20261116)
