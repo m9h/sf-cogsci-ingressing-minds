@@ -40,7 +40,7 @@ verifying their terminal parent artifacts. No local numerical worker was resumed
 | Fuss complete case controls | [All 32 fixed partitions](https://github.com/m9h/GRN_ODE/actions/runs/44657363724) | Actual continuation jobs bound after Linux validation; parent audit preserves 794 arrays and 180 complete branches |
 | Ueda complete case controls | [Complete 302-case audit](docs/evidence/ueda-complete-model-20261121.json) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; new raw-evidence release still pending |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [All 750 failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44401097371) | Run has ended with failures retained; original checkpoint collection and full array audit remain pending |
-| Ciliberto breaking diagnostics, network 28 / BioModel 697 | [All 260 remaining original failed branches](https://github.com/m9h/GRN_ODE/actions/runs/44407336593) | All 32 jobs ended; all 24.11 GB of original ZIPs preserved and checksummed; complete array audit running |
+| Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
 | Rohwer complete later controls | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both runs remain unfinished; all 10,924 later-control branches stay in the fixed required scope |
 
@@ -59,6 +59,15 @@ without collection errors. The largest scaled errors are 0.73991 for Ciliberto
 diagnostics, 0.03387 for its later controls, and 0.04998 for Ueda, against the
 unchanged acceptance threshold of 1. These results add no recovered cases or
 whole-model passes; every unfinished partition remains required.
+
+The [complete first Ciliberto diagnostic collection](docs/evidence/ciliberto-first-complete-20261121.json)
+now covers all 32 fixed partitions, all 260 branches and all 1,040 complete
+arrays. It reproduces 1,553 passing comparisons out of 1,560. Three branches
+retain mismatches: two fail the Radau refinement comparison, and one retains
+RoadRunner refinement and cross-engine disagreements. There are no missing
+artifacts or collection errors. All 24,108,022,074 original ZIP bytes are
+preserved. The later controls and complete 74-case replay remain necessary;
+this diagnostic completion alone adds no case or whole-model pass.
 
 The [20 November Ueda audit](docs/evidence/ueda-continuation-20261120.json) covers
 partitions 0 through 24: 125 branches, 500 arrays and 750 passing comparisons.

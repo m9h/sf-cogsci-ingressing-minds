@@ -237,7 +237,11 @@ comparisons pass over the complete original grids. The remaining 200 Ciliberto
 diagnostics and 6,778 later controls still require verification. The subsequent
 [complete Ueda audit](docs/evidence/ueda-complete-model-20261121.json) now recovers
 all four selected cases and adds one passing whole-model audit. Ciliberto's
-complete first diagnostic run is being audited from all 32 original archives.
+[complete first diagnostic collection](docs/evidence/ciliberto-first-complete-20261121.json)
+now verifies all 32 original archives and all 1,040 trajectories. Of 260 branches,
+257 pass and three retain numerical mismatches; 1,553 of 1,560 pairwise
+comparisons pass. The failures remain in the result. Later controls and the
+full case replay are still required, so this adds no recovered Ciliberto case.
 
 The [complete Fuss continuation checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261119.json)
 now verifies all 32 original ZIPs, totalling 6.61 GB, and 794 complete arrays.
