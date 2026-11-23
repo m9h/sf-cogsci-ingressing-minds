@@ -71,7 +71,7 @@ The five models are **MAPK protein-signaling models**, despite the historical
 The [BioModels guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/models/README.md)
 explains their biology, equations, conserved pools, source papers and provenance.
 
-**Completion status, 21 November 2026 UTC:** the basic all-35-model simulations
+**Completion status, 23 November 2026 UTC:** the basic all-35-model simulations
 are finished; the full memory-validation goal remains open.
 
 | Validation stage | Verified result | Remaining work |
@@ -80,7 +80,7 @@ are finished; the full memory-validation goal remains open.
 | Single-input retention | 538/538 stimulation cases pass numerical comparisons | Below-resolution response labels remain unresolved |
 | Repeated stimulation | 538/538 cases pass on macOS and Linux | Complete numerical comparison |
 | Paired stimulation | 4,205/4,208 cases pass | Three Vilar cases unresolved |
-| Conditional breaking | 34/35 initial inventories complete; 27/35 whole-model audits pass | Finish Tyson's inventory and resolve or document remaining validation failures |
+| Conditional breaking | 34/35 initial inventories fully auditable; 27/35 whole-model audits pass | Restore Tyson's missing evidence through fixed-scope recomputation; finish remaining validation |
 
 These counts measure numerical validation, not proof that every network learns.
 Completed jobs, software tests and partially verified trajectories do not add
@@ -92,13 +92,13 @@ remaining issues:
 | Model | Current gap |
 |---|---|
 | [Reduced Goldbeter (3)](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/CATALOG_BREAKING.md#a-domain-limit-exposed-by-the-goldbeter-model) | Four integration failures affect two of eight cases; all 24 dedicated diagnostic attempts also stop before the required endpoint. |
-| Tyson (5) | One initial case remains unfinished; its verified cloud continuation is running. |
+| Tyson (5) | Its last active partition finished, but fourteen older partition payloads are unavailable. [Evidence restoration](docs/evidence/tyson-completion-and-evidence-gap-20261123.json) is required before the complete 58-case audit. |
 | Fuss (8) | [1,050 trajectories are retained and verified](docs/evidence/fuss-checkpoint-audit-20261121.json) across the latest 31 checkpoints and the older retained partition 11; complete controls and replay remain open for eighteen cases. |
 | François (25) | The separate Linux inventory covers all 118 cases, with 38 failures and six unresolved conditional decisions. |
 | Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. |
-| Marhl (30) | The fixed high-precision computation covers 380 branches for twelve cases; collection and complete-case validation remain open. |
+| Marhl (30) | [60 full trajectories and five complete branches verified](docs/evidence/marhl-partial-array-audit-20261121.json); all thirty available branch comparisons pass. The full scope remains 1,520 tasks, 380 branches and twelve cases. |
 | Vilar (32) | Breaking validation remains unresolved, alongside three paired cases; four precision checkpoints remain incomplete. |
-| Rohwer (35) | [All 750 first-stage branches are accounted for](docs/evidence/rohwer-checkpoint-audit-20261121.json), but 584 diagnostics remain unfinished; later controls and complete-case replay are also required. |
+| Rohwer (35) | The [verified continuation](docs/evidence/rohwer-continuation-20261123.json) produced 32 new artifacts after passing 112 Linux tests. Their arrays still need collection; later controls and complete-case replay also remain required. |
 
 Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics
@@ -129,13 +129,17 @@ passes all 1,088 cases and 34,816 conditional trials; its sixteen original
 evidence packages reproduce the audit from fresh extraction.
 New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
-with failures retained. **Tyson is the only unfinished initial inventory**;
-partition 15 has now completed all four cases, leaving only
-[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44930974577).
-Its [latest audited checkpoint](docs/evidence/terminal-checkpoints-20261121.json)
-adds seven passing branch records and preserves all 107 previous passing
-records byte-for-byte. One case remains pending; its next cloud continuation
-is bound to the same partition and verified parent.
+with failures retained. Tyson's last active
+[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44930974577)
+has now finished all four cases, with three passing. Its latest audit verifies
+121 branch records, adds six passing records and preserves all 114 earlier
+passing records byte-for-byte. The [full-model audit exposed an evidence gap](docs/evidence/tyson-completion-and-evidence-gap-20261123.json):
+partitions 0–13 no longer have available original payloads. Partitions 14 and 15
+are preserved in the workspace. Recomputations of 0–13 were submitted with
+unchanged numerical code and requests; thirteen actual jobs are bound, while
+partition 0 still awaits run binding. The full 58-case audit and completion
+count remain unpromoted. Missing historical bytes are not reconstructed or
+represented as verified originals.
 The [complete separate François Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
 now covers all 118 cases: 80 pass and 38 retain numerical failures. All sixteen
 original ZIPs and all 4,121 partition-local branch records verify; six conditional
@@ -243,8 +247,7 @@ Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee3
 requires no new ODE integrations; the complete recovery above builds on these
 preserved inputs.
 The [current execution table](FORKS.md#current-execution) records the next Fuss
-case-control continuations and Vilar precision checkpoints. Tyson's continuation
-is running. The
+case-control continuations, Tyson evidence restoration and Vilar precision checkpoints. The
 four latest Vilar checkpoints are collected and verified: they add 373–409
 samples each with every old sample preserved bit-for-bit, but no integration
 has yet finished in those four partitions. François's full
@@ -260,8 +263,9 @@ connection and produced no artifact. Its older retained checkpoint has been
 reaudited separately, preserving 34 trajectories. The
 [two new continuation scopes](docs/evidence/fuss-continuations-20261121.json)
 cover all 32 original partitions exactly once, using the appropriate verified
-parent for each. Their validation gates are queued; actual computation job
-IDs still need binding. No complete case or whole-model recovery is claimed.
+parent for each. [Both gates passed and all 32 actual jobs are bound](docs/evidence/fuss-job-bindings-20261123.json).
+The runs are now terminal and their latest checkpoint collection is pending.
+No complete case or whole-model recovery is claimed.
 
 The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)
 binds all 864 computation jobs across the Ueda, Ciliberto and Rohwer stages to
@@ -300,9 +304,14 @@ runner](https://github.com/m9h/GRN_ODE/blob/a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf
 adds authenticated checkpoint transfer, and its [full-precision Linux gate](https://github.com/m9h/GRN_ODE/actions/runs/44593959589)
 now passes all 234 tests without skips. [All six original batches are submitted](docs/evidence/marhl-complete-execution-20261120.json),
 covering the full 1,520 tasks. The [published collector and twelve-case auditor](https://github.com/m9h/GRN_ODE/blob/f95c155a968e15c30bdd39d6ac843f7b961c2930/python/results/catalog-breaking-marhl-full-precision-20261119/COLLECTION.md)
-also pass all 47 Linux tests without skips. Full scientific computations,
-artifact audits and case outcomes remain outstanding; implementation tests do
-not count as full-precision scientific results. A separate inherited workflow reports source-fingerprint
+also pass all 47 Linux tests without skips. The [first full-array collection](docs/evidence/marhl-partial-array-audit-20261121.json)
+preserves eighty original artifacts (695 MB): sixty contain complete trajectories
+and twenty contain verified portable partial checkpoints. Five complete branches
+pass all thirty pairwise comparisons on their full grids. This compares two
+high-precision implementations of the Taylor method, not different integrator
+families or all internal states. Exact restart-state checks remain for the
+matching Linux runtime. Complete-case validation is still outstanding.
+A separate inherited workflow reports source-fingerprint
 errors when it applies older published-evidence checks to the new Taylor adapter;
 that evidence must continue to use its original frozen source.
 
