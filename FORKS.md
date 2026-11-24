@@ -49,7 +49,7 @@ No local numerical worker was resumed.
 | Fuss complete case controls | [Complete checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261124.json) · [Next submissions](docs/evidence/fuss-continuations-20261124.json) | All 32 checkpoints audited: 1,283 arrays, all 1,050 parent arrays preserved, 302 agreeing branches and 1,812 passing comparisons. Two continuations submitted; validation gates queued at observation |
 | Ueda complete case controls | [Complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; original ZIPs and offline reproduction guide published |
 | Rohwer breaking diagnostics, network 35 / BioModel 38 | [Completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) · [Next continuation](https://github.com/m9h/GRN_ODE/actions/runs/45335934693) | 1,369 complete arrays; 318 terminal diagnostics include 255 agreements, 23 mismatches and 40 integration failures. Full 32-partition continuation submitted for the remaining 432; local 152-test gate and real restoration pass, Linux validation queued |
-| Marhl high-precision diagnostics | [Latest array audit](docs/evidence/marhl-array-audit-20261124T0547.json) | 222 original artifacts verified; 166 complete arrays, 56 partial checkpoints; nineteen branches pass all 114 comparisons. All 215 earlier artifacts and extracted payloads remain byte-identical. Sixteen cancelled jobs produced no artifact; full 1,520-task scope remains required |
+| Marhl high-precision diagnostics | [Latest array audit](docs/evidence/marhl-array-audit-20261124T0547.json) · [Checkpoint continuations](docs/evidence/marhl-continuations-20261124.json) | 222 original artifacts verified; 166 complete arrays; nineteen branches pass all 114 comparisons. Six accepted continuation requests cover all 56 partial checkpoints; validation gates queued. Sixteen cancelled jobs produced no artifact; full 1,520-task scope remains required |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
 | Rohwer complete later controls | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both runs remain unfinished; all 10,924 later-control branches stay in the fixed required scope |
@@ -119,6 +119,17 @@ across the two Taylor implementations and two precisions. These are not
 different integrator families; exact checkpoint restart validation still
 requires the matching Linux runtime. All 1,520 tasks, 380 branches and twelve
 cases remain in the fixed selection; no complete-case recovery is claimed.
+
+The [Marhl continuation submissions](docs/evidence/marhl-continuations-20261124.json)
+now cover all 56 audited partial checkpoints across the original six batches.
+All six new run records are visible, with validation gates queued. Each task
+uses the unchanged producer and must validate its exact checkpoint state in
+the matching Linux runtime before resuming. The eventual collection selection
+will retain all 1,520 tasks: 56 continued bindings with their original lineage
+and 1,464 unchanged bindings. Actual compute jobs are not yet created or bound;
+batch identity will be established from each complete task matrix. The sixteen
+cancelled jobs without output require a separate replacement path, and no
+active original job or local numerical worker was restarted.
 
 The [20 November Ueda audit](docs/evidence/ueda-continuation-20261120.json) covers
 partitions 0 through 24: 125 branches, 500 arrays and 750 passing comparisons.
