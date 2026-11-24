@@ -43,12 +43,12 @@ No local numerical worker was resumed.
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Evidence restoration status](docs/evidence/biomodels-progress-20261124.json) | All fourteen replacement jobs bound: four terminal, five running, five queued. New results await audit; original partitions 14–15 are published and freshly verified |
+| Tyson initial inventory | [Replacement evidence audit](docs/evidence/tyson-recomputation-audit-20261124.json) | Four replacement partitions verify: fourteen cases, thirteen passing, 548 branch records. Ten replacements still await collection and audit; original partitions 14–15 are published and freshly verified |
 | François separate Linux inventory | [Completed full audit](docs/evidence/francois-linux-inventory-20261120.json) | All 118 cases covered; 80 pass, 38 retain failures; all sixteen original ZIPs verified |
 | Vilar precision diagnostics | [Checkpoint audit](docs/evidence/terminal-checkpoints-20261121.json) | All four original ZIPs verified; checkpoints add 373–409 samples each with old prefixes bitwise unchanged; all four integrations remain incomplete |
-| Fuss complete case controls | [31 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44934673699) · [Partition 11](https://github.com/m9h/GRN_ODE/actions/runs/44933648891) | All 32 jobs terminal; incremental collection has audited ten partitions and 341 complete arrays without collection errors. The earlier 1,050-array inventory remains retained; no new complete case claimed |
+| Fuss complete case controls | [Complete checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261124.json) · [Next submissions](docs/evidence/fuss-continuations-20261124.json) | All 32 checkpoints audited: 1,283 arrays, all 1,050 parent arrays preserved, 302 agreeing branches and 1,812 passing comparisons. Two continuations submitted; validation gates queued at observation |
 | Ueda complete case controls | [Complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; original ZIPs and offline reproduction guide published |
-| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Collection status](docs/evidence/biomodels-progress-20261124.json) | All 32 new original artifacts (8.78 GB) downloaded and checksummed; full array audit running; no additional complete case claimed |
+| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) | 1,369 complete arrays; all 715 parent arrays and 166 terminal results preserved. Of 318 terminal diagnostics, 255 agree, 23 mismatch and 40 retain integration failures; 432 diagnostics unfinished |
 | Marhl high-precision diagnostics | [First array audit](docs/evidence/marhl-partial-array-audit-20261121.json) | 80 original artifacts verified; 60 complete arrays, 20 partial checkpoints; five branches pass all thirty comparisons; full 1,520-task scope remains required |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
@@ -94,9 +94,16 @@ are now implemented, with 112 local and Linux tests passing. Untouched branches
 run before interrupted requests within the same fixed partitions. The
 [continuation run](https://github.com/m9h/GRN_ODE/actions/runs/44950774489)
 restored all parents successfully and produced 32 new artifacts totaling
-8,782,403,087 bytes. All 32 original ZIP sizes and checksums now verify, and
-the independent full-array collector is running. No case or whole-model recovery is
-claimed, and durable publication of the original ZIPs remains pending.
+8,782,403,087 bytes. The [completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json)
+verifies all 32 original ZIPs and 1,369 complete arrays: all 715 parent arrays
+remain unchanged, with 654 additions. All 166 terminal parent diagnostics are
+preserved. The full 750-branch inventory now contains 255 agreements, 23
+mismatches, forty explicit integration failures, 61 interrupted diagnostics and
+371 unstarted diagnostics. Available arrays yield 1,879 comparisons, 1,769
+passing. The next continuation must preserve all 318 terminal diagnostics and
+finish the other 432; its restoration code still needs extension for this
+generation. No case or whole-model recovery is claimed, and durable publication
+of the original ZIPs remains pending.
 
 The [20 November Ueda audit](docs/evidence/ueda-continuation-20261120.json) covers
 partitions 0 through 24: 125 branches, 500 arrays and 750 passing comparisons.
@@ -151,6 +158,16 @@ and 136935485284 have passed. [All 32 actual computation jobs are bound](docs/ev
 and were terminal by the 23 November check; their newest checkpoint audit is pending.
 The full 1,309-branch, 5,236-trajectory, eighteen-case scope is unchanged.
 No case or whole-model recovery is claimed.
+
+The [24 November Fuss audit](docs/evidence/fuss-complete-checkpoint-20261124.json)
+now verifies all 32 latest checkpoints and 1,283 complete arrays. All 1,050
+parent arrays remain byte-identical, with 233 additions; the 302 complete
+branches pass all 1,812 comparisons. Every partition remains incomplete. The
+[two new continuation submissions](docs/evidence/fuss-continuations-20261124.json)
+resume partition 11 from run 44933648891 and the other 31 from run 44934673699,
+under the unchanged producer and full eighteen-case plan. Both requests are
+bound to actual runs; their validation gates were queued at the first check.
+Actual computation-job binding remains pending until those gates pass.
 
 The [earlier terminal-checkpoint audit](docs/evidence/cloud-progress-20261119-evening.json)
 replays all recorded cases and checks all 95 Tyson and 324 François branch

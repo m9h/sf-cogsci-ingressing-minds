@@ -95,13 +95,13 @@ remaining issues:
 | Model | Current gap |
 |---|---|
 | [Reduced Goldbeter (3)](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/CATALOG_BREAKING.md#a-domain-limit-exposed-by-the-goldbeter-model) | Four integration failures affect two of eight cases; all 24 dedicated diagnostic attempts also stop before the required endpoint. |
-| Tyson (5) | Its last active partition finished, but fourteen older partition payloads are unavailable. [Evidence restoration](docs/evidence/tyson-completion-and-evidence-gap-20261123.json) is required before the complete 58-case audit. |
-| Fuss (8) | [1,050 trajectories are retained and verified](docs/evidence/fuss-checkpoint-audit-20261121.json) across the latest 31 checkpoints and the older retained partition 11; complete controls and replay remain open for eighteen cases. |
+| Tyson (5) | [Four replacement partitions audited](docs/evidence/tyson-recomputation-audit-20261124.json): fourteen cases, thirteen passing, with 548 branch records verified. Ten replacement partitions still await collection and audit before the full 58-case inventory can be reconstructed. |
+| Fuss (8) | [All 32 latest checkpoints audited](docs/evidence/fuss-complete-checkpoint-20261124.json): 1,283 complete trajectories, including all 1,050 parent trajectories unchanged. All 302 complete branches agree; controls and full replay remain open for eighteen cases. |
 | François (25) | The separate Linux inventory covers all 118 cases, with 38 failures and six unresolved conditional decisions. |
 | Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. |
 | Marhl (30) | [60 full trajectories and five complete branches verified](docs/evidence/marhl-partial-array-audit-20261121.json); all thirty available branch comparisons pass. The full scope remains 1,520 tasks, 380 branches and twelve cases. |
 | Vilar (32) | Breaking validation remains unresolved, alongside three paired cases; four precision checkpoints remain incomplete. |
-| Rohwer (35) | All 32 continuation artifacts (8.78 GB) have been downloaded and checksummed; the full array audit is running. Later controls and complete-case replay remain required. See the [latest collection status](docs/evidence/biomodels-progress-20261124.json). |
+| Rohwer (35) | [All 32 continuation artifacts audited](docs/evidence/rohwer-continuation-audit-20261124.json): 1,369 complete trajectories; 318 terminal diagnostics include 255 agreements, 23 mismatches and 40 explicit integration failures. Another 432 diagnostics, later controls and complete-case replay remain required. |
 
 Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics
@@ -142,9 +142,10 @@ are now preserved in a [durable evidence release](https://github.com/m9h/GRN_ODE
 a fresh download verifies both original ZIPs and all 230 payload files.
 Recomputations of 0–13 use unchanged numerical code and requests; all fourteen
 actual jobs are bound. A duplicate partition-0 submission was cancelled after
-the original appeared late. At the latest [cloud check](docs/evidence/biomodels-progress-20261124.json),
-four recomputations were terminal, five running and five queued. Their results
-still require collection and numerical auditing. The full 58-case audit and completion
+the original appeared late. The first [four replacement partitions now verify](docs/evidence/tyson-recomputation-audit-20261124.json):
+all 548 branch records and fourteen recorded case decisions reproduce, with
+thirteen passing cases and one retained failure. These archives contain saved
+comparison and window summaries, not raw trajectories. The full 58-case audit and completion
 count remain unpromoted. Missing historical bytes are not reconstructed or
 represented as verified originals.
 The [complete separate François Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)

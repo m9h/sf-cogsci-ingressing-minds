@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-11-24T03:48:34.724744+00:00",
+  "status_sha256": "49d6bab2b24afbfda57f69236769e5e48a6ba89cf81e9faabafcf09886a62fba",
+  "source_revision": "5fcd8ee18170d9d9d404a84d3d7f7f4c74f4cec5",
+  "run_id": 44950774489,
+  "fixed_branch_count": 750,
+  "verified_partition_count": 32,
+  "verified_arrays": 1369,
+  "parent_arrays_preserved": 715,
+  "new_arrays": 654,
+  "preserved_parent_terminal_diagnostics": 166,
+  "complete_diagnostics": 318,
+  "branch_status_counts": {
+    "interrupted": 61,
+    "confirmed": 255,
+    "not_started": 371,
+    "incomplete": 40,
+    "mismatch": 23
+  },
+  "comparisons": 1879,
+  "passing_comparisons": 1769,
+  "max_scaled_error": 3.6459785314179936,
+  "unverified_arrays": 0,
+  "collection_errors": [],
+  "missing_artifacts": [],
+  "pending_indices": [],
+  "case_recovery_claimed": false,
+  "full_model_coverage_claimed": false
+}

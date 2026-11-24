@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-11-24T05:17:06.165458+00:00",
+  "requests": [
+    {
+      "state": "bound",
+      "source_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+      "workflow_id": 420439895,
+      "request": {
+        "ref": "kinetics-fuss-continuation-scheduling",
+        "inputs": {
+          "operation": "compute",
+          "partition_indices": "[11]",
+          "resume_run": "44933648891"
+        }
+      },
+      "post_attempts": 1,
+      "prepared_at": "2026-11-24T05:14:51.107798+00:00",
+      "parent_audit_sha256": "704bfd1d3e42943c5f7782a6893655b3735318efa53cf50a6ffb2cdefd862a5b",
+      "full_required_partitions": 32,
+      "full_required_branches": 1309,
+      "full_required_trajectories": 5236,
+      "required_cases": 18,
+      "started_at": "2026-11-24T05:14:51.109016+00:00",
+      "post_exit_code": 0,
+      "run_id": 45331953904,
+      "run_attempt": 1,
+      "status": "queued",
+      "created_at": "2026-11-24T05:14:57Z",
+      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45331953904"
+    },
+    {
+      "state": "bound",
+      "source_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+      "workflow_id": 420439895,
+      "request": {
+        "ref": "kinetics-fuss-continuation-scheduling",
+        "inputs": {
+          "operation": "compute",
+          "partition_indices": "[0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]",
+          "resume_run": "44934673699"
+        }
+      },
+      "post_attempts": 1,
+      "prepared_at": "2026-11-24T05:14:51.108449+00:00",
+      "parent_audit_sha256": "704bfd1d3e42943c5f7782a6893655b3735318efa53cf50a6ffb2cdefd862a5b",
+      "full_required_partitions": 32,
+      "full_required_branches": 1309,
+      "full_required_trajectories": 5236,
+      "required_cases": 18,
+      "started_at": "2026-11-24T05:15:28.878706+00:00",
+      "before_run_ids": [
+        45331953904,
+        44934673699,
+        44933648891,
+        44657363724,
+        44385665111
+      ],
+      "post_exit_code": 0,
+      "run_id": 45332029602,
+      "run_attempt": 1,
+      "status": "queued",
+      "created_at": "2026-11-24T05:15:30Z",
+      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45332029602"
+    }
+  ],
+  "validation_gates": [
+    {
+      "run_id": 45331953904,
+      "job_id": 138234997037,
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "run_id": 45332029602,
+      "job_id": 138235220638,
+      "status": "queued",
+      "conclusion": null
+    }
+  ],
+  "all_actual_compute_jobs_bound": false,
+  "case_recovery_claimed": false
+}
