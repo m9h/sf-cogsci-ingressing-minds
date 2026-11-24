@@ -48,8 +48,8 @@ No local numerical worker was resumed.
 | Vilar precision diagnostics | [Checkpoint audit](docs/evidence/terminal-checkpoints-20261121.json) | All four original ZIPs verified; checkpoints add 373–409 samples each with old prefixes bitwise unchanged; all four integrations remain incomplete |
 | Fuss complete case controls | [Complete checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261124.json) · [Next submissions](docs/evidence/fuss-continuations-20261124.json) | All 32 checkpoints audited: 1,283 arrays, all 1,050 parent arrays preserved, 302 agreeing branches and 1,812 passing comparisons. Two continuations submitted; validation gates queued at observation |
 | Ueda complete case controls | [Complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; original ZIPs and offline reproduction guide published |
-| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) | 1,369 complete arrays; all 715 parent arrays and 166 terminal results preserved. Of 318 terminal diagnostics, 255 agree, 23 mismatch and 40 retain integration failures; 432 diagnostics unfinished |
-| Marhl high-precision diagnostics | [Latest array audit](docs/evidence/marhl-partial-array-audit-20261124.json) | 215 original artifacts verified; 161 complete arrays, 54 partial checkpoints; seventeen branches pass all 102 comparisons. Sixteen cancelled jobs produced no artifact; full 1,520-task scope remains required |
+| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) · [Next continuation](https://github.com/m9h/GRN_ODE/actions/runs/45335934693) | 1,369 complete arrays; 318 terminal diagnostics include 255 agreements, 23 mismatches and 40 integration failures. Full 32-partition continuation submitted for the remaining 432; local 152-test gate and real restoration pass, Linux validation queued |
+| Marhl high-precision diagnostics | [Latest array audit](docs/evidence/marhl-array-audit-20261124T0547.json) | 222 original artifacts verified; 166 complete arrays, 56 partial checkpoints; nineteen branches pass all 114 comparisons. All 215 earlier artifacts and extracted payloads remain byte-identical. Sixteen cancelled jobs produced no artifact; full 1,520-task scope remains required |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
 | Rohwer complete later controls | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both runs remain unfinished; all 10,924 later-control branches stay in the fixed required scope |
@@ -100,10 +100,25 @@ remain unchanged, with 654 additions. All 166 terminal parent diagnostics are
 preserved. The full 750-branch inventory now contains 255 agreements, 23
 mismatches, forty explicit integration failures, 61 interrupted diagnostics and
 371 unstarted diagnostics. Available arrays yield 1,879 comparisons, 1,769
-passing. The next continuation must preserve all 318 terminal diagnostics and
-finish the other 432; its restoration code still needs extension for this
-generation. No case or whole-model recovery is claimed, and durable publication
-of the original ZIPs remains pending.
+passing. The [checkpoint continuation](https://github.com/m9h/GRN_ODE/blob/607bac71ae98f78472457ed1d1c7a6a597f4b4a1/python/results/catalog-breaking-rohwer-checkpoint-continuation-20261124/README.md)
+now restores this generation and supports explicitly pinned later generations.
+All 152 local regression tests pass. A real partition restoration and audit
+preserves 33 complete arrays and eight terminal diagnostics, including two
+integration failures. The [submission evidence](docs/evidence/rohwer-checkpoint-continuation-20261124.json)
+binds run `45335934693` to the published source and the complete 32-partition,
+750-branch plan. Its Linux validation is queued; no new numerical result is
+claimed. It must preserve all 318 terminal diagnostics and finish the other
+432. No case or whole-model recovery is claimed, and durable publication of
+the original ZIPs remains pending.
+
+The [latest Marhl collection](docs/evidence/marhl-array-audit-20261124T0547.json)
+adds seven original simulation archives: five complete trajectories and two
+partial checkpoints. All 215 earlier archives and extracted payload hashes
+remain unchanged. Nineteen complete branches now pass 114 full-grid comparisons
+across the two Taylor implementations and two precisions. These are not
+different integrator families; exact checkpoint restart validation still
+requires the matching Linux runtime. All 1,520 tasks, 380 branches and twelve
+cases remain in the fixed selection; no complete-case recovery is claimed.
 
 The [20 November Ueda audit](docs/evidence/ueda-continuation-20261120.json) covers
 partitions 0 through 24: 125 branches, 500 arrays and 750 passing comparisons.

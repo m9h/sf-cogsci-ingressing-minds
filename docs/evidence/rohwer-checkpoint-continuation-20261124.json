@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-11-24T05:49:30Z",
+  "source_revision": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
+  "source_url": "https://github.com/m9h/GRN_ODE/blob/607bac71ae98f78472457ed1d1c7a6a597f4b4a1/python/results/catalog-breaking-rohwer-checkpoint-continuation-20261124/README.md",
+  "binding_sha256": "ac2be132f47739184dccdb9a6efcdeb8853710d8f8ac4390be231029296089f4",
+  "submission": {
+    "state": "bound_to_run_waiting_for_linux_validation",
+    "post_attempts": 1,
+    "started_at": "2026-11-24 05:48:48 UTC",
+    "workflow_id": 426200969,
+    "producer_revision": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
+    "request": {
+      "ref": "kinetics-rohwer-checkpoint-continuation",
+      "inputs": {
+        "operation": "compute"
+      }
+    },
+    "parent_run": 44950774489,
+    "fixed_partitions": 32,
+    "fixed_diagnostic_branches": 750,
+    "unfinished_diagnostics": 432,
+    "parent_arrays_to_preserve": 1369,
+    "terminal_diagnostics_to_preserve": 318,
+    "local_regression_tests_passed": 152,
+    "real_restore_audit_sha256": "044162d70a5832f7f1339f0ecb80726f87f450a73f584fad0b506e85d38b2ade",
+    "linux_validation_required_before_compute": true,
+    "case_recovery_claimed": false,
+    "full_model_coverage_claimed": false,
+    "post_exit_code": 0,
+    "run_id": 45335934693,
+    "run_attempt": 1,
+    "status": "queued",
+    "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45335934693",
+    "actual_compute_jobs_bound": false,
+    "validation_jobs": [
+      {
+        "id": 138247896241,
+        "status": "queued",
+        "conclusion": null
+      }
+    ]
+  },
+  "real_restore": {
+    "source_revision": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
+    "partition_index": 4,
+    "parent_run_id": 44950774489,
+    "parent_artifact_id": 14738525753,
+    "restored_arrays": 33,
+    "terminal_diagnostics_preserved": 8,
+    "branch_statuses": {
+      "mismatch": 1,
+      "confirmed": 5,
+      "incomplete": 2,
+      "interrupted": 2,
+      "not_started": 14
+    },
+    "attempted_now": [],
+    "audit_sha256": "044162d70a5832f7f1339f0ecb80726f87f450a73f584fad0b506e85d38b2ade",
+    "execution_sha256": "db70fca594d7df9cfb73d804da74931b0a3d612a8a2e42bad1922fa2c1605205",
+    "regression_tests_passed": 152,
+    "regression_log_sha256": "3da43c9f17b394dbd1498e63bfc74b40ce0f78080a071babec947b176ddee30d",
+    "numerical_integrations_performed": 0,
+    "case_recovery_claimed": false,
+    "full_model_coverage_claimed": false
+  },
+  "api_sha256": {
+    "run": "f7d48372cf90e522b56ec86ee6da736b9a81c9e4c28f0a6d6ee5fb8ac23c370c",
+    "jobs": "75490890d3292a059d9eaaa506d25797e86288966ced0cfe07918e94e3feed86"
+  },
+  "local_workers_resumed": false,
+  "frozen_numerical_sources_changed": false,
+  "case_recovery_claimed": false,
+  "full_model_coverage_claimed": false
+}

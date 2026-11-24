@@ -99,9 +99,9 @@ remaining issues:
 | Fuss (8) | [All 32 latest checkpoints audited](docs/evidence/fuss-complete-checkpoint-20261124.json): 1,283 complete trajectories, including all 1,050 parent trajectories unchanged. All 302 complete branches agree; controls and full replay remain open for eighteen cases. |
 | François (25) | The separate Linux inventory covers all 118 cases, with 38 failures and six unresolved conditional decisions. |
 | Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. |
-| Marhl (30) | [161 full trajectories and seventeen complete branches verified](docs/evidence/marhl-partial-array-audit-20261124.json); all 102 available branch comparisons pass. Another 54 outputs are partial checkpoints; sixteen cancelled jobs have no output. The full scope remains 1,520 tasks, 380 branches and twelve cases. |
+| Marhl (30) | [166 full trajectories and nineteen complete branches verified](docs/evidence/marhl-array-audit-20261124T0547.json); all 114 available branch comparisons pass. Another 56 outputs are partial checkpoints; sixteen cancelled jobs have no output. The full scope remains 1,520 tasks, 380 branches and twelve cases. |
 | Vilar (32) | Breaking validation remains unresolved, alongside three paired cases; four precision checkpoints remain incomplete. |
-| Rohwer (35) | [All 32 continuation artifacts audited](docs/evidence/rohwer-continuation-audit-20261124.json): 1,369 complete trajectories; 318 terminal diagnostics include 255 agreements, 23 mismatches and 40 explicit integration failures. Another 432 diagnostics, later controls and complete-case replay remain required. |
+| Rohwer (35) | [All 32 continuation artifacts audited](docs/evidence/rohwer-continuation-audit-20261124.json): 1,369 complete trajectories; 318 terminal diagnostics include 255 agreements, 23 mismatches and 40 explicit integration failures. The [next continuation is submitted](docs/evidence/rohwer-checkpoint-continuation-20261124.json) for the other 432 diagnostics; its Linux gate is queued. Later controls and complete-case replay remain required. |
 
 Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics

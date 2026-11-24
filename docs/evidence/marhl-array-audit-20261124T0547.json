@@ -1,0 +1,722 @@
+{
+  "checked_at": "2026-11-24T05:47:30.093747+00:00",
+  "network": 30,
+  "model_id": "BIOMD0000000039",
+  "source_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+  "selection_sha256": "81421bf16fea951b16ce8a3f627490d38b2a524c1510a18daa7e315239229475",
+  "collection_sha256": "85922dbfa6bdc8137121b925279e7f38e9548e92eea7882b7b6b23ba1ae9efa2",
+  "required_tasks": 1520,
+  "required_branches": 380,
+  "required_cases": 12,
+  "verified_original_archives": 222,
+  "original_archive_bytes": 1771661396,
+  "previous_artifacts_preserved_byte_identical": 215,
+  "new_artifacts": 7,
+  "complete_arrays": 166,
+  "new_complete_arrays": 5,
+  "checkpointed_tasks": 56,
+  "task_status_counts": {
+    "completed": 166,
+    "checkpointed": 56,
+    "pending": 1298
+  },
+  "complete_branches": 19,
+  "new_complete_branches": 2,
+  "agreeing_branches": 19,
+  "comparisons": 114,
+  "passing_comparisons": 114,
+  "max_scaled_error": 7.696210746388428e-08,
+  "verification_errors": [],
+  "branches": [
+    {
+      "branch_id": "b5f70bd5bd9a3c6273555ba22992a27965f0794869348491cd29cef30854934c",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "759d41a8a1182c682288b9eaff965b27d129a7aa5650ab2855546404ef5ab2f9",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "05056ec6440014c2322b4715a6b2614b0f44c545e59dcfb34def3cda414d35cd",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "4ee2b81302260b8b181bbbfa54cbbfb63b506863ac7e0ad2521bf76c7f7cf992",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1a432eeffb6779acf1191dc0e112be42b6924e1815d6da2cc03e38a3ddd287e4",
+      "status": "agreement",
+      "samples": 181001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "bd11b5643acca8822963b739b56d7ea832c572b7ecd01e4178929e63d9b3dc17",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1b8e0520f170e8eb138c45a72be1e4c6e2d0e9bc43076fa7f21be9ac49deadd1",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 7.696210746388428e-08,
+      "audit_sha256": "c7ee389b5bb99dc03c04139312ddad965fc50cc52814132bc2c3f8189fe44d85",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "52c4262d15793b942c2161f29cd82d6a4d4ffc61ec63e4175ff79f1e28ef3f8d",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "f8e953d3d639be55dcdfa4b86a05a524458e53f6868f0e0d427ccea2cc4cc015",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1f373f7baa8f5190e0afc90cfff332d92784aca1d619139514cc4fa127005127",
+      "status": "agreement",
+      "samples": 181001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "61a9d648d20cf6e657eef1a3a40f68e080d282c2cd223ee1e91822f7ebe7046a",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "4efab2258cd480ffd5f44d90a3bca317c4a99b4e22b9ce2ee2d227f1f32a14d7",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "381d53484dd6fbfb324ee1be86993c070ae0a2d240f6074e6eccd5e9c7d1f3a7",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "4fefece54e92a6166996884ad487c6ed230d4bf7efcf42631e932da1687fdd0e",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "520d3a3147dfca16ec3a6e1e9851594361865dea6881da6c8ff5a4189409f880",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "52afbb8f75ef8b4828a6eec162996cbf470dff7f128d1220dc45a94f8f8f05af",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "0ac6eaca90bd5ddb0b27a0c8dd31605f858c02f63db719f34ba167c14828232e",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "79fd0535c71032bdaf6616b6e5f94f7d4e2eec37cbb19a0011563725fa456f6a",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "4af17cb814cc7ba76e2b73d0847c2e3414e0b4571b3558234aa505e8132d8e3b",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7b5dfadf5da5f0bca0e55c4a248e4ff893807974daf8ecc48b979ab0cbbdbd88",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "1a77eaa2ac60452f8d70c104d334f1859b69dc48752d0e5e9736537165c829e1",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7c4d9867e42e2ceab517b4df25fe4866543c18750eb49661b93d417a5abe0840",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "1761b1f33f3aa6d519d28b2b864af8b18e622a789e15d73079c46c0b8040b566",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7d2039d3a6b3d866c17da6a0bb5983af3390510e8b0cfaf459560a1287fca3fb",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "d58168b676c966aa13ebe18cc6c74bc71a0957eebe69e70440a949fdcbacf1c2",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7ddb844aed2b84a69952e4116bc02c7f2e3414a29978e2a3273de477c22c206a",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "0ff5fc839185a8bc7fd9375ae1a56009462759f3d736309b004b770025563305",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7e0305180a912fb15449786f6a927eec5f3e59ed79807ac50aa471b6db202a65",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "aa1fb8d50a35fc7fc5e492c717014200f586c1b0ca13295455949a712ab13781",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "a764cb094e5a67371090135c93bdbff698aa2fa0bf8bbfb9fd0e990bccbb4ce4",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "ab5d73005fd991be43547baa9bf2bca6b81caa39e93b44cd395c1c68766cbd33",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "a87c640ee03fbe56bc5c1f24d2e95ebd9bea0460f00627c8008c4e8d1dcff17b",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "716e33f83869c8ccff4734e0af9324888a623d641ad2b3d845bc0d9f83aa5a54",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d4c4c7d294e126fb9618bbd21eca3ad68af4bb1eeb88251d8d2c6d97ea572561",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "654cf688a7c470efcc7f32292755828a2bd9c9d1c7b8fe9ed9fce36b96426554",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d6c805697213146ec3983838be59dd7630a18053521c5f50cfa6c6c822a5f60c",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "4d1f4c307996d3a6a3d94247ddb8476f613125a2dfecc3f9edeb79f0c9703cc4",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    }
+  ],
+  "new_tasks": [
+    {
+      "artifact_name": "marhl-precision-task-47-attempt-1",
+      "run_id": 44608641889,
+      "run_attempt": 1,
+      "batch": 0,
+      "index": 47,
+      "job_id": 135867872580,
+      "job_status": "completed",
+      "job_conclusion": "success",
+      "status": "completed",
+      "complete_array_verified": true,
+      "artifact_id": 14890628239,
+      "archive_sha256": "sha256:6707d6c1d07c7d2d6b914fb39d28ad5f9426a068d41780d12fcb41dd8e49109f",
+      "archive_bytes": 10334570,
+      "extracted_file_sha256": {
+        "execution.json": "4e94f5ac5cbfdbc71c3e1c055a880f85366f40ab2553554a1a1de053288893e4",
+        "evidence/trajectory.npz": "d8ca94e3bda7bf1de457022d31f26ecd40ed38b3f6959f982acf995d3173d2e4",
+        "evidence/checkpoint.npz": "9df8ccfa9c1ab73c447dfad9599f092606cc2dfdd97ea220377c484d1b4303e5",
+        "evidence/report.json": "7a87d723be00052d0fe9d8e0c4fea6bef0586430b1c8ad9681daab1dc33d7464"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-status-20261124T0542/collection/artifacts/14890628239/payload/evidence",
+      "report_sha256": "7a87d723be00052d0fe9d8e0c4fea6bef0586430b1c8ad9681daab1dc33d7464",
+      "branch_id": "52c4262d15793b942c2161f29cd82d6a4d4ffc61ec63e4175ff79f1e28ef3f8d",
+      "request_label": "mpmath192",
+      "checkpoint": {
+        "sha256": "9df8ccfa9c1ab73c447dfad9599f092606cc2dfdd97ea220377c484d1b4303e5",
+        "saved_samples": 141001,
+        "completed": true,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": null
+    },
+    {
+      "artifact_name": "marhl-precision-task-299-attempt-1",
+      "run_id": 44608843472,
+      "run_attempt": 1,
+      "batch": 1,
+      "index": 299,
+      "job_id": 135896426225,
+      "job_status": "completed",
+      "job_conclusion": "failure",
+      "status": "checkpointed",
+      "complete_array_verified": false,
+      "artifact_id": 14885377822,
+      "archive_sha256": "sha256:b52286523dd98e80c21dcac28704a2a881d8b5e5602262c6ec3b64c03f72bf73",
+      "archive_bytes": 591126,
+      "extracted_file_sha256": {
+        "execution.json": "e6bab041776da9ca0b7308a6335636533313d3a6d21215658e0a4f97dd3d1612",
+        "evidence/checkpoint.npz": "4ab8f483a199b4b7d1f1e33c2328acda2692fb75c11a2a749b02633ad4bdc8e9",
+        "evidence/report.json": "d07b3964595ac4e1c5bed88932cb86689ee78ba0201f8bf6b41d2293b4a461b9"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-status-20261124T0542/collection/artifacts/14885377822/payload/evidence",
+      "report_sha256": "d07b3964595ac4e1c5bed88932cb86689ee78ba0201f8bf6b41d2293b4a461b9",
+      "branch_id": "26bf619cbf29ce357478e5f4cb8918e8adc30272d1778f1c6c887bd32050a976",
+      "request_label": "mpmath192",
+      "checkpoint": {
+        "sha256": "4ab8f483a199b4b7d1f1e33c2328acda2692fb75c11a2a749b02633ad4bdc8e9",
+        "saved_samples": 30470,
+        "completed": false,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": "Saved exact mpmath checkpoint after chunk 1427 at time 304.7"
+    },
+    {
+      "artifact_name": "marhl-precision-task-803-attempt-1",
+      "run_id": 44625203552,
+      "run_attempt": 1,
+      "batch": 3,
+      "index": 803,
+      "job_id": 136355816765,
+      "job_status": "completed",
+      "job_conclusion": "success",
+      "status": "completed",
+      "complete_array_verified": true,
+      "artifact_id": 14891580287,
+      "archive_sha256": "sha256:f2824e876a0ad258289be4b17fb82944881fe7622928e2dadffaeacea73ec73c",
+      "archive_bytes": 9387364,
+      "extracted_file_sha256": {
+        "execution.json": "310f8655205d8473ebd34dbb7f70ba5e11363625fe0969a675d266bf5abab9ce",
+        "evidence/trajectory.npz": "d33e375e60046e80cc049189b8989008dd5f0247d17b210b4ad579372037f4f4",
+        "evidence/checkpoint.npz": "e173020a8981364a98943ae013f78e0d6856dc8a052662145ccc1aadc3505f99",
+        "evidence/report.json": "139c299eaf79e0d67ad0668cfb56cdb126da592f4b81aca66445619cab3dd57e"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-status-20261124T0542/collection/artifacts/14891580287/payload/evidence",
+      "report_sha256": "139c299eaf79e0d67ad0668cfb56cdb126da592f4b81aca66445619cab3dd57e",
+      "branch_id": "7e0305180a912fb15449786f6a927eec5f3e59ed79807ac50aa471b6db202a65",
+      "request_label": "mpmath192",
+      "checkpoint": {
+        "sha256": "e173020a8981364a98943ae013f78e0d6856dc8a052662145ccc1aadc3505f99",
+        "saved_samples": 141001,
+        "completed": true,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": null
+    },
+    {
+      "artifact_name": "marhl-precision-task-805-attempt-1",
+      "run_id": 44625203552,
+      "run_attempt": 1,
+      "batch": 3,
+      "index": 805,
+      "job_id": 136355817490,
+      "job_status": "completed",
+      "job_conclusion": "success",
+      "status": "completed",
+      "complete_array_verified": true,
+      "artifact_id": 14884424442,
+      "archive_sha256": "sha256:b69708044d1ebf7274b3a0835cff82374988471da72ca783d1b341e572063353",
+      "archive_bytes": 2716442,
+      "extracted_file_sha256": {
+        "execution.json": "cf4fdd58b4f97380c4fc7f3db039f6da4e6a8e84d79a9ebdddb315d406009617",
+        "evidence/trajectory.npz": "0f884704862bef6cee3ca6c259870f97eca3139cbfe9f5d1e47f0fc803a94b8a",
+        "evidence/checkpoint.npz": "e4d1be724f37e9256b0cee3d6bcf37c386ca79daaf613d3a521fd50fde7aa7ca",
+        "evidence/report.json": "6c2280f55ce3201c6c04720a4ea61bbeb3e8271bce3ff32db7ed0c85ff43dfa4"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-status-20261124T0542/collection/artifacts/14884424442/payload/evidence",
+      "report_sha256": "6c2280f55ce3201c6c04720a4ea61bbeb3e8271bce3ff32db7ed0c85ff43dfa4",
+      "branch_id": "7f71a2dfce9c4bce230d07aa6f3507016aa037736187c29879fa28892236de4c",
+      "request_label": "taylor192",
+      "checkpoint": {
+        "sha256": "e4d1be724f37e9256b0cee3d6bcf37c386ca79daaf613d3a521fd50fde7aa7ca",
+        "saved_samples": 141001,
+        "completed": true,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": null
+    },
+    {
+      "artifact_name": "marhl-precision-task-1311-attempt-1",
+      "run_id": 44657261295,
+      "run_attempt": 1,
+      "batch": 5,
+      "index": 1311,
+      "job_id": 136398523707,
+      "job_status": "completed",
+      "job_conclusion": "failure",
+      "status": "checkpointed",
+      "complete_array_verified": false,
+      "artifact_id": 14886492498,
+      "archive_sha256": "sha256:dcfe66a97961f834257c4eb43f554edbdd7d4054aa5a9d9ca724bef79eb25275",
+      "archive_bytes": 634325,
+      "extracted_file_sha256": {
+        "execution.json": "16068e3488264146714136c1ffb6310ef93090d134ea3ddc71fb20a0278410d6",
+        "evidence/checkpoint.npz": "e80bfe7407f74e70b3746571399834ca5faa79d739e2aa502e7d5ee261ca18ef",
+        "evidence/report.json": "cbbc5e336d9b21d6bcb2e69b1ab3daf96b0a50161ab032cd024c1a9e2e13e363"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-status-20261124T0542/collection/artifacts/14886492498/payload/evidence",
+      "report_sha256": "cbbc5e336d9b21d6bcb2e69b1ab3daf96b0a50161ab032cd024c1a9e2e13e363",
+      "branch_id": "d6e1007aa8e86f875689c6d472e421c12a197fb6fd13d7d4ea7b95493ad62560",
+      "request_label": "mpmath192",
+      "checkpoint": {
+        "sha256": "e80bfe7407f74e70b3746571399834ca5faa79d739e2aa502e7d5ee261ca18ef",
+        "saved_samples": 31920,
+        "completed": false,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": "Saved exact mpmath checkpoint after chunk 1572 at time 319.2"
+    },
+    {
+      "artifact_name": "marhl-precision-task-1312-attempt-1",
+      "run_id": 44657261295,
+      "run_attempt": 1,
+      "batch": 5,
+      "index": 1312,
+      "job_id": 136398523652,
+      "job_status": "completed",
+      "job_conclusion": "success",
+      "status": "completed",
+      "complete_array_verified": true,
+      "artifact_id": 14887746132,
+      "archive_sha256": "sha256:87f4ba446e7b7cdd04ced43b57d7539b5c28a7500a3459423504f25c9a00e1d6",
+      "archive_bytes": 12029558,
+      "extracted_file_sha256": {
+        "execution.json": "0dbb5307d8d765b23c63eef13eaa46c92a8b9324f820be5a3e93a716f2e9ed0b",
+        "evidence/trajectory.npz": "be1c314c3471b739f4c19688f3484605055f025caf6bf012db980d72596d9054",
+        "evidence/checkpoint.npz": "d45c73beb87e62f69c9d2c30dba6b9f50a4482160ffab34a71c870c5310873a8",
+        "evidence/report.json": "f206b4d0b15a8a766cb91f9aa885d8873ac5ec7fd5ef2f6fbb579b2f2a1ce0c2"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-status-20261124T0542/collection/artifacts/14887746132/payload/evidence",
+      "report_sha256": "f206b4d0b15a8a766cb91f9aa885d8873ac5ec7fd5ef2f6fbb579b2f2a1ce0c2",
+      "branch_id": "d8371fb97d2cf1a44563f8fa012302253d046c3bcde5435894066cb0559c77cb",
+      "request_label": "taylor128",
+      "checkpoint": {
+        "sha256": "d45c73beb87e62f69c9d2c30dba6b9f50a4482160ffab34a71c870c5310873a8",
+        "saved_samples": 221001,
+        "completed": true,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": null
+    },
+    {
+      "artifact_name": "marhl-precision-task-1313-attempt-1",
+      "run_id": 44657261295,
+      "run_attempt": 1,
+      "batch": 5,
+      "index": 1313,
+      "job_id": 136398523898,
+      "job_status": "completed",
+      "job_conclusion": "success",
+      "status": "completed",
+      "complete_array_verified": true,
+      "artifact_id": 14887771575,
+      "archive_sha256": "sha256:6eb4eeb29800fc14bba1a1fd50f53039440e7bbfc661aea1511fa0e85e1ba336",
+      "archive_bytes": 12029648,
+      "extracted_file_sha256": {
+        "execution.json": "efce6ee112e11323f7356505bcf37dc8ae46c876c8f590d84448013a25c2048f",
+        "evidence/trajectory.npz": "be1c314c3471b739f4c19688f3484605055f025caf6bf012db980d72596d9054",
+        "evidence/checkpoint.npz": "f4da5860a053ed9900b25318cb11c6856e20016c518a981b0f72f413b4444d6d",
+        "evidence/report.json": "db68a78136e635fd79526be649dc637a4ffece79422abab481951b693e498ed9"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-status-20261124T0542/collection/artifacts/14887771575/payload/evidence",
+      "report_sha256": "db68a78136e635fd79526be649dc637a4ffece79422abab481951b693e498ed9",
+      "branch_id": "d8371fb97d2cf1a44563f8fa012302253d046c3bcde5435894066cb0559c77cb",
+      "request_label": "taylor192",
+      "checkpoint": {
+        "sha256": "f4da5860a053ed9900b25318cb11c6856e20016c518a981b0f72f413b4444d6d",
+        "saved_samples": 221001,
+        "completed": true,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": null
+    }
+  ],
+  "case_recovery_claimed": false,
+  "full_model_coverage_claimed": false,
+  "different_integrator_family_claimed": false,
+  "exact_checkpoint_state_validation_pending_matching_linux": true,
+  "numerical_integrations_performed": 0,
+  "terminal_tasks_without_artifacts": [
+    {
+      "index": 33,
+      "job_id": 135867868898,
+      "run_id": 44608641889,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 34,
+      "job_id": 135867868828,
+      "run_id": 44608641889,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 36,
+      "job_id": 135867869488,
+      "run_id": 44608641889,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 287,
+      "job_id": 135896422761,
+      "run_id": 44608843472,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 536,
+      "job_id": 136354813454,
+      "run_id": 44625023792,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 537,
+      "job_id": 136354813389,
+      "run_id": 44625023792,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 789,
+      "job_id": 136355811962,
+      "run_id": 44625203552,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1042,
+      "job_id": 136394108962,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1043,
+      "job_id": 136394109268,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1045,
+      "job_id": 136394109418,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1046,
+      "job_id": 136394109646,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1047,
+      "job_id": 136394109499,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1297,
+      "job_id": 136398518547,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1298,
+      "job_id": 136398521341,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1299,
+      "job_id": 136398521628,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1302,
+      "job_id": 136398521419,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    }
+  ]
+}
