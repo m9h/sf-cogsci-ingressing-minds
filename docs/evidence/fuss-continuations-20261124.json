@@ -77,7 +77,7 @@
       "conclusion": null
     }
   ],
-  "all_actual_compute_jobs_bound": false,
+  "all_actual_compute_jobs_bound": true,
   "case_recovery_claimed": false,
   "submission_observed_at": "2026-11-24T05:17:06.165458+00:00",
   "current_jobs": {
@@ -91,18 +91,258 @@
       {
         "id": 138288669481,
         "name": "scipy-case-partition-11",
-        "status": "queued",
-        "conclusion": null
+        "status": "completed",
+        "conclusion": "failure"
       }
     ],
     "45332029602": [
       {
         "id": 138235220638,
         "name": "validation",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 138298630213,
+        "name": "scipy-case-partition-2",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630222,
+        "name": "scipy-case-partition-4",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630258,
+        "name": "scipy-case-partition-0",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630261,
+        "name": "scipy-case-partition-5",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630270,
+        "name": "scipy-case-partition-7",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630276,
+        "name": "scipy-case-partition-3",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630288,
+        "name": "scipy-case-partition-1",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630296,
+        "name": "scipy-case-partition-6",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630314,
+        "name": "scipy-case-partition-8",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630425,
+        "name": "scipy-case-partition-19",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630445,
+        "name": "scipy-case-partition-20",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630467,
+        "name": "scipy-case-partition-18",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630509,
+        "name": "scipy-case-partition-16",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630528,
+        "name": "scipy-case-partition-9",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 138298630533,
+        "name": "scipy-case-partition-10",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "id": 138298630541,
+        "name": "scipy-case-partition-14",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "id": 138298630558,
+        "name": "scipy-case-partition-12",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "id": 138298630593,
+        "name": "scipy-case-partition-13",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "id": 138298630595,
+        "name": "scipy-case-partition-24",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630608,
+        "name": "scipy-case-partition-25",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630614,
+        "name": "scipy-case-partition-21",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630657,
+        "name": "scipy-case-partition-17",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630662,
+        "name": "scipy-case-partition-22",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630726,
+        "name": "scipy-case-partition-15",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630836,
+        "name": "scipy-case-partition-23",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298630872,
+        "name": "scipy-case-partition-26",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298632844,
+        "name": "scipy-case-partition-27",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298633084,
+        "name": "scipy-case-partition-28",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298633255,
+        "name": "scipy-case-partition-30",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298633319,
+        "name": "scipy-case-partition-29",
+        "status": "queued",
+        "conclusion": null
+      },
+      {
+        "id": 138298633400,
+        "name": "scipy-case-partition-31",
         "status": "queued",
         "conclusion": null
       }
     ]
   },
-  "current_note": "Partition-11 Linux validation passed and its compute job is queued. The other 31-partition validation is queued. A full replacement selection is not yet bound. Initial submission gates are historical."
+  "current_note": "Both Linux gates passed; all 32 actual jobs are bound. Ten outputs available in saved snapshots; numerical collection of this generation remains pending. Initial queued gates are historical.",
+  "latest_binding": {
+    "full_fixed_partition_count": 32,
+    "validation_gates": [
+      {
+        "run_id": 45331953904,
+        "job_id": 138234997037,
+        "conclusion": "success"
+      },
+      {
+        "run_id": 45332029602,
+        "job_id": 138235220638,
+        "conclusion": "success"
+      }
+    ],
+    "numerical_integrations_performed": 0,
+    "case_recovery_claimed": false,
+    "selection_sha256": "4305e588df3a96a218d31741fc0b68d08922258c357226e6e617a1f5e947af45",
+    "all_actual_compute_jobs_bound": true,
+    "partition_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "latest_job_snapshot_utc": "2026-11-24T23:18:00.581391+00:00"
 }

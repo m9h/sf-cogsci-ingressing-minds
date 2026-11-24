@@ -75,5 +75,15 @@
   "collection_note": "Bind the 56 checkpoint continuations first, then apply the new missing-output binder to that full selection after all actual jobs exist. Preserve both recovery sets and every original parent identity.",
   "numerical_sources_or_environment_changed": false,
   "linux_validation_passed": false,
-  "case_recovery_claimed": false
+  "case_recovery_claimed": false,
+  "latest_outcome": {
+    "run_id": 45350129879,
+    "linux_gate_passed": true,
+    "all_16_actual_jobs_bound": true,
+    "all_16_original_archives_verified": true,
+    "complete_arrays": 12,
+    "partial_checkpoints": 4,
+    "audit": "marhl-cold-recovery-audit-20261124.json",
+    "next_continuation_run": 45508667739
+  }
 }

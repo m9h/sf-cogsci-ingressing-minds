@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-11-24T23:12:53.503017+00:00",
+  "run_id": 45351112676,
+  "parent_run_id": 44589152244,
+  "vilar": [
+    {
+      "partition": 8,
+      "artifact_id": 14946635336,
+      "archive_sha256": "sha256:6ea71d4a7082c81c8c1f89129ac9057cd47fcfa58437ff6972f0fe1871d5d099",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "470f0c5d9f615ef0ac06992b0e265fa2bdcdeca55acf38ce82aacc7b35d4d4cb",
+      "parent_checkpoint_sha256": "aa58b9b5c4b75df8d7f7d3cd3e1a8f82a04db61989e2e4b013edb00d4ff3b3ae",
+      "parent_samples": 12157,
+      "saved_samples": 12673,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 766842296,
+      "steps": 853842296,
+      "active_time": [
+        "1.267201896455495284870264446038087496214e+2",
+        "-1.503099219192061761624743666041505211594e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 9,
+      "artifact_id": 14936559766,
+      "archive_sha256": "sha256:db3ba52c28ed8186642fa05684f8a8a417379f91a736aa24fad19545a6f94088",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "73a026636e74e931a4891816bc8430f851728f5c14793c6ecd1bf08e874b912e",
+      "parent_checkpoint_sha256": "a121d68fd51444a084e583a457a720c800e5d51c42983e25ac96a9163f0e8e16",
+      "parent_samples": 12299,
+      "saved_samples": 12815,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 790842296,
+      "steps": 877842296,
+      "active_time": [
+        "1.281431097357887524228130910088725877709e+2",
+        "-3.302447449442857176741597197174319597760e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 11,
+      "artifact_id": 14942904861,
+      "archive_sha256": "sha256:7a4742d354fae7a22685b4cf47b5797d8591a0e2c5ade59bfc8ee314098b263a",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "e204fbcdca74f954e6e3a311b34123999116e098c40ebdbcf1124b7a6a656f04",
+      "parent_checkpoint_sha256": "be7fca987d5431d1cd6b62da56415a6898967d7c5c350022b06b360e58a9ca49",
+      "parent_samples": 12281,
+      "saved_samples": 12684,
+      "new_samples": 403,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 787842296,
+      "steps": 855842296,
+      "active_time": [
+        "1.268387660096116342844702625862483165969e+2",
+        "-1.447969497909541286180446791659277388610e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 16,
+      "artifact_id": 14950575592,
+      "archive_sha256": "sha256:8ca0d0a1ed4f5e3c84e45428b2015d9f14269a248596a97afa0e6ff37c7985f1",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "b6a410ced69c3dbf01a0a35282c9d1c6bcd47294442e42982be2ad87194d9418",
+      "parent_checkpoint_sha256": "42083bf735bdeb4fb2dd2877cf283a47f3212c6bd1b8d6b8556a9ca712329f27",
+      "parent_samples": 12044,
+      "saved_samples": 12560,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 747842296,
+      "steps": 834842296,
+      "active_time": [
+        "1.255937169991946536216105413260611037340e+2",
+        "6.604491601684435510318139867665244399433e-38"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    }
+  ],
+  "numerical_integrations_performed_locally": 0,
+  "new_complete_cases": 0,
+  "new_complete_models": 0,
+  "next_continuation": {
+    "state": "bound_to_run_waiting_for_linux_validation",
+    "post_attempts": 1,
+    "prepared_at": "2026-11-24T23:13:34.104706+00:00",
+    "workflow_id": 416944455,
+    "producer_revision": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+    "request": {
+      "ref": "precision-segment-checkpoints",
+      "inputs": {
+        "operation": "compute",
+        "model": "35",
+        "resume_run": "45351112676",
+        "partition_indices": "[8,9,11,16]",
+        "migrate_segments": "false"
+      }
+    },
+    "parent_run": 45351112676,
+    "required_full_partitions": 17,
+    "continued_partitions": [
+      8,
+      9,
+      11,
+      16
+    ],
+    "actual_compute_jobs_bound": false,
+    "exact_checkpoint_state_validated_locally": false,
+    "linux_gate_and_exact_restore_required": true,
+    "case_recovery_claimed": false,
+    "started_at": "2026-11-24T23:13:43.643944+00:00",
+    "post_exit_code": 0,
+    "run_id": 45508141808,
+    "run_attempt": 1,
+    "status": "queued",
+    "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45508141808",
+    "validation_job_id": 138848590048
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-24 07:48:30 UTC",
+  "recorded_at": "2026-11-24T23:18:41.569359+00:00",
   "scientific_status": {
     "baseline_models_passed": 35,
     "single_stimulation_cases_passed": 538,
@@ -52,158 +52,25 @@
       }
     ],
     "goal_complete": false,
-    "initial_inventory_caveat": "Tyson full 58-case auditable inventory remains incomplete: 13 replacement checkpoints audited, 11 complete; partitions 4 and 7 need continuations, partition 13 remains running. Original partitions 14 and 15 remain retained separately."
+    "initial_inventory_caveat": "Tyson has audited outputs from all14replacementpartitions, but only13have complete selections: two cases in partition13 remain unfinished and have a submitted continuation. Retained partitions14and15 remain preserved separately. Full58caseaudit pending."
   },
   "scope_note": "Passing model counts are unchanged. A completed investigation may retain numerical disagreements or model-domain limits. Missing evidence and unfinished integrations remain incomplete.",
   "current_evidence": {
     "tyson": "tyson-recomputation-audit-20261124.json",
-    "rohwer": "rohwer-checkpoint-continuation-20261124.json",
+    "marhl": "marhl-cold-recovery-audit-20261124.json",
+    "vilar": "vilar-checkpoint-progress-20261124.json",
     "fuss": "fuss-continuations-20261124.json",
-    "marhl_checkpoints": "marhl-continuations-20261124.json",
-    "marhl_missing_outputs": "marhl-no-output-recovery-20261124.json",
-    "vilar": "vilar-continuation-20261124.json"
+    "rohwer_first": "rohwer-checkpoint-continuation-20261124.json",
+    "rohwer_later": "rohwer-later-audit-20261124.json"
   },
-  "cloud_runs": [
-    {
-      "id": 45350129879,
-      "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T07:42:58Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45350129879"
-    },
-    {
-      "id": 45350173420,
-      "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T07:43:18Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45350173420"
-    },
-    {
-      "id": 45332804675,
-      "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-      "status": "in_progress",
-      "conclusion": null,
-      "updated_at": "2026-11-24T06:05:59Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45332804675"
-    },
-    {
-      "id": 45273607847,
-      "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-      "status": "in_progress",
-      "conclusion": null,
-      "updated_at": "2026-11-24T04:54:42Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273607847"
-    },
-    {
-      "id": 45335934693,
-      "head_sha": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T07:19:08Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45335934693"
-    },
-    {
-      "id": 45331953904,
-      "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T07:30:00Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45331953904"
-    },
-    {
-      "id": 45332029602,
-      "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T05:15:30Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45332029602"
-    },
-    {
-      "id": 45336593648,
-      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T05:54:41Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336593648"
-    },
-    {
-      "id": 45336651157,
-      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T05:55:11Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336651157"
-    },
-    {
-      "id": 45336656225,
-      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T05:55:14Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336656225"
-    },
-    {
-      "id": 45336660754,
-      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T05:55:16Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336660754"
-    },
-    {
-      "id": 45336664864,
-      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T05:55:18Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336664864"
-    },
-    {
-      "id": 45336669164,
-      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T05:55:20Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336669164"
-    },
-    {
-      "id": 44412503884,
-      "head_sha": "05232fa83c4be917455dc2d143a11253cb7773e6",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-19T02:15:49Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44412503884"
-    },
-    {
-      "id": 44419997278,
-      "head_sha": "0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-19T01:33:07Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44419997278"
-    },
-    {
-      "id": 44420020715,
-      "head_sha": "0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-19T01:39:41Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44420020715"
-    },
-    {
-      "id": 45351112676,
-      "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
-      "status": "queued",
-      "conclusion": null,
-      "updated_at": "2026-11-24T07:50:31Z",
-      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45351112676"
-    }
-  ],
+  "latest_submitted_runs": {
+    "tyson_partition13": 45508115366,
+    "vilar_four_checkpoints": 45508141808,
+    "marhl_four_recovery_checkpoints": 45508667739
+  },
   "local_workers_resumed": false,
   "historical_observation": {
-    "recorded_at": "2026-11-24T02:47:08.798554+00:00",
+    "recorded_at": "2026-11-24 07:48:30 UTC",
     "scientific_status": {
       "baseline_models_passed": 35,
       "single_stimulation_cases_passed": 538,
@@ -256,423 +123,628 @@
         }
       ],
       "goal_complete": false,
-      "initial_inventory_caveat": "Tyson last active computation finished, but full58-case auditable inventory is not achieved because14 historical partition payloads are missing. Recomputations preserve fullscope."
+      "initial_inventory_caveat": "Tyson has audited outputs from all14replacementpartitions, but only13have complete selections: two cases in partition13 remain unfinished and have a submitted continuation. Retained partitions14and15 remain preserved separately. Full58caseaudit pending."
     },
     "scope_note": "Passing model counts are unchanged. A completed investigation may retain numerical disagreements or model-domain limits. Missing evidence and unfinished integrations remain incomplete.",
-    "tyson": {
-      "cloud_observation": {
-        "source": "https://api.github.com/repos/m9h/GRN_ODE/actions/runs?branch=kinetics-resume-case-selection&per_page=50",
-        "workflow_runs": [
-          {
-            "id": 45274580585,
-            "run_attempt": 1,
-            "status": "completed",
-            "conclusion": "cancelled",
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:55:41Z",
-            "updated_at": "2026-11-23T22:39:10Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45274580585"
-          },
-          {
-            "id": 45273607847,
-            "run_attempt": 1,
-            "status": "queued",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:46Z",
-            "updated_at": "2026-11-23T21:49:46Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273607847"
-          },
-          {
-            "id": 45273603700,
-            "run_attempt": 1,
-            "status": "queued",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:44Z",
-            "updated_at": "2026-11-23T21:49:44Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273603700"
-          },
-          {
-            "id": 45273597088,
-            "run_attempt": 1,
-            "status": "queued",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:43Z",
-            "updated_at": "2026-11-23T21:49:43Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273597088"
-          },
-          {
-            "id": 45273590467,
-            "run_attempt": 1,
-            "status": "queued",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:41Z",
-            "updated_at": "2026-11-23T21:49:41Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273590467"
-          },
-          {
-            "id": 45273585157,
-            "run_attempt": 1,
-            "status": "queued",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:39Z",
-            "updated_at": "2026-11-23T21:49:39Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273585157"
-          },
-          {
-            "id": 45273581093,
-            "run_attempt": 1,
-            "status": "in_progress",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:38Z",
-            "updated_at": "2026-11-24T02:35:02Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273581093"
-          },
-          {
-            "id": 45273577248,
-            "run_attempt": 1,
-            "status": "in_progress",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:36Z",
-            "updated_at": "2026-11-24T02:26:28Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273577248"
-          },
-          {
-            "id": 45273573680,
-            "run_attempt": 1,
-            "status": "in_progress",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:34Z",
-            "updated_at": "2026-11-24T01:36:42Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273573680"
-          },
-          {
-            "id": 45273556971,
-            "run_attempt": 1,
-            "status": "completed",
-            "conclusion": "success",
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:27Z",
-            "updated_at": "2026-11-24T01:05:16Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273556971"
-          },
-          {
-            "id": 45273551262,
-            "run_attempt": 1,
-            "status": "in_progress",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:26Z",
-            "updated_at": "2026-11-23T23:09:37Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273551262"
-          },
-          {
-            "id": 45273542940,
-            "run_attempt": 1,
-            "status": "completed",
-            "conclusion": "success",
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:24Z",
-            "updated_at": "2026-11-24T00:57:14Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273542940"
-          },
-          {
-            "id": 45273535731,
-            "run_attempt": 1,
-            "status": "in_progress",
-            "conclusion": null,
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:21Z",
-            "updated_at": "2026-11-23T23:05:15Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273535731"
-          },
-          {
-            "id": 45273530331,
-            "run_attempt": 1,
-            "status": "completed",
-            "conclusion": "success",
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:49:19Z",
-            "updated_at": "2026-11-24T02:26:33Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273530331"
-          },
-          {
-            "id": 45273373803,
-            "run_attempt": 1,
-            "status": "completed",
-            "conclusion": "failure",
-            "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
-            "created_at": "2026-11-23T21:48:21Z",
-            "updated_at": "2026-11-23T23:08:53Z",
-            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273373803"
-          }
-        ],
-        "scope_note": "Workflow status is not a numerical audit; all four terminal recomputations still require artifact collection.",
-        "recorded_at": "2026-11-24T02:47:08.798554+00:00",
-        "observed_after": "2026-11-24T02:45:37Z"
+    "current_evidence": {
+      "tyson": "tyson-recomputation-audit-20261124.json",
+      "rohwer": "rohwer-checkpoint-continuation-20261124.json",
+      "fuss": "fuss-continuations-20261124.json",
+      "marhl_checkpoints": "marhl-continuations-20261124.json",
+      "marhl_missing_outputs": "marhl-no-output-recovery-20261124.json",
+      "vilar": "vilar-continuation-20261124.json"
+    },
+    "cloud_runs": [
+      {
+        "id": 45350129879,
+        "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T07:42:58Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45350129879"
       },
-      "bound_recomputation_indices": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
-      ],
-      "duplicate_run": 45274580585,
-      "duplicate_conclusion": "cancelled",
-      "retained_evidence_release": {
-        "checked_at": "2026-11-24T02:41:24.307892+00:00",
-        "release_id": 456242052,
-        "tag": "kinetics-tyson-retained-20261124",
-        "target_revision": "4fcf963c9b0ac2b74f3a131da274513b4111f1e8",
-        "all_seven_server_sizes_and_sha256_verified": true,
-        "original_zip_count": 2,
-        "original_zip_bytes": 2096153,
-        "payload_files_verified": 230,
-        "full_model_completion_claimed": false,
-        "published": true,
-        "published_at": "2026-11-24T02:41:25Z",
-        "release_url": "https://github.com/m9h/GRN_ODE/releases/tag/kinetics-tyson-retained-20261124",
-        "tag_target_verified": true,
-        "server_digests_rechecked_after_publication": true,
-        "fresh_published_download_verification": {
-          "verified_at": "2026-11-24T02:47:08.798554+00:00",
-          "original_archives": 2,
-          "payload_files": 230,
-          "original_archive_bytes": 2096153,
-          "verifier_exit_code": 0,
-          "numerical_integrations_performed": 0
-        }
+      {
+        "id": 45350173420,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T07:43:18Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45350173420"
+      },
+      {
+        "id": 45332804675,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+        "status": "in_progress",
+        "conclusion": null,
+        "updated_at": "2026-11-24T06:05:59Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45332804675"
+      },
+      {
+        "id": 45273607847,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+        "status": "in_progress",
+        "conclusion": null,
+        "updated_at": "2026-11-24T04:54:42Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273607847"
+      },
+      {
+        "id": 45335934693,
+        "head_sha": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T07:19:08Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45335934693"
+      },
+      {
+        "id": 45331953904,
+        "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T07:30:00Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45331953904"
+      },
+      {
+        "id": 45332029602,
+        "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T05:15:30Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45332029602"
+      },
+      {
+        "id": 45336593648,
+        "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T05:54:41Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336593648"
+      },
+      {
+        "id": 45336651157,
+        "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T05:55:11Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336651157"
+      },
+      {
+        "id": 45336656225,
+        "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T05:55:14Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336656225"
+      },
+      {
+        "id": 45336660754,
+        "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T05:55:16Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336660754"
+      },
+      {
+        "id": 45336664864,
+        "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T05:55:18Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336664864"
+      },
+      {
+        "id": 45336669164,
+        "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T05:55:20Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45336669164"
+      },
+      {
+        "id": 44412503884,
+        "head_sha": "05232fa83c4be917455dc2d143a11253cb7773e6",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-19T02:15:49Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44412503884"
+      },
+      {
+        "id": 44419997278,
+        "head_sha": "0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-19T01:33:07Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44419997278"
+      },
+      {
+        "id": 44420020715,
+        "head_sha": "0dc31af29f4ff9c5e0e610d7c473cc1382fb7dda",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-19T01:39:41Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/44420020715"
+      },
+      {
+        "id": 45351112676,
+        "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-24T07:50:31Z",
+        "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45351112676"
       }
-    },
-    "fuss": {
-      "checked_at": "2026-11-24T02:46:49.655433+00:00",
-      "available_partition_count": 10,
-      "verified_arrays": 341,
-      "pending_download_indices": [
-        8,
-        10,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31
-      ],
-      "missing_artifact_indices": [],
-      "collection_errors": [],
-      "selection_sha256": "7b07a4b6d8ee5745c49502f4b0ca8125101ac4c6ae8fe4af9f9168dee18bff7d",
-      "original_collector_revision": "b1115dbdda449e9b20bdb7bd8eb6c9b45ce833e7"
-    },
-    "rohwer_first_continuation": {
-      "download_proof": {
-        "checked_at": "2026-11-24T02:40:52.748615+00:00",
-        "fixed_partitions": 32,
-        "all_original_archives_verified": 32,
-        "total_bytes": 8782403087,
-        "resumed_artifacts": [
-          14767072731,
-          14835638266
-        ],
-        "original_artifacts": [
+    ],
+    "local_workers_resumed": false,
+    "historical_observation": {
+      "recorded_at": "2026-11-24T02:47:08.798554+00:00",
+      "scientific_status": {
+        "baseline_models_passed": 35,
+        "single_stimulation_cases_passed": 538,
+        "repeated_stimulation_cases_passed": 538,
+        "paired_cases_passed": 4205,
+        "paired_cases_total": 4208,
+        "paired_unresolved": "Three Vilar cases",
+        "breaking_initial_inventories_complete": 34,
+        "breaking_whole_model_audits_passed": 27,
+        "remaining_models_without_passing_breaking_audits": [
           {
-            "artifact_id": 14835638266,
-            "bytes": 284131052,
-            "sha256": "sha256:de095e3bc5302305fe7e55ab239284b6cdf5025ad90602283fa4be0084aebd2b"
+            "network": 3,
+            "model": "BIOMD0000000003",
+            "name": "Goldbeter1991 reduced mitotic oscillator"
           },
           {
-            "artifact_id": 14814158826,
-            "bytes": 149850105,
-            "sha256": "sha256:cfd79ea1d4ff054e92371680c398186c12d499f56dd074379558d252d554a386"
+            "network": 5,
+            "model": "BIOMD0000000005",
+            "name": "Tyson1991 cell cycle"
           },
           {
-            "artifact_id": 14804875076,
-            "bytes": 245114771,
-            "sha256": "sha256:53fd966efc6d955fdcfa515b572d2f38bfece1f735bb787ce20e5f728d83b43b"
+            "network": 8,
+            "model": "BIOMD0000000069",
+            "name": "Fuss2006 mitotic activation"
           },
           {
-            "artifact_id": 14803703299,
-            "bytes": 168805362,
-            "sha256": "sha256:90b91ddd2d71b4c2041cf7a48d3e2517330ab373295134f77b01edba1723b829"
+            "network": 25,
+            "model": "BIOMD0000000539",
+            "name": "Francois2005 mixed feedback loop"
           },
           {
-            "artifact_id": 14800348127,
-            "bytes": 460070080,
-            "sha256": "sha256:08886374db69311b11598a901b72a39f15dfa5bdd3a218858bd3432de89163d2"
+            "network": 28,
+            "model": "BIOMD0000000697",
+            "name": "Ciliberto2003 cyclin E/Cdk2 timer"
           },
           {
-            "artifact_id": 14796573730,
-            "bytes": 275134939,
-            "sha256": "sha256:64f114a3a2992364a1ca6ff670c0dd970babc775f51dc01b1d7e6c470572df20"
+            "network": 30,
+            "model": "BIOMD0000000039",
+            "name": "Marhl2000 calcium oscillations"
           },
           {
-            "artifact_id": 14795979344,
-            "bytes": 96464116,
-            "sha256": "sha256:e2cc52a33959887c4bf834de524b278cd18037e2a46d3e533c41905292b8246a"
+            "network": 32,
+            "model": "BIOMD0000000035",
+            "name": "Vilar2002 oscillator"
           },
           {
-            "artifact_id": 14792385920,
-            "bytes": 416591192,
-            "sha256": "sha256:a88e2fe12fceb06bda928ed7de3b04019eceed061d1b588345189665eafae329"
-          },
-          {
-            "artifact_id": 14789060091,
-            "bytes": 168575146,
-            "sha256": "sha256:23968d7acc76da3b1c6c5793f9850f8ee3bd8391b74446fdce96f3b5aeecf88c"
-          },
-          {
-            "artifact_id": 14786755342,
-            "bytes": 428852188,
-            "sha256": "sha256:0e457018036689167aa7b98f120f53989e6b6ff1e42095a56943d723cea41300"
-          },
-          {
-            "artifact_id": 14785582184,
-            "bytes": 125998466,
-            "sha256": "sha256:267347ea48f7e52a62de5db1782f6c83997ac928ac3b70621a87bc05ca5c0077"
-          },
-          {
-            "artifact_id": 14785252403,
-            "bytes": 85214000,
-            "sha256": "sha256:58be0a66ba7b4b8505902a2ff2480739ace895102f32348009796470c2df53f9"
-          },
-          {
-            "artifact_id": 14781194947,
-            "bytes": 132033831,
-            "sha256": "sha256:661edb95a38affd3577e86a7b2499982e46c47672f5b8a7e74a2b3c6b29c6776"
-          },
-          {
-            "artifact_id": 14781062891,
-            "bytes": 124115191,
-            "sha256": "sha256:7f7472f086901057e2dd8992f5ac21b1e696e8dccf4f92f2f52dec626390a951"
-          },
-          {
-            "artifact_id": 14774324654,
-            "bytes": 566928593,
-            "sha256": "sha256:23f72c64ff31694775b5224f7343586318bce9e8ae8e08312229dc3e180a605b"
-          },
-          {
-            "artifact_id": 14772789690,
-            "bytes": 382300475,
-            "sha256": "sha256:40379bb37f95fd9f20b1c6131e51c1486f06c38ae66a4c9d032ef938de63cefb"
-          },
-          {
-            "artifact_id": 14771750855,
-            "bytes": 160782047,
-            "sha256": "sha256:4eab34f9171a3241e9572b03ccad552de9e50748062b551ca8fe94634835dc87"
-          },
-          {
-            "artifact_id": 14770193957,
-            "bytes": 419366885,
-            "sha256": "sha256:19eb34047b526a64e859c5a72c8940ed6612c1176b7d5656522d165a654dc938"
-          },
-          {
-            "artifact_id": 14769375569,
-            "bytes": 359753617,
-            "sha256": "sha256:095d5235ada2c5f3e549f7d84ac2d28115f0a793aab879592b267ecebb23fc7a"
-          },
-          {
-            "artifact_id": 14768167763,
-            "bytes": 553757525,
-            "sha256": "sha256:1cdce78fa8df6e58b4473f72eaf1e76f48677e3325a0b989b70e7619660c2f47"
-          },
-          {
-            "artifact_id": 14767072731,
-            "bytes": 502406692,
-            "sha256": "sha256:4e940dab0f9265330475ed0aa20d6b6891bba828cbe245e962c30966b67db9eb"
-          },
-          {
-            "artifact_id": 14766419643,
-            "bytes": 467469366,
-            "sha256": "sha256:7bdc6e391a1f4c10e45212ab916bf0fe4a641894e297893c5e57612e48ca3e0d"
-          },
-          {
-            "artifact_id": 14757648196,
-            "bytes": 233562460,
-            "sha256": "sha256:6be52d55c075cd010b5a021c6e9761f823a0605f67f62a3d553dc3147faeee13"
-          },
-          {
-            "artifact_id": 14756340821,
-            "bytes": 318815443,
-            "sha256": "sha256:936fd2e00ecc95c234669023f2c76fe3ab21f4249d765ff80014fd35bf24b0ba"
-          },
-          {
-            "artifact_id": 14754983059,
-            "bytes": 202882356,
-            "sha256": "sha256:3252632c9bbd339bfbb9db91abe1dc32002c75a9476d87f44410c59ddb74d492"
-          },
-          {
-            "artifact_id": 14752378755,
-            "bytes": 301025150,
-            "sha256": "sha256:b9e9737a91785c1c1cf899aef40e0e05e63b62d2447e855941dd75d6826336ec"
-          },
-          {
-            "artifact_id": 14749758858,
-            "bytes": 338834000,
-            "sha256": "sha256:5125733c13dabab70cf49b44af92887d911cb315ed29331ecfdcde1e1ba36685"
-          },
-          {
-            "artifact_id": 14749013748,
-            "bytes": 215905300,
-            "sha256": "sha256:c8ce8f607165e2715ed2e32e7a841d8f37932b08880388aebff2437e1fe3c00b"
-          },
-          {
-            "artifact_id": 14746659254,
-            "bytes": 150377963,
-            "sha256": "sha256:c2db413b059b62abe5ce800c93754258da2b120c0bcc2cbade5bb0db22e417ec"
-          },
-          {
-            "artifact_id": 14746160188,
-            "bytes": 208936165,
-            "sha256": "sha256:c7cda6ca465f821ccca4fd7affb8796883559debc98ed7ee2e0247896d64549d"
-          },
-          {
-            "artifact_id": 14738525753,
-            "bytes": 164339664,
-            "sha256": "sha256:25107933a2ad1df1bfbd69e803c68c76b2c61c665249ffe6c63766c8ecfe2916"
-          },
-          {
-            "artifact_id": 14738255892,
-            "bytes": 74008947,
-            "sha256": "sha256:faf8349d7ec934e030393deab5583cdd52d626381a07b8669fc5ab382b66d8c4"
+            "network": 35,
+            "model": "BIOMD0000000038",
+            "name": "Rohwer2000 phosphotransferase system"
           }
         ],
-        "numerical_integrations_performed": 0
+        "goal_complete": false,
+        "initial_inventory_caveat": "Tyson last active computation finished, but full58-case auditable inventory is not achieved because14 historical partition payloads are missing. Recomputations preserve fullscope."
       },
-      "array_audit_status": "running",
-      "no_new_case_or_model_pass_claimed": true
+      "scope_note": "Passing model counts are unchanged. A completed investigation may retain numerical disagreements or model-domain limits. Missing evidence and unfinished integrations remain incomplete.",
+      "tyson": {
+        "cloud_observation": {
+          "source": "https://api.github.com/repos/m9h/GRN_ODE/actions/runs?branch=kinetics-resume-case-selection&per_page=50",
+          "workflow_runs": [
+            {
+              "id": 45274580585,
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "cancelled",
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:55:41Z",
+              "updated_at": "2026-11-23T22:39:10Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45274580585"
+            },
+            {
+              "id": 45273607847,
+              "run_attempt": 1,
+              "status": "queued",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:46Z",
+              "updated_at": "2026-11-23T21:49:46Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273607847"
+            },
+            {
+              "id": 45273603700,
+              "run_attempt": 1,
+              "status": "queued",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:44Z",
+              "updated_at": "2026-11-23T21:49:44Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273603700"
+            },
+            {
+              "id": 45273597088,
+              "run_attempt": 1,
+              "status": "queued",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:43Z",
+              "updated_at": "2026-11-23T21:49:43Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273597088"
+            },
+            {
+              "id": 45273590467,
+              "run_attempt": 1,
+              "status": "queued",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:41Z",
+              "updated_at": "2026-11-23T21:49:41Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273590467"
+            },
+            {
+              "id": 45273585157,
+              "run_attempt": 1,
+              "status": "queued",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:39Z",
+              "updated_at": "2026-11-23T21:49:39Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273585157"
+            },
+            {
+              "id": 45273581093,
+              "run_attempt": 1,
+              "status": "in_progress",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:38Z",
+              "updated_at": "2026-11-24T02:35:02Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273581093"
+            },
+            {
+              "id": 45273577248,
+              "run_attempt": 1,
+              "status": "in_progress",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:36Z",
+              "updated_at": "2026-11-24T02:26:28Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273577248"
+            },
+            {
+              "id": 45273573680,
+              "run_attempt": 1,
+              "status": "in_progress",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:34Z",
+              "updated_at": "2026-11-24T01:36:42Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273573680"
+            },
+            {
+              "id": 45273556971,
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success",
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:27Z",
+              "updated_at": "2026-11-24T01:05:16Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273556971"
+            },
+            {
+              "id": 45273551262,
+              "run_attempt": 1,
+              "status": "in_progress",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:26Z",
+              "updated_at": "2026-11-23T23:09:37Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273551262"
+            },
+            {
+              "id": 45273542940,
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success",
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:24Z",
+              "updated_at": "2026-11-24T00:57:14Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273542940"
+            },
+            {
+              "id": 45273535731,
+              "run_attempt": 1,
+              "status": "in_progress",
+              "conclusion": null,
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:21Z",
+              "updated_at": "2026-11-23T23:05:15Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273535731"
+            },
+            {
+              "id": 45273530331,
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success",
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:49:19Z",
+              "updated_at": "2026-11-24T02:26:33Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273530331"
+            },
+            {
+              "id": 45273373803,
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "failure",
+              "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+              "created_at": "2026-11-23T21:48:21Z",
+              "updated_at": "2026-11-23T23:08:53Z",
+              "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45273373803"
+            }
+          ],
+          "scope_note": "Workflow status is not a numerical audit; all four terminal recomputations still require artifact collection.",
+          "recorded_at": "2026-11-24T02:47:08.798554+00:00",
+          "observed_after": "2026-11-24T02:45:37Z"
+        },
+        "bound_recomputation_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "duplicate_run": 45274580585,
+        "duplicate_conclusion": "cancelled",
+        "retained_evidence_release": {
+          "checked_at": "2026-11-24T02:41:24.307892+00:00",
+          "release_id": 456242052,
+          "tag": "kinetics-tyson-retained-20261124",
+          "target_revision": "4fcf963c9b0ac2b74f3a131da274513b4111f1e8",
+          "all_seven_server_sizes_and_sha256_verified": true,
+          "original_zip_count": 2,
+          "original_zip_bytes": 2096153,
+          "payload_files_verified": 230,
+          "full_model_completion_claimed": false,
+          "published": true,
+          "published_at": "2026-11-24T02:41:25Z",
+          "release_url": "https://github.com/m9h/GRN_ODE/releases/tag/kinetics-tyson-retained-20261124",
+          "tag_target_verified": true,
+          "server_digests_rechecked_after_publication": true,
+          "fresh_published_download_verification": {
+            "verified_at": "2026-11-24T02:47:08.798554+00:00",
+            "original_archives": 2,
+            "payload_files": 230,
+            "original_archive_bytes": 2096153,
+            "verifier_exit_code": 0,
+            "numerical_integrations_performed": 0
+          }
+        }
+      },
+      "fuss": {
+        "checked_at": "2026-11-24T02:46:49.655433+00:00",
+        "available_partition_count": 10,
+        "verified_arrays": 341,
+        "pending_download_indices": [
+          8,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "missing_artifact_indices": [],
+        "collection_errors": [],
+        "selection_sha256": "7b07a4b6d8ee5745c49502f4b0ca8125101ac4c6ae8fe4af9f9168dee18bff7d",
+        "original_collector_revision": "b1115dbdda449e9b20bdb7bd8eb6c9b45ce833e7"
+      },
+      "rohwer_first_continuation": {
+        "download_proof": {
+          "checked_at": "2026-11-24T02:40:52.748615+00:00",
+          "fixed_partitions": 32,
+          "all_original_archives_verified": 32,
+          "total_bytes": 8782403087,
+          "resumed_artifacts": [
+            14767072731,
+            14835638266
+          ],
+          "original_artifacts": [
+            {
+              "artifact_id": 14835638266,
+              "bytes": 284131052,
+              "sha256": "sha256:de095e3bc5302305fe7e55ab239284b6cdf5025ad90602283fa4be0084aebd2b"
+            },
+            {
+              "artifact_id": 14814158826,
+              "bytes": 149850105,
+              "sha256": "sha256:cfd79ea1d4ff054e92371680c398186c12d499f56dd074379558d252d554a386"
+            },
+            {
+              "artifact_id": 14804875076,
+              "bytes": 245114771,
+              "sha256": "sha256:53fd966efc6d955fdcfa515b572d2f38bfece1f735bb787ce20e5f728d83b43b"
+            },
+            {
+              "artifact_id": 14803703299,
+              "bytes": 168805362,
+              "sha256": "sha256:90b91ddd2d71b4c2041cf7a48d3e2517330ab373295134f77b01edba1723b829"
+            },
+            {
+              "artifact_id": 14800348127,
+              "bytes": 460070080,
+              "sha256": "sha256:08886374db69311b11598a901b72a39f15dfa5bdd3a218858bd3432de89163d2"
+            },
+            {
+              "artifact_id": 14796573730,
+              "bytes": 275134939,
+              "sha256": "sha256:64f114a3a2992364a1ca6ff670c0dd970babc775f51dc01b1d7e6c470572df20"
+            },
+            {
+              "artifact_id": 14795979344,
+              "bytes": 96464116,
+              "sha256": "sha256:e2cc52a33959887c4bf834de524b278cd18037e2a46d3e533c41905292b8246a"
+            },
+            {
+              "artifact_id": 14792385920,
+              "bytes": 416591192,
+              "sha256": "sha256:a88e2fe12fceb06bda928ed7de3b04019eceed061d1b588345189665eafae329"
+            },
+            {
+              "artifact_id": 14789060091,
+              "bytes": 168575146,
+              "sha256": "sha256:23968d7acc76da3b1c6c5793f9850f8ee3bd8391b74446fdce96f3b5aeecf88c"
+            },
+            {
+              "artifact_id": 14786755342,
+              "bytes": 428852188,
+              "sha256": "sha256:0e457018036689167aa7b98f120f53989e6b6ff1e42095a56943d723cea41300"
+            },
+            {
+              "artifact_id": 14785582184,
+              "bytes": 125998466,
+              "sha256": "sha256:267347ea48f7e52a62de5db1782f6c83997ac928ac3b70621a87bc05ca5c0077"
+            },
+            {
+              "artifact_id": 14785252403,
+              "bytes": 85214000,
+              "sha256": "sha256:58be0a66ba7b4b8505902a2ff2480739ace895102f32348009796470c2df53f9"
+            },
+            {
+              "artifact_id": 14781194947,
+              "bytes": 132033831,
+              "sha256": "sha256:661edb95a38affd3577e86a7b2499982e46c47672f5b8a7e74a2b3c6b29c6776"
+            },
+            {
+              "artifact_id": 14781062891,
+              "bytes": 124115191,
+              "sha256": "sha256:7f7472f086901057e2dd8992f5ac21b1e696e8dccf4f92f2f52dec626390a951"
+            },
+            {
+              "artifact_id": 14774324654,
+              "bytes": 566928593,
+              "sha256": "sha256:23f72c64ff31694775b5224f7343586318bce9e8ae8e08312229dc3e180a605b"
+            },
+            {
+              "artifact_id": 14772789690,
+              "bytes": 382300475,
+              "sha256": "sha256:40379bb37f95fd9f20b1c6131e51c1486f06c38ae66a4c9d032ef938de63cefb"
+            },
+            {
+              "artifact_id": 14771750855,
+              "bytes": 160782047,
+              "sha256": "sha256:4eab34f9171a3241e9572b03ccad552de9e50748062b551ca8fe94634835dc87"
+            },
+            {
+              "artifact_id": 14770193957,
+              "bytes": 419366885,
+              "sha256": "sha256:19eb34047b526a64e859c5a72c8940ed6612c1176b7d5656522d165a654dc938"
+            },
+            {
+              "artifact_id": 14769375569,
+              "bytes": 359753617,
+              "sha256": "sha256:095d5235ada2c5f3e549f7d84ac2d28115f0a793aab879592b267ecebb23fc7a"
+            },
+            {
+              "artifact_id": 14768167763,
+              "bytes": 553757525,
+              "sha256": "sha256:1cdce78fa8df6e58b4473f72eaf1e76f48677e3325a0b989b70e7619660c2f47"
+            },
+            {
+              "artifact_id": 14767072731,
+              "bytes": 502406692,
+              "sha256": "sha256:4e940dab0f9265330475ed0aa20d6b6891bba828cbe245e962c30966b67db9eb"
+            },
+            {
+              "artifact_id": 14766419643,
+              "bytes": 467469366,
+              "sha256": "sha256:7bdc6e391a1f4c10e45212ab916bf0fe4a641894e297893c5e57612e48ca3e0d"
+            },
+            {
+              "artifact_id": 14757648196,
+              "bytes": 233562460,
+              "sha256": "sha256:6be52d55c075cd010b5a021c6e9761f823a0605f67f62a3d553dc3147faeee13"
+            },
+            {
+              "artifact_id": 14756340821,
+              "bytes": 318815443,
+              "sha256": "sha256:936fd2e00ecc95c234669023f2c76fe3ab21f4249d765ff80014fd35bf24b0ba"
+            },
+            {
+              "artifact_id": 14754983059,
+              "bytes": 202882356,
+              "sha256": "sha256:3252632c9bbd339bfbb9db91abe1dc32002c75a9476d87f44410c59ddb74d492"
+            },
+            {
+              "artifact_id": 14752378755,
+              "bytes": 301025150,
+              "sha256": "sha256:b9e9737a91785c1c1cf899aef40e0e05e63b62d2447e855941dd75d6826336ec"
+            },
+            {
+              "artifact_id": 14749758858,
+              "bytes": 338834000,
+              "sha256": "sha256:5125733c13dabab70cf49b44af92887d911cb315ed29331ecfdcde1e1ba36685"
+            },
+            {
+              "artifact_id": 14749013748,
+              "bytes": 215905300,
+              "sha256": "sha256:c8ce8f607165e2715ed2e32e7a841d8f37932b08880388aebff2437e1fe3c00b"
+            },
+            {
+              "artifact_id": 14746659254,
+              "bytes": 150377963,
+              "sha256": "sha256:c2db413b059b62abe5ce800c93754258da2b120c0bcc2cbade5bb0db22e417ec"
+            },
+            {
+              "artifact_id": 14746160188,
+              "bytes": 208936165,
+              "sha256": "sha256:c7cda6ca465f821ccca4fd7affb8796883559debc98ed7ee2e0247896d64549d"
+            },
+            {
+              "artifact_id": 14738525753,
+              "bytes": 164339664,
+              "sha256": "sha256:25107933a2ad1df1bfbd69e803c68c76b2c61c665249ffe6c63766c8ecfe2916"
+            },
+            {
+              "artifact_id": 14738255892,
+              "bytes": 74008947,
+              "sha256": "sha256:faf8349d7ec934e030393deab5583cdd52d626381a07b8669fc5ab382b66d8c4"
+            }
+          ],
+          "numerical_integrations_performed": 0
+        },
+        "array_audit_status": "running",
+        "no_new_case_or_model_pass_claimed": true
+      },
+      "other_models": "Scientific counts retained from progress-20261123T2155.json; cloud execution states for other models were not refreshed in this check.",
+      "local_numerical_workers": "User instruction remains: leave stopped. No restart or signal performed."
     },
-    "other_models": "Scientific counts retained from progress-20261123T2155.json; cloud execution states for other models were not refreshed in this check.",
-    "local_numerical_workers": "User instruction remains: leave stopped. No restart or signal performed."
-  },
-  "vilar_observed_at": "2026-11-24T07:51:45.290266+00:00"
+    "vilar_observed_at": "2026-11-24T07:51:45.290266+00:00"
+  }
 }

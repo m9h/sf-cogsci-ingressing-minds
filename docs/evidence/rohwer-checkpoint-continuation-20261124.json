@@ -93,85 +93,85 @@
     {
       "id": 138284068701,
       "name": "rohwer-checkpoint-continuation-7",
-      "status": "in_progress",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068732,
       "name": "rohwer-checkpoint-continuation-6",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068743,
       "name": "rohwer-checkpoint-continuation-10",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068755,
       "name": "rohwer-checkpoint-continuation-16",
-      "status": "queued",
+      "status": "in_progress",
       "conclusion": null
     },
     {
       "id": 138284068759,
       "name": "rohwer-checkpoint-continuation-3",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068765,
       "name": "rohwer-checkpoint-continuation-11",
-      "status": "queued",
+      "status": "in_progress",
       "conclusion": null
     },
     {
       "id": 138284068768,
       "name": "rohwer-checkpoint-continuation-8",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068770,
       "name": "rohwer-checkpoint-continuation-12",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068772,
       "name": "rohwer-checkpoint-continuation-0",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068790,
       "name": "rohwer-checkpoint-continuation-5",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068798,
       "name": "rohwer-checkpoint-continuation-2",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068803,
       "name": "rohwer-checkpoint-continuation-4",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068807,
       "name": "rohwer-checkpoint-continuation-1",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068834,
       "name": "rohwer-checkpoint-continuation-13",
-      "status": "queued",
+      "status": "in_progress",
       "conclusion": null
     },
     {
@@ -183,20 +183,20 @@
     {
       "id": 138284068913,
       "name": "rohwer-checkpoint-continuation-14",
-      "status": "queued",
+      "status": "in_progress",
       "conclusion": null
     },
     {
       "id": 138284068923,
       "name": "rohwer-checkpoint-continuation-15",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284068986,
       "name": "rohwer-checkpoint-continuation-9",
-      "status": "queued",
-      "conclusion": null
+      "status": "completed",
+      "conclusion": "failure"
     },
     {
       "id": 138284070403,
@@ -283,5 +283,6 @@
       "conclusion": null
     }
   ],
-  "current_note": "Linux validation passed; all 32 compute jobs are bound. Partition 7 running, 31 queued. Initial submission below is retained as historical evidence."
+  "current_note": "Linux gate passed and all 32 compute jobs bound: 13 terminal outputs available, four jobs running and 15 queued. This generation has not yet been scientifically collected.",
+  "latest_job_snapshot_utc": "2026-11-24T23:18:00.583000+00:00"
 }
