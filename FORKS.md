@@ -1,6 +1,6 @@
 # Forks, contributions and reproducible revisions
 
-Kinetics evidence updated **2026-11-23 UTC**; other fork and review snapshots are
+Kinetics evidence updated **2026-11-24 UTC**; other fork and review snapshots are
 retained from **2026-11-09**. Branch links follow ongoing work; revision links
 preserve the code examined. Review status can change after these dates.
 
@@ -17,9 +17,12 @@ the full audit. Tyson (5) remains short of a reproducible complete inventory.
 Its last active [partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44930974577)
 finished all four cases, with three passing. The [full-model audit found missing historical payloads](docs/evidence/tyson-completion-and-evidence-gap-20261123.json)
 for partitions 0–13; their GitHub artifacts are unavailable and temporary files
-are absent. Partitions 14 and 15 are preserved. Fixed-scope recomputation of
-0–13 was submitted under the frozen numerical implementation; thirteen jobs
-are bound, with partition 0's run binding pending. The audited inventory count
+are absent. Partitions 14 and 15 are now preserved in a
+[durable evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-tyson-retained-20261124):
+a fresh download verifies both original ZIPs and all 230 payload files.
+Fixed-scope recomputation of 0–13 uses the frozen numerical implementation;
+all fourteen jobs are bound. The original partition-0 run appeared late, and
+its duplicate was cancelled. The audited inventory count
 remains 34/35, and whole-model passes remain 27/35. François's
 [separate Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
 now covers all 118 cases across sixteen partitions: eighty pass and thirty-eight
@@ -34,17 +37,18 @@ The original job snapshot below was checked **2026-11-19 at 18:31–18:35 UTC**.
 Tyson, François and Vilar were checked again **2026-11-20 at 02:03 UTC**;
 Ueda, Ciliberto, Tyson, Vilar and Marhl have later checks from **21 November
 2026 UTC** described below. The latest Tyson, Fuss and Rohwer checks are from
-**23 November 2026 UTC**. The continuations were dispatched once, after
-verifying their terminal parent artifacts. No local numerical worker was resumed.
+**24 November 2026 UTC**, recorded in the [latest status evidence](docs/evidence/biomodels-progress-20261124.json).
+The Tyson duplicate submission and cancellation are recorded explicitly.
+No local numerical worker was resumed.
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Completion and evidence restoration](docs/evidence/tyson-completion-and-evidence-gap-20261123.json) | Last active partition complete; 121 records audited, 120 passing. Missing payloads for partitions 0–13 require recomputation; thirteen jobs bound, partition 0 binding pending |
+| Tyson initial inventory | [Evidence restoration status](docs/evidence/biomodels-progress-20261124.json) | All fourteen replacement jobs bound: four terminal, five running, five queued. New results await audit; original partitions 14–15 are published and freshly verified |
 | François separate Linux inventory | [Completed full audit](docs/evidence/francois-linux-inventory-20261120.json) | All 118 cases covered; 80 pass, 38 retain failures; all sixteen original ZIPs verified |
 | Vilar precision diagnostics | [Checkpoint audit](docs/evidence/terminal-checkpoints-20261121.json) | All four original ZIPs verified; checkpoints add 373–409 samples each with old prefixes bitwise unchanged; all four integrations remain incomplete |
-| Fuss complete case controls | [31 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44934673699) · [Partition 11](https://github.com/m9h/GRN_ODE/actions/runs/44933648891) | Both validation gates passed; all 32 actual jobs bound and now terminal; latest output collection pending. Last verified retained scope: 1,050 arrays |
+| Fuss complete case controls | [31 partitions](https://github.com/m9h/GRN_ODE/actions/runs/44934673699) · [Partition 11](https://github.com/m9h/GRN_ODE/actions/runs/44933648891) | All 32 jobs terminal; incremental collection has audited ten partitions and 341 complete arrays without collection errors. The earlier 1,050-array inventory remains retained; no new complete case claimed |
 | Ueda complete case controls | [Complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; original ZIPs and offline reproduction guide published |
-| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Verified continuation](docs/evidence/rohwer-continuation-20261123.json) | 112 Linux tests pass; every parent checkpoint restored successfully; all 32 jobs terminal with 8.78 GB of new original artifacts awaiting collection |
+| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Collection status](docs/evidence/biomodels-progress-20261124.json) | All 32 new original artifacts (8.78 GB) downloaded and checksummed; full array audit running; no additional complete case claimed |
 | Marhl high-precision diagnostics | [First array audit](docs/evidence/marhl-partial-array-audit-20261121.json) | 80 original artifacts verified; 60 complete arrays, 20 partial checkpoints; five branches pass all thirty comparisons; full 1,520-task scope remains required |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
@@ -90,8 +94,8 @@ are now implemented, with 112 local and Linux tests passing. Untouched branches
 run before interrupted requests within the same fixed partitions. The
 [continuation run](https://github.com/m9h/GRN_ODE/actions/runs/44950774489)
 restored all parents successfully and produced 32 new artifacts totaling
-8,782,403,087 bytes. Their actual job IDs are bound, but the new arrays still
-need independent collection and auditing. No case or whole-model recovery is
+8,782,403,087 bytes. All 32 original ZIP sizes and checksums now verify, and
+the independent full-array collector is running. No case or whole-model recovery is
 claimed, and durable publication of the original ZIPs remains pending.
 
 The [20 November Ueda audit](docs/evidence/ueda-continuation-20261120.json) covers

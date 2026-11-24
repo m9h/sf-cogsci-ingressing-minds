@@ -71,7 +71,7 @@ The five models are **MAPK protein-signaling models**, despite the historical
 The [BioModels guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/models/README.md)
 explains their biology, equations, conserved pools, source papers and provenance.
 
-**Completion status, 23 November 2026 UTC:** the basic all-35-model simulations
+**Completion status, 24 November 2026 UTC:** the basic all-35-model simulations
 are finished; the full memory-validation goal remains open.
 
 | Validation stage | Verified result | Remaining work |
@@ -85,6 +85,9 @@ are finished; the full memory-validation goal remains open.
 These counts measure numerical validation, not proof that every network learns.
 Completed jobs, software tests and partially verified trajectories do not add
 whole-model passes. The evidence links and outstanding work follow below.
+A documented disagreement or model-domain limitation can be a completed
+scientific result. Missing evidence and unfinished integrations still require
+work; completion does not mean forcing every comparison to pass.
 
 The eight models without a passing whole-model breaking audit have different
 remaining issues:
@@ -98,7 +101,7 @@ remaining issues:
 | Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. |
 | Marhl (30) | [60 full trajectories and five complete branches verified](docs/evidence/marhl-partial-array-audit-20261121.json); all thirty available branch comparisons pass. The full scope remains 1,520 tasks, 380 branches and twelve cases. |
 | Vilar (32) | Breaking validation remains unresolved, alongside three paired cases; four precision checkpoints remain incomplete. |
-| Rohwer (35) | The [verified continuation](docs/evidence/rohwer-continuation-20261123.json) produced 32 new artifacts after passing 112 Linux tests. Their arrays still need collection; later controls and complete-case replay also remain required. |
+| Rohwer (35) | All 32 continuation artifacts (8.78 GB) have been downloaded and checksummed; the full array audit is running. Later controls and complete-case replay remain required. See the [latest collection status](docs/evidence/biomodels-progress-20261124.json). |
 
 Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics
@@ -135,9 +138,13 @@ has now finished all four cases, with three passing. Its latest audit verifies
 121 branch records, adds six passing records and preserves all 114 earlier
 passing records byte-for-byte. The [full-model audit exposed an evidence gap](docs/evidence/tyson-completion-and-evidence-gap-20261123.json):
 partitions 0–13 no longer have available original payloads. Partitions 14 and 15
-are preserved in the workspace. Recomputations of 0–13 were submitted with
-unchanged numerical code and requests; thirteen actual jobs are bound, while
-partition 0 still awaits run binding. The full 58-case audit and completion
+are now preserved in a [durable evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-tyson-retained-20261124);
+a fresh download verifies both original ZIPs and all 230 payload files.
+Recomputations of 0–13 use unchanged numerical code and requests; all fourteen
+actual jobs are bound. A duplicate partition-0 submission was cancelled after
+the original appeared late. At the latest [cloud check](docs/evidence/biomodels-progress-20261124.json),
+four recomputations were terminal, five running and five queued. Their results
+still require collection and numerical auditing. The full 58-case audit and completion
 count remain unpromoted. Missing historical bytes are not reconstructed or
 represented as verified originals.
 The [complete separate François Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
