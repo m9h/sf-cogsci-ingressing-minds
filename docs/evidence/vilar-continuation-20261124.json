@@ -1,0 +1,120 @@
+{
+  "checked_at": "2026-11-24T07:51:45.290266+00:00",
+  "submission": {
+    "state": "bound_to_run_waiting_for_linux_validation",
+    "post_attempts": 1,
+    "prepared_at": "2026-11-24T07:50:22.017838+00:00",
+    "workflow_id": 416944455,
+    "producer_revision": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+    "request": {
+      "ref": "precision-segment-checkpoints",
+      "inputs": {
+        "operation": "compute",
+        "model": "35",
+        "resume_run": "44589152244",
+        "partition_indices": "[8,9,11,16]",
+        "migrate_segments": "false"
+      }
+    },
+    "parent_run": 44589152244,
+    "required_full_partitions": 17,
+    "actual_compute_jobs_bound": false,
+    "exact_checkpoint_state_validated_locally": false,
+    "linux_gate_and_exact_restore_required": true,
+    "case_recovery_claimed": false,
+    "started_at": "2026-11-24T07:50:29.349888+00:00",
+    "post_exit_code": 0,
+    "run_id": 45351112676,
+    "run_attempt": 1,
+    "status": "queued",
+    "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45351112676",
+    "validation_job_id": 138297498207
+  },
+  "parent_verification": {
+    "checked_at": "2026-11-24T07:50:22.017838+00:00",
+    "producer_revision": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+    "all_parent_jobs_terminal": true,
+    "no_active_branch_run": true,
+    "partitions": [
+      {
+        "partition_index": 8,
+        "parent_run_id": 44589152244,
+        "parent_job_id": 135847253559,
+        "artifact_id": 14596742091,
+        "archive_sha256": "sha256:b8ff153a436ec76967714b67cfb0061ab1838106e78bb9229567ecd85a20fd18",
+        "verified_payload_files": 8,
+        "checkpoint_sha256": "aa58b9b5c4b75df8d7f7d3cd3e1a8f82a04db61989e2e4b013edb00d4ff3b3ae",
+        "reported_status": "checkpointed"
+      },
+      {
+        "partition_index": 9,
+        "parent_run_id": 44589152244,
+        "parent_job_id": 135847253676,
+        "artifact_id": 14596119586,
+        "archive_sha256": "sha256:9730f003ac7614fa0f78d08bc4fc54f8377d06a7de6591c74cfd4551bc93b737",
+        "verified_payload_files": 8,
+        "checkpoint_sha256": "a121d68fd51444a084e583a457a720c800e5d51c42983e25ac96a9163f0e8e16",
+        "reported_status": "checkpointed"
+      },
+      {
+        "partition_index": 11,
+        "parent_run_id": 44589152244,
+        "parent_job_id": 135847253549,
+        "artifact_id": 14592499765,
+        "archive_sha256": "sha256:8ab509d48307b249ea2f70455e6d8b67958f06fc90f9756fae5af24640629d40",
+        "verified_payload_files": 8,
+        "checkpoint_sha256": "be7fca987d5431d1cd6b62da56415a6898967d7c5c350022b06b360e58a9ca49",
+        "reported_status": "checkpointed"
+      },
+      {
+        "partition_index": 16,
+        "parent_run_id": 44589152244,
+        "parent_job_id": 135847253500,
+        "artifact_id": 14588603972,
+        "archive_sha256": "sha256:e005494d682bcf95de9eedfa0439f44ff8aa7aed02f5e3cf5bc4892f4d04d3c1",
+        "verified_payload_files": 8,
+        "checkpoint_sha256": "42083bf735bdeb4fb2dd2877cf283a47f3212c6bd1b8d6b8556a9ca712329f27",
+        "reported_status": "checkpointed"
+      }
+    ],
+    "reviewed_frozen_workflow_and_restore_sources": {
+      ".github/workflows/precision-checkpoints.yml": "0bc3aea79664069badd6f416fa309a1eebc79fedcda749c8864cefa59312f707",
+      "python/scripts/run_taylor_ci_partition.py": "8a73ccfa9f151aca497ff9855777a9adc6313330786998a84b258949a4790740",
+      "python/grn_memory/taylor_partition_resume.py": "3c3c749e43b581793b4d07a69e3b1f505a133b10f5760f7309320345489c25d5"
+    },
+    "exact_mpfr_state_validated_locally": false,
+    "matching_linux_restore_requires_exact_state_before_integration": true,
+    "full_partition_count": 17,
+    "continued_partitions": [
+      8,
+      9,
+      11,
+      16
+    ],
+    "other_completed_partitions_retained": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      12,
+      13,
+      14,
+      15
+    ],
+    "numerical_integrations_performed_locally": 0
+  },
+  "current_validation": {
+    "id": 138297498207,
+    "name": "precision-checkpoints",
+    "status": "queued",
+    "conclusion": null
+  },
+  "local_workers_resumed": false,
+  "new_complete_cases": 0,
+  "new_complete_models": 0
+}

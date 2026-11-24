@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-11-24 07:48:30 UTC",
+  "submission": {
+    "state": "bound_to_run_waiting_for_linux_validation",
+    "post_attempts": 1,
+    "started_at": "2026-11-24 07:42:55 UTC",
+    "workflow_id": 424428602,
+    "producer_revision": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+    "frozen_numerical_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+    "request": {
+      "ref": "kinetics-marhl-no-output-recovery",
+      "inputs": {
+        "operation": "compute"
+      }
+    },
+    "full_required_tasks": 1520,
+    "recovery_tasks": [
+      33,
+      34,
+      36,
+      287,
+      536,
+      537,
+      789,
+      1042,
+      1043,
+      1045,
+      1046,
+      1047,
+      1297,
+      1298,
+      1299,
+      1302
+    ],
+    "local_tests_passed": 250,
+    "local_tests_skipped": 6,
+    "existing_archives_compatibility_verified": 222,
+    "linux_validation_required_before_compute": true,
+    "actual_compute_jobs_bound": false,
+    "case_recovery_claimed": false,
+    "full_model_coverage_claimed": false,
+    "post_exit_code": 0,
+    "run_id": 45350129879,
+    "run_attempt": 1,
+    "status": "queued",
+    "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45350129879",
+    "validation_job_id": 138294217252
+  },
+  "compatibility": {
+    "full_tasks": 1520,
+    "original_archives_verified": 222,
+    "complete_arrays": 166,
+    "complete_branches": 19,
+    "all_original_task_judgments_unchanged": true,
+    "all_branch_audits_byte_identical": true,
+    "verification_errors": [],
+    "old_collection_sha256": "85922dbfa6bdc8137121b925279e7f38e9548e92eea7882b7b6b23ba1ae9efa2",
+    "new_collection_sha256": "4561ecb436283a94c33921e10d9e507bcf085c6324531ee4700912d880b582ff",
+    "local_tests_passed": 250,
+    "local_tests_skipped": 6,
+    "skip_reason": "Heyoka absent from local audit environment; matching Linux gate installs frozen full requirements and repeats all suites.",
+    "test_log_sha256": "ee53b7d25e53bc7ffc27954b14e9b3dac8aa831af2e74b04d6177accbfe5423d",
+    "numerical_production_integrations_performed": 0,
+    "case_recovery_claimed": false
+  },
+  "source_url": "https://github.com/m9h/GRN_ODE/blob/cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed/python/results/catalog-breaking-marhl-no-output-20261124/README.md",
+  "scope": {
+    "full_tasks": 1520,
+    "branches": 380,
+    "cases": 12,
+    "checkpoint_continuations": 56,
+    "cancelled_without_output_replacements": 16,
+    "other_task_bindings_retained": 1448
+  },
+  "collection_note": "Bind the 56 checkpoint continuations first, then apply the new missing-output binder to that full selection after all actual jobs exist. Preserve both recovery sets and every original parent identity.",
+  "numerical_sources_or_environment_changed": false,
+  "linux_validation_passed": false,
+  "case_recovery_claimed": false
+}

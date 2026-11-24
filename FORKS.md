@@ -43,13 +43,13 @@ No local numerical worker was resumed.
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Replacement evidence audit](docs/evidence/tyson-recomputation-audit-20261124.json) | Eleven checkpoints verify: 39 cases, 37 passing, 1,519 branch records. Ten partition selections complete; one targeted continuation submitted for partition 4; three replacements await collection and audit |
+| Tyson initial inventory | [Replacement evidence audit](docs/evidence/tyson-recomputation-audit-20261124.json) | Thirteen checkpoints verify: 44 cases, 42 passing, 1,759 branch records. Eleven partition selections complete; continuations for partitions 4 and 7 submitted; partition 13 running |
 | François separate Linux inventory | [Completed full audit](docs/evidence/francois-linux-inventory-20261120.json) | All 118 cases covered; 80 pass, 38 retain failures; all sixteen original ZIPs verified |
-| Vilar precision diagnostics | [Checkpoint audit](docs/evidence/terminal-checkpoints-20261121.json) | All four original ZIPs verified; checkpoints add 373–409 samples each with old prefixes bitwise unchanged; all four integrations remain incomplete |
-| Fuss complete case controls | [Complete checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261124.json) · [Next submissions](docs/evidence/fuss-continuations-20261124.json) | All 32 checkpoints audited: 1,283 arrays, all 1,050 parent arrays preserved, 302 agreeing branches and 1,812 passing comparisons. Two continuations submitted; validation gates queued at observation |
+| Vilar precision diagnostics | [Checkpoint audit](docs/evidence/terminal-checkpoints-20261121.json) | All four original ZIPs and 32 payload files reverified; [checkpoint continuation submitted](docs/evidence/vilar-continuation-20261124.json), with Linux validation queued. All four integrations remain incomplete; full 17-partition scope retained |
+| Fuss complete case controls | [Complete checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261124.json) · [Next submissions](docs/evidence/fuss-continuations-20261124.json) | All 32 checkpoints audited: 1,283 arrays, all 1,050 parent arrays preserved, 302 agreeing branches and 1,812 passing comparisons. Two continuations submitted; partition-11 validation passed and its computation is queued; the other validation gate remains queued |
 | Ueda complete case controls | [Complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; original ZIPs and offline reproduction guide published |
-| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) · [Next continuation](https://github.com/m9h/GRN_ODE/actions/runs/45335934693) | 1,369 complete arrays; 318 terminal diagnostics include 255 agreements, 23 mismatches and 40 integration failures. Full 32-partition continuation submitted for the remaining 432; local 152-test gate and real restoration pass, Linux validation queued |
-| Marhl high-precision diagnostics | [Latest array audit](docs/evidence/marhl-array-audit-20261124T0547.json) · [Checkpoint continuations](docs/evidence/marhl-continuations-20261124.json) | 222 original artifacts verified; 166 complete arrays; nineteen branches pass all 114 comparisons. Six accepted continuation requests cover all 56 partial checkpoints; validation gates queued. Sixteen cancelled jobs produced no artifact; full 1,520-task scope remains required |
+| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) · [Next continuation](https://github.com/m9h/GRN_ODE/actions/runs/45335934693) | 1,369 complete arrays; 318 terminal diagnostics include 255 agreements, 23 mismatches and 40 integration failures. Full 32-partition continuation submitted for the remaining 432; local 152-test gate, real restoration and Linux validation pass; all 32 jobs bound, with partition 7 running at observation |
+| Marhl high-precision diagnostics | [Latest array audit](docs/evidence/marhl-array-audit-20261124T0547.json) · [Checkpoint continuations](docs/evidence/marhl-continuations-20261124.json) | 222 original artifacts verified; 166 complete arrays; nineteen branches pass all 114 comparisons. Six accepted continuation requests cover all 56 partial checkpoints; validation gates queued. [Sixteen cancelled jobs without artifacts have a submitted replacement run](docs/evidence/marhl-no-output-recovery-20261124.json), with validation queued; full 1,520-task scope remains required |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
 | Rohwer complete later controls | [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | Both runs remain unfinished; all 10,924 later-control branches stay in the fixed required scope |
@@ -106,9 +106,10 @@ All 152 local regression tests pass. A real partition restoration and audit
 preserves 33 complete arrays and eight terminal diagnostics, including two
 integration failures. The [submission evidence](docs/evidence/rohwer-checkpoint-continuation-20261124.json)
 binds run `45335934693` to the published source and the complete 32-partition,
-750-branch plan. Its Linux validation is queued; no new numerical result is
-claimed. It must preserve all 318 terminal diagnostics and finish the other
-432. No case or whole-model recovery is claimed, and durable publication of
+750-branch plan. Linux validation passed, and all 32 actual compute jobs are
+bound to the fixed selection. Partition 7 is running and 31 are queued at the
+latest observation; no new numerical result is claimed. It must preserve all
+318 terminal diagnostics and finish the other 432. No case or whole-model recovery is claimed, and durable publication of
 the original ZIPs remains pending.
 
 The [latest Marhl collection](docs/evidence/marhl-array-audit-20261124T0547.json)
@@ -124,12 +125,18 @@ The [Marhl continuation submissions](docs/evidence/marhl-continuations-20261124.
 now cover all 56 audited partial checkpoints across the original six batches.
 All six new run records are visible, with validation gates queued. Each task
 uses the unchanged producer and must validate its exact checkpoint state in
-the matching Linux runtime before resuming. The eventual collection selection
+the matching Linux runtime before resuming. The checkpoint-only collection selection
 will retain all 1,520 tasks: 56 continued bindings with their original lineage
-and 1,464 unchanged bindings. Actual compute jobs are not yet created or bound;
-batch identity will be established from each complete task matrix. The sixteen
-cancelled jobs without output require a separate replacement path, and no
-active original job or local numerical worker was restarted.
+and 1,464 unchanged bindings, before adding the sixteen replacements below. Actual compute jobs are not yet created or bound;
+batch identity will be established from each complete task matrix. The
+[separate replacement path for sixteen cancelled jobs without output](docs/evidence/marhl-no-output-recovery-20261124.json)
+is now published and submitted. It preserves the numerical implementation and
+environment: 250 local tests pass, with six Heyoka-dependent tests deferred to
+the required Linux gate. Compatibility checks reproduce all 222 existing
+archive judgments and all nineteen branch audits unchanged. The final selection
+will combine 56 checkpoint continuations, sixteen replacements and 1,448
+unchanged bindings. Its Linux gate is queued, and no case recovery is claimed.
+No active original job or local numerical worker was restarted.
 
 The [20 November Ueda audit](docs/evidence/ueda-continuation-20261120.json) covers
 partitions 0 through 24: 125 branches, 500 arrays and 750 passing comparisons.

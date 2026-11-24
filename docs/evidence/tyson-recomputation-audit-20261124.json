@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T05:21:00.906458+00:00",
+  "checked_at": "2026-11-24T07:39:39.015052+00:00",
   "full_selection_sha256": "74a97ce7d33a8869018badf74b6109ec32d2f619af6c78369962a05e5916de1b",
   "scope": "Available original replacement archives and recorded comparisons/window summaries; no raw trajectory arrays.",
   "partitions": [
@@ -488,6 +488,57 @@
       "unresolved_conditional_decisions": []
     },
     {
+      "shard_index": 7,
+      "run_id": 45273577248,
+      "run_attempt": 1,
+      "job_id": 138039427138,
+      "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+      "artifact_id": 14898508668,
+      "archive_sha256": "sha256:c779013a3994bc808ae0d52d6c99ca2af8aeacd97bfd8dec48efa8412ea06fd1",
+      "archive_bytes": 573008,
+      "verified_files": 102,
+      "manifest_sha256": "92c4b60e060ca01b5e0236186407e8880282a0966d8152a62b55f42ce500b5a8",
+      "file_inventory_sha256": "dcd1ad7a9608dca5e73b233a0e0e05ffff457fac6ff99b8495f8a1ba4a1468a0",
+      "model_fingerprint": "dc0d47bbcc53669ecdabf9a0460892e3661c2db756fdcee7400e79eded72261c",
+      "selected_coverage_complete": false,
+      "pending_cases": [
+        "M__down--pM__up",
+        "M__up--C2__down"
+      ],
+      "recorded_cases": 2,
+      "passing_cases": 2,
+      "branch_records": 96,
+      "branch_outcomes": {
+        "true": 96
+      },
+      "case_summaries": {
+        "M__down--Y__up": {
+          "record_id": "60740ad09b536a88d251e093070c7fb75cc28a458b9fb41254047a8ea9c4f112",
+          "status": "passed",
+          "initial_response_assessments": 3,
+          "evaluated_trials": 8,
+          "evaluated_response_trials": 10,
+          "controlled_categories": {
+            "history_effect_changed_without_half_restoration": 5,
+            "history_effect_reduced_by_half": 5
+          },
+          "raw_disagreeing_response_trials": 0
+        },
+        "M__down--pM__down": {
+          "record_id": "92b56cbaf96d90d51651ae0484abd34ea177837e55fc0dc2894798d2fa977b9c",
+          "status": "passed",
+          "initial_response_assessments": 4,
+          "evaluated_trials": 8,
+          "evaluated_response_trials": 11,
+          "controlled_categories": {
+            "history_effect_reduced_by_half": 11
+          },
+          "raw_disagreeing_response_trials": 0
+        }
+      },
+      "unresolved_conditional_decisions": []
+    },
+    {
       "shard_index": 8,
       "run_id": 45273581093,
       "run_attempt": 1,
@@ -629,6 +680,70 @@
             "history_effect_amplified": 3,
             "history_effect_reduced_by_half": 2,
             "no_resolved_breaker_effect_on_history": 2
+          },
+          "raw_disagreeing_response_trials": 0
+        }
+      },
+      "unresolved_conditional_decisions": []
+    },
+    {
+      "shard_index": 10,
+      "run_id": 45273590467,
+      "run_attempt": 1,
+      "job_id": 138039476077,
+      "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+      "artifact_id": 14897792250,
+      "archive_sha256": "sha256:b5719a4f00b653f96fb09b59a080468a9a3731178b00c47e25e2313f7f940a6b",
+      "archive_bytes": 1492626,
+      "manifest_sha256": "d72b6e2c522fa4d521256c9f5633ae0964a6810b6fa2a1a31ea04b539d3947de",
+      "verified_files": 154,
+      "verified_uncompressed_bytes": 1427502,
+      "file_inventory_sha256": "d6d51b6fcfa935d67440916ddb100a30ba0a0462cb611b4e3855ae1397db0d97",
+      "model_fingerprint": "dc0d47bbcc53669ecdabf9a0460892e3661c2db756fdcee7400e79eded72261c",
+      "selected_coverage_complete": true,
+      "pending_cases": [],
+      "recorded_cases": 3,
+      "passing_cases": 3,
+      "branch_records": 144,
+      "branch_outcomes": {
+        "true": 144
+      },
+      "case_summaries": {
+        "M__up--pM__down": {
+          "record_id": "89449564e1a5575974f11f9b7f0dcd79c066685b609656c7a2a728a2c03aff57",
+          "status": "passed",
+          "initial_response_assessments": 3,
+          "evaluated_trials": 10,
+          "evaluated_response_trials": 24,
+          "controlled_categories": {
+            "no_resolved_history_effect_at_rechallenge": 23,
+            "history_effect_amplified": 1
+          },
+          "raw_disagreeing_response_trials": 0
+        },
+        "M__up--pM__up": {
+          "record_id": "ea9bf87ede187097cab876cf5de36554dc4448401ea78a275f46aa54604272d8",
+          "status": "passed",
+          "initial_response_assessments": 3,
+          "evaluated_trials": 10,
+          "evaluated_response_trials": 24,
+          "controlled_categories": {
+            "no_resolved_history_effect_at_rechallenge": 23,
+            "history_effect_reduced_by_half": 1
+          },
+          "raw_disagreeing_response_trials": 0
+        },
+        "pM__down--C2__down": {
+          "record_id": "08bfc05669ed8077f98ca09bffee88691c430ef9af456d82ceb652ee1ace6842",
+          "status": "passed",
+          "initial_response_assessments": 2,
+          "evaluated_trials": 10,
+          "evaluated_response_trials": 16,
+          "controlled_categories": {
+            "history_effect_reduced_by_half": 7,
+            "history_effect_amplified": 6,
+            "history_effect_reversed": 1,
+            "history_effect_changed_without_half_restoration": 2
           },
           "raw_disagreeing_response_trials": 0
         }
@@ -788,19 +903,111 @@
     }
   ],
   "pending_replacement_indices": [
-    7,
-    10,
     13
   ],
   "needs_continuation_indices": [
-    4
+    4,
+    7
   ],
   "full_model_completion_claimed": false,
   "numerical_integrations_performed": 0,
   "auditor_source_sha256": "0442085bd6051a2b84fdf2235ab16ba70b70781f7729accdaa94c5c57d3634ab",
-  "verified_replacement_partitions": 11,
-  "complete_replacement_partitions": 10,
-  "recorded_cases": 39,
-  "passing_cases": 37,
-  "branch_records": 1519
+  "verified_replacement_partitions": 13,
+  "complete_replacement_partitions": 11,
+  "recorded_cases": 44,
+  "passing_cases": 42,
+  "branch_records": 1759,
+  "current_continuations": {
+    "partition4": {
+      "state": "bound",
+      "post_attempts": 1,
+      "started_at": "2026-11-24T05:21:57.672336+00:00",
+      "workflow_id": 410775433,
+      "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+      "request": {
+        "ref": "kinetics-resume-case-selection",
+        "inputs": {
+          "breaking_networks": "[5]",
+          "breaking_resume_run": "45273551262",
+          "breaking_shard_count": "16",
+          "breaking_resume_shard_count": "16",
+          "breaking_only_shard": "4"
+        }
+      },
+      "parent_run": 45273551262,
+      "parent_artifact": 14889255959,
+      "parent_zip_sha256": "sha256:dad331c96216fd1118ce700a4a51d4d7e04ae8cb813ac1d1d7d1d3a2e80c6e8e",
+      "audit_sha256": "b74461e932d89d1ec2c7daba5911785a98f6855e8b5d5c0f875eb69bdba4c4df",
+      "preserve_passing_branch_records": 89,
+      "pending_cases": [
+        "CP__up--pM__up"
+      ],
+      "full_required_partition_count": 16,
+      "full_required_case_count": 58,
+      "full_model_completion_claimed": false,
+      "run_id": 45332804675,
+      "run_attempt": 1,
+      "job_id": 138237713630,
+      "status": "queued",
+      "post_exit_code": 0
+    },
+    "partition7": {
+      "state": "bound",
+      "post_attempts": 1,
+      "started_at": "2026-11-24 07:43:16 UTC",
+      "workflow_id": 410775433,
+      "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+      "request": {
+        "ref": "kinetics-resume-case-selection",
+        "inputs": {
+          "breaking_networks": "[5]",
+          "breaking_resume_run": "45273577248",
+          "breaking_shard_count": "16",
+          "breaking_resume_shard_count": "16",
+          "breaking_only_shard": "7"
+        }
+      },
+      "parent_run": 45273577248,
+      "parent_artifact": 14898508668,
+      "parent_zip_sha256": "sha256:c779013a3994bc808ae0d52d6c99ca2af8aeacd97bfd8dec48efa8412ea06fd1",
+      "preserve_passing_branch_records": 96,
+      "pending_cases": [
+        "M__down--pM__up",
+        "M__up--C2__down"
+      ],
+      "full_required_partition_count": 16,
+      "full_required_case_count": 58,
+      "full_model_completion_claimed": false,
+      "post_exit_code": 0,
+      "run_id": 45350173420,
+      "run_attempt": 1,
+      "status": "queued",
+      "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45350173420",
+      "job_id": 138294359293
+    },
+    "complete_selection_binding": {
+      "full_partition_count": 16,
+      "full_case_count": 58,
+      "only_changed_partition": 7,
+      "previous_selection_sha256": "c82fb579787a949df6fc1b2d3bd1ead66a9acbd2731d50146216f1fe6611f004",
+      "selection_sha256": "7337a19eaac56f39844d4f4655367853017b3880bbc1e5a8dea2eaf07facfa12",
+      "previous_partition": {
+        "shard_index": 7,
+        "run_id": 45273577248,
+        "run_attempt": 1,
+        "job_id": 138039427138,
+        "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      "selected_partition": {
+        "shard_index": 7,
+        "run_id": 45350173420,
+        "run_attempt": 1,
+        "job_id": 138294359293,
+        "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      "actual_job_identity_verified": true,
+      "complete_inventory_validator_passed": true,
+      "full_model_completion_claimed": false
+    }
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T05:17:06.165458+00:00",
+  "checked_at": "2026-11-24 07:48:30 UTC",
   "requests": [
     {
       "state": "bound",
@@ -78,5 +78,31 @@
     }
   ],
   "all_actual_compute_jobs_bound": false,
-  "case_recovery_claimed": false
+  "case_recovery_claimed": false,
+  "submission_observed_at": "2026-11-24T05:17:06.165458+00:00",
+  "current_jobs": {
+    "45331953904": [
+      {
+        "id": 138234997037,
+        "name": "validation",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 138288669481,
+        "name": "scipy-case-partition-11",
+        "status": "queued",
+        "conclusion": null
+      }
+    ],
+    "45332029602": [
+      {
+        "id": 138235220638,
+        "name": "validation",
+        "status": "queued",
+        "conclusion": null
+      }
+    ]
+  },
+  "current_note": "Partition-11 Linux validation passed and its compute job is queued. The other 31-partition validation is queued. A full replacement selection is not yet bound. Initial submission gates are historical."
 }

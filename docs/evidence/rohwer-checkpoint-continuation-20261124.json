@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T05:49:30Z",
+  "checked_at": "2026-11-24 07:48:30 UTC",
   "source_revision": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
   "source_url": "https://github.com/m9h/GRN_ODE/blob/607bac71ae98f78472457ed1d1c7a6a597f4b4a1/python/results/catalog-breaking-rohwer-checkpoint-continuation-20261124/README.md",
   "binding_sha256": "ac2be132f47739184dccdb9a6efcdeb8853710d8f8ac4390be231029296089f4",
@@ -70,5 +70,218 @@
   "local_workers_resumed": false,
   "frozen_numerical_sources_changed": false,
   "case_recovery_claimed": false,
-  "full_model_coverage_claimed": false
+  "full_model_coverage_claimed": false,
+  "submission_observed_at": "2026-11-24T05:49:30Z",
+  "current_binding": {
+    "run_id": 45335934693,
+    "producer_revision": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
+    "validation_job_id": 138247896241,
+    "linux_validation_passed": true,
+    "all_actual_compute_jobs_bound": true,
+    "fixed_partitions": 32,
+    "fixed_branches": 750,
+    "selection_sha256": "3c28616d72da171f7ebb01dc0270d04ec5bd7db526e27b1d396335ea92558ebc",
+    "numerical_case_recovery_claimed": false
+  },
+  "current_jobs": [
+    {
+      "id": 138247896241,
+      "name": "validation",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 138284068701,
+      "name": "rohwer-checkpoint-continuation-7",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 138284068732,
+      "name": "rohwer-checkpoint-continuation-6",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068743,
+      "name": "rohwer-checkpoint-continuation-10",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068755,
+      "name": "rohwer-checkpoint-continuation-16",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068759,
+      "name": "rohwer-checkpoint-continuation-3",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068765,
+      "name": "rohwer-checkpoint-continuation-11",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068768,
+      "name": "rohwer-checkpoint-continuation-8",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068770,
+      "name": "rohwer-checkpoint-continuation-12",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068772,
+      "name": "rohwer-checkpoint-continuation-0",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068790,
+      "name": "rohwer-checkpoint-continuation-5",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068798,
+      "name": "rohwer-checkpoint-continuation-2",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068803,
+      "name": "rohwer-checkpoint-continuation-4",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068807,
+      "name": "rohwer-checkpoint-continuation-1",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068834,
+      "name": "rohwer-checkpoint-continuation-13",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068862,
+      "name": "rohwer-checkpoint-continuation-17",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068913,
+      "name": "rohwer-checkpoint-continuation-14",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068923,
+      "name": "rohwer-checkpoint-continuation-15",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284068986,
+      "name": "rohwer-checkpoint-continuation-9",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070403,
+      "name": "rohwer-checkpoint-continuation-18",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070448,
+      "name": "rohwer-checkpoint-continuation-19",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070493,
+      "name": "rohwer-checkpoint-continuation-21",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070622,
+      "name": "rohwer-checkpoint-continuation-22",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070653,
+      "name": "rohwer-checkpoint-continuation-20",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070676,
+      "name": "rohwer-checkpoint-continuation-23",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070823,
+      "name": "rohwer-checkpoint-continuation-24",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070898,
+      "name": "rohwer-checkpoint-continuation-26",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284070916,
+      "name": "rohwer-checkpoint-continuation-25",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284071047,
+      "name": "rohwer-checkpoint-continuation-27",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284072209,
+      "name": "rohwer-checkpoint-continuation-28",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284072451,
+      "name": "rohwer-checkpoint-continuation-30",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284072500,
+      "name": "rohwer-checkpoint-continuation-29",
+      "status": "queued",
+      "conclusion": null
+    },
+    {
+      "id": 138284072515,
+      "name": "rohwer-checkpoint-continuation-31",
+      "status": "queued",
+      "conclusion": null
+    }
+  ],
+  "current_note": "Linux validation passed; all 32 compute jobs are bound. Partition 7 running, 31 queued. Initial submission below is retained as historical evidence."
 }
