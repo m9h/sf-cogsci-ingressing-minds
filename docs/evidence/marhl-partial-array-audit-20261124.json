@@ -1,0 +1,422 @@
+{
+  "checked_at": "2026-11-24T05:22:43.952089+00:00",
+  "network": 30,
+  "model_id": "BIOMD0000000039",
+  "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+  "collector_revision": "f95c155a968e15c30bdd39d6ac843f7b961c2930",
+  "selection_sha256": "81421bf16fea951b16ce8a3f627490d38b2a524c1510a18daa7e315239229475",
+  "collection_sha256": "5f173a84937450a5e7f3d529936cd74d698059c1d1245e807194468658997c53",
+  "required_tasks": 1520,
+  "required_branches": 380,
+  "selected_cases": 12,
+  "original_artifacts_verified": 215,
+  "original_artifact_bytes": 1723938363,
+  "previous_artifacts_preserved_byte_identical": 80,
+  "complete_arrays": 161,
+  "checkpointed_tasks": 54,
+  "task_status_counts": {
+    "completed": 161,
+    "checkpointed": 54,
+    "pending": 1305
+  },
+  "complete_branches": 17,
+  "agreeing_branches": 17,
+  "comparisons": 102,
+  "passing_comparisons": 102,
+  "max_scaled_error": 7.696210746388428e-08,
+  "verification_errors": [],
+  "branches": [
+    {
+      "branch_id": "b5f70bd5bd9a3c6273555ba22992a27965f0794869348491cd29cef30854934c",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "05056ec6440014c2322b4715a6b2614b0f44c545e59dcfb34def3cda414d35cd",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1a432eeffb6779acf1191dc0e112be42b6924e1815d6da2cc03e38a3ddd287e4",
+      "status": "agreement",
+      "samples": 181001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1b8e0520f170e8eb138c45a72be1e4c6e2d0e9bc43076fa7f21be9ac49deadd1",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 7.696210746388428e-08,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1f373f7baa8f5190e0afc90cfff332d92784aca1d619139514cc4fa127005127",
+      "status": "agreement",
+      "samples": 181001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "4efab2258cd480ffd5f44d90a3bca317c4a99b4e22b9ce2ee2d227f1f32a14d7",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "4fefece54e92a6166996884ad487c6ed230d4bf7efcf42631e932da1687fdd0e",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "52afbb8f75ef8b4828a6eec162996cbf470dff7f128d1220dc45a94f8f8f05af",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "79fd0535c71032bdaf6616b6e5f94f7d4e2eec37cbb19a0011563725fa456f6a",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7b5dfadf5da5f0bca0e55c4a248e4ff893807974daf8ecc48b979ab0cbbdbd88",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7c4d9867e42e2ceab517b4df25fe4866543c18750eb49661b93d417a5abe0840",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7d2039d3a6b3d866c17da6a0bb5983af3390510e8b0cfaf459560a1287fca3fb",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7ddb844aed2b84a69952e4116bc02c7f2e3414a29978e2a3273de477c22c206a",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "a764cb094e5a67371090135c93bdbff698aa2fa0bf8bbfb9fd0e990bccbb4ce4",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "a87c640ee03fbe56bc5c1f24d2e95ebd9bea0460f00627c8008c4e8d1dcff17b",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d4c4c7d294e126fb9618bbd21eca3ad68af4bb1eeb88251d8d2c6d97ea572561",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d6c805697213146ec3983838be59dd7630a18053521c5f50cfa6c6c822a5f60c",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    }
+  ],
+  "case_recovery_claimed": false,
+  "full_model_coverage_claimed": false,
+  "different_integrator_family_claimed": false,
+  "exact_checkpoint_state_validation_pending_matching_linux": true,
+  "numerical_integrations_performed": 0,
+  "terminal_tasks_without_artifacts": [
+    {
+      "index": 33,
+      "job_id": 135867868898,
+      "run_id": 44608641889,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 34,
+      "job_id": 135867868828,
+      "run_id": 44608641889,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 36,
+      "job_id": 135867869488,
+      "run_id": 44608641889,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 287,
+      "job_id": 135896422761,
+      "run_id": 44608843472,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 536,
+      "job_id": 136354813454,
+      "run_id": 44625023792,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 537,
+      "job_id": 136354813389,
+      "run_id": 44625023792,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 789,
+      "job_id": 136355811962,
+      "run_id": 44625203552,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1042,
+      "job_id": 136394108962,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1043,
+      "job_id": 136394109268,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1045,
+      "job_id": 136394109418,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1046,
+      "job_id": 136394109646,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1047,
+      "job_id": 136394109499,
+      "run_id": 44657098734,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1297,
+      "job_id": 136398518547,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1298,
+      "job_id": 136398521341,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1299,
+      "job_id": 136398521628,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    },
+    {
+      "index": 1302,
+      "job_id": 136398521419,
+      "run_id": 44657261295,
+      "conclusion": "cancelled"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "state": "bound",
+  "post_attempts": 1,
+  "started_at": "2026-11-24T05:21:57.672336+00:00",
+  "workflow_id": 410775433,
+  "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+  "request": {
+    "ref": "kinetics-resume-case-selection",
+    "inputs": {
+      "breaking_networks": "[5]",
+      "breaking_resume_run": "45273551262",
+      "breaking_shard_count": "16",
+      "breaking_resume_shard_count": "16",
+      "breaking_only_shard": "4"
+    }
+  },
+  "parent_run": 45273551262,
+  "parent_artifact": 14889255959,
+  "parent_zip_sha256": "sha256:dad331c96216fd1118ce700a4a51d4d7e04ae8cb813ac1d1d7d1d3a2e80c6e8e",
+  "audit_sha256": "b74461e932d89d1ec2c7daba5911785a98f6855e8b5d5c0f875eb69bdba4c4df",
+  "preserve_passing_branch_records": 89,
+  "pending_cases": [
+    "CP__up--pM__up"
+  ],
+  "full_required_partition_count": 16,
+  "full_required_case_count": 58,
+  "full_model_completion_claimed": false,
+  "run_id": 45332804675,
+  "run_attempt": 1,
+  "job_id": 138237713630,
+  "status": "queued",
+  "post_exit_code": 0
+}
