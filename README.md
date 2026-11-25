@@ -71,7 +71,7 @@ The five models are **MAPK protein-signaling models**, despite the historical
 The [BioModels guide](https://github.com/m9h/GRN_ODE/blob/python-memory-replication/python/models/README.md)
 explains their biology, equations, conserved pools, source papers and provenance.
 
-**Completion status, 24 November 2026 UTC:** the basic all-35-model simulations
+**Completion status, 25 November 2026 UTC:** the basic all-35-model simulations
 are finished; the full memory-validation goal remains open.
 
 | Validation stage | Verified result | Remaining work |
@@ -95,13 +95,13 @@ remaining issues:
 | Model | Current gap |
 |---|---|
 | [Reduced Goldbeter (3)](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/CATALOG_BREAKING.md#a-domain-limit-exposed-by-the-goldbeter-model) | Four integration failures affect two of eight cases; all 24 dedicated diagnostic attempts also stop before the required endpoint. |
-| Tyson (5) | [All fourteen replacement partitions now have audited outputs](docs/evidence/tyson-recomputation-audit-20261124.json): 48 recorded cases, 46 passing, and 1,921 branch records. Thirteen replacement selections are complete. Only partition 13 has unfinished cases; its two pending cases have a submitted continuation. Retained partitions 14 and 15 remain separate. |
-| Fuss (8) | [All 32 latest checkpoints audited](docs/evidence/fuss-complete-checkpoint-20261124.json): 1,283 complete trajectories, including all 1,050 parent trajectories unchanged. All 302 complete branches agree; controls and full replay remain open for eighteen cases. |
+| Tyson (5) | [All fourteen replacement partitions have audited outputs](docs/evidence/tyson-recomputation-audit-20261125.json): 48 recorded cases, 46 passing, and 1,939 branch records. Thirteen replacement selections are complete. The latest partition-13 checkpoint adds eighteen branch records while preserving all 66 parent records exactly; two cases still need continuation. Retained partitions 14 and 15 remain separate. |
+| Fuss (8) | [Twenty-five current outputs audited](docs/evidence/fuss-continuation-audit-20261125.json), verifying 184 additional complete trajectories beyond the previous checkpoint generation. Those outputs contain 270 complete branches, all agreeing across 1,620 comparisons. Six current jobs remain pending and one terminal job has no artifact in the collection snapshot; the full 1,309-branch control scope and eighteen-case replay remain open. |
 | François (25) | The separate Linux inventory covers all 118 cases, with 38 failures and six unresolved conditional decisions. |
 | Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. |
-| Marhl (30) | [178 full trajectories and 22 complete branches verified](docs/evidence/marhl-cold-recovery-audit-20261124.json); all 132 available branch comparisons pass. Sixteen missing-output replacements produced twelve complete arrays and four partial checkpoints; continuation of those four is submitted. The earlier 56 checkpoint continuations remain queued. Full scope: 1,520 tasks, 380 branches and twelve cases. |
-| Vilar (32) | Breaking validation and three paired cases remain unresolved. [Four precision checkpoints advanced another 403–516 samples](docs/evidence/vilar-checkpoint-progress-20261124.json), preserving earlier samples exactly; their next continuation is submitted. |
-| Rohwer (35) | The [first-stage audit](docs/evidence/rohwer-continuation-audit-20261124.json) retains 1,369 trajectories and 318 terminal diagnostics; its next generation has thirteen outputs awaiting audit. The [first sixteen later-control partitions audited](docs/evidence/rohwer-later-audit-20261124.json) add 363 verified trajectories: 76 agreeing branches, four mismatches and three explicit integration failures. Full controls and case replay remain open. |
+| Marhl (30) | [178 full trajectories and 22 complete branches verified](docs/evidence/marhl-cold-recovery-audit-20261124.json); all 132 available branch comparisons pass. The latest four-task continuation has ended and awaits output audit. Of the earlier 56 checkpoint continuations, twelve tasks are queued after a successful gate; five batches covering the other 44 tasks were cancelled before computation and need recovery. [Current run observations](docs/evidence/biomodels-progress-20261125.json). Full scope remains 1,520 tasks, 380 branches and twelve cases. |
+| Vilar (32) | Breaking validation and three paired cases remain unresolved. [Previously audited precision checkpoints advanced 403–516 samples](docs/evidence/vilar-checkpoint-progress-20261124.json), preserving earlier samples exactly. Their latest continuation has ended; its outputs still need audit. |
+| Rohwer (35) | The [previous first-stage audit](docs/evidence/rohwer-continuation-audit-20261124.json) retains 1,369 trajectories and 318 terminal diagnostics. All 32 next-generation archives are downloaded and hash-verified; their scientific audit is running. The [first sixteen later-control partitions audited](docs/evidence/rohwer-later-audit-20261124.json) add 363 verified trajectories: 76 agreeing branches, four mismatches and three explicit integration failures. Full controls and case replay remain open. |
 
 Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics

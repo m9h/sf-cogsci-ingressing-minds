@@ -1,0 +1,459 @@
+{
+  "checked_at": "2026-11-25 20:53:33 UTC",
+  "goal_complete": false,
+  "scope": "All-35 baseline kinetics are complete. Full memory validation remains incomplete; a reproducible numerical disagreement or domain limitation can be a completed scientific result.",
+  "verified_stage_counts": {
+    "baseline_models": 35,
+    "total_models": 35,
+    "single_input_numerically_passing": 538,
+    "single_input_total": 538,
+    "repeated_stimulation_numerically_passing": 538,
+    "repeated_stimulation_total": 538,
+    "paired_passing": 4205,
+    "paired_total": 4208,
+    "whole_model_conditional_breaking_passes": 27,
+    "initial_breaking_inventories_fully_auditable": 34
+  },
+  "previous_summary": "biomodels-progress-20261124.json",
+  "tyson": {
+    "verified_replacement_partitions": 14,
+    "complete_replacement_partitions": 13,
+    "recorded_cases": 48,
+    "passing_cases": 46,
+    "branch_records": 1939,
+    "new_branch_records_in_latest_checkpoint": 18,
+    "parent_branch_records_preserved_byte_identical": 66,
+    "latest_run": 45508115366,
+    "pending_cases": [
+      "pM__up--C2__down",
+      "pM__up--C2__up"
+    ],
+    "retained_partitions_14_and_15_separate": true,
+    "full_model_completion_claimed": false,
+    "evidence": "tyson-recomputation-audit-20261125.json",
+    "audit_sha256": "c76643f43f03ac934b856af945e91109858282b85f7217d1717ea4b2fb78896c"
+  },
+  "audits_in_progress": [
+    {
+      "model": "Rohwer",
+      "stage": "first diagnostics, continuation generation 2",
+      "original_archives_hash_verified": 32,
+      "original_archive_bytes": 12788718523,
+      "full_partition_selection": 32,
+      "full_required_branches": 750,
+      "scientific_audit_complete": false
+    }
+  ],
+  "marhl_earlier_continuations": {
+    "selected_tasks": 56,
+    "run_with_successful_gate_and_12_queued_tasks": 45336593648,
+    "cancelled_before_compute": [
+      45336651157,
+      45336656225,
+      45336660754,
+      45336664864,
+      45336669164
+    ],
+    "remaining_44_tasks_need_recovery": true,
+    "cancellation_cause_not_established": true
+  },
+  "latest_vilar_and_marhl_recovery_outputs": {
+    "run_ids": [
+      45508141808,
+      45508667739
+    ],
+    "scientific_audit_pending": true
+  },
+  "local_numerical_workers": {
+    "paused_workers": 9,
+    "restarted": false
+  },
+  "remote_run_observations": [
+    {
+      "run_id": 45332029602,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45332029602",
+      "status": "in_progress",
+      "conclusion": null,
+      "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+      "updated_at": "2026-11-25T17:52:41Z"
+    },
+    {
+      "run_id": 45335934693,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45335934693",
+      "status": "completed",
+      "conclusion": "failure",
+      "producer_revision": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
+      "updated_at": "2026-11-25T20:09:13Z"
+    },
+    {
+      "run_id": 45508115366,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45508115366",
+      "status": "completed",
+      "conclusion": "failure",
+      "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+      "updated_at": "2026-11-25T04:34:22Z"
+    },
+    {
+      "run_id": 45508141808,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45508141808",
+      "status": "completed",
+      "conclusion": "failure",
+      "producer_revision": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+      "updated_at": "2026-11-25T10:36:27Z"
+    },
+    {
+      "run_id": 45508667739,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45508667739",
+      "status": "completed",
+      "conclusion": "failure",
+      "producer_revision": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+      "updated_at": "2026-11-25T12:47:26Z"
+    },
+    {
+      "run_id": 45336593648,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45336593648",
+      "status": "queued",
+      "conclusion": null,
+      "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "updated_at": "2026-11-25T05:42:39Z"
+    },
+    {
+      "run_id": 45336651157,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45336651157",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "updated_at": "2026-11-25T05:55:24Z"
+    },
+    {
+      "run_id": 45336656225,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45336656225",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "updated_at": "2026-11-25T05:55:16Z"
+    },
+    {
+      "run_id": 45336660754,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45336660754",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "updated_at": "2026-11-25T05:55:19Z"
+    },
+    {
+      "run_id": 45336664864,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45336664864",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "updated_at": "2026-11-25T05:55:20Z"
+    },
+    {
+      "run_id": 45336669164,
+      "url": "https://github.com/m9h/GRN_ODE/actions/runs/45336669164",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "updated_at": "2026-11-25T05:55:23Z"
+    }
+  ],
+  "marhl_job_observations": [
+    {
+      "run_id": 45332029602,
+      "jobs": [
+        {
+          "id": 138235220638,
+          "name": "validation",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-24T05:15:32Z",
+          "completed_at": null
+        }
+      ]
+    },
+    {
+      "run_id": 45336593648,
+      "jobs": [
+        {
+          "id": 138250022259,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-25T05:39:30Z",
+          "completed_at": "2026-11-25T05:42:38Z"
+        },
+        {
+          "id": 139006285764,
+          "name": "marhl-precision-task-15",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285770,
+          "name": "marhl-precision-task-35",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285789,
+          "name": "marhl-precision-task-6",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285806,
+          "name": "marhl-precision-task-39",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285808,
+          "name": "marhl-precision-task-7",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285822,
+          "name": "marhl-precision-task-14",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285845,
+          "name": "marhl-precision-task-23",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285853,
+          "name": "marhl-precision-task-19",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285854,
+          "name": "marhl-precision-task-43",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285857,
+          "name": "marhl-precision-task-22",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006285868,
+          "name": "marhl-precision-task-38",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:38Z",
+          "completed_at": null
+        },
+        {
+          "id": 139006286101,
+          "name": "marhl-precision-task-42",
+          "status": "queued",
+          "conclusion": null,
+          "started_at": "2026-11-25T05:42:39Z",
+          "completed_at": null
+        }
+      ]
+    },
+    {
+      "run_id": 45336651157,
+      "jobs": [
+        {
+          "id": 138250222956,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "started_at": "2026-11-24T05:55:15Z",
+          "completed_at": "2026-11-25T05:55:15Z"
+        },
+        {
+          "id": 139010961618,
+          "name": "marhl-precision-task-${{ matrix.task }}",
+          "status": "completed",
+          "conclusion": "skipped",
+          "started_at": "2026-11-25T05:55:16Z",
+          "completed_at": "2026-11-25T05:55:16Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45336656225,
+      "jobs": [
+        {
+          "id": 138250222106,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "started_at": "2026-11-24T05:55:15Z",
+          "completed_at": "2026-11-25T05:55:15Z"
+        },
+        {
+          "id": 139010960858,
+          "name": "marhl-precision-task-${{ matrix.task }}",
+          "status": "completed",
+          "conclusion": "skipped",
+          "started_at": "2026-11-25T05:55:16Z",
+          "completed_at": "2026-11-25T05:55:15Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45336660754,
+      "jobs": [
+        {
+          "id": 138250237355,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "started_at": "2026-11-24T05:55:17Z",
+          "completed_at": "2026-11-25T05:55:18Z"
+        },
+        {
+          "id": 139010976906,
+          "name": "marhl-precision-task-${{ matrix.task }}",
+          "status": "completed",
+          "conclusion": "skipped",
+          "started_at": "2026-11-25T05:55:18Z",
+          "completed_at": "2026-11-25T05:55:18Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45336664864,
+      "jobs": [
+        {
+          "id": 138250249527,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "started_at": "2026-11-24T05:55:20Z",
+          "completed_at": "2026-11-25T05:55:20Z"
+        },
+        {
+          "id": 139010990180,
+          "name": "marhl-precision-task-${{ matrix.task }}",
+          "status": "completed",
+          "conclusion": "skipped",
+          "started_at": "2026-11-25T05:55:20Z",
+          "completed_at": "2026-11-25T05:55:20Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45336669164,
+      "jobs": [
+        {
+          "id": 138250264042,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "started_at": "2026-11-24T05:55:22Z",
+          "completed_at": "2026-11-25T05:55:22Z"
+        },
+        {
+          "id": 139011004317,
+          "name": "marhl-precision-task-${{ matrix.task }}",
+          "status": "completed",
+          "conclusion": "skipped",
+          "started_at": "2026-11-25T05:55:23Z",
+          "completed_at": "2026-11-25T05:55:22Z"
+        }
+      ]
+    }
+  ],
+  "no_new_model_pass_claimed": true,
+  "numerical_integrations_performed_locally": 0,
+  "fuss_latest_available_outputs": {
+    "checked_at": "2026-11-25T20:53:48.005065+00:00",
+    "network": 8,
+    "model_id": "BIOMD0000000069",
+    "snapshot_sha256": "4aee18188bf7105f9254dd5206b8dee9c0c799423365760f2c4d703d848ac1c5",
+    "full_selected_partitions": 32,
+    "full_required_case_control_branches": 1309,
+    "full_required_trajectories": 5236,
+    "required_cases": 18,
+    "selection_sha256": "4305e588df3a96a218d31741fc0b68d08922258c357226e6e617a1f5e947af45",
+    "verified_partition_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "pending_download_indices": [],
+    "pending_job_indices": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "verified_arrays": 1151,
+    "parent_arrays_preserved_byte_identical": 967,
+    "new_arrays": 184,
+    "complete_audited_branches": 270,
+    "branch_statuses": {
+      "confirmed": 270
+    },
+    "comparisons": 1620,
+    "passing_comparisons": 1620,
+    "original_archive_bytes": 8855558180,
+    "collection_errors": [],
+    "missing_artifact_indices": [
+      8
+    ],
+    "numerical_integrations_performed": 0,
+    "case_recovery_claimed": false,
+    "whole_model_pass_claimed": false,
+    "unavailable_current_partitions_still_required": true,
+    "evidence": "fuss-continuation-audit-20261125.json",
+    "audit_sha256": "eff91112b55c8354319112928e0599c0f64441c28d48d613bbe71c70f750a6b4"
+  }
+}

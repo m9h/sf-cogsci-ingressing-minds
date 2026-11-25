@@ -37,25 +37,26 @@ The original job snapshot below was checked **2026-11-19 at 18:31–18:35 UTC**.
 Tyson, François and Vilar were checked again **2026-11-20 at 02:03 UTC**;
 Ueda, Ciliberto, Tyson, Vilar and Marhl have later checks from **21 November
 2026 UTC** described below. The latest Tyson, Fuss and Rohwer checks are from
-**24 November 2026 UTC**, recorded in the [latest status evidence](docs/evidence/biomodels-progress-20261124.json).
+**25 November 2026 UTC**, recorded in the [latest status evidence](docs/evidence/biomodels-progress-20261125.json).
 The Tyson duplicate submission and cancellation are recorded explicitly.
 No local numerical worker was resumed.
 
 | Computation | Current cloud run | Observed state |
 |---|---|---|
-| Tyson initial inventory | [Replacement evidence audit](docs/evidence/tyson-recomputation-audit-20261124.json) | Fourteen checkpoints verified: 48 cases, 46 passing, 1,921 branch records. Thirteen replacement selections complete; only partition 13 needs continuation for two cases, now submitted |
+| Tyson initial inventory | [Replacement evidence audit](docs/evidence/tyson-recomputation-audit-20261125.json) | Fourteen checkpoints verified: 48 cases, 46 passing, 1,939 branch records. Thirteen replacement selections complete; partition 13 still has two unfinished cases after its latest continuation |
 | François separate Linux inventory | [Completed full audit](docs/evidence/francois-linux-inventory-20261120.json) | All 118 cases covered; 80 pass, 38 retain failures; all sixteen original ZIPs verified |
-| Vilar precision diagnostics | [Latest checkpoint audit](docs/evidence/vilar-checkpoint-progress-20261124.json) | Four checkpoints advance 403–516 samples each; all prior samples preserved bitwise. Next continuation submitted; all four integrations remain incomplete |
-| Fuss complete case controls | [Prior checkpoint audit](docs/evidence/fuss-complete-checkpoint-20261124.json) · [Current continuations](docs/evidence/fuss-continuations-20261124.json) | Prior 1,283 arrays and 302 agreeing branches retained. Both new Linux gates passed; all 32 actual jobs bound. Ten new outputs available, awaiting scientific collection |
+| Vilar precision diagnostics | [Previous checkpoint audit](docs/evidence/vilar-checkpoint-progress-20261124.json) · [Current run observations](docs/evidence/biomodels-progress-20261125.json) | Four previously audited checkpoints advanced 403–516 samples each, preserving prior samples bitwise. The next continuation ended; its outputs await audit |
+| Fuss complete case controls | [Current available-output audit](docs/evidence/fuss-continuation-audit-20261125.json) | Twenty-five outputs audited: 1,151 complete arrays, including 967 unchanged parent arrays and 184 new arrays; their 270 complete branches pass all 1,620 comparisons. Six jobs pending; one terminal job has no artifact in the saved collection snapshot. Full 32-partition selection retained |
 | Ueda complete case controls | [Complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ueda-complete-20261121) | All four failed cases recovered; 323 branches, 1,292 arrays and 1,938 passing comparisons; original ZIPs and offline reproduction guide published |
-| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Completed continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) · [Current continuation](docs/evidence/rohwer-checkpoint-continuation-20261124.json) | Prior 1,369 arrays and 318 terminal outcomes retained. New generation: thirteen outputs awaiting audit, four jobs running, fifteen queued; full 750-branch scope retained |
-| Marhl high-precision diagnostics | [Latest recovery audit](docs/evidence/marhl-cold-recovery-audit-20261124.json) · [Earlier checkpoint continuations](docs/evidence/marhl-continuations-20261124.json) | 238 original archives verified; 178 complete arrays; 22 branches pass all 132 comparisons. Sixteen missing-output replacements yielded twelve arrays and four checkpoints; continuation of the four is submitted. Earlier 56 continuations still queued; all 1,520 tasks remain required |
+| Rohwer breaking diagnostics, network 35 / BioModel 38 | [Previous continuation audit](docs/evidence/rohwer-continuation-audit-20261124.json) · [Current collection](docs/evidence/biomodels-progress-20261125.json) | Previous 1,369 arrays and 318 terminal outcomes retained. All 32 next-generation original archives downloaded and hash-verified; scientific audit running against the full 750-branch selection |
+| Marhl high-precision diagnostics | [Latest completed recovery audit](docs/evidence/marhl-cold-recovery-audit-20261124.json) · [Current run observations](docs/evidence/biomodels-progress-20261125.json) | 178 complete arrays; 22 branches pass all 132 comparisons. Latest four-task continuation ended and awaits audit. Among the earlier 56 checkpoint continuations, twelve tasks are queued after a passing gate; five batches covering 44 tasks were cancelled before computation and need recovery. All 1,520 tasks remain required |
 | Ciliberto breaking diagnostics, network 28 / BioModel 697 | [Complete diagnostic audit](docs/evidence/ciliberto-first-complete-20261121.json) | All 260 branches and 1,040 arrays audited; 257 branches pass, three retain mismatches; all 24.11 GB of original ZIPs preserved |
 | Ciliberto complete later controls | [All 6,859 remaining controls](https://github.com/m9h/GRN_ODE/actions/runs/44412503884) | Run remains unfinished; latest completed array audit covers three partitions, 81 branches and 324 arrays |
 | Rohwer complete later controls | [First sixteen-partition audit](docs/evidence/rohwer-later-audit-20261124.json) · [Batch 0](https://github.com/m9h/GRN_ODE/actions/runs/44419997278) · [Batch 1](https://github.com/m9h/GRN_ODE/actions/runs/44420020715) | 363 complete arrays verified; 83 terminal diagnostics contain 76 agreements, four mismatches and three integration failures. Available comparisons pass 500/512; all 10,924 later-control branches remain required |
 
-The table above includes the **24 November, 23:11–23:18 UTC** collection and
-job snapshots. The dated paragraphs below retain earlier checkpoints; their
+The table above includes **25 November, approximately 20:53 UTC** updates for
+Tyson, Fuss, Rohwer first-stage collection, Vilar and Marhl. Other rows retain
+their linked earlier audit observations. The dated paragraphs below retain earlier checkpoints; their
 queued/running states describe those observations.
 
 All **864 computation jobs** across the five Ueda, Ciliberto and Rohwer
