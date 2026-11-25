@@ -1,0 +1,676 @@
+{
+  "checked_at": "2026-11-25T20:57:13.688429+00:00",
+  "network": 30,
+  "model_id": "BIOMD0000000039",
+  "source_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+  "selection_sha256": "b38277d864b1c7a2b529a77382c249a32ba48b947b54c06ec89e35d8bc2445b9",
+  "collection_sha256": "0982ccde876efeca04bb2813b434adf0195b7c6b5ade27322c4d492ed4657726",
+  "required_tasks": 1520,
+  "required_branches": 380,
+  "required_cases": 12,
+  "verified_original_archives": 238,
+  "original_archive_bytes": 1898688983,
+  "previous_artifacts_preserved_byte_identical": 234,
+  "replacement_checkpoint_artifacts": 4,
+  "complete_arrays": 178,
+  "new_complete_arrays": 0,
+  "checkpointed_tasks": 60,
+  "task_status_counts": {
+    "completed": 178,
+    "checkpointed": 60,
+    "pending": 1282
+  },
+  "complete_branches": 22,
+  "new_complete_branches": 0,
+  "agreeing_branches": 22,
+  "comparisons": 132,
+  "passing_comparisons": 132,
+  "max_scaled_error": 7.696210746388428e-08,
+  "verification_errors": [],
+  "branches": [
+    {
+      "branch_id": "b5f70bd5bd9a3c6273555ba22992a27965f0794869348491cd29cef30854934c",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "759d41a8a1182c682288b9eaff965b27d129a7aa5650ab2855546404ef5ab2f9",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "05056ec6440014c2322b4715a6b2614b0f44c545e59dcfb34def3cda414d35cd",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "4ee2b81302260b8b181bbbfa54cbbfb63b506863ac7e0ad2521bf76c7f7cf992",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1a432eeffb6779acf1191dc0e112be42b6924e1815d6da2cc03e38a3ddd287e4",
+      "status": "agreement",
+      "samples": 181001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "bd11b5643acca8822963b739b56d7ea832c572b7ecd01e4178929e63d9b3dc17",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1b8e0520f170e8eb138c45a72be1e4c6e2d0e9bc43076fa7f21be9ac49deadd1",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 7.696210746388428e-08,
+      "audit_sha256": "c7ee389b5bb99dc03c04139312ddad965fc50cc52814132bc2c3f8189fe44d85",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "52c4262d15793b942c2161f29cd82d6a4d4ffc61ec63e4175ff79f1e28ef3f8d",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "f8e953d3d639be55dcdfa4b86a05a524458e53f6868f0e0d427ccea2cc4cc015",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "1f373f7baa8f5190e0afc90cfff332d92784aca1d619139514cc4fa127005127",
+      "status": "agreement",
+      "samples": 181001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "61a9d648d20cf6e657eef1a3a40f68e080d282c2cd223ee1e91822f7ebe7046a",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "255c63a24abab889793686a9aec10510a858fcff0517e8923546e316325d0694",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "f75e9f5b5ccf6f1c6aec17702db3b97f23dc193ee0d2304b2ca70d33032b0ed0",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "4efab2258cd480ffd5f44d90a3bca317c4a99b4e22b9ce2ee2d227f1f32a14d7",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "381d53484dd6fbfb324ee1be86993c070ae0a2d240f6074e6eccd5e9c7d1f3a7",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "4fefece54e92a6166996884ad487c6ed230d4bf7efcf42631e932da1687fdd0e",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "520d3a3147dfca16ec3a6e1e9851594361865dea6881da6c8ff5a4189409f880",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "52afbb8f75ef8b4828a6eec162996cbf470dff7f128d1220dc45a94f8f8f05af",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "0ac6eaca90bd5ddb0b27a0c8dd31605f858c02f63db719f34ba167c14828232e",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "79fd0535c71032bdaf6616b6e5f94f7d4e2eec37cbb19a0011563725fa456f6a",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "4af17cb814cc7ba76e2b73d0847c2e3414e0b4571b3558234aa505e8132d8e3b",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7b5dfadf5da5f0bca0e55c4a248e4ff893807974daf8ecc48b979ab0cbbdbd88",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "1a77eaa2ac60452f8d70c104d334f1859b69dc48752d0e5e9736537165c829e1",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7c4d9867e42e2ceab517b4df25fe4866543c18750eb49661b93d417a5abe0840",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "1761b1f33f3aa6d519d28b2b864af8b18e622a789e15d73079c46c0b8040b566",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7d2039d3a6b3d866c17da6a0bb5983af3390510e8b0cfaf459560a1287fca3fb",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "d58168b676c966aa13ebe18cc6c74bc71a0957eebe69e70440a949fdcbacf1c2",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7ddb844aed2b84a69952e4116bc02c7f2e3414a29978e2a3273de477c22c206a",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "0ff5fc839185a8bc7fd9375ae1a56009462759f3d736309b004b770025563305",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "7e0305180a912fb15449786f6a927eec5f3e59ed79807ac50aa471b6db202a65",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "aa1fb8d50a35fc7fc5e492c717014200f586c1b0ca13295455949a712ab13781",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "a764cb094e5a67371090135c93bdbff698aa2fa0bf8bbfb9fd0e990bccbb4ce4",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "ab5d73005fd991be43547baa9bf2bca6b81caa39e93b44cd395c1c68766cbd33",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "a87c640ee03fbe56bc5c1f24d2e95ebd9bea0460f00627c8008c4e8d1dcff17b",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "716e33f83869c8ccff4734e0af9324888a623d641ad2b3d845bc0d9f83aa5a54",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d4c4c7d294e126fb9618bbd21eca3ad68af4bb1eeb88251d8d2c6d97ea572561",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "654cf688a7c470efcc7f32292755828a2bd9c9d1c7b8fe9ed9fce36b96426554",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d4dd87660697325658abab82c7e7cbb715474918eb9dda15ac2403f4c36a16bc",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "624e6a74e4fdb162e81940d6961ed5cefa18a46a6f4c09b455aaf20a45852717",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d62f923007a1c2a27822b3df3e8a4fa9c983f9d103dee90043372713479cd4f0",
+      "status": "agreement",
+      "samples": 221001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "fdd397598c6ace9ef1c730359e10d9cec68f853a1cda2d836efbd4aae31330cb",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    },
+    {
+      "branch_id": "d6c805697213146ec3983838be59dd7630a18053521c5f50cfa6c6c822a5f60c",
+      "status": "agreement",
+      "samples": 141001,
+      "observables": [
+        "Ca_cyt",
+        "CaER",
+        "CaM",
+        "CaPr",
+        "Pr"
+      ],
+      "comparisons": 6,
+      "passing_comparisons": 6,
+      "max_scaled_error": 0.0,
+      "audit_sha256": "4d1f4c307996d3a6a3d94247ddb8476f613125a2dfecc3f9edeb79f0c9703cc4",
+      "full_grid_compared": true,
+      "different_integrator_family_claimed": false
+    }
+  ],
+  "continued_tasks": [
+    {
+      "run_id": 45508667739,
+      "batch": 0,
+      "job_id": 138858726319,
+      "index": 34,
+      "artifact_name": "marhl-precision-task-34-attempt-1",
+      "run_attempt": 1,
+      "job_status": "completed",
+      "job_conclusion": "failure",
+      "status": "checkpointed",
+      "complete_array_verified": false,
+      "recovery_revision": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+      "missing_output_parent": {
+        "index": 34,
+        "batch": 0,
+        "run_id": 44608641889,
+        "run_attempt": 1,
+        "job_id": 135867868828,
+        "artifact_name": "marhl-precision-task-34-attempt-1"
+      },
+      "artifact_id": 15017487083,
+      "archive_sha256": "sha256:d4ab0873f09a4e0d16c3c62025c32d7ac8890d2608f126211cd84eda7b8eea40",
+      "archive_bytes": 2658555,
+      "extracted_file_sha256": {
+        "execution.json": "ed10014124e2cc7f6c63707a9dcf4384cb3ae15b68f46d23964efe56b467d9ba",
+        "evidence/checkpoint.npz": "abc468e537d463399eebc8abcfd6d0610d6b0c519d24c9700f39e9e1aabb7fa5",
+        "evidence/report.json": "8f308c576ce52e694bf1eeb2ee8736aeca165512f168ea80d29d5da794014e77",
+        "evidence/restore-provenance.json": "ff453a63074ff85c13695f94ed3a83a7b118350dff2bb27f85ee05c013a07148"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-recovery-collection-20261125T2056/collection/artifacts/15017487083/payload/evidence",
+      "report_sha256": "8f308c576ce52e694bf1eeb2ee8736aeca165512f168ea80d29d5da794014e77",
+      "branch_id": "210c6af02e465c770c1694328c6b62aa0751f9378c7434fb6f0d2eb49c07170e",
+      "request_label": "mpmath128",
+      "checkpoint": {
+        "sha256": "abc468e537d463399eebc8abcfd6d0610d6b0c519d24c9700f39e9e1aabb7fa5",
+        "saved_samples": 141260,
+        "completed": false,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": "Saved exact mpmath checkpoint after chunk 7284 at time 1412.6",
+      "cancelled_parent_job_preserved": 135867868828,
+      "parent_archive_verified": "sha256:680d0838f5595015fba32910ada9d4e681cc17922468b7a506e83990296e0cf4"
+    },
+    {
+      "run_id": 45508667739,
+      "batch": 4,
+      "job_id": 138858726270,
+      "index": 1042,
+      "artifact_name": "marhl-precision-task-1042-attempt-1",
+      "run_attempt": 1,
+      "job_status": "completed",
+      "job_conclusion": "failure",
+      "status": "checkpointed",
+      "complete_array_verified": false,
+      "recovery_revision": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+      "missing_output_parent": {
+        "index": 1042,
+        "batch": 4,
+        "run_id": 44657098734,
+        "run_attempt": 1,
+        "job_id": 136394108962,
+        "artifact_name": "marhl-precision-task-1042-attempt-1"
+      },
+      "artifact_id": 14997244603,
+      "archive_sha256": "sha256:4e634f4328bb9e66273540bddb8e5ad6a914fc8423c6c010e546e21bd1db3a50",
+      "archive_bytes": 1600382,
+      "extracted_file_sha256": {
+        "execution.json": "6c93776c47166cd2b643d9643fe5a8ccb8e213a97dafb548904f1d23195bf629",
+        "evidence/checkpoint.npz": "9ba08c3ef00ab69c829831d8c2ad8aaa4044a08347a238dd58472040752627ea",
+        "evidence/report.json": "6a2de7782cb90c50f315bf2ca0ed3521ebf4c1425c1dbea2795d9ae4e518f1b3",
+        "evidence/restore-provenance.json": "27896ac1667513e132df7dee6593eb29234018f70a7ae92f1807a7ad13d9f1bb"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-recovery-collection-20261125T2056/collection/artifacts/14997244603/payload/evidence",
+      "report_sha256": "6a2de7782cb90c50f315bf2ca0ed3521ebf4c1425c1dbea2795d9ae4e518f1b3",
+      "branch_id": "a78a7110ee35d62e4d8c9cc87e18808150f93ee376f5d4608b7d27857016e7da",
+      "request_label": "mpmath128",
+      "checkpoint": {
+        "sha256": "9ba08c3ef00ab69c829831d8c2ad8aaa4044a08347a238dd58472040752627ea",
+        "saved_samples": 112082,
+        "completed": false,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": "Saved exact mpmath checkpoint after chunk 6070 at time 1120.8128712871287",
+      "cancelled_parent_job_preserved": 136394108962,
+      "parent_archive_verified": "sha256:e471a58293234d30803c08a79799b015f2617d036767b065b56f313ab3a4355d"
+    },
+    {
+      "run_id": 45508667739,
+      "batch": 4,
+      "job_id": 138858726721,
+      "index": 1043,
+      "artifact_name": "marhl-precision-task-1043-attempt-1",
+      "run_attempt": 1,
+      "job_status": "completed",
+      "job_conclusion": "failure",
+      "status": "checkpointed",
+      "complete_array_verified": false,
+      "recovery_revision": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+      "missing_output_parent": {
+        "index": 1043,
+        "batch": 4,
+        "run_id": 44657098734,
+        "run_attempt": 1,
+        "job_id": 136394109268,
+        "artifact_name": "marhl-precision-task-1043-attempt-1"
+      },
+      "artifact_id": 15022228320,
+      "archive_sha256": "sha256:2ab4ba20d3f78593680acd04d4c7be62e920612921a1ddb0a7e74c80411182ff",
+      "archive_bytes": 1063085,
+      "extracted_file_sha256": {
+        "execution.json": "7a501ee38dc5ae950741e1cf1d8a1d24a03a134beaa3356e1fc9e88e376e4c14",
+        "evidence/checkpoint.npz": "59ab3eb5f63b8e0935f687af72da165a273d0d11b521c248a00c0a3770b8569d",
+        "evidence/report.json": "733813fe56eefd42c0e91a5ed3900077c06adc5914837b26a1955aa04cf8bfa7",
+        "evidence/restore-provenance.json": "3bfc38ab1ec779ffd7f908d75af18445293593f17914eb8b041cc7b55782d20b"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-recovery-collection-20261125T2056/collection/artifacts/15022228320/payload/evidence",
+      "report_sha256": "733813fe56eefd42c0e91a5ed3900077c06adc5914837b26a1955aa04cf8bfa7",
+      "branch_id": "a78a7110ee35d62e4d8c9cc87e18808150f93ee376f5d4608b7d27857016e7da",
+      "request_label": "mpmath192",
+      "checkpoint": {
+        "sha256": "59ab3eb5f63b8e0935f687af72da165a273d0d11b521c248a00c0a3770b8569d",
+        "saved_samples": 52600,
+        "completed": false,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": "Saved exact mpmath checkpoint after chunk 2866 at time 526.0",
+      "cancelled_parent_job_preserved": 136394109268,
+      "parent_archive_verified": "sha256:efbab662d61e4871b2e3d244a8898501c9bc922d879a68fe9cf94a7410561714"
+    },
+    {
+      "run_id": 45508667739,
+      "batch": 4,
+      "job_id": 138858726272,
+      "index": 1047,
+      "artifact_name": "marhl-precision-task-1047-attempt-1",
+      "run_attempt": 1,
+      "job_status": "completed",
+      "job_conclusion": "failure",
+      "status": "checkpointed",
+      "complete_array_verified": false,
+      "recovery_revision": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+      "missing_output_parent": {
+        "index": 1047,
+        "batch": 4,
+        "run_id": 44657098734,
+        "run_attempt": 1,
+        "job_id": 136394109499,
+        "artifact_name": "marhl-precision-task-1047-attempt-1"
+      },
+      "artifact_id": 14990464906,
+      "archive_sha256": "sha256:c50807429f3136a6cf6ffdddaa21f6276589b042d90ce84b8250e6f6fc44f20f",
+      "archive_bytes": 4898856,
+      "extracted_file_sha256": {
+        "execution.json": "9b8c95d7bc441f3b21e469f000e9d00c3a96fd2e6cbd6a9bf30921a2db8a2a35",
+        "evidence/checkpoint.npz": "1f6802571863242c185afcb06e727bc46f44d83aac06432f469a27ea792a8218",
+        "evidence/report.json": "0b24e2bfd0f85bc1fae18bfff5f32ed5f2e2b8a5bdfd014f9c8e7f6e19642e60",
+        "evidence/restore-provenance.json": "8edf8347735258d1e7fd50c3032ab8b0382747d35a030da2acee964d08a1550b"
+      },
+      "evidence_directory": "/Users/mhough/Workspace/grn-computation-evidence/marhl-recovery-collection-20261125T2056/collection/artifacts/14990464906/payload/evidence",
+      "report_sha256": "0b24e2bfd0f85bc1fae18bfff5f32ed5f2e2b8a5bdfd014f9c8e7f6e19642e60",
+      "branch_id": "a7ad06807d738f8d01655847f20d0da34906050253cb9a50f8619c3b4121176d",
+      "request_label": "mpmath192",
+      "checkpoint": {
+        "sha256": "1f6802571863242c185afcb06e727bc46f44d83aac06432f469a27ea792a8218",
+        "saved_samples": 170380,
+        "completed": false,
+        "portable_payload_verified": true,
+        "exact_restart_state_validated": false
+      },
+      "unclaimed_orphan_trajectory": false,
+      "error": null,
+      "interruption": "Saved exact mpmath checkpoint after chunk 5245 at time 1703.8",
+      "cancelled_parent_job_preserved": 136394109499,
+      "parent_archive_verified": "sha256:002ef0038e9ffa4f25e10d63091c55a131d62f93d8335e4cd5983c4dd5111a2e"
+    }
+  ],
+  "case_recovery_claimed": false,
+  "full_model_coverage_claimed": false,
+  "different_integrator_family_claimed": false,
+  "exact_checkpoint_state_validation_pending_matching_linux": true,
+  "numerical_integrations_performed": 0,
+  "terminal_tasks_without_artifacts": [],
+  "checkpoint_progress": [
+    {
+      "task_index": 34,
+      "request_label": "mpmath128",
+      "run_id": 45508667739,
+      "parent_run_id": 45350129879,
+      "parent_samples": 68240,
+      "saved_samples": 141260,
+      "new_samples": 73020,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_sha256": "abc468e537d463399eebc8abcfd6d0610d6b0c519d24c9700f39e9e1aabb7fa5",
+      "parent_checkpoint_sha256": "6c1c87550efa1b1341340a3c2b54d63e8538b00b1a6395a5a251f9a1b213d235",
+      "new_complete_integration": false
+    },
+    {
+      "task_index": 1042,
+      "request_label": "mpmath128",
+      "run_id": 45508667739,
+      "parent_run_id": 45350129879,
+      "parent_samples": 72600,
+      "saved_samples": 112082,
+      "new_samples": 39482,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_sha256": "9ba08c3ef00ab69c829831d8c2ad8aaa4044a08347a238dd58472040752627ea",
+      "parent_checkpoint_sha256": "e7f1e5ba9dff53b308b3dce438273290432ba913fc31f9b7c3ce9cea14395c66",
+      "new_complete_integration": false
+    },
+    {
+      "task_index": 1043,
+      "request_label": "mpmath192",
+      "run_id": 45508667739,
+      "parent_run_id": 45350129879,
+      "parent_samples": 35500,
+      "saved_samples": 52600,
+      "new_samples": 17100,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_sha256": "59ab3eb5f63b8e0935f687af72da165a273d0d11b521c248a00c0a3770b8569d",
+      "parent_checkpoint_sha256": "f52637bb518b09f5bd79851b3f1fef92d51b314f9c89fc753d12d80f597e838c",
+      "new_complete_integration": false
+    },
+    {
+      "task_index": 1047,
+      "request_label": "mpmath192",
+      "run_id": 45508667739,
+      "parent_run_id": 45350129879,
+      "parent_samples": 130690,
+      "saved_samples": 170380,
+      "new_samples": 39690,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_sha256": "1f6802571863242c185afcb06e727bc46f44d83aac06432f469a27ea792a8218",
+      "parent_checkpoint_sha256": "4d2c23f53be77cdaf197c2ab055bda124ffa6f7f1d0996c13d61e0c03f3f0834",
+      "new_complete_integration": false
+    }
+  ],
+  "full_selection_retained": true,
+  "earlier_56_checkpoint_continuations_not_yet_combined": true
+}

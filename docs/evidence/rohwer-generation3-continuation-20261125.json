@@ -1,0 +1,96 @@
+{
+  "checked_at": "2026-11-25T21:20:42.068610+00:00",
+  "preparation": {
+    "prepared_at": "2026-11-25T21:12:05.530923+00:00",
+    "bindings": "/Users/mhough/Workspace/grn-computation-evidence/source-rohwer-generation3/python/results/catalog-breaking-rohwer-checkpoint-continuation-20261125",
+    "binding_sha256": "700ff6ac98c8caf12111527e508b6cc8a0f803a2068f2eaa3cf22c714960bb76",
+    "requirements_sha256": "623233707f71689c0c5f9de23e0c61dd6012559cc314f07ec237bf6bb19bf511",
+    "parent_collection_sha256": "cd7ddfd789c03e37daaba54875485605bba4b2d50e6ff80f20f2c642135436b1",
+    "full_branch_scope": 750,
+    "full_partition_scope": 32,
+    "terminal_diagnostics_preserved": 477,
+    "parent_arrays_preserved": 2027,
+    "interrupted_branches_to_resume": 80,
+    "unstarted_branches_to_compute": 193,
+    "numerical_implementation_changed": false,
+    "local_numerical_integrations_performed": 0
+  },
+  "local_validation": {
+    "checked_at": "2026-11-25T21:19:09.679559+00:00",
+    "full_suite_attempt": {
+      "exit_code": 1,
+      "passed": 151,
+      "failed": 1,
+      "failure": "Workflow text assertion expected the check operation immediately after the script name."
+    },
+    "correction": "Placed binding arguments after the existing operations and arguments; all numerical modules, scripts and environment files remain unchanged.",
+    "targeted_rerun": {
+      "command": "pytest -q tests/test_rohwer_checkpoint_continuation.py::test_workflow_preserves_full_scope_and_validation_gate",
+      "exit_code": 0,
+      "passed": 1,
+      "seconds": 0.36
+    },
+    "fixed_full_scope_binding_check": {
+      "exit_code": 0,
+      "partitions": 32,
+      "branches": 750,
+      "parent_arrays": 2027,
+      "terminal_diagnostics": 477,
+      "interrupted": 80,
+      "unstarted": 193
+    },
+    "real_restore_proof_sha256": "6ada852dc1018c96ea77e2cf93a9600c8e6e961a4a37902dbcc067cc36e2a27e",
+    "linux_validation_still_required_before_compute": true
+  },
+  "real_restore": {
+    "checked_at": "2026-11-25T21:15:16.464041+00:00",
+    "generation": 3,
+    "partition": 21,
+    "parent_artifact_id": 15009024674,
+    "parent_archive_sha256": "sha256:c0e75423c43832701c761d98846a9a65e219ace062180b462d003e163ec94b11",
+    "restored_arrays_preserved_byte_identical": 28,
+    "terminal_diagnostics_preserved": 5,
+    "partial_branches_retained": 3,
+    "unattempted_branches_retained": 15,
+    "restore_command_exit_code": 0,
+    "restore_performed_full_parent_and_initialized_output_audits": true,
+    "binding_sha256": "700ff6ac98c8caf12111527e508b6cc8a0f803a2068f2eaa3cf22c714960bb76",
+    "execution_sha256": "254e897cdb5372f4af5033e16b2a1d5d852a43dc11b3434350601bf53b74ea19",
+    "runner_sha256": "8d9f735554a22c33f316ef45c1c69b44e2a25327d8decc5d6c6c44106e353a7b",
+    "local_numerical_integrations_performed": 0,
+    "numerical_modules_scripts_and_environment_unchanged": true
+  },
+  "submission": {
+    "state": "accepted_run_identity_verified",
+    "post_attempts": 1,
+    "started_at": "2026-11-25 21:19:46 UTC",
+    "workflow_id": 426200969,
+    "producer_revision": "fcf7fd8cf975bc9171370e05789661d9da4d35b4",
+    "parent_run_id": 45335934693,
+    "generation": 3,
+    "full_partitions": 32,
+    "full_branches": 750,
+    "terminal_diagnostics_to_preserve": 477,
+    "parent_arrays_to_preserve": 2027,
+    "interrupted_branches": 80,
+    "unstarted_branches": 193,
+    "binding_sha256": "700ff6ac98c8caf12111527e508b6cc8a0f803a2068f2eaa3cf22c714960bb76",
+    "request": {
+      "ref": "kinetics-rohwer-generation3",
+      "inputs": {
+        "operation": "compute"
+      }
+    },
+    "actual_compute_jobs_bound": false,
+    "post_exit_code": 0,
+    "post_session_id": null,
+    "command_output": "",
+    "run_id": 45703326499,
+    "validation_job_id": 139518811769,
+    "validation_status": "queued",
+    "validation_conclusion": null
+  },
+  "actual_compute_jobs_bound": false,
+  "case_recovery_claimed": false,
+  "whole_model_pass_claimed": false
+}

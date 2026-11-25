@@ -1,0 +1,142 @@
+{
+  "vilar": {
+    "state": "accepted_run_identity_verified",
+    "post_attempts": 1,
+    "started_at": "2026-11-25 21:00:42 UTC",
+    "name": "vilar",
+    "parent_run": 45508141808,
+    "workflow_id": 416944455,
+    "producer_revision": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+    "request": {
+      "ref": "precision-segment-checkpoints",
+      "inputs": {
+        "operation": "compute",
+        "model": "35",
+        "resume_run": "45508141808",
+        "partition_indices": "[8,9,11,16]",
+        "migrate_segments": "false"
+      }
+    },
+    "request_sha256": "bcaabd4855156b55112c335c87888252fb2dddb6d6fa2c3aabb5149a17193554",
+    "parent_proof_sha256": "35296af4f6ff4a2748f9b316a48a950ffe13cfc39082b6f401a1766f69bde3a1",
+    "actual_compute_jobs_bound": false,
+    "post_exit_code": 0,
+    "post_session_id": null,
+    "command_output": "",
+    "run_id": 45700337838,
+    "validation_job_id": 139508478545
+  },
+  "tyson": {
+    "state": "accepted_run_identity_verified",
+    "post_attempts": 1,
+    "started_at": "2026-11-25 21:00:44 UTC",
+    "name": "tyson",
+    "parent_run": 45508115366,
+    "workflow_id": 410775433,
+    "producer_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+    "request": {
+      "ref": "kinetics-resume-case-selection",
+      "inputs": {
+        "breaking_networks": "[5]",
+        "breaking_resume_run": "45508115366",
+        "breaking_shard_count": "16",
+        "breaking_resume_shard_count": "16",
+        "breaking_only_shard": "13"
+      }
+    },
+    "request_sha256": "92bb89e7e82521b438ee7bea53a1ffae5d852d35291ab899bb80d7bebdafe78f",
+    "parent_proof_sha256": "91036b92e2950d5f5bbc9794f5fafbfe52b134446797ccf6ebdf549b875c8688",
+    "actual_compute_jobs_bound": true,
+    "post_exit_code": 0,
+    "post_session_id": null,
+    "command_output": "",
+    "run_id": 45700343507,
+    "validation_job_id": null,
+    "job_id": 139508516174,
+    "full_selection_sha256": "d244981ac9476e932a3eb84d8c987faf72b1d527817c21d443e671c448dd219d"
+  },
+  "marhl": {
+    "state": "accepted_run_identity_verified",
+    "post_attempts": 1,
+    "started_at": "2026-11-25 21:00:46 UTC",
+    "name": "marhl",
+    "parent_run": 45508667739,
+    "workflow_id": 424428602,
+    "producer_revision": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+    "request": {
+      "ref": "kinetics-marhl-no-output-recovery",
+      "inputs": {
+        "operation": "compute",
+        "resume_run": "45508667739",
+        "task_indices": "[34,1042,1043,1047]"
+      }
+    },
+    "request_sha256": "faf77cdbab21d06233f64907c018ee8d15b979508d47cce988a32785b9afca9a",
+    "parent_proof_sha256": "d3ee9ddf72dfb3fb1d179d8826e602c6896a4b4a890e8ffabb2658021d1f103a",
+    "actual_compute_jobs_bound": false,
+    "post_exit_code": 0,
+    "post_session_id": null,
+    "command_output": "",
+    "run_id": 45700349707,
+    "validation_job_id": 139508517055
+  },
+  "fuss_partition8": {
+    "state": "accepted_run_identity_verified",
+    "post_attempts": 1,
+    "started_at": "2026-11-25 21:05:05 UTC",
+    "workflow_id": 420439895,
+    "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+    "parent_run": 44934673699,
+    "request": {
+      "ref": "kinetics-fuss-continuation-scheduling",
+      "inputs": {
+        "operation": "compute",
+        "partition_indices": "[8]",
+        "resume_run": "44934673699"
+      }
+    },
+    "full_selected_partitions": 32,
+    "continued_partition_indices": [
+      8
+    ],
+    "actual_compute_jobs_bound": false,
+    "post_exit_code": 0,
+    "post_session_id": null,
+    "command_output": "",
+    "run_id": 45701034026,
+    "validation_job_id": 139510866815
+  },
+  "fuss_partition8_failure": {
+    "prepared_at": "2026-11-25T21:04:44.499817+00:00",
+    "workflow_id": 420439895,
+    "producer_revision": "1e09feb192eed1c7be6e59f5771518e49906f026",
+    "failed_run": 45332029602,
+    "failed_job": 138298630314,
+    "failed_before_integration": true,
+    "failure_stage": "GitHub API retrieval of parent job metadata",
+    "specific_http_failure_not_recorded": true,
+    "same_parent_job_metadata_retrieved_successfully_now": true,
+    "parent_run": 44934673699,
+    "parent_audit_sha256": "54b25c944e7f1b90f642e1a5a662ababe84c85a0bf6541f1b83be6c39c79bfe2",
+    "full_selected_partitions": 32,
+    "full_required_branches": 1309,
+    "full_required_cases": 18,
+    "continued_partition_indices": [
+      8
+    ],
+    "other_31_current_bindings_retained": true,
+    "request": {
+      "ref": "kinetics-fuss-continuation-scheduling",
+      "inputs": {
+        "operation": "compute",
+        "partition_indices": "[8]",
+        "resume_run": "44934673699"
+      }
+    },
+    "request_sha256": "c249fe61efa6a10b3160511126ccf9fb62afd1a9f86b17b0780fd5aa942e95f4",
+    "parent_selection_sha256": "4305e588df3a96a218d31741fc0b68d08922258c357226e6e617a1f5e947af45",
+    "failed_job_log_sha256": "32796ad85808b1caa57d2d01697fc14ecd5669a6315c064d62f2e6dfe63389d9",
+    "numerical_source_changed": false,
+    "actual_compute_jobs_bound": false
+  }
+}

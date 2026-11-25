@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25 20:53:33 UTC",
+  "checked_at": "2026-11-25T21:20:42.070859+00:00",
   "goal_complete": false,
   "scope": "All-35 baseline kinetics are complete. Full memory validation remains incomplete; a reproducible numerical disagreement or domain limitation can be a completed scientific result.",
   "verified_stage_counts": {
@@ -33,17 +33,7 @@
     "evidence": "tyson-recomputation-audit-20261125.json",
     "audit_sha256": "c76643f43f03ac934b856af945e91109858282b85f7217d1717ea4b2fb78896c"
   },
-  "audits_in_progress": [
-    {
-      "model": "Rohwer",
-      "stage": "first diagnostics, continuation generation 2",
-      "original_archives_hash_verified": 32,
-      "original_archive_bytes": 12788718523,
-      "full_partition_selection": 32,
-      "full_required_branches": 750,
-      "scientific_audit_complete": false
-    }
-  ],
+  "audits_in_progress": [],
   "marhl_earlier_continuations": {
     "selected_tasks": 56,
     "run_with_successful_gate_and_12_queued_tasks": 45336593648,
@@ -54,21 +44,331 @@
       45336664864,
       45336669164
     ],
-    "remaining_44_tasks_need_recovery": true,
-    "cancellation_cause_not_established": true
+    "cancellation_cause_not_established": false,
+    "recovery_evidence": "marhl-queue-recovery-20261125.json",
+    "replacement_44_tasks_submitted": true,
+    "cancellation_cause": "Each gate exceeded 24 hours waiting for a runner before computation began.",
+    "remaining_44_tasks_need_computation": true
   },
   "latest_vilar_and_marhl_recovery_outputs": {
     "run_ids": [
       45508141808,
       45508667739
     ],
-    "scientific_audit_pending": true
+    "scientific_audit_pending": false
   },
   "local_numerical_workers": {
     "paused_workers": 9,
     "restarted": false
   },
-  "remote_run_observations": [
+  "no_new_model_pass_claimed": true,
+  "fuss_latest_available_outputs": {
+    "checked_at": "2026-11-25T21:10:03.736517+00:00",
+    "network": 8,
+    "model_id": "BIOMD0000000069",
+    "snapshot_sha256": "7f17982129032a847966ac987d38dd7aa5b3dbf34f273293e52869888d3c53eb",
+    "full_selected_partitions": 32,
+    "full_required_case_control_branches": 1309,
+    "full_required_trajectories": 5236,
+    "required_cases": 18,
+    "selection_sha256": "4305e588df3a96a218d31741fc0b68d08922258c357226e6e617a1f5e947af45",
+    "verified_partition_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "pending_download_indices": [],
+    "pending_job_indices": [
+      29,
+      30,
+      31
+    ],
+    "verified_arrays": 1301,
+    "parent_arrays_preserved_byte_identical": 1088,
+    "new_arrays": 213,
+    "complete_audited_branches": 306,
+    "branch_statuses": {
+      "confirmed": 306
+    },
+    "comparisons": 1836,
+    "passing_comparisons": 1836,
+    "original_archive_bytes": 9971984992,
+    "collection_errors": [],
+    "missing_artifact_indices": [
+      8
+    ],
+    "numerical_integrations_performed": 0,
+    "case_recovery_claimed": false,
+    "whole_model_pass_claimed": false,
+    "unavailable_current_partitions_still_required": true,
+    "evidence": "fuss-continuation-audit-20261125.json"
+  },
+  "updated_at": "2026-11-25T21:20:42.070859+00:00",
+  "rohwer_first_stage": {
+    "checked_at": "2026-11-25T21:13:17.540909+00:00",
+    "network": 35,
+    "model_id": "BIOMD0000000038",
+    "generation": 2,
+    "run_id": 45335934693,
+    "producer_revision": "607bac71ae98f78472457ed1d1c7a6a597f4b4a1",
+    "selection_sha256": "3c28616d72da171f7ebb01dc0270d04ec5bd7db526e27b1d396335ea92558ebc",
+    "collection_sha256": "cd7ddfd789c03e37daaba54875485605bba4b2d50e6ff80f20f2c642135436b1",
+    "fixed_partitions": 32,
+    "fixed_first_stage_branches": 750,
+    "verified_original_archives": 32,
+    "original_archive_bytes": 12788718523,
+    "verified_arrays": 2027,
+    "parent_arrays_preserved_byte_identical": 1369,
+    "new_complete_arrays": 658,
+    "complete_terminal_diagnostics": 477,
+    "parent_terminal_diagnostics_preserved": 318,
+    "branch_status_counts": {
+      "interrupted": 80,
+      "confirmed": 384,
+      "incomplete": 59,
+      "not_started": 193,
+      "mismatch": 34
+    },
+    "available_comparisons": 2801,
+    "passing_available_comparisons": 2649,
+    "max_scaled_error": 3.6459785314179936,
+    "collection_errors": [],
+    "full_case_audit_still_required": true,
+    "full_case_scope_branches": 11674,
+    "full_case_scope_cases": 123,
+    "case_recovery_claimed": false,
+    "whole_model_pass_claimed": false,
+    "numerical_integrations_performed_locally": 0,
+    "evidence": "rohwer-checkpoint-audit-20261125.json"
+  },
+  "marhl_latest_audit": {
+    "checked_at": "2026-11-25T20:57:13.688429+00:00",
+    "network": 30,
+    "model_id": "BIOMD0000000039",
+    "source_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+    "selection_sha256": "b38277d864b1c7a2b529a77382c249a32ba48b947b54c06ec89e35d8bc2445b9",
+    "collection_sha256": "0982ccde876efeca04bb2813b434adf0195b7c6b5ade27322c4d492ed4657726",
+    "required_tasks": 1520,
+    "required_branches": 380,
+    "required_cases": 12,
+    "verified_original_archives": 238,
+    "original_archive_bytes": 1898688983,
+    "previous_artifacts_preserved_byte_identical": 234,
+    "replacement_checkpoint_artifacts": 4,
+    "complete_arrays": 178,
+    "new_complete_arrays": 0,
+    "checkpointed_tasks": 60,
+    "task_status_counts": {
+      "completed": 178,
+      "checkpointed": 60,
+      "pending": 1282
+    },
+    "complete_branches": 22,
+    "new_complete_branches": 0,
+    "agreeing_branches": 22,
+    "comparisons": 132,
+    "passing_comparisons": 132,
+    "max_scaled_error": 7.696210746388428e-08,
+    "verification_errors": [],
+    "case_recovery_claimed": false,
+    "full_model_coverage_claimed": false,
+    "different_integrator_family_claimed": false,
+    "exact_checkpoint_state_validation_pending_matching_linux": true,
+    "numerical_integrations_performed": 0,
+    "checkpoint_progress": [
+      {
+        "task_index": 34,
+        "request_label": "mpmath128",
+        "run_id": 45508667739,
+        "parent_run_id": 45350129879,
+        "parent_samples": 68240,
+        "saved_samples": 141260,
+        "new_samples": 73020,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_sha256": "abc468e537d463399eebc8abcfd6d0610d6b0c519d24c9700f39e9e1aabb7fa5",
+        "parent_checkpoint_sha256": "6c1c87550efa1b1341340a3c2b54d63e8538b00b1a6395a5a251f9a1b213d235",
+        "new_complete_integration": false
+      },
+      {
+        "task_index": 1042,
+        "request_label": "mpmath128",
+        "run_id": 45508667739,
+        "parent_run_id": 45350129879,
+        "parent_samples": 72600,
+        "saved_samples": 112082,
+        "new_samples": 39482,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_sha256": "9ba08c3ef00ab69c829831d8c2ad8aaa4044a08347a238dd58472040752627ea",
+        "parent_checkpoint_sha256": "e7f1e5ba9dff53b308b3dce438273290432ba913fc31f9b7c3ce9cea14395c66",
+        "new_complete_integration": false
+      },
+      {
+        "task_index": 1043,
+        "request_label": "mpmath192",
+        "run_id": 45508667739,
+        "parent_run_id": 45350129879,
+        "parent_samples": 35500,
+        "saved_samples": 52600,
+        "new_samples": 17100,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_sha256": "59ab3eb5f63b8e0935f687af72da165a273d0d11b521c248a00c0a3770b8569d",
+        "parent_checkpoint_sha256": "f52637bb518b09f5bd79851b3f1fef92d51b314f9c89fc753d12d80f597e838c",
+        "new_complete_integration": false
+      },
+      {
+        "task_index": 1047,
+        "request_label": "mpmath192",
+        "run_id": 45508667739,
+        "parent_run_id": 45350129879,
+        "parent_samples": 130690,
+        "saved_samples": 170380,
+        "new_samples": 39690,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_sha256": "1f6802571863242c185afcb06e727bc46f44d83aac06432f469a27ea792a8218",
+        "parent_checkpoint_sha256": "4d2c23f53be77cdaf197c2ab055bda124ffa6f7f1d0996c13d61e0c03f3f0834",
+        "new_complete_integration": false
+      }
+    ],
+    "full_selection_retained": true,
+    "earlier_56_checkpoint_continuations_not_yet_combined": true,
+    "evidence": "marhl-recovery-audit-20261125.json"
+  },
+  "vilar_latest_checkpoint_audit": {
+    "checked_at": "2026-11-25T20:56:57.556952+00:00",
+    "run_id": 45508141808,
+    "parent_run_id": 45351112676,
+    "vilar": [
+      {
+        "partition": 8,
+        "artifact_id": 15013841076,
+        "archive_sha256": "sha256:5b3a4359b0009ea08a11c7510f15d79d933f3ad3d0fff3bf7a735269c5fb2e9f",
+        "all_zip_members_verified": 8,
+        "checkpoint_sha256": "76a86028a144fe0cdabe99bc2f28daac332b8e6f126e2fa52c83f0b12d116a3f",
+        "parent_checkpoint_sha256": "470f0c5d9f615ef0ac06992b0e265fa2bdcdeca55acf38ce82aacc7b35d4d4cb",
+        "parent_samples": 12673,
+        "saved_samples": 13188,
+        "new_samples": 515,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_metadata_checksums_verified": true,
+        "parent_steps": 853842296,
+        "steps": 940842296,
+        "active_time": [
+          "1.318783136050843491407512785868111274250e+2",
+          "-3.509969941168489230819883743697811168278e-38"
+        ],
+        "complete_integrations": 0,
+        "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+      },
+      {
+        "partition": 9,
+        "artifact_id": 14994401523,
+        "archive_sha256": "sha256:e0afcc4dfa62f1e30dfec82223e5726c15c1ccf65c624e08778abb3ad10a782b",
+        "all_zip_members_verified": 8,
+        "checkpoint_sha256": "77d0161f63036edcb70137c4f37a608e8e6498709460e4880976df58b64e40bd",
+        "parent_checkpoint_sha256": "73a026636e74e931a4891816bc8430f851728f5c14793c6ecd1bf08e874b912e",
+        "parent_samples": 12815,
+        "saved_samples": 13331,
+        "new_samples": 516,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_metadata_checksums_verified": true,
+        "parent_steps": 877842296,
+        "steps": 964842296,
+        "active_time": [
+          "1.333012631299347038474491432059026573648e+2",
+          "3.293045847276270631613227678726139017778e-37"
+        ],
+        "complete_integrations": 0,
+        "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+      },
+      {
+        "partition": 11,
+        "artifact_id": 15003472768,
+        "archive_sha256": "sha256:f25c28ea94d2c551139aaf630fe4f4a55ee428693a51242d7d8a2205bf3f12b5",
+        "all_zip_members_verified": 8,
+        "checkpoint_sha256": "511957622209787786aa7ff82d631159869d9d28d17351332a463c73eabf100f",
+        "parent_checkpoint_sha256": "e204fbcdca74f954e6e3a311b34123999116e098c40ebdbcf1124b7a6a656f04",
+        "parent_samples": 12684,
+        "saved_samples": 13200,
+        "new_samples": 516,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_metadata_checksums_verified": true,
+        "parent_steps": 855842296,
+        "steps": 942842296,
+        "active_time": [
+          "1.319968924220114684487424029213323869479e+2",
+          "1.490944606794608796412602663252711492144e-37"
+        ],
+        "complete_integrations": 0,
+        "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+      },
+      {
+        "partition": 16,
+        "artifact_id": 15006510379,
+        "archive_sha256": "sha256:5ffc7be9511231c379725a1c3f08b6797ca5b035bfd5c55576bec10e5fee46ec",
+        "all_zip_members_verified": 8,
+        "checkpoint_sha256": "1f93bebc810544f8fe5467d6a46cb3111fb440b47db264e1fbe08b98d7f2a4fc",
+        "parent_checkpoint_sha256": "b6a410ced69c3dbf01a0a35282c9d1c6bcd47294442e42982be2ad87194d9418",
+        "parent_samples": 12560,
+        "saved_samples": 12969,
+        "new_samples": 409,
+        "original_prefix_bitwise_equal": true,
+        "checkpoint_metadata_checksums_verified": true,
+        "parent_steps": 834842296,
+        "steps": 903842296,
+        "active_time": [
+          "1.296846156630865238619445296612039037504e+2",
+          "3.677575160446487852613245280519396809297e-37"
+        ],
+        "complete_integrations": 0,
+        "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+      }
+    ],
+    "numerical_integrations_performed_locally": 0,
+    "new_complete_cases": 0,
+    "new_complete_models": 0
+  },
+  "new_continuations_evidence": "checkpoint-continuations-20261125.json",
+  "rohwer_later_available_archives": {
+    "checked_at": "2026-11-25T21:09:03.755996+00:00",
+    "full_selected_partitions": 512,
+    "required_later_control_branches": 10924,
+    "required_full_case_branches": 11674,
+    "required_cases": 123,
+    "selection_sha256": "4ecaa91cbca48275ae20f2600a132821945c90ccf2618603dc61513551c596d2",
+    "available_bytes": 18030996831,
+    "previous_archives_reverified": 16,
+    "archives_to_download": 181,
+    "bytes_to_download": 16848569409,
+    "scientific_audit_pending": true,
+    "numerical_integrations_performed": 0
+  },
+  "historical_snapshot_checked_at": "2026-11-25 20:53:33 UTC",
+  "historical_remote_run_observations_2053": [
     {
       "run_id": 45332029602,
       "url": "https://github.com/m9h/GRN_ODE/actions/runs/45332029602",
@@ -158,7 +458,7 @@
       "updated_at": "2026-11-25T05:55:23Z"
     }
   ],
-  "marhl_job_observations": [
+  "historical_marhl_job_observations_2053": [
     {
       "run_id": 45332029602,
       "jobs": [
@@ -387,73 +687,19 @@
       ]
     }
   ],
-  "no_new_model_pass_claimed": true,
-  "numerical_integrations_performed_locally": 0,
-  "fuss_latest_available_outputs": {
-    "checked_at": "2026-11-25T20:53:48.005065+00:00",
-    "network": 8,
-    "model_id": "BIOMD0000000069",
-    "snapshot_sha256": "4aee18188bf7105f9254dd5206b8dee9c0c799423365760f2c4d703d848ac1c5",
-    "full_selected_partitions": 32,
-    "full_required_case_control_branches": 1309,
-    "full_required_trajectories": 5236,
-    "required_cases": 18,
-    "selection_sha256": "4305e588df3a96a218d31741fc0b68d08922258c357226e6e617a1f5e947af45",
-    "verified_partition_indices": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25
-    ],
-    "pending_download_indices": [],
-    "pending_job_indices": [
-      26,
-      27,
-      28,
-      29,
-      30,
-      31
-    ],
-    "verified_arrays": 1151,
-    "parent_arrays_preserved_byte_identical": 967,
-    "new_arrays": 184,
-    "complete_audited_branches": 270,
-    "branch_statuses": {
-      "confirmed": 270
-    },
-    "comparisons": 1620,
-    "passing_comparisons": 1620,
-    "original_archive_bytes": 8855558180,
-    "collection_errors": [],
-    "missing_artifact_indices": [
-      8
-    ],
-    "numerical_integrations_performed": 0,
-    "case_recovery_claimed": false,
-    "whole_model_pass_claimed": false,
-    "unavailable_current_partitions_still_required": true,
-    "evidence": "fuss-continuation-audit-20261125.json",
-    "audit_sha256": "eff91112b55c8354319112928e0599c0f64441c28d48d613bbe71c70f750a6b4"
-  }
+  "rohwer_generation3_continuation_evidence": "rohwer-generation3-continuation-20261125.json",
+  "rohwer_later_downloads": {
+    "checked_at": "2026-11-25T21:18:30.162115+00:00",
+    "full_selected_partitions": 512,
+    "available_archive_inventory": 197,
+    "verified_original_archives": 32,
+    "verified_original_bytes": 2609424060,
+    "new_archives_verified": 16,
+    "new_archive_bytes": 1426996638,
+    "remaining_available_archives": 165,
+    "remaining_available_bytes": 15421572771,
+    "scientific_audit_pending_for_new_archives": true,
+    "numerical_integrations_performed": 0
+  },
+  "production_numerical_integrations_performed_locally": 0
 }

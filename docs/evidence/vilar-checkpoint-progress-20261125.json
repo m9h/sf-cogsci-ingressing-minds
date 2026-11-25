@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-11-25T20:56:57.556952+00:00",
+  "run_id": 45508141808,
+  "parent_run_id": 45351112676,
+  "vilar": [
+    {
+      "partition": 8,
+      "artifact_id": 15013841076,
+      "archive_sha256": "sha256:5b3a4359b0009ea08a11c7510f15d79d933f3ad3d0fff3bf7a735269c5fb2e9f",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "76a86028a144fe0cdabe99bc2f28daac332b8e6f126e2fa52c83f0b12d116a3f",
+      "parent_checkpoint_sha256": "470f0c5d9f615ef0ac06992b0e265fa2bdcdeca55acf38ce82aacc7b35d4d4cb",
+      "parent_samples": 12673,
+      "saved_samples": 13188,
+      "new_samples": 515,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 853842296,
+      "steps": 940842296,
+      "active_time": [
+        "1.318783136050843491407512785868111274250e+2",
+        "-3.509969941168489230819883743697811168278e-38"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 9,
+      "artifact_id": 14994401523,
+      "archive_sha256": "sha256:e0afcc4dfa62f1e30dfec82223e5726c15c1ccf65c624e08778abb3ad10a782b",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "77d0161f63036edcb70137c4f37a608e8e6498709460e4880976df58b64e40bd",
+      "parent_checkpoint_sha256": "73a026636e74e931a4891816bc8430f851728f5c14793c6ecd1bf08e874b912e",
+      "parent_samples": 12815,
+      "saved_samples": 13331,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 877842296,
+      "steps": 964842296,
+      "active_time": [
+        "1.333012631299347038474491432059026573648e+2",
+        "3.293045847276270631613227678726139017778e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 11,
+      "artifact_id": 15003472768,
+      "archive_sha256": "sha256:f25c28ea94d2c551139aaf630fe4f4a55ee428693a51242d7d8a2205bf3f12b5",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "511957622209787786aa7ff82d631159869d9d28d17351332a463c73eabf100f",
+      "parent_checkpoint_sha256": "e204fbcdca74f954e6e3a311b34123999116e098c40ebdbcf1124b7a6a656f04",
+      "parent_samples": 12684,
+      "saved_samples": 13200,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 855842296,
+      "steps": 942842296,
+      "active_time": [
+        "1.319968924220114684487424029213323869479e+2",
+        "1.490944606794608796412602663252711492144e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 16,
+      "artifact_id": 15006510379,
+      "archive_sha256": "sha256:5ffc7be9511231c379725a1c3f08b6797ca5b035bfd5c55576bec10e5fee46ec",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "1f93bebc810544f8fe5467d6a46cb3111fb440b47db264e1fbe08b98d7f2a4fc",
+      "parent_checkpoint_sha256": "b6a410ced69c3dbf01a0a35282c9d1c6bcd47294442e42982be2ad87194d9418",
+      "parent_samples": 12560,
+      "saved_samples": 12969,
+      "new_samples": 409,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 834842296,
+      "steps": 903842296,
+      "active_time": [
+        "1.296846156630865238619445296612039037504e+2",
+        "3.677575160446487852613245280519396809297e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    }
+  ],
+  "numerical_integrations_performed_locally": 0,
+  "new_complete_cases": 0,
+  "new_complete_models": 0
+}
