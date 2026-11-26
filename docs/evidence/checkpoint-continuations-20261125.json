@@ -24,7 +24,55 @@
     "post_session_id": null,
     "command_output": "",
     "run_id": 45700337838,
-    "validation_job_id": 139508478545
+    "validation_job_id": 139508478545,
+    "latest_observed_at": "2026-11-25T23:42:00Z",
+    "job_observations": [
+      {
+        "id": 139508478545,
+        "name": "precision-checkpoints",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 45700337838,
+        "run_attempt": 1,
+        "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089"
+      },
+      {
+        "id": 139530428136,
+        "name": "precision-model-35-partition-9",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_id": 45700337838,
+        "run_attempt": 1,
+        "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089"
+      },
+      {
+        "id": 139530428178,
+        "name": "precision-model-35-partition-16",
+        "status": "queued",
+        "conclusion": null,
+        "run_id": 45700337838,
+        "run_attempt": 1,
+        "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089"
+      },
+      {
+        "id": 139530428212,
+        "name": "precision-model-35-partition-11",
+        "status": "queued",
+        "conclusion": null,
+        "run_id": 45700337838,
+        "run_attempt": 1,
+        "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089"
+      },
+      {
+        "id": 139530428277,
+        "name": "precision-model-35-partition-8",
+        "status": "queued",
+        "conclusion": null,
+        "run_id": 45700337838,
+        "run_attempt": 1,
+        "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089"
+      }
+    ]
   },
   "tyson": {
     "state": "accepted_run_identity_verified",
@@ -53,7 +101,100 @@
     "run_id": 45700343507,
     "validation_job_id": null,
     "job_id": 139508516174,
-    "full_selection_sha256": "d244981ac9476e932a3eb84d8c987faf72b1d527817c21d443e671c448dd219d"
+    "full_selection_sha256": "d244981ac9476e932a3eb84d8c987faf72b1d527817c21d443e671c448dd219d",
+    "latest_observed_at": "2026-11-25T23:42:00Z",
+    "job_observations": [
+      {
+        "id": 139508516174,
+        "name": "catalog-breaking-shards (5, 13)",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508518483,
+        "name": "catalog-repeated",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508518539,
+        "name": "reproduce",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508518795,
+        "name": "catalog",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508518934,
+        "name": "catalog-breaking-smoke",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508518993,
+        "name": "catalog-memory",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508519059,
+        "name": "catalog-jax",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508519072,
+        "name": "catalog-paired-solver-regression",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508605061,
+        "name": "jaxkineticmodel",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      },
+      {
+        "id": 139508605642,
+        "name": "catalog-paired-smoke",
+        "status": "completed",
+        "conclusion": "skipped",
+        "run_id": 45700343507,
+        "run_attempt": 1,
+        "head_sha": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0"
+      }
+    ]
   },
   "marhl": {
     "state": "accepted_run_identity_verified",
@@ -78,7 +219,55 @@
     "post_session_id": null,
     "command_output": "",
     "run_id": 45700349707,
-    "validation_job_id": 139508517055
+    "validation_job_id": 139508517055,
+    "latest_observed_at": "2026-11-25T23:42:00Z",
+    "job_observations": [
+      {
+        "id": 139508517055,
+        "name": "marhl-full-precision",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 45700349707,
+        "run_attempt": 1,
+        "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed"
+      },
+      {
+        "id": 139532623407,
+        "name": "marhl-precision-task-1047",
+        "status": "queued",
+        "conclusion": null,
+        "run_id": 45700349707,
+        "run_attempt": 1,
+        "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed"
+      },
+      {
+        "id": 139532623585,
+        "name": "marhl-precision-task-1042",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_id": 45700349707,
+        "run_attempt": 1,
+        "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed"
+      },
+      {
+        "id": 139532624851,
+        "name": "marhl-precision-task-1043",
+        "status": "queued",
+        "conclusion": null,
+        "run_id": 45700349707,
+        "run_attempt": 1,
+        "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed"
+      },
+      {
+        "id": 139532628134,
+        "name": "marhl-precision-task-34",
+        "status": "queued",
+        "conclusion": null,
+        "run_id": 45700349707,
+        "run_attempt": 1,
+        "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed"
+      }
+    ]
   },
   "fuss_partition8": {
     "state": "accepted_run_identity_verified",
@@ -99,12 +288,72 @@
     "continued_partition_indices": [
       8
     ],
-    "actual_compute_jobs_bound": false,
+    "actual_compute_jobs_bound": true,
     "post_exit_code": 0,
     "post_session_id": null,
     "command_output": "",
     "run_id": 45701034026,
-    "validation_job_id": 139510866815
+    "validation_job_id": 139510866815,
+    "job_id": 139540135067,
+    "full_selection_sha256": "c52495b12b2c4ede65d0ce9ba0f57a2212f0d8ee1cc86e66a2e4499cfaaaab8c",
+    "binding_proof": {
+      "checked_at": "2026-11-25T23:44:50.003122+00:00",
+      "full_partition_scope": 32,
+      "rebound_partition_indices": [
+        8
+      ],
+      "other_31_bindings_unchanged": true,
+      "new_run_id": 45701034026,
+      "new_job_id": 139540135067,
+      "parent_run_id": 44934673699,
+      "linux_validation_passed": true,
+      "selection_sha256": "c52495b12b2c4ede65d0ce9ba0f57a2212f0d8ee1cc86e66a2e4499cfaaaab8c",
+      "new_terminal_archives": [
+        {
+          "shard_index": 29,
+          "artifact_id": 15067763177,
+          "bytes": 397399199,
+          "digest": "sha256:bea86e5bdd33de6ece7db02414d006a27f0f339c5fc7ca691a2be3880fb4c83d",
+          "path": "/Users/mhough/Workspace/grn-computation-evidence/fuss-current-collection-20261124T2321/archives/artifact-15067763177.zip"
+        },
+        {
+          "shard_index": 30,
+          "artifact_id": 15069885797,
+          "bytes": 320132387,
+          "digest": "sha256:52094b203d6d3785ebe3898920dee70341dd98e77b0e37d89ff1f7c77572b211",
+          "path": "/Users/mhough/Workspace/grn-computation-evidence/fuss-current-collection-20261124T2321/archives/artifact-15069885797.zip"
+        },
+        {
+          "shard_index": 31,
+          "artifact_id": 15072366749,
+          "bytes": 508394816,
+          "digest": "sha256:d1062c07106f9b8e71bc523c5f5f9fc04212c8feb55afe35202250fc8c8a4163",
+          "path": "/Users/mhough/Workspace/grn-computation-evidence/fuss-current-collection-20261124T2321/archives/artifact-15072366749.zip"
+        }
+      ],
+      "numerical_integrations_performed": 0
+    },
+    "latest_observed_at": "2026-11-25T23:42:00Z",
+    "job_observations": [
+      {
+        "id": 139510866815,
+        "name": "validation",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 45701034026,
+        "run_attempt": 1,
+        "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026"
+      },
+      {
+        "id": 139540135067,
+        "name": "scipy-case-partition-8",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_id": 45701034026,
+        "run_attempt": 1,
+        "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026"
+      }
+    ]
   },
   "fuss_partition8_failure": {
     "prepared_at": "2026-11-25T21:04:44.499817+00:00",

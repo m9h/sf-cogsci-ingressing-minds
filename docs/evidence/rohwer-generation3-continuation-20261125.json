@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T21:20:42.068610+00:00",
+  "checked_at": "2026-11-25T23:45:54.571084+00:00",
   "preparation": {
     "prepared_at": "2026-11-25T21:12:05.530923+00:00",
     "bindings": "/Users/mhough/Workspace/grn-computation-evidence/source-rohwer-generation3/python/results/catalog-breaking-rohwer-checkpoint-continuation-20261125",
@@ -40,7 +40,7 @@
       "unstarted": 193
     },
     "real_restore_proof_sha256": "6ada852dc1018c96ea77e2cf93a9600c8e6e961a4a37902dbcc067cc36e2a27e",
-    "linux_validation_still_required_before_compute": true
+    "linux_validation_still_required_before_compute": false
   },
   "real_restore": {
     "checked_at": "2026-11-25T21:15:16.464041+00:00",
@@ -81,7 +81,7 @@
         "operation": "compute"
       }
     },
-    "actual_compute_jobs_bound": false,
+    "actual_compute_jobs_bound": true,
     "post_exit_code": 0,
     "post_session_id": null,
     "command_output": "",
@@ -90,7 +90,34 @@
     "validation_status": "queued",
     "validation_conclusion": null
   },
-  "actual_compute_jobs_bound": false,
+  "actual_compute_jobs_bound": true,
   "case_recovery_claimed": false,
-  "whole_model_pass_claimed": false
+  "whole_model_pass_claimed": false,
+  "binding_proof": {
+    "checked_at": "2026-11-25T23:45:54.571084+00:00",
+    "run_id": 45703326499,
+    "generation": 3,
+    "producer_revision": "fcf7fd8cf975bc9171370e05789661d9da4d35b4",
+    "full_partitions": 32,
+    "full_branches": 750,
+    "validation_job_id": 139518811769,
+    "validation_passed": true,
+    "actual_compute_jobs_bound": true,
+    "selection_sha256": "71b8f9685a16e392a090787327a2a340f62a04ff8b3d95c692bd4abb738b7575",
+    "binding_sha256": "700ff6ac98c8caf12111527e508b6cc8a0f803a2068f2eaa3cf22c714960bb76",
+    "api_sha256": {
+      "run": "d82ebc2838b34fe300d3e138519b4e7ceef677f0de596194bbcb0829653049ce",
+      "jobs": "450371609934123871046f99cd484653a4f5659aa53e26857e0d7202ed74ad59",
+      "artifacts": "d3ad979d01443a9d7342e7fbe39064b41ebdb340029293f1b099bcfb6c493c42"
+    },
+    "numerical_integrations_performed_locally": 0,
+    "case_recovery_claimed": false,
+    "whole_model_pass_claimed": false
+  },
+  "linux_validation": {
+    "job_id": 139518811769,
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at": "2026-11-25T22:14:13Z"
+  }
 }

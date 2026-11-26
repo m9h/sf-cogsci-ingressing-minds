@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T21:20:42.070859+00:00",
+  "checked_at": "2026-11-25T23:45:54.571084+00:00",
   "goal_complete": false,
   "scope": "All-35 baseline kinetics are complete. Full memory validation remains incomplete; a reproducible numerical disagreement or domain limitation can be a completed scientific result.",
   "verified_stage_counts": {
@@ -33,7 +33,23 @@
     "evidence": "tyson-recomputation-audit-20261125.json",
     "audit_sha256": "c76643f43f03ac934b856af945e91109858282b85f7217d1717ea4b2fb78896c"
   },
-  "audits_in_progress": [],
+  "audits_in_progress": [
+    {
+      "network": 35,
+      "stage": "Rohwer later controls",
+      "archives_available_and_downloaded": 197,
+      "full_partition_scope": 512,
+      "evidence": "rohwer-later-downloads-20261125.json"
+    },
+    {
+      "network": 8,
+      "stage": "Fuss current continuation",
+      "archives_available_and_downloaded": 31,
+      "full_partition_scope": 32,
+      "recovery_partition_8_running": true,
+      "evidence": "checkpoint-continuations-20261125.json"
+    }
+  ],
   "marhl_earlier_continuations": {
     "selected_tasks": 56,
     "run_with_successful_gate_and_12_queued_tasks": 45336593648,
@@ -128,7 +144,7 @@
     "unavailable_current_partitions_still_required": true,
     "evidence": "fuss-continuation-audit-20261125.json"
   },
-  "updated_at": "2026-11-25T21:20:42.070859+00:00",
+  "updated_at": "2026-11-25T23:47:27.241878+00:00",
   "rohwer_first_stage": {
     "checked_at": "2026-11-25T21:13:17.540909+00:00",
     "network": 35,
@@ -362,10 +378,11 @@
     "selection_sha256": "4ecaa91cbca48275ae20f2600a132821945c90ccf2618603dc61513551c596d2",
     "available_bytes": 18030996831,
     "previous_archives_reverified": 16,
-    "archives_to_download": 181,
-    "bytes_to_download": 16848569409,
+    "archives_to_download": 0,
+    "bytes_to_download": 0,
     "scientific_audit_pending": true,
-    "numerical_integrations_performed": 0
+    "numerical_integrations_performed": 0,
+    "available_archives_downloaded": 197
   },
   "historical_snapshot_checked_at": "2026-11-25 20:53:33 UTC",
   "historical_remote_run_observations_2053": [
@@ -689,17 +706,43 @@
   ],
   "rohwer_generation3_continuation_evidence": "rohwer-generation3-continuation-20261125.json",
   "rohwer_later_downloads": {
-    "checked_at": "2026-11-25T21:18:30.162115+00:00",
+    "checked_at": "2026-11-25T23:43:31.121611+00:00",
     "full_selected_partitions": 512,
     "available_archive_inventory": 197,
-    "verified_original_archives": 32,
-    "verified_original_bytes": 2609424060,
-    "new_archives_verified": 16,
-    "new_archive_bytes": 1426996638,
-    "remaining_available_archives": 165,
-    "remaining_available_bytes": 15421572771,
+    "verified_original_archives": 197,
+    "verified_original_bytes": 18030996831,
+    "new_archives_verified": 165,
+    "new_archive_bytes": 15421572771,
+    "remaining_available_archives": 0,
+    "remaining_available_bytes": 0,
     "scientific_audit_pending_for_new_archives": true,
-    "numerical_integrations_performed": 0
+    "numerical_integrations_performed": 0,
+    "verification_basis": "32 prior verified archives plus 165 individual SHA-256 transfer receipts; full scientific collector rechecks every original ZIP",
+    "available_snapshot_scope": 197,
+    "required_later_control_branches": 10924,
+    "required_full_case_branches": 11674,
+    "required_cases": 123,
+    "scientific_audit_running": true,
+    "scientific_audit_status": "pending",
+    "selection_sha256": "4ecaa91cbca48275ae20f2600a132821945c90ccf2618603dc61513551c596d2",
+    "pending_jobs_in_preserved_snapshot": 314,
+    "terminal_missing_artifacts_in_preserved_snapshot": 1,
+    "case_recovery_claimed": false,
+    "whole_model_pass_claimed": false
   },
-  "production_numerical_integrations_performed_locally": 0
+  "production_numerical_integrations_performed_locally": 0,
+  "francois_durable_evidence": "francois-release-verification-20261125.json",
+  "latest_cloud_execution_evidence": "cloud-execution-status-20261125.json",
+  "fuss_three_additional_terminal_outputs": {
+    "partitions": [
+      29,
+      30,
+      31
+    ],
+    "download_and_scientific_audit_pending": false,
+    "does_not_change_passing_counts": true,
+    "download_complete": true,
+    "scientific_audit_running": true,
+    "verified_original_bytes": 1225926402
+  }
 }

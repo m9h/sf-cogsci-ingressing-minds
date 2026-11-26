@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-11-25T23:45:54.571084+00:00",
+  "network": 25,
+  "model_id": "BIOMD0000000539",
+  "release_url": "https://github.com/m9h/GRN_ODE/releases/tag/kinetics-francois-inventory-20261125",
+  "release_id": 458674367,
+  "tag": "kinetics-francois-inventory-20261125",
+  "published_at": "2026-11-25T23:41:28Z",
+  "auditor_revision": "cae38e9a6ec4c7567ea6cbf2908778f409a1ebb0",
+  "assets": [
+    {
+      "id": 793225617,
+      "name": "francois-inventory-20261125.tar.gz",
+      "size": 32315937,
+      "digest": "sha256:0271b999be45f6462fba044a653c8c273cae0c9c0e9b596ff2be5901e8b4110e",
+      "browser_download_url": "https://github.com/m9h/GRN_ODE/releases/download/kinetics-francois-inventory-20261125/francois-inventory-20261125.tar.gz"
+    },
+    {
+      "id": 793225613,
+      "name": "README.md",
+      "size": 2497,
+      "digest": "sha256:248a4b5418f6eeb32541c5b55729dd03293667d2d1ea47328259cbd46d264258",
+      "browser_download_url": "https://github.com/m9h/GRN_ODE/releases/download/kinetics-francois-inventory-20261125/README.md"
+    },
+    {
+      "id": 793225614,
+      "name": "SHA256SUMS",
+      "size": 101,
+      "digest": "sha256:5deaed4d493a399054060fbd8a828cf29bd0d80d1330d7aa73759ffe66a6af8d",
+      "browser_download_url": "https://github.com/m9h/GRN_ODE/releases/download/kinetics-francois-inventory-20261125/SHA256SUMS"
+    }
+  ],
+  "fresh_download_verification": {
+    "release_id": 458674367,
+    "published": true,
+    "assets_verified": 3,
+    "archive_sha256": "0271b999be45f6462fba044a653c8c273cae0c9c0e9b596ff2be5901e8b4110e",
+    "fresh_download_verified": true
+  },
+  "fresh_reproduction": {
+    "complete_case_coverage": true,
+    "status": "numerical_disagreement",
+    "cases": 118,
+    "passed_cases": 80,
+    "failed_cases": 38,
+    "unresolved_conditional_decisions": 6,
+    "original_archives_verified": 16,
+    "expected_model_audit_sha256": "162c7795ff4b6161e32b04ca47914a0493f00aa38fb6cc18f84592b9e995cda4",
+    "actual_model_audit_sha256": "ff49a02afd955af1bebecca043eda9ba8b393db505704d168f00b358a8617ea0",
+    "model_audit_equal_except_verified_directory_relocations": true,
+    "relocated_directory_fields": 16,
+    "status_equal_except_timestamp_and_path_dependent_audit_checksum": true,
+    "numerical_integrations_performed": 0,
+    "raw_trajectory_arrays_available": false
+  },
+  "original_archive_count": 16,
+  "original_archive_bytes": 34137474,
+  "cases": 118,
+  "passed_cases": 80,
+  "failed_cases": 38,
+  "unresolved_conditional_decisions": 6,
+  "complete_case_coverage": true,
+  "raw_trajectory_arrays_available": false,
+  "whole_model_pass_claimed": false,
+  "evidence_scope": "Original pointwise comparison and observation-window summaries; all recorded conditional decisions replayed. Full raw trajectory arrays are unavailable.",
+  "numerical_integrations_performed_locally": 0
+}
