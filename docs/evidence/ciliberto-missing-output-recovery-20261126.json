@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-11-26T22:41:30.374602+00:00",
+  "source_revision": "3eb1a191bd9531435cbd949680c1637ab3c9529c",
+  "source_url": "https://github.com/m9h/GRN_ODE/tree/3eb1a191bd9531435cbd949680c1637ab3c9529c/python/results/catalog-breaking-ciliberto-missing-output-20261126",
+  "original_run": 44412503884,
+  "original_selection_sha256": "caea6504ee78b9f7bc26ebe2c08d0a4a4b1d1ae10c4ef7cc93b24f53077bdc0c",
+  "full_selected_partitions": 256,
+  "required_later_control_branches": 6859,
+  "required_full_case_branches": 7334,
+  "required_cases": 74,
+  "captured_original_archives": 195,
+  "captured_original_archive_bytes": 478646175890,
+  "previous_177_archives_identity_and_checksums_preserved": true,
+  "archive_count_is_not_scientific_validation": true,
+  "missing_original_partition": 43,
+  "missing_original_job": 135288259512,
+  "missing_reason": "Hosted runner lost communication before artifact upload; numerical outcome unknown.",
+  "recovery_run": 45906265133,
+  "recovery_workflow": 432143330,
+  "recovery_url": "https://github.com/m9h/GRN_ODE/actions/runs/45906265133",
+  "recovery_validation_job": 140203622721,
+  "recovery_validation_status": "queued",
+  "actual_compute_job_binding_pending": true,
+  "do_not_repeat_accepted_dispatch": true,
+  "unchanged_other_original_selections": 255,
+  "new_local_recovery_tests_passed": 35,
+  "existing_audit_tests_passed": 157,
+  "frozen_runtime_and_execution_plan_reproduced": true,
+  "numerical_code_settings_grids_and_environment_unchanged": true,
+  "archive_pilot": {
+    "run": 45892778117,
+    "gate_job": 140159250091,
+    "gate_conclusion": "success",
+    "transfer_job": 140199587652,
+    "transfer_status": "queued",
+    "archive_preservation_verified": false
+  },
+  "vilar_continuation": {
+    "run": 45893802753,
+    "gate_conclusion": "success",
+    "actual_jobs": [
+      {
+        "id": 140199856163,
+        "name": "precision-model-35-partition-11",
+        "status": "queued"
+      },
+      {
+        "id": 140199856212,
+        "name": "precision-model-35-partition-9",
+        "status": "queued"
+      },
+      {
+        "id": 140199856242,
+        "name": "precision-model-35-partition-8",
+        "status": "queued"
+      },
+      {
+        "id": 140199856311,
+        "name": "precision-model-35-partition-16",
+        "status": "queued"
+      }
+    ]
+  },
+  "evidence_sha256": {
+    "source-proof.json": "5d9404948a5380f1c3bef62a5f60bf95c7f674769d07c609dc7c369a91ef579d",
+    "orchestration-validation.json": "d60ce22f47cdf8239cc5b2600be61717ebd69230364618d8c4db4380e9a54896",
+    "accepted-run.json": "e55b92538264f81bad505ffee23c6158eb69fdd6ac7f99284a6331225ac00d9c",
+    "accepted-jobs.json": "7994428d7b1294abe925496e62f05957b83c01a7c55f50d4a08656e36a6093fd",
+    "recovery-plan.json": "38dbc0d7d4376f356fd281534b498b800576e384c81d30ab1572ebb20a78f771"
+  },
+  "numerical_integrations_performed_locally": 0,
+  "new_case_or_model_pass_claimed": false,
+  "baseline_models_verified": 35,
+  "whole_model_breaking_passes": 27,
+  "goal_complete": false
+}
