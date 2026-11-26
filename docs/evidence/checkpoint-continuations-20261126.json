@@ -1,0 +1,319 @@
+{
+  "bindings": [
+    {
+      "group": "fuss_main",
+      "run_id": 45761582215,
+      "requested_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "actual_task_jobs": [
+        {
+          "id": 139728925640,
+          "name": "scipy-case-partition-12",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925645,
+          "name": "scipy-case-partition-10",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925651,
+          "name": "scipy-case-partition-3",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925657,
+          "name": "scipy-case-partition-4",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925660,
+          "name": "scipy-case-partition-5",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925665,
+          "name": "scipy-case-partition-14",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925668,
+          "name": "scipy-case-partition-0",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925675,
+          "name": "scipy-case-partition-2",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925679,
+          "name": "scipy-case-partition-1",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925683,
+          "name": "scipy-case-partition-19",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925686,
+          "name": "scipy-case-partition-9",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925690,
+          "name": "scipy-case-partition-6",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925693,
+          "name": "scipy-case-partition-18",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925699,
+          "name": "scipy-case-partition-22",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925709,
+          "name": "scipy-case-partition-16",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925710,
+          "name": "scipy-case-partition-23",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925713,
+          "name": "scipy-case-partition-15",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925720,
+          "name": "scipy-case-partition-17",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925724,
+          "name": "scipy-case-partition-25",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925737,
+          "name": "scipy-case-partition-13",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925738,
+          "name": "scipy-case-partition-26",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925754,
+          "name": "scipy-case-partition-7",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925778,
+          "name": "scipy-case-partition-24",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925780,
+          "name": "scipy-case-partition-21",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925784,
+          "name": "scipy-case-partition-20",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728925872,
+          "name": "scipy-case-partition-27",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728927224,
+          "name": "scipy-case-partition-28",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728927330,
+          "name": "scipy-case-partition-29",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728927363,
+          "name": "scipy-case-partition-31",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728927491,
+          "name": "scipy-case-partition-30",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761582215,
+          "run_attempt": 1
+        }
+      ]
+    },
+    {
+      "group": "fuss_eight",
+      "run_id": 45761594168,
+      "requested_indices": [
+        8
+      ],
+      "actual_task_jobs": [
+        {
+          "id": 139774733638,
+          "name": "scipy-case-partition-8",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761594168,
+          "run_attempt": 1
+        }
+      ]
+    },
+    {
+      "group": "fuss_eleven",
+      "run_id": 45761615797,
+      "requested_indices": [
+        11
+      ],
+      "actual_task_jobs": [
+        {
+          "id": 139788116825,
+          "name": "scipy-case-partition-11",
+          "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
+          "run_id": 45761615797,
+          "run_attempt": 1
+        }
+      ]
+    },
+    {
+      "group": "marhl",
+      "run_id": 45761626752,
+      "requested_indices": [
+        1042,
+        1043,
+        1047
+      ],
+      "actual_task_jobs": [
+        {
+          "id": 139728043474,
+          "name": "marhl-precision-task-1043",
+          "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+          "run_id": 45761626752,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728043516,
+          "name": "marhl-precision-task-1042",
+          "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+          "run_id": 45761626752,
+          "run_attempt": 1
+        },
+        {
+          "id": 139728043593,
+          "name": "marhl-precision-task-1047",
+          "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+          "run_id": 45761626752,
+          "run_attempt": 1
+        }
+      ]
+    }
+  ],
+  "full_fuss32_scope_retained": true,
+  "marhl_completed_task34_retained": true,
+  "numerical_integrations_performed": 0
+}

@@ -80,7 +80,7 @@ are finished; the full memory-validation goal remains open.
 | Single-input retention | 538/538 stimulation cases pass numerical comparisons | Below-resolution response labels remain unresolved |
 | Repeated stimulation | 538/538 cases pass on macOS and Linux | Complete numerical comparison |
 | Paired stimulation | 4,205/4,208 cases pass | Three Vilar cases unresolved |
-| Conditional breaking | 34/35 initial inventories fully auditable; 27/35 whole-model audits pass | Restore Tyson's missing evidence through fixed-scope recomputation; finish remaining validation |
+| Conditional breaking | 35/35 initial inventories fully auditable; 27/35 whole-model audits pass | Finish remaining case/control validation and document retained failures |
 
 These counts measure numerical validation, not proof that every network learns.
 Completed jobs, software tests and partially verified trajectories do not add
@@ -90,18 +90,19 @@ scientific result. Missing evidence and unfinished integrations still require
 work; completion does not mean forcing every comparison to pass.
 
 The eight models without a passing whole-model breaking audit have different
-remaining issues:
+remaining issues. Cloud job states below were checked at 20:42 UTC on 26 November;
+terminal jobs are not scientific results until their outputs are audited:
 
 | Model | Current gap |
 |---|---|
 | [Reduced Goldbeter (3)](https://github.com/m9h/GRN_ODE/blob/12c0693df1d68d1736b274a9364e1ef7b2533b06/python/CATALOG_BREAKING.md#a-domain-limit-exposed-by-the-goldbeter-model) | Four integration failures affect two of eight cases; all 24 dedicated diagnostic attempts also stop before the required endpoint. |
-| Tyson (5) | [Fourteen replacement outputs audited](docs/evidence/tyson-recomputation-audit-20261125.json): 48 recorded cases, 46 passing, and 1,939 branch records. Thirteen replacement selections are complete; partition 13 has two unfinished cases in that audit. [Its next job has finished](docs/evidence/cloud-execution-status-20261126.json), and its output awaits collection and validation. Retained partitions 14 and 15 remain separate. |
-| Fuss (8) | [Thirty-one outputs audited](docs/evidence/fuss-continuation-audit-20261126.json): 1,465 complete trajectories, including all 1,224 parent trajectories unchanged and 241 additional completions. Their 345 complete branches agree across all 2,070 comparisons. Partition 8's targeted replacement job has finished and awaits collection; its earlier metadata-retrieval failure remains recorded. The full 1,309-branch control scope and eighteen-case replay remain open. |
+| Tyson (5) | [All 58 cases are now audited](docs/evidence/tyson-full-inventory-audit-20261126.json): 55 pass and three retain failures, with 2,189 branch records and no unresolved conditional decisions. All sixteen original ZIPs are preserved in the [complete evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-tyson-complete-20261126); a fresh download reproduces the audit. Raw full trajectories are unavailable. The missing-evidence recovery is complete; this is not a whole-model numerical pass. |
+| Fuss (8) | [All 32 current outputs audited](docs/evidence/fuss-continuation-audit-20261126.json): 1,539 complete trajectories, including all 1,283 parent trajectories unchanged and 256 additional completions. Their 363 complete branches agree across all 2,178 comparisons. The next full 32-partition continuation has five terminal jobs awaiting collection, five running and 22 queued. The full 1,309-branch control scope and eighteen-case replay remain open. |
 | François (25) | The separate Linux inventory covers all 118 cases, with 38 failures and six unresolved conditional decisions. The [published evidence bundle](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-francois-inventory-20261125) preserves all sixteen original archives and a reproduction guide. A [fresh download reproduces the recorded audit](docs/evidence/francois-release-verification-20261125.json); raw full trajectory arrays are unavailable. |
-| Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. |
-| Marhl (30) | [178 full trajectories and 22 agreeing branches remain verified](docs/evidence/marhl-recovery-audit-20261125.json). Four partial checkpoints advanced another 17,100–73,020 samples, preserving every earlier sample exactly. Three jobs in their next continuation have finished and await collection; one is running. Five earlier batches expired while waiting 24 hours for runners; [replacement submissions for their 44 tasks are queued](docs/evidence/marhl-queue-recovery-20261125.json). The separate twelve-task batch has three running and nine queued jobs. Full scope: 1,520 tasks, 380 branches and twelve cases. |
-| Vilar (32) | Breaking validation and three paired cases remain unresolved. [Four precision checkpoints advanced another 409–516 samples](docs/evidence/vilar-checkpoint-progress-20261125.json), preserving earlier samples exactly. Two jobs in their next continuation have finished and await collection; two remain running. No completed integration is claimed from unaudited output. |
-| Rohwer (35) | [All 32 first-stage continuation outputs audited](docs/evidence/rohwer-checkpoint-audit-20261125.json): 2,027 verified trajectories, including all 1,369 parent trajectories unchanged. There are 477 terminal diagnostics: 384 agreements, 34 mismatches and 59 recorded integration failures. [The next continuation](docs/evidence/rohwer-generation3-continuation-20261125.json) has all 32 actual jobs bound; two have finished, six are running and 24 are queued. The [197-output later-control audit](docs/evidence/rohwer-later-audit-20261126.json) verifies 5,324 trajectories and 1,216 terminal diagnostics: 1,141 agreements, 43 mismatches and 32 recorded integration failures. All 512 later-control partitions remain in scope; their unfinished work and the full case replay remain open. |
+| Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. The [05:32 UTC archive inventory](docs/evidence/ciliberto-storage-and-streaming-20261126.json) contains 177 original ZIPs totaling 434 GB. A bounded-storage audit and durable archive transport are implemented; the corrected one-archive pilot is queued. No new scientific result is claimed from transport tests. |
+| Marhl (30) | [179 full trajectories and 22 agreeing branches are verified](docs/evidence/marhl-recovery-audit-20261126.json). Task 34 reached all 221,001 samples; all earlier samples in the four recovered checkpoints remain bitwise unchanged. The next three-task continuation is terminal and awaits collection. Earlier 56-task continuation work also remains to be consolidated. Full scope remains 1,520 tasks, 380 branches and twelve cases. |
+| Vilar (32) | Breaking validation and three paired cases remain unresolved. [Four precision checkpoints advanced another 409–516 samples](docs/evidence/vilar-checkpoint-progress-20261125.json), preserving earlier samples exactly. All four jobs in their next continuation are terminal and await collection. No completed integration is claimed from unaudited output. |
+| Rohwer (35) | [All 32 first-stage continuation outputs audited](docs/evidence/rohwer-checkpoint-audit-20261125.json): 2,027 verified trajectories, including all 1,369 parent trajectories unchanged. There are 477 terminal diagnostics: 384 agreements, 34 mismatches and 59 recorded integration failures. The next continuation has 17 terminal jobs awaiting collection, one running and fourteen queued. The [197-output later-control audit](docs/evidence/rohwer-later-audit-20261126.json) verifies 5,324 trajectories and 1,216 terminal diagnostics: 1,141 agreements, 43 mismatches and 32 recorded integration failures. All 512 later-control partitions and the full case replay remain required. |
 
 Our active goal extends the kinetics and memory computations to all **35
 BioModels** in the source study, with independent validation. Baseline kinetics
@@ -132,24 +133,16 @@ passes all 1,088 cases and 34,816 conditional trials; its sixteen original
 evidence packages reproduce the audit from fresh extraction.
 New audits pass all 624 Edelstein species-model cases and all 398 Markevich
 cases. François, Vilar and Rohwer have also finished their initial inventories,
-with failures retained. Tyson's last active
-[partition 14](https://github.com/m9h/GRN_ODE/actions/runs/44930974577)
-has now finished all four cases, with three passing. Its latest audit verifies
-121 branch records, adds six passing records and preserves all 114 earlier
-passing records byte-for-byte. The [full-model audit exposed an evidence gap](docs/evidence/tyson-completion-and-evidence-gap-20261123.json):
-partitions 0–13 no longer have available original payloads. Partitions 14 and 15
-are now preserved in a [durable evidence release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-tyson-retained-20261124);
-a fresh download verifies both original ZIPs and all 230 payload files.
-Recomputations of 0–13 use unchanged numerical code and requests; all fourteen
-actual jobs are bound. A duplicate partition-0 submission was cancelled after
-the original appeared late. The latest [eleven replacement checkpoints now verify](docs/evidence/tyson-recomputation-audit-20261124.json):
-all 1,519 branch records and 39 recorded case decisions reproduce, with 37
-passing cases and two retained failures. Partition 4's three completed cases
-pass, but `CP__up--pM__up` remains unfinished; a [targeted continuation](docs/evidence/tyson-partition4-continuation-20261124.json)
-preserves its 89 passing branch records. These archives contain saved comparison
-and window summaries, not raw trajectories. The full 58-case audit and completion
-count remain unpromoted. Missing historical bytes are not reconstructed or
-represented as verified originals.
+with failures retained. Tyson's [historical evidence gap](docs/evidence/tyson-completion-and-evidence-gap-20261123.json)
+is now resolved: partitions 0–13 were recomputed with unchanged numerical code,
+requests and environment, then combined with the two preserved original
+partitions. The [complete 58-case audit](docs/evidence/tyson-full-inventory-audit-20261126.json)
+reproduces 55 passes and three failures, with no unresolved conditional decisions.
+All sixteen original ZIPs are in the [complete Tyson release](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-tyson-complete-20261126),
+and a fresh download reproduces the same audit. The evidence contains saved
+solver comparisons and response-window summaries, not full raw trajectories.
+This restores all-35 initial inventory coverage while preserving the three
+failed Tyson cases; the whole-model passing count remains 27.
 The [complete separate François Linux inventory](docs/evidence/francois-linux-inventory-20261120.json)
 now covers all 118 cases: 80 pass and 38 retain numerical failures. All sixteen
 original ZIPs and all 4,121 partition-local branch records verify; six conditional
