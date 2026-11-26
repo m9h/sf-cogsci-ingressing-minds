@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-26T22:56:23.456277+00:00",
+  "run_id": 45907634050,
+  "url": "https://github.com/m9h/GRN_ODE/actions/runs/45907634050",
+  "workflow_id": 432151529,
+  "source_revision": "9cfc3ea9b9fdb022aa2c5bc9a9a9d04582924d5d",
+  "source_url": "https://github.com/m9h/GRN_ODE/tree/9cfc3ea9b9fdb022aa2c5bc9a9a9d04582924d5d/python/results/catalog-breaking-rohwer-missing-output-20261126",
+  "original_runs": [
+    44419997278,
+    44420020715
+  ],
+  "original_missing_job": 135270755047,
+  "recovery_partition": 23,
+  "missing_reason": "Hosted runner lost communication before upload; numerical outcome unknown.",
+  "validation_job": 140208096800,
+  "validation_status": "queued",
+  "actual_compute_job_binding_pending": true,
+  "do_not_repeat_post": true,
+  "full_partitions": 512,
+  "unchanged_other_original_selections": 511,
+  "required_stage_branches": 10924,
+  "required_full_branches": 11674,
+  "required_cases": 123,
+  "local_new_tests_passed": 35,
+  "existing_audit_tests_passed": 225,
+  "validation_note": "A copied test initially requested SHA-512 instead of SHA-256. Corrected the test; all 35 new tests then passed. The 225 existing tests passed. Production source hashes and numerical settings were unchanged.",
+  "frozen_numerical_source_hashes_verified": 29,
+  "full_original_execution_plan_and_inputs_reproduced": true,
+  "numerical_code_settings_grids_and_environment_unchanged": true,
+  "scientific_scope_branch_store_snapshot_checks_and_case_math_unchanged": true,
+  "proof_sha256": {
+    "source": "965177f4e1b00e1ad0ae998c966e434c6be9089499844b61e48753cc22e2d509",
+    "run": "5555395d864bd37c5cc2e18c95a282a61f7e5f74c90b1ffcb145e8c8dd6633a3",
+    "jobs": "849dc35d53f201bb8187b29f705eaf58a4a2c8da2a4d3f1893f0e7e05125c96f",
+    "capture": "ac59ea2cdd6294282a42979a806df8cdf139259fe6e4b52468ba48194d60c4bd"
+  },
+  "numerical_integrations_performed_locally": 0,
+  "case_recovery_claimed": false,
+  "whole_model_pass_claimed": false
+}
