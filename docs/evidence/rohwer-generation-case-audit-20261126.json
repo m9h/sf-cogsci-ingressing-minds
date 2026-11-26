@@ -1,0 +1,160 @@
+{
+  "checked_at": "2026-11-26T23:34:18.747559+00:00",
+  "source_revision": "988d39156ee4eb758f9a788d8b84c1e235143a39",
+  "source_url": "https://github.com/m9h/GRN_ODE/blob/988d39156ee4eb758f9a788d8b84c1e235143a39/python/results/catalog-breaking-rohwer-generation-case-audit-20261126/README.md",
+  "validation_run": 45911491000,
+  "validation_url": "https://github.com/m9h/GRN_ODE/actions/runs/45911491000",
+  "validation_job": 140220678589,
+  "linux_validation_status": "queued",
+  "first_stage_partitions": 32,
+  "first_stage_branches": 750,
+  "selected_generation_counts": {
+    "2": 15,
+    "3": 17
+  },
+  "required_later_stage_partitions": 512,
+  "required_later_stage_branches": 10924,
+  "required_full_branches": 11674,
+  "required_cases": 123,
+  "original_auditor_and_queued_later_control_sources_unchanged": true,
+  "generation_source_job_zip_array_and_lineage_checks_required": true,
+  "pending_new_generations_retain_parent_evidence": true,
+  "corrupt_uploaded_outputs_never_silently_fall_back": true,
+  "implementation_validation": {
+    "checked_at": "2026-11-26T23:34:18.747559+00:00",
+    "source_revision": "988d39156ee4eb758f9a788d8b84c1e235143a39",
+    "tests_passed": 421,
+    "test_groups": {
+      "existing_later_and_full_case_regressions": 323,
+      "frozen_checkpoint_checks": 74,
+      "new_generation_routing": 24
+    },
+    "initial_test_fixture_corrections": [
+      "Read deployed workflow from pinned Git revision in collection-only checkout",
+      "Use the original diagnostic runner_sha256 field in the synthetic fixture"
+    ],
+    "all_affected_tests_pass_after_correction": true,
+    "actionlint_exit_code": 0,
+    "frozen_checkpoint_validators": {
+      "scripts/continue_rohwer_first.py": "6aff40d54d6612b120658a40bdac7ed4f20ad15c3888dbe121ba59c29b21a0e5",
+      "scripts/collect_rohwer_first_continuation.py": "cca80a0ea5d1ddcbdade913783b0cdb621c3639d9033bc1896515f37398223c4",
+      "scripts/continue_rohwer_checkpoint.py": "8d9f735554a22c33f316ef45c1c69b44e2a25327d8decc5d6c6c44106e353a7b",
+      "scripts/collect_rohwer_checkpoint.py": "54c68df2afd9e9d3ecc7c7f22f17389503bbbbf37884a0e0977565882add11ee",
+      "scripts/collect_rohwer_breaking_diagnostics.py": "65751ee00e66c30f9efed0cc6ee13091b356a2567f4eb3c4cb2383c6cf49c4de"
+    },
+    "frozen_checkpoint_validator_revision": "fcf7fd8cf975bc9171370e05789661d9da4d35b4",
+    "queued_later_continuation_source_still_exact": {
+      "revision": "762d8812b516c10e90892a230a0baee3423988b6",
+      "frozen_numerical_files": {
+        "jaxkineticmodel/load_sbml/sbml_model.py": "57ddfef282e220affab237ce15e760e8b01aeb4b8e5fd4c39b91696f619477cb",
+        "jaxkineticmodel/load_sbml/jax_kinetic_model.py": "04dabdfc81da14da8a008aa406e723b974213f208442225a1d512d03ab4547b2",
+        "jaxkineticmodel/load_sbml/sympy_converter.py": "8b4bfec0fd8a6ea4dfd72bf6a66af8b50faa9f3975827aac609c460287b9e504",
+        "jaxkineticmodel/load_sbml/export_sbml.py": "54b054ceaef678ae77827ce560e198d70865a34692542c798235af2121114ee9",
+        "jaxkineticmodel/load_sbml/sbml_load_utils.py": "f914d0ee1bf06602d7c9ccac6643c9814ad4f63b9c520acf92e98839e64626ca",
+        "grn_memory/catalog_jax.py": "c2ee2f06f10880232ed6faa1ffa17caebf274306ab0be152ad6d6d703bba49e5",
+        "grn_memory/catalog_validation.py": "d5fa5611d1c3c8ab0ed5fb4aca567c6504dae33e7e79800d640008746b16669f",
+        "grn_memory/native_protocols.py": "bc7d49a05a87cb2855131985ca88f47e1d32ca29d31fd5c0f567714699f172c9",
+        "scripts/diagnose_scipy_breaking.py": "8b70959e1bc0cc9621554e16863c6f9af803172e450e0e050fa4892117cacfb7",
+        "scripts/audit_scipy_breaking.py": "54952a9212fe11312163633597e6dc139681497cd19ccb61bd5493ce96dd3c31",
+        "grn_memory/scipy_reference.py": "69c2a55bb79731db6744d6f9d3f78c564f07d5a221ad2f8f2ebb0a033e536b5c",
+        "grn_memory/jax_protocols.py": "d15e5b53081c6392446d5ae3029d43a17292f00d025102dad5c1e27fcb6eb9f7",
+        "grn_memory/catalog_repeated.py": "9245a0403d9469080d027cf7a5d3f582524ec2ec07ca685530e440ddfd85f315",
+        "grn_memory/catalog_breaking.py": "48834a2d0ed8c9105b381413a27314ef71f5d37c4243a677a583d47955e48c73",
+        "pyproject.toml": "967f20f982ca1f8ae97d1c9070f1ff7e134d7b09fed2ea3b24d424a25cc94a84",
+        "uv.lock": "9524c496ca2b1de837e5021233fe39224bfbc220751ae37d643b4abc71300628",
+        "grn_memory/scipy_breaking_recovery.py": "7b573d8c6c38768a5aa13496d86a3cff5f540e0c355375d336e10332a33e9be2",
+        "grn_memory/breaking_audit.py": "bacdce191f345754b04eb4a9f49468c74122192b23ca5b70cb354941a835a1b5",
+        "grn_memory/breaking_scores.py": "62f7ceab84cbf9c7e48c0ba4b84efdae4b3123574fcf78f2f27a320264c7c174",
+        "scripts/audit_scipy_breaking_cases.py": "0de4c611e96a63f08b737d18bbbd12771615910b2f0eb9a129821a71a7b84057",
+        "scripts/audit_breaking_shards.py": "0442085bd6051a2b84fdf2235ab16ba70b70781f7729accdaa94c5c57d3634ab",
+        "scripts/audit_breaking_continuations.py": "ce0b493223a04c8dcc781e43864e79a40fc9a476813df0b5f968cfe01329b087",
+        "scripts/prepare_rohwer_full_controls.py": "48d8c0b187844b97d793edb9596e24ffd102a59b49be14eae4701aaa3d455ccd",
+        "scripts/run_rohwer_breaking_diagnostics.py": "77d254bc3c5d6a137a6351ed5f00d6d62332f19c66312a53b1fa7fe73c16a1ce",
+        "scripts/run_rohwer_later_controls.py": "ce085098dab536e4dfd7f7d8e939ff1a4cdc6adf8fc16f930b0e591353b0884c",
+        "scripts/audit_rohwer_later_controls.py": "82efb26901d4f707f13e5f4aaf1ba38e5c09e3d8318cccb17b582b7512d4ecff",
+        "scripts/diagnose_scipy_breaking_controls.py": "c642d8955c54053e9b95a4b90bccd64390d7933aba2db815cd8ace03cd2c1377",
+        "grn_memory/catalog_runner.py": "0f3d14d6e70743481dc3d2d85fc23b0657481be1ce3606e4eab0be1e641d57c2",
+        "grn_memory/catalog_memory.py": "abc6b6a497bf5686ec930918ebda320f784329952f45282a0f042f726fb1e1ba"
+      },
+      "continuation_files": {
+        "scripts/rohwer_later_continuation_inputs.py": "f45164431c501711b1df6740b589da3f9dcb118251fbea624f9bd6f672d892cd",
+        "scripts/audit_rohwer_resumed_branch.py": "96d8925972f35042eb842b848236c35ba221da4695fe03a27c209ed004dfcff8",
+        "scripts/continue_rohwer_later.py": "4a32f98f2be5cc7aa9de5371ff9ad5fc2563c8ae6bff5a45144a7220d2d9062e",
+        "scripts/collect_rohwer_later_continuation.py": "67354bb5cd2397d985d113bffb141e2efb9247f68d4366f7a1725c10bc629c02",
+        "scripts/audit_rohwer_full_cases.py": "a2541a2cb53d896119d441a57f6470f9e0c03d475302f612cca69bc766363361",
+        "scripts/collect_rohwer_later_controls.py": "a9b0de777196422c56e55ec95a0c57c956ebf520c7f7e587696632875b92d8fe"
+      },
+      "workflow_sha256": "145cd97ffa81d363a94b8d68f76b9455d704801beaad12782ec7e5a18260ed21"
+    },
+    "combined_auditor_source_sha256": {
+      "scripts/audit_rohwer_generation_cases.py": "de4c75fb571217aefdbcb18d534beb0640fa7ce0a681414b0d59391474f322e9",
+      "scripts/collect_rohwer_diagnostic_generations.py": "fc58a69ed3ff393be57abd50f88e13918b639347295cde9714c525e13a6955f9"
+    },
+    "scope_store_case_math_and_replay_ast_unchanged": true,
+    "new_numerical_integrations": 0
+  },
+  "actual_combined_array_audit": {
+    "status": "running",
+    "completed": false,
+    "partial_progress_at_check": [
+      {
+        "stage": "diagnostics",
+        "partition": 0,
+        "verified_arrays": 65,
+        "complete_diagnostics": 15
+      },
+      {
+        "stage": "diagnostics",
+        "partition": 1,
+        "verified_arrays": 84,
+        "complete_diagnostics": 21
+      },
+      {
+        "stage": "diagnostics",
+        "partition": 2,
+        "verified_arrays": 84,
+        "complete_diagnostics": 19
+      },
+      {
+        "stage": "diagnostics",
+        "partition": 3,
+        "verified_arrays": 80,
+        "complete_diagnostics": 19
+      },
+      {
+        "stage": "diagnostics",
+        "partition": 4,
+        "verified_arrays": 74,
+        "complete_diagnostics": 17
+      },
+      {
+        "stage": "diagnostics",
+        "partition": 5,
+        "verified_arrays": 62,
+        "complete_diagnostics": 13
+      },
+      {
+        "stage": "diagnostics",
+        "partition": 6,
+        "verified_arrays": 73,
+        "complete_diagnostics": 16
+      }
+    ],
+    "expected_existing_first_stage_arrays": 2223,
+    "expected_existing_later_stage_arrays": 6279,
+    "expected_counts_are_not_yet_combined_audit_results": true,
+    "new_scientific_arrays_claimed": 0
+  },
+  "source_evidence_sha256": {
+    "diagnostic-generations.json": "3cc5915912aae83769c0671ff48d48afd507a1699957e0941600a9fc7e5c5d98",
+    "sources.json": "ec9f7456b40800fb1ec7b21f4b6812dfe41ca97e7d9bc30d728d2aae5e5ee4fc",
+    "remote-branch.json": "266202113caa9e6f28ef0d7e70cb3f5ea93451ed0ffe82865eb2502daf174c23",
+    "publication-runs.json": "3ac2ba24624ad2254bec9341d65b8d28123acb84759c062af66cf0f5aa9a8004",
+    "validation-jobs-initial.json": "aa6534b7c934c9678d919772aa398e78e0e24ae31f92809bfc546e9ab7a70402",
+    "implementation-validation.json": "98b54c1ded88ff51ada806413c79f825449300d1580b6349f958974fead6f1f7"
+  },
+  "baseline_models_verified": 35,
+  "whole_model_breaking_passes": 27,
+  "new_model_or_case_passes": 0,
+  "goal_complete": false
+}

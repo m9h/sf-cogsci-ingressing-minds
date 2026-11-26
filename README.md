@@ -366,6 +366,18 @@ disjoint batches, keeps audited parents while children wait, and reports corrupt
 replacement evidence as an error. These restoration and software checks add no
 new scientific trajectories, recovered cases or whole-model passes.
 
+The [combined generation auditor](https://github.com/m9h/GRN_ODE/blob/988d39156ee4eb758f9a788d8b84c1e235143a39/python/results/catalog-breaking-rohwer-generation-case-audit-20261126/README.md)
+now connects all 750 first-stage branches to the complete case analysis: its
+captured selection uses seventeen generation-3 outputs and retains fifteen
+generation-2 outputs. The earlier entry point remains unchanged for the queued
+later-control jobs. All 421 relevant tests pass, including checks that case
+scoring is unchanged and corrupt replacement evidence cannot be hidden.
+The [saved-array audit is running](docs/evidence/rohwer-generation-case-audit-20261126.json)
+across both stages; its partial progress is not a completed combined audit.
+All 11,674 branches and 123 selected cases remain required. Linux validation
+of the new collection-only workflow is also queued; it launches no numerical
+computation jobs.
+
 Two supporting forks make the numerical work inspectable:
 
 - [SBMLtoODEjax](https://github.com/m9h/sbmltoodejax/tree/fix-continuous-assignment-rules):
