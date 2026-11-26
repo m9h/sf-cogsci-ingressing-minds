@@ -1,0 +1,2199 @@
+{
+  "checked_at": "2026-11-26T21:56:13.079261+00:00",
+  "network": 8,
+  "model_id": "BIOMD0000000069",
+  "snapshot_sha256": "461b3789eb8492ab0ca2f356d9b6deb59285d8122dc897c80dbb0050fa691a18",
+  "selection_sha256": "5b0422b33adac5fc19c1aae25b1fec5c8a18b1684a2d0b2388d62a3aeb3b6283",
+  "requested_selection_sha256": "9cec492de9f99beee74da985d760c03b3359815cf0d4874d36e8d9be4cf4a000",
+  "full_selected_partitions": 32,
+  "full_required_case_control_branches": 1309,
+  "full_required_trajectories": 5236,
+  "required_cases": 18,
+  "replaced_indices": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    14,
+    15
+  ],
+  "retained_indices": [
+    0,
+    4,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "pending_requested_indices": [
+    0,
+    4,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "verified_arrays": 1584,
+  "parent_arrays_preserved_byte_identical": 1539,
+  "new_arrays": 45,
+  "complete_audited_branches": 375,
+  "branch_statuses": {
+    "confirmed": 375
+  },
+  "comparisons": 2250,
+  "passing_comparisons": 2250,
+  "original_archive_bytes": 12117882817,
+  "collection_errors": [],
+  "partitions": [
+    {
+      "shard_index": 0,
+      "run_id": 45332029602,
+      "job_id": 138298630258,
+      "artifact_id": 14993048273,
+      "archive_sha256": "sha256:8f38e131fce03f817c4c7009d0766582ec810c1d65e0a7a1d76e1ae39d650582",
+      "archive_bytes": 246225353,
+      "verified_complete_arrays": 31,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14993048273,
+      "parent_arrays_preserved_byte_identical": 31,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "9984e2a5f861efaa22a28e3c54540601694337d3e19a6100b8d5c70d94e6986c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0753f1ee3249fb0e05fbc63a8c05bb75b3946b2cb7e334d2399ad707a3cbda90",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0d8c325a007e2b6761348400a890511974f23336c11f0834e6fc6d6b6056f731",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "14655d5a725368acd2343c25b5823214832b27f26d469025548cf276f9fc31e1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1c88bb161d188956f03e98001456f30b3b5793fa10119a77be219d4ac6811c34",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2210a2592d1035c5ecd8985eb0f6692a630f3446a6ae500d690c5b130fee5b6e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "280870ce8d66ad82eb04b2ceeb9e8d5f6cdfb0fc05cb35589ee02325c1cdbff3",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 42,
+      "passing_comparisons": 42
+    },
+    {
+      "shard_index": 1,
+      "run_id": 45761582215,
+      "job_id": 139728925679,
+      "artifact_id": 15155226820,
+      "archive_sha256": "sha256:6cecaa3659f33c4f64a7cc510dbee3ed40b51257a845628c6304e2f4427f1b16",
+      "archive_bytes": 411889413,
+      "verified_complete_arrays": 50,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": true,
+      "parent_artifact_id": 14962905581,
+      "parent_arrays_preserved_byte_identical": 47,
+      "new_complete_arrays": 3,
+      "audited_branches": [
+        {
+          "record_id": "00453080b407ac628f416820bf925c7ba5ac795581767adc7bfa315ea40d47ab",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "078b6627f0d2550cc92e8e98132948212b18105563fa159bd7fbfbb0d5315ed9",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0ddc1b72ba756e940b5c28a41c480cb6c2d3f610482405394db80f37f48b8414",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "148804700f928eae5d21e6fdc0fa0013d0bb0e999ebdf1d8d745a3a5fd0b89b1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1c895f1943ba49be4cf44a17b3dd739041c041f5843ba59df6fe6e1e321fd41f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "221f44faa07b336b8142cc5133ec1205e6e3e84d4f4aeb7017126b5dce1ac7c4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "283a7af7664685114538e5610fc8338533f7912c339f2b9a358d9e12020de876",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2ee889fa8e4dcabb2abec418076facb9b568019d7fa124a8fb9292867dd0583a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "365241d1b4e0c37bd358197a678b8e8b43def283e02f3b3a37984ee2dac196c5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3d43516430a5ca77fc89b93c5ed14db7d898f496a908eef9f8bf2dab43ce8d38",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "426a99dc10672daf771cbaf4e8d517dd0261db101e36f3b77a6b4c19eb99cff1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4a0b30351ffd29b8cfefefd1c2973ee8f4d90012a343fb876df6dd5dbc83630c",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 72,
+      "passing_comparisons": 72
+    },
+    {
+      "shard_index": 2,
+      "run_id": 45761582215,
+      "job_id": 139728925675,
+      "artifact_id": 15150132998,
+      "archive_sha256": "sha256:974af487a1ae76d135e137f94bb5af91d691a4fb9f5fd921ce10f1ede45124bc",
+      "archive_bytes": 384329910,
+      "verified_complete_arrays": 47,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": true,
+      "parent_artifact_id": 14932677981,
+      "parent_arrays_preserved_byte_identical": 35,
+      "new_complete_arrays": 12,
+      "audited_branches": [
+        {
+          "record_id": "00b0465e2656bfc35ffd93dbbbfe03791e2caf173e8bc2a2b1f2602ba2919ec9",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "07d3b58a1ecd2773ab98feda4f1579fab5993ceaee7d8c19e19c2df07b48631d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0e3153459ad96a47def2e9c584abd0330a423b885774d844113e83e906a9c0ec",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1492693431add931e16bfb87867d63f3cd569477361141116f606c98da545bdb",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1c9111c0881c3e73768ea759fa81e54f183c3ea2357fdc1197b17de166f685f2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2232b6b346f763b53231293a22b7f09e4ed388d831d31852bc35a10d55111f04",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2843d0e5d3c33b224efbfb7e69ec1a5801b1c9fec1c7b980dcd7443cd22799ab",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2f0c39aae55afc78f01ce14ac1c420615fedc8bf64e6e3ad4d5bf7feaf83fca4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "36525bcc984365c3c36813015a6e26f2d2d23dda96865331e1f4362e4876affa",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3db0883937c746b7485af7f69c8a5a285b818f217c392979e623cced3a4783d8",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "427d65b4e31721e50676e57faecbbdd46541302a427383e4e075a71c1a136e96",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 66,
+      "passing_comparisons": 66
+    },
+    {
+      "shard_index": 3,
+      "run_id": 45761582215,
+      "job_id": 139728925651,
+      "artifact_id": 15135827608,
+      "archive_sha256": "sha256:5b41f368e922eeffa9705c5a8aeacf1168479ad3b2757ffd68199b8a022fb85b",
+      "archive_bytes": 279318410,
+      "verified_complete_arrays": 34,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": true,
+      "parent_artifact_id": 14933059432,
+      "parent_arrays_preserved_byte_identical": 27,
+      "new_complete_arrays": 7,
+      "audited_branches": [
+        {
+          "record_id": "01171aa41819eae5e6712132ef080e0c555c264d8b2a92c3dc788ac6fa631075",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "07f29312d10d08e8be5edae6efdefb424fe0eed90372628fac4a687c24b9870f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0f4c6b03f13ef11327d469021650ea41b97b12fb63d3356ed9af39098670b8bc",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "14cb6588fa8b6babb3f0a8b0df907253023b5f23931a99eb489a6c029ab200fe",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1cb37df13cb0d10a3857e1146d02c816171362de71f155099da700594bd8ec99",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "227c4ea0b8d71cfcb199e591fca6851204960cf91d68efe091a1806dc2434c4a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "288569e44177291bc80f6e7ad134f4aa06315516e7be7e949e62b400e57b1f99",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2f93c8997c1b7a60d81288f406d594aaeb91a0f3be1d046a4b1fd7a41d87fddb",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 48,
+      "passing_comparisons": 48
+    },
+    {
+      "shard_index": 4,
+      "run_id": 45332029602,
+      "job_id": 138298630222,
+      "artifact_id": 14935444081,
+      "archive_sha256": "sha256:b0065892c42b8b2e6f4c7c9f379e57289da487ae90c503cfca69a80049946850",
+      "archive_bytes": 367395488,
+      "verified_complete_arrays": 46,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14935444081,
+      "parent_arrays_preserved_byte_identical": 46,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "012737ec7c8ff8d57c6845285bd6ccc72be381a6a5e2c186af5501029243dee1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "07f78d957590995530ab29a447dd9af081689a358b5afa8749bf63346244546e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0f5de9190a3bdf329100024dd6125ac60199f6b73fc44271749768c770520e13",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "152944aaf2df9adc42fb367cb1ff41fff1fc9d890a5698b134f28a4ad8bb8fff",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1cb50e5b83979df53c0588763762c01dcc79075f926041d4254889299cbad6ac",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "22b7532f1dbfe6748a64474b65d839199b7b3c4d06a9f8618811e2e7c758fc21",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2892213094b13b6e88c361f9ea8f792a42f43f0ff02e610be9a07685aab621ba",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2fe0ff6724643b399d1f3aefd38dc2267721b9086f4d6b78a663de7552ddbcc9",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3678ab4c31d605361a3fb2c16c64708ae7847ca16e15f83156cb42a94154e9a6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3dde8802833940ec180641cdb97312a72d6028a0ac0924eda81c851fce526f91",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "42cd6c507d1afb931ab9f646e981b50f5281cc413618716c15d0547741f6d152",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 66,
+      "passing_comparisons": 66
+    },
+    {
+      "shard_index": 5,
+      "run_id": 45761582215,
+      "job_id": 139728925660,
+      "artifact_id": 15127927712,
+      "archive_sha256": "sha256:c12b12ee8dcb7260aa9a69fac21384c437fb589ed3c1e54aa83f657278a95f58",
+      "archive_bytes": 334697368,
+      "verified_complete_arrays": 42,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": true,
+      "parent_artifact_id": 14934308842,
+      "parent_arrays_preserved_byte_identical": 39,
+      "new_complete_arrays": 3,
+      "audited_branches": [
+        {
+          "record_id": "01b6ea3fb8c7d5e3e546c3f2022625140b7eb2f0c529e74e9a925fdd98fe4539",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "085a6f658c823a7517f50580816bffbfc352dc9ab19c09292f8d567daad274ff",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0f6039e02fd3da3387f480b565869edaa891024379186c4a2e60277370dd5f03",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "15bd019f6e590b194a25211d3533071c8a7244580e995deaa77c949f69885665",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1d2ae155cf82a8561dbb2bcd5689c3a353d24bbb12f0c490c133f98f9f141b14",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "22c6cbb1d5a8d72e965286d6cdd2f3b9c7dba4f128464708051a5c250c04ffd8",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "29b5e057210dd7d3c8b48970a9073b9392087eb53a5efaf376aec5c06a09fe46",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2fe47dd90943d46f3fe09d497a735a42eb4ee86ba03ca456ee62673e5f208477",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "36a84a51e4f2c7af3e7ee47e9b648e128f98bd90723c86b47d0bcfc3f7aa314d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3dfca0915a3a9f01681024d7d5c48b440865f2ad3f0c5df8b4661c239de4e0ee",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 60,
+      "passing_comparisons": 60
+    },
+    {
+      "shard_index": 6,
+      "run_id": 45332029602,
+      "job_id": 138298630296,
+      "artifact_id": 14962832957,
+      "archive_sha256": "sha256:8358eb914ba28d24f901320bc1bc3eeb56365eb21561540db7b62cee17af7f48",
+      "archive_bytes": 269873978,
+      "verified_complete_arrays": 34,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14962832957,
+      "parent_arrays_preserved_byte_identical": 34,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "01da1ee90768340c703ffbef668d0e948ad2fff553440aad644a69e72cf6954e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "085b4dcf6c53faaa0e97735ea2ba795264d9aae29101358bf992f3a7f0e54f1e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0f97a9cd23fd13414e036b1b53cb89562444d358cb01401030ba3f2806e61385",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "161762596667857fd54e6259c210d342e7202a72d8fa2f46de678b0d3339d86d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1d30dbc8f7904c2b17f57cbd1abc5ad2800afe749e1c7f8f5e2843e8e620e5c6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "22f707109aa13e6c37b1cf23a167a6c6770ab0e4c6c503f16b7b723fc8e5baee",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "29cf5daec5e24a5e814abfb6c6b910107ee9739745e1633a448d51ca9c988960",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2feb0ec78bc2489a92047639d947a75337b57ee6220f29467b99fc496b756200",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 48,
+      "passing_comparisons": 48
+    },
+    {
+      "shard_index": 7,
+      "run_id": 45332029602,
+      "job_id": 138298630270,
+      "artifact_id": 14934687252,
+      "archive_sha256": "sha256:b2f32c2d90e1f4e73b81a0edec95a844a28e1c0e0e70532c503e5ebcd280165d",
+      "archive_bytes": 388501138,
+      "verified_complete_arrays": 55,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14934687252,
+      "parent_arrays_preserved_byte_identical": 55,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "01e47639e71f5ae9a98f31fcdd47dbff82748c7ddacae7874bcdd38829531e27",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0863ba3fd767baa8870c08d48a1791e56e3700a5769e4041468855eac68a93d1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0fd1c8df71e8d714a6650cf8c94e12eee58c46ef3b6c4f3c4324492b4588f8f0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "161d62e207a6baf36bf6d1742720441c6e4024b4e2ec71781c1cf562ad7edb14",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1d3d59d61fb0f38f50a87ffcafa238acf492de9c8b1f62fd2ab43b22c1d1a9d2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "23379ba678637f807e8d3e67e5f71c3f35fa053a65fd4cc96fd2e4c22ed7121b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "29d341b3b7e28bc807db6ff99f2902c003ae9c130b2091c4470bebf7ee4c3623",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "30033d2636a982a06af4f318ffabb0abfaff2f25317d3685c0ad1879edc51b98",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "37003f7726666cdb92f03180500227da749afe5aed6d09d3cd15aed0a0fbf8ca",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3e57c2b41497a538cbe0fc7fc07ae438f2033357ee82f468f48241491f092b1f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "43c432b2c47fab1207e49fad1b4b7aea2d213d4f7d9a8d3ed3a9ad93c6e0dc95",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4b228dbfddb785b77bd552aadc145bdde9f5a29066ef84a08e75c1c42083c776",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "52714e94d13e583adb104a5194f31624c12529b2295783b28ae0a7b003eccc95",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 78,
+      "passing_comparisons": 78
+    },
+    {
+      "shard_index": 8,
+      "run_id": 45701034026,
+      "job_id": 139540135067,
+      "artifact_id": 15087890157,
+      "archive_sha256": "sha256:f734a489adbddc291a6bea50c2ac78d1803a683426eb4313fec2ecc8b58d3a3f",
+      "archive_bytes": 591117930,
+      "verified_complete_arrays": 74,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15087890157,
+      "parent_arrays_preserved_byte_identical": 74,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "0231989136fc3978649ee390e0a17786e2960a88a30a32025d0335567c635aa5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "08c13a5e0540981999b4356ac086a7974d275d0e9f15616adf588acbf1a17ed3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0ff2e092e549ddf942dab30bf456c9f7ca406486d46dec92cf64eca16da3b142",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "166aa47932fcfc2e9ba4214a384184ce4bf30265d7abc912d248630b78f089ac",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1dd515e818b83acc56b9eb8d37c01c6828819e7ba9cfe81ed70d756fbf721c42",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "238970ddf72ea577ed211023c42704fc54b90ff6f8e4013355194bd0e3d1d7c6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2a1edfde45d55accc4147009861691ade3d018232e0ed39750107433c4539574",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3035710a648faba38c9dbbded332fd6bf2096e7a470d6014c98b173317a84b28",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3795316d6727aaad5ca2d0e677fbb6b7de90540bff479ad965898e4a2efbe1d5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3ea57017483b6c6e26f97974649d19f00803907e628493bf89d1649d6014fa59",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "447260bddf552b00bb6e4dd4717dded8ad479316f5d70c2caad7b97a58a3d4d3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4b6c8d1c4f8b31607aea17e500823980ec421dbb31207a8ccc6925e741abc8e8",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "527bafb502e63453db82038678f210aa50402767b6a76669f30feb158f749272",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "58be137122bffbfefa59267272d536ccd6aa600fb718b2ab1b58d7f79c22d799",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5dca8b9a52a280a97ab86e631dac74790bd0f8ebca209dc2e7a127ecee8b90c0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "62ffb10e29ca9edffbad94f9a01b6cc5d69530f2ae81ac300ebc23c7021046f4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "6a24ad12b056fefaaa1fa112f1f1b972c293641264a7ef8e7facb64f3be45b94",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "700deb2031a8b90ea2007dc18c0abc2b807dac70973707d7980e05026f6e1df8",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 108,
+      "passing_comparisons": 108
+    },
+    {
+      "shard_index": 9,
+      "run_id": 45332029602,
+      "job_id": 138298630528,
+      "artifact_id": 14956902799,
+      "archive_sha256": "sha256:5df2e307c7d6e19fe2d85daedac8efeb04371459cbd8528a2932e8b5a04aac47",
+      "archive_bytes": 343260433,
+      "verified_complete_arrays": 43,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14956902799,
+      "parent_arrays_preserved_byte_identical": 43,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "023894371439de67f028cb720923c9ae63a90b4e9db7a53e80ad55342d21e904",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "08ddfb6d4a25a15e86085ad7bdec5339e0bc5438a2a604983b8f77b7889c4ca4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0ff406ce90c1e017694bb2cf7de0ca57e7b60bd2483ad9a76a8775bb90a917c1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "16b2a272da8ff7cd63d028011dd4a026eb8c8a28509c7f68e45986164cee1168",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1e2dbebcde8d2a411e56f86d057618504d09b5c9774b6b681f558f901c79cec4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "239d9d9744a9732e9263140f158f474585d815c3538031d4c7f283317ab46061",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2a2eebb24f3a4e5d9de4f475ce677c1878d6bff2357e6e48973555d6f24dbdc4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "30579a554eeb8b8d826d098a9d349e041e5019ef11b37c1ee82089e55f0e790d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "37d115d08c66282ae168c4a9f1e888bdc3ae019636f21a6f6fb557cd72726db1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3eaade086402c13b9b264abd50908e123017b8245851460add0ca7414bbdb5db",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 60,
+      "passing_comparisons": 60
+    },
+    {
+      "shard_index": 10,
+      "run_id": 45761582215,
+      "job_id": 139728925645,
+      "artifact_id": 15153548376,
+      "archive_sha256": "sha256:7b191d4f3f4153bebedd6ca19d12e9d6341d1cfee70f145c2a360e658cf6456f",
+      "archive_bytes": 474689487,
+      "verified_complete_arrays": 67,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": true,
+      "parent_artifact_id": 14982050165,
+      "parent_arrays_preserved_byte_identical": 63,
+      "new_complete_arrays": 4,
+      "audited_branches": [
+        {
+          "record_id": "0263fb4d56753bc46b0f1419a3b53d8175e909a3d0793b0be92b3baf14a64534",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "08ed1a7a3063b2c607707bec80c5f1179ed8f906dbea045b0ccf7d3554610504",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "105e0b76af1ac107797a37494b99c6d1fced7e5a68d3a3af0476d7bf97eb6fce",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "16cc8321de6ad35fdf6eb70cf2c9ba7a1b2570e0b6d83036d07e24299c4e47d5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1e6eb940102e89c1a84e4583a9105240b9b147f430a0b4826c8bf30ffb5f35e1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "239dc161c3d34a04ba88c3844f66175aa74fcecf99460ef9f3a5674939e97106",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2a323aa7e897bf8b638f9f4ccc0193d0b7aedfa1794ac5f145dacc7d74cd19f5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3152881329327f384c9554ad08f5528456435edc72733da84a6643fc3ccaa5a1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "37eac3f312079d083956cb8de10b96e8295dc87c81df69bff069a195c8dc4767",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3eca7f9d796aea22ebfc8952d18ec14eff677f80a95f8c4efbe56f617f65fdf6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "44cdbd2552fed9c9aca204ab3fa21e8b2812e3a4a6ed571d2db94cc01ef11ae1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4c3dcb8ed7db59c6d9de734e9d9065aaf6cc64a55781b696b049bc52b4d1f941",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "530b134d4aefadb5374013e4bc227359f9a9077f43bfef302275ede15b5eaa90",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "58de91a72d6204edb2ed4439efaa73ead920012bbe62a703bded71645883aede",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5decf460cecf61fea8a469eb2e07dccb49820827ef66abf03d2dfbc88e8ff02e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "6337bceae87356e99cc0e15c40d047a6533b12fef0692db5c0714a713165268a",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 96,
+      "passing_comparisons": 96
+    },
+    {
+      "shard_index": 11,
+      "run_id": 45331953904,
+      "job_id": 138288669481,
+      "artifact_id": 14924422971,
+      "archive_sha256": "sha256:1138154826e743962498d417e4d91ee4eacfe3cf9dc6ef29cf99e6ef79af4621",
+      "archive_bytes": 416117377,
+      "verified_complete_arrays": 55,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14924422971,
+      "parent_arrays_preserved_byte_identical": 55,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "02b9ff85175b6d79111492ef97ed34875b400fe62854cb77341788e863db2712",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "08f0c7f1a857d9d8fa0c6b7725c6a006004958d2750d8212e6ed9bf6eb935b2e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "10784bc123d0a7cf45c0ef8e7fda9de9aea2eb3369d5217f4d462c703c081f8f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "16f90b82be1a52cb0d493b689b0f9054076b85459374ea0d1b228b0bb72ea056",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1e972d180e7a76c6e2f50fd321b8431563ec8763829e736c8e584904d34938c5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "23cb6c83fd60a69452ab07016aa156240d9f5ee284d84267d8b54095d52714bc",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2a640296c31ffdb3cbbc2b33bd1fc61bdda7cda0af7ea4662c04a22d449fc83f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "317e4dd627f6583a5b45d69c5250461b210d86c4970494eaf2fcaccb39448997",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "37f91d692ff6a03c20875f061e98f6da54be40698b1bd3669b5adc8537e7c8a2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3f10110215487ea00d61c0edae3adce7d9b5d3dbf58eca9fba684ce3db5075ec",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "456a5cb4d136587bac8e4c5a8e777e4f074e75062947dfa258fa466449da9846",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4c823519b5c8e649426cb9af99fe2ecac43b806a0346dea4384f6ac64e52280c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "534bd77b5bf648478da7fc2b504435f76f84c25bb0bdcef2167b78abde1ef4c1",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 78,
+      "passing_comparisons": 78
+    },
+    {
+      "shard_index": 12,
+      "run_id": 45332029602,
+      "job_id": 138298630558,
+      "artifact_id": 14985450003,
+      "archive_sha256": "sha256:073b4b335415662c78ec5bfaf4b5867b4c373463380d497f93b5b1d69fae2746",
+      "archive_bytes": 451151887,
+      "verified_complete_arrays": 55,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14985450003,
+      "parent_arrays_preserved_byte_identical": 55,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "02eabfa59d6738328fd04e93277698b0913e3e028231e94a20069e8fbc2a70a9",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0952248880908adaea0363aaea2f402576c1de97e38cdb9252a2a1374075aec0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "10afa71e135c7fb62f864a2c8d0ea3282e074ce28643397053ea7d24f3fd2b24",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "16fadb3031100acd5e356c7487abcb658e20e850d2ccf334c91a33f609abf4f1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1eae2b7a8cb8de5a14ed232649d7aa0c11deb4de618a2f0414ad9c8469871f4e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "23cbc20ce708247685a609c31b872824004afac6a4977377718394bb5cff1228",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2a93042fe6bcf5c83a397841666f40b72ea1fad6fcfd3caa9628fa60b0b721eb",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "31cb0c7d1db85d1b250965fc194e56e2db195010f7eec60f569682d859b60420",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "37fc5dffe0a5c16693236cd3be2378481153a190ce867cc7eb080f64e084ec52",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3f26c2dc11a05b0596cbc0f59ba6f5da5085c3395a6e62dc1efa628090e02d10",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "456c5f18b06a6b6720e6f41eae961e972ff3107e25f0ab7a9c04cfa9a33d68f3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4c9104b863ec4ed83845aa44b95a2ad829edab086974e93367fed5f19f625f8a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5367861ad3ac9fe7fe93006e025196faa8cb3aab6a11929540ea9c19d53c3961",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 78,
+      "passing_comparisons": 78
+    },
+    {
+      "shard_index": 13,
+      "run_id": 45332029602,
+      "job_id": 138298630593,
+      "artifact_id": 14985293989,
+      "archive_sha256": "sha256:845be514f3a270e780372359d759aa6958b9e8be799e20703822adedc1d6041a",
+      "archive_bytes": 452387860,
+      "verified_complete_arrays": 63,
+      "complete_selected_inventory": false,
+      "producer_status": "checkpointed",
+      "replaced": false,
+      "parent_artifact_id": 14985293989,
+      "parent_arrays_preserved_byte_identical": 63,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "037023fdbd26dd1caa7b81a16bf2c05dcf6a75937e7f93526b5e837f5500a693",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0983c9204c41948cf78845dfc12d15b53fa85462b0089c5c37462c2c7c5a505d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "10db3fd7b84d62af0b88b27d55c3cd1aeb29cfb9eb58dea593d9101fc7d8e188",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "17201ce75c59f3d8652f83454242aba5e2c29bab1154696195f4ae38457db0cf",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1f3567a29d25c39a2ceb6949a6a596b98fc1c0bf3a7ef084af55076e45560771",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2459023c7a19ae091afffa62755cad889443277cb04fa9df45e6f7ef396f9f30",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2b0294adb45c84bf29ded0328246bbe1c66999f246b1f71eb4d205add7be586a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "320e26c0851df461126d5eb19ef79cedd33c012164663d06546481274b3bab0f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3801a6424c6a5033d1c43a8690adc5e395b16286ec63850cc2b2fd9e2998c55f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3f3eadf3ea36f292b3cb3f000a892d25027287b23aaae9896701faa7d7a17f6f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "45d49cb5d6c57c04afc8458ed15d8df7a69e41ca1846138ed7cea872a52b8d56",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4d08a05349245d13a9a5a120ea7f8dc5217383c66dfa230c0f3d47bec2d0a578",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "53c06138fb8abafef467d37357a7e4273b18e46e6a1d577bf01b07fa332a6dad",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5928bee4713cd049e5a0818218c4a723707b4d8b93b3f6be21dbdb97a46dc502",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5e9b3f6fc88c8137e63f470822fcb8d6f01c86730cf09daf87bbdc4819616467",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 90,
+      "passing_comparisons": 90
+    },
+    {
+      "shard_index": 14,
+      "run_id": 45761582215,
+      "job_id": 139728925665,
+      "artifact_id": 15148254409,
+      "archive_sha256": "sha256:2aad6674b8f45ba573b4365b7935d54a7b36521d72a867e9b0315e0e215df57a",
+      "archive_bytes": 381368633,
+      "verified_complete_arrays": 54,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": true,
+      "parent_artifact_id": 14988584032,
+      "parent_arrays_preserved_byte_identical": 46,
+      "new_complete_arrays": 8,
+      "audited_branches": [
+        {
+          "record_id": "038aedffccfcb27161512e0c4ac2d7847ceaca669f089d8d90b284be933acdfe",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0a25333d02adad55e4f74a4f953276e2baf143f0f976d3b92d2392f8f9c5ea62",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "10e8f196146107b23195aeb6074ed3f9ad0add9279db099611e7761b0f8c9a79",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "173abd1819443fd2f54bf01f898ff69d55aaa52dfd9cb30b44429a36aecd3d1a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1f8bd5a2a0d58dcbd7c8a0934fe540783c8068f02d7ddfaecaeeedc333f3ca76",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "245d1bd4f95ce5fc098c8a766effec6bf300fdfa9df28efda1bf7aee80eb00e3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2b4759aaca79609b30270485d76e93b5c3b7dbcdaf866a460621d54da8931a3d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3240329813daf9f071a80af998748b8873eff1e8a69a76292695d45cf178f87e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3805bcfaea4d6f9ec1b3841194ac03dac441172c0d16852f698a3bb1624e2348",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3f40e7e0fb26c11539ecb3509644bb7677d056e384dddca58fd605854ad26695",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "45ea27f1b4e749cec07d2dcc4c9547d01b3c0f40698c9853a2e3b2fccca2b514",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4d14c53fa233fc6b978913a7fd89938fd21eab7881c80b8ccad90675e2827a4c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "53c49415d7122850c2b511cf37a7538c5a6463e59e10cf536462f9a5901e5614",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 78,
+      "passing_comparisons": 78
+    },
+    {
+      "shard_index": 15,
+      "run_id": 45761582215,
+      "job_id": 139728925713,
+      "artifact_id": 15148621076,
+      "archive_sha256": "sha256:508b876d0a93b9a1612cda8fd42cacdbf857e87824e1e02eac41bf653c34898d",
+      "archive_bytes": 430524253,
+      "verified_complete_arrays": 55,
+      "complete_selected_inventory": false,
+      "producer_status": "checkpointed",
+      "replaced": true,
+      "parent_artifact_id": 14998081640,
+      "parent_arrays_preserved_byte_identical": 47,
+      "new_complete_arrays": 8,
+      "audited_branches": [
+        {
+          "record_id": "03ba496de86242dafc7510fc807a7642d10aacaf6d8ea366d243047895f8ed2c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0a3c2c6e5812590cf6577a41165479babfd62badb2a9cfd22e5f435cac2a2cc3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1133c12781791b04943b8f0294c20948f250253f43ff6abd0d914568799bba1e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1763013bc855c727180e24f2bf42c5b3ffdaf28a8d364d0efd56945a2debca37",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1f8f55233081b097bc93a024ddc2c5c411aa08534a95ecc87896d1f8681b151c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "246f42f0b22a282e6692220d6f21ca2aaa5a1d82c8f82f12a2e0873dc68cf797",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2b488f2b16b670fe24a46184ba7ec6b881fab1d9ab873351e77a63c647be3ad1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3243d17045464f0b508047e85ccedae1455f0e79014c66bec404ca0edba5f91e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "38087900a9607d5d9c470553f6fc172be0a192bbcab09da26abc861b1d366140",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3f6cbcdf5187314b810fea934b8ea444a2d6d6ed81a18d50cac6e591f3681621",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "46a61aeb02a308049c72e1e3b051885d86ae5f7eaeb3c8441f322d128c771025",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4d396117f074355e8313d8aa1168e0212b53247eec29a08cff9cc32bbdcea0a4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "53d6e1ad8e8d86c3f10c3aaa1d276bc2204db207a2461fa88c97b7f83369cd6c",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 78,
+      "passing_comparisons": 78
+    },
+    {
+      "shard_index": 16,
+      "run_id": 45332029602,
+      "job_id": 138298630509,
+      "artifact_id": 14970752997,
+      "archive_sha256": "sha256:1d008fd3ef8d032b6efed39c0be470806fda0cdb3f3ac9363ca5ececc658ab1f",
+      "archive_bytes": 424657850,
+      "verified_complete_arrays": 59,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14970752997,
+      "parent_arrays_preserved_byte_identical": 59,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "03baea3f221f604df859ba39193686fade7ee5143c20afa8505474b3040f3b46",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0a4e9155c2c74bb7748ceb21d443c2be144540a7cb5d8e63a46932930480005f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "114c9ddba9907504515b1e7f4b1e8399d9c04c2064b1441e082fff29f1ad972f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "177c608800413b808fe1061d3e91d2d5fa085738f9f3c53f1c9e054c56c34b94",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1fab598af279a9d031455c885de32c6cfc3e993249853f34b63857185d00b5ba",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "249c6aa1b082b66d653f0dadbe74d4201ad85c768ccfebd7a536d0e7b08ac1e6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2b992aaaca7cae735cafc271c43bbd7d297335c521a3bc450dcd9f9ebb83a70e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "329e364329029a014d62833bbaf6b0f97cd712c0211e17f32c1600d90451a24e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3835cf051f68d9950f7d689f7d87541105968f3997f2910400f4cdb4e7cb460e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3fd874375b84e15435de5cd624ecdbcdaaeef71923fb94c0e087c00332e1ee94",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "46bdf0128164671c7f9918ed99166b8c5715e9fabc499e89f1b9fe21590149ea",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4d4d7b8051962cb18875077c1f8fafb7c593e5b678696c1a407aa431a2b13143",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "541f16ced878137c5567186db42a20413911355807ea4a5eee1040fe2359e85c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "595381e254db630a9566f54c835493a7590eb3e9f4db7a5dd38ba4b344cb8061",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 84,
+      "passing_comparisons": 84
+    },
+    {
+      "shard_index": 17,
+      "run_id": 45332029602,
+      "job_id": 138298630657,
+      "artifact_id": 14998311254,
+      "archive_sha256": "sha256:651ea4401143ba9cec83100fe82a85a696fd696172f82eee245728af3a9018ff",
+      "archive_bytes": 351508135,
+      "verified_complete_arrays": 46,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 14998311254,
+      "parent_arrays_preserved_byte_identical": 46,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "03cb70abfb6327f22a2bb4cbb082dc28deec4ce70e35261a7171bb363d2b0ed4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0abc5f2283fd806230cda045388b0487f9dc724bee1a8bb822a05de787f33a6f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1192d816ba1fc0ba85663efec8030f687ae5ae4736aa7b7a215b0e81aee17852",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "178b84d4ba4cacf0571d1f65da886085f93fb390df64c9d7db455bbd41f239ae",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1fcd19f4aa808b6136e7d619e225596193196076453f0a1049dc97693257cddc",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2505289fd3097cbea7f9c4fa77ba2efb4a4d85e6c380e1e09dc3bc1447914d4e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2bd06ac33234826c2507902bbdb0f2a7979579f7ed2cbcdf3b9adeb63c34c27b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3336810820d646c94f5603cdad818598ff1bd8886979f516c2d2285153e10b83",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "38948c2028865e118ece74c23cf4ef70558a672c581232a410b4b9705cd00319",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3fdeaea52aadf70024ca0adbf73dde14fa6a6cab4ad301824cc82f8e55a9db91",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "46c57e7a2b51dde92af62761f066a5ac8a44da4ce164eebfba5437b462a659b8",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 66,
+      "passing_comparisons": 66
+    },
+    {
+      "shard_index": 18,
+      "run_id": 45332029602,
+      "job_id": 138298630467,
+      "artifact_id": 15000737307,
+      "archive_sha256": "sha256:e63a1c5cc3bef089dc113c6bcf8a8161164d8489674321d785acef0cbb6127c8",
+      "archive_bytes": 286030818,
+      "verified_complete_arrays": 35,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15000737307,
+      "parent_arrays_preserved_byte_identical": 35,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "0405679a1caf2b10515552f140c8fec8368469792728831c1d3b741a2ec2276c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0ae49888417dd8617a14149660d525f4dba10997d8f075d71ba8a78c54c93441",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "11931e09b63a52506e0fa7145ac02fa77c5773b4d28e1e0c33acbca394ca1d97",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "179d63f1f3dfff5c7d1795bf0cbab22876b6b4fbf7926d29cf1caf42956a444d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "20007711231c4463a7f7b86bdddaaa01a56f929231b738baeb425834cc3c2881",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "256722134a3296228cc09af0f98a57e5f40d0d51cc3d6bc70a25965b5aa250df",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2bdcd959d1eab3c7ff0ca23552f7abb012402a93e5b85a746e823099e440c47d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3396f8ad8a60b39fa53aae789efc72277668f73e0771a20e4d202430fd582908",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 48,
+      "passing_comparisons": 48
+    },
+    {
+      "shard_index": 19,
+      "run_id": 45332029602,
+      "job_id": 138298630425,
+      "artifact_id": 15008241702,
+      "archive_sha256": "sha256:d6793ef19ded1f4858448bc5521d1a6423ba3a16b4c889d21c07a607f0a0fd9a",
+      "archive_bytes": 579995379,
+      "verified_complete_arrays": 75,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15008241702,
+      "parent_arrays_preserved_byte_identical": 75,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "041182484cbe25a5ee8a02e80560aba52099ef9c0f11eb58a02a496ddc10a029",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0b330b370b10a9533958211320ba3458fb5832db212944f092cdd41363feda66",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "11b41c0204505c27b8b31ed867d571970c8f8a95d14222ca31f33fec4ac41cd7",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "17bf2a49bf8673ab7874742fff44d502b35ab3e7a9d68f77bd49e13cafa4407a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2033b8102786d2526ec28daa3ffd4a6617f96e8ad40ca6f9460261a4e6dda1ab",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2571b166b11b878bf3e48f4ea3ed48e1a65837ee0aa21d7051f38f01a39fcac3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2c098b035e24518e1aad25f1f099b71fbc4db93983555ce8b1eb846b7d8663c1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "33f859b12664d6c707e6b623c8e66bd2c8bb82b49351e63e6095406c174886a7",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3906aa4f4c0eeda996f5879d0c3f1ab8033f4743f3b9a9778d7f3c77e4c9b9e3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3ff747554898806eade5f019c4e75d86277c145ccad6fafad8f6940965eb0c36",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4730673cf2928a75dc11461ebf01abb70222514de0956fdf2f17df3e0d8b52f6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4da8b5e7e48636b8a4ff3bd2f2cf521f2881a333a7075be6438234b0b0db9508",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "54a38a307d087acd36a1b404e92559352a28c7dc63eb22cb514bcc93c95a0467",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "59969343b45f51cd9e32b6c2ac0e78d39e322c24f80a670c180424e4fab56af0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5f9062ee666860b1b66b2631fd1e27dabaa3845a276421a8651731c5bc60d863",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "6481a0149042cbf963e2134dfa83b2bc4f7037c0c3588eb2a137a37b9e4e6c14",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "6d296a71d3c04c3e6fe8d2cb2fee1a104809ce50644d0fc0d402b9aed62757d6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "7202fec805feb11d733fd7f92da16e849917b6ad2e3317a2cf90ebfcec37029a",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 108,
+      "passing_comparisons": 108
+    },
+    {
+      "shard_index": 20,
+      "run_id": 45332029602,
+      "job_id": 138298630445,
+      "artifact_id": 15019742308,
+      "archive_sha256": "sha256:88bcb0b510f3819b38927a56fdf7fc46168f07f32e09b4ab3d08221abe8c56a6",
+      "archive_bytes": 346955547,
+      "verified_complete_arrays": 43,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15019742308,
+      "parent_arrays_preserved_byte_identical": 43,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "043c807026bf98ffc58944f07f6ca1e11026f5b50217c06f8bc2e551844e10e6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0b648fd8e1cbfc66a6759610913da81de99c0281c26368da8829173443d3496f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "11b70ccb9d7c82d7f7a65cb3a11849556383f4be0bf722e798fb5e8f6d34d68e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "19172979b7638d83cd857495f33fdb02420e2db157cf44abf61d0d873010c124",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "203dfa374c0ae7b2e2bf301901e1035c7c8c9e219318682c614b5591c535b080",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2610b091644c564f99997b9b9c5f49205fd07d3fc9b6241cad4cd39b5c46c7ee",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2c1e92d9182a58adb32fc09feabb5856b54621a961564b93743033a9056e7a4b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "340581cac108abd09f9c01bd91d0eb5659e11df974e332c8e0656550a8a4fb2c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "390a8e7032a451fe2713bb79c4f4108cf8e8010cde4bce35081d3b4422e945ec",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "401f24e0b65b090bf3b66fcf49edee615ba7b999d2ae5e64e5e8c7b01506d1cd",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 60,
+      "passing_comparisons": 60
+    },
+    {
+      "shard_index": 21,
+      "run_id": 45332029602,
+      "job_id": 138298630614,
+      "artifact_id": 15027581221,
+      "archive_sha256": "sha256:3949dd558d0fe4d05bba8d0ee715a18463c4c490b3a107d3d2d50e39f151eb20",
+      "archive_bytes": 359638637,
+      "verified_complete_arrays": 47,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15027581221,
+      "parent_arrays_preserved_byte_identical": 47,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "0567fb93551ba70929d22ef11b477577f3fe8404236faf25e3d1ea877d02429b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0b9b98a66cee0692b90c6d60666c3f3688d647841e9e23937f511f618fd49e21",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "11df4da45b486590fa6dae16719f223e41a68a9b2f09386cb2ea83f84582dd2a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "19453c49902a340fdeb05b74723229e3c5caff3d0c44b56e3a71ed5edae28cd4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "204727178e67c7aea6e1ee3652ad4c14ca66ad60ebd1e2c2b2e1ae95db70dade",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "26250fd625a99aa570559098093e3e9f4c0c9e253cd8131a09d30580b28350b5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2c4de984a5c37ac1c57e0d2d294931ff67deb6aa23f3052435eb80f6e405045c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "34085355ea4d1a3f0b5980e796e7afe084b8587a7ddd9c5b5b8c45876f43a856",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "392e2e95d7a4df58cf98fb0fd48855d61ff4d09ee9c5a8ec59e6324587679e62",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "402b9269a2fb49ce4355410651e71d47a9e7c1fbebcb3ccd95f8182960bb98bb",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "475de2d3d3a9ff1d82ebab59f67380b2e2f8b0b6c1bee5dbbba600f978e064ae",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 66,
+      "passing_comparisons": 66
+    },
+    {
+      "shard_index": 22,
+      "run_id": 45332029602,
+      "job_id": 138298630662,
+      "artifact_id": 15036570193,
+      "archive_sha256": "sha256:bbfa0e58b294af0025ea24089db54fd9bb1963aa1f09853312740e98fd39a089",
+      "archive_bytes": 267537345,
+      "verified_complete_arrays": 35,
+      "complete_selected_inventory": false,
+      "producer_status": "checkpointed",
+      "replaced": false,
+      "parent_artifact_id": 15036570193,
+      "parent_arrays_preserved_byte_identical": 35,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "05e718334c297ddfcd1bde79ae8798c911068dd915bb667f9ca257b48f722e46",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0b9ca5e116faf31047d63b011955c890150832c45ab890462c39304ed8c9544c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1218a2fdac1f87454aa4ec0b177e7f1071f52cee8ad0a0e8be64e5fcbc222d6b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1970b7839eed6243b7c4bfcd3fc73ebbfe810d4b06171183c310bbfe46036dd7",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "205915422672685c5bc3dc20e975e149ccf59a695629d21c34c40f8db0177d15",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2641ed2aac127f36dd66e26061b06df56b996dfdc35cb72245b521220a3b8e02",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2c79389f653dee0cd7bce23850af680292c2aaa43578d713eacf545b91ebc157",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "346856f0d231605cfdaa327cf0aaf4c751428d5b8f393de844a1a40869bef6c3",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 48,
+      "passing_comparisons": 48
+    },
+    {
+      "shard_index": 23,
+      "run_id": 45332029602,
+      "job_id": 138298630836,
+      "artifact_id": 15043869714,
+      "archive_sha256": "sha256:4685e954e020ef5afc6fe190f482bc84079fbda213f360d8c0873a13f9c7af2c",
+      "archive_bytes": 318192241,
+      "verified_complete_arrays": 43,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15043869714,
+      "parent_arrays_preserved_byte_identical": 43,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "05fa2ab84716a3c94cf243d1e05f8a6f544ec5f1abb04ad89353077a3858e32d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0c70f5e7ca2e2e84eb401eb16ba515043c86ca9db6dc526ea456ca1f909dd542",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "122efeef5d51a7787b3731f3820842f555a7cf575fd6c24916cb0d5974f419d4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "197f61d6fbda592357c3ce6e90512b77db8f732b3eae3eac5b1ded1f43e21380",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "20da8267e243ca13ce8165cf020ffdc48f04343adc6a9c898aae7593afecc641",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "266e2fd235cc6e86f8d53927fa660abc8f6eb9fc7b943f0d13087fc71a0322b3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2ca0cf96343fa2958023aeff356413195f3ad07ccbd07bab3090133c0e10ed81",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3489097fcb47a2c04742fc9445ffbd1a941e482dcff2899d3568f71aa9dc15df",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3970ba952beee325137b93de8049bc4a1ffb544184ab3bb21528f09fae5dba2e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "411e1d42ad59ad2c32e4763d5910c8ca58ff0045d599c955ce4f10ff36ec8a5d",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 60,
+      "passing_comparisons": 60
+    },
+    {
+      "shard_index": 24,
+      "run_id": 45332029602,
+      "job_id": 138298630595,
+      "artifact_id": 15045930214,
+      "archive_sha256": "sha256:6289520239617cf2d8b596d3f7439de7d6055ffbd19d24fff3ca2430dbcdb766",
+      "archive_bytes": 223482676,
+      "verified_complete_arrays": 27,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15045930214,
+      "parent_arrays_preserved_byte_identical": 27,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "05ffbe6638828a351f3799e623c9c89cb0b217c135d361dd0a984044cf65d6c0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0c7d6950c5884ec5a361c5a3683aa0ef2e9536f59ee0e2ae33b70ca684ddc5a1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1240b868980249ba87a026cc717bbeba3890f59c13e21a72a8a6c69e1fd38284",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1991d5474f0d5c95ff0d8199811897075bf4ff09f02a905848183ab4b331a67b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "20e1805d54e02c82e673df9134269d3e3859c4175e72d0c2c5c8e333ae7bdf00",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "269666cb13185149006be8ceea4257f47b662142bc70722e127e576cc01c3c10",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 36,
+      "passing_comparisons": 36
+    },
+    {
+      "shard_index": 25,
+      "run_id": 45332029602,
+      "job_id": 138298630608,
+      "artifact_id": 15048145891,
+      "archive_sha256": "sha256:0bb7f0a6a291a8c7afc52936fecc4e8a54248f75bc417b43fe497dd55272170d",
+      "archive_bytes": 394682057,
+      "verified_complete_arrays": 55,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15048145891,
+      "parent_arrays_preserved_byte_identical": 55,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "061a5dc17e81dede58a4de4f6cff3348a8b78847a9dc6adce4b639fcc3befbb2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0c86c8a86b22bb3f7804833f850590d4c75be63e5b9baa381f316e407bb02030",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "125163930fe87fda4514e74955b1dc5a8bdfc127521ba8fe86c41f0565a3dd4e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "199ddcabf1fe35cf43b36cb944621c32e63c5ff25e3a4ec92d3db556012c7d05",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2128619da037490005cea44cf1b45b9accd19041eb5e2217b862ce5539b00b6b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "26e3453f1b3fc7c47a66ac58044b20b0adc9f121e225a4a7cccf91c86ff92850",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2cf84bc5cbee5dd4af84d8e808b555ad442d9203752e64a5181fd0c1156bf018",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "35222e0b36937eb86d5a45d8ae79ece0dd1f4efbc81f3cce2f70e9a586f7203c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3a69a6471ddb3da72c9cc0b849b0e0e6fcb1c54d9a0d95011c70c8c137f88dbf",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4148e0ac80447b6f2fa819f1c80ccf1dba87a0e17677a70e5ab166ee8540328a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4838d423ba740422d7a425f311a3ec7c9ef9d6533c2ac3e5eeeae887d42c9ecd",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4f0e4b95dd7c0e7133180f221f3d46726d52bf8f525512619ea60c50fe1f5f5b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5560efcfecd5d88f36d8804128326943b13a3e7e01c705aadb6b777b85bd54c7",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 78,
+      "passing_comparisons": 78
+    },
+    {
+      "shard_index": 26,
+      "run_id": 45332029602,
+      "job_id": 138298630872,
+      "artifact_id": 15057484308,
+      "archive_sha256": "sha256:e6e7cfadaf6194550c65731871d46a0a2e887e20b7e0244019fe6b8cb45a201b",
+      "archive_bytes": 316467034,
+      "verified_complete_arrays": 43,
+      "complete_selected_inventory": false,
+      "producer_status": "checkpointed",
+      "replaced": false,
+      "parent_artifact_id": 15057484308,
+      "parent_arrays_preserved_byte_identical": 43,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "066d5317c8ef228cd28338e75201b70e15413520301bc951e5acdb2bd28e88d6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0ca8f0a539040c901b408c6db35f6117e9cc88dca2d9a1eaf4572c8fffb2b816",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "126c7cc7cb528446ce4e7f0a2e924662ed3b3964ffe1231a6850ecb86f3492f2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "19afcee96dacbf8e06fa9d79b5bb04831de93c6a0305bea747bb8fb6eb9273a9",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2177526904b00b03c9f1c8ae3f92d1698ae0b3d05e54067f0433ba0bf011d5fc",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2722d915c13cd69fecb7adba3e6a627d920edb9d12ace7436bd34235161cfd3b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2d0f2c2abbddbe5af6dbe3a87f1aa570eff4c2d2bddeb0a69072ef8d00a6a0f8",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "353631b534e1d4ab181d1c7773e9f339ee470d2e5a2072c6c2ed98160d3746f4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3b0692453667e04514bff59be72982745c5f4f9cb993608c17eac7e8a83bb7ae",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "418cf6850b2bac270c0f0afadc271d99fa65fa7c59f88486512ff51f1eaf92a9",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 60,
+      "passing_comparisons": 60
+    },
+    {
+      "shard_index": 27,
+      "run_id": 45332029602,
+      "job_id": 138298632844,
+      "artifact_id": 15059481935,
+      "archive_sha256": "sha256:628040e74dcbe66bd7a3fcb65d14650004014a908a8550c6a312b03eb5eafd5f",
+      "archive_bytes": 449715756,
+      "verified_complete_arrays": 60,
+      "complete_selected_inventory": false,
+      "producer_status": "checkpointed",
+      "replaced": false,
+      "parent_artifact_id": 15059481935,
+      "parent_arrays_preserved_byte_identical": 60,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "068ef7ecedac5920eaac9a668c917cc3072d8340cd5f14a5c7427160f0960acf",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0cab94e184dd842464a6bc3ad514a855cee31b644abb834d029bf4d6e9298587",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "129f92237824d7d55834871c1a9dbac4c79c506f05473a9967bb442d86f4463d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "19f4f9d615bdbb2d1b4612485f5d8da9ea54e6c94c757f1d39a04e36b313100e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2186fe4e0f4e4a62897ad5ba93570875a0f0e29a5b7a398812ad15926d5847e3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2763463b35b91ed03e8e0057b0d3486b5f16b083a317dc0bda04745d9405bbaa",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2d1318bc055140511d1b5c84ded8e29710a43b570ef7df8b1e39fae0d097f19c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "35561a491e6445db1a4d7b3312fb20d87a79504dfaff24eb2f20c2237f92cb68",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3bd281d1f6ce0e16acd0d39996830251b0554df40eff626d4873713b2a543893",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "41df6bc07cf43c10ca936c6f3f8f930d3e05a1ee3f26fb01477d5bbf58585181",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "48cff096cefca7794956848a7c8a923865fcb51c583c0341f7d84234b50541ab",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4fa29361e643404f265b384b4d4f4d8781340e9905975a414a1c3203a96362f6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "557ffc7e74ec64e232789a7d93df1776d7fe5b503bc0184ccd849479bcae44c3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5b56244d13a10747cff571b9c32c205f801e0a43697055005b76cfdf660fa7b2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "60d6ff588571495c6d0e7aa079997dc3f7fbbb0a6bd438f288214f98ce1a0025",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 90,
+      "passing_comparisons": 90
+    },
+    {
+      "shard_index": 28,
+      "run_id": 45332029602,
+      "job_id": 138298633084,
+      "artifact_id": 15060335799,
+      "archive_sha256": "sha256:afe1ed687b5e2f50550d8d98206809690781a0cafac4ec82a8f056e6543415e6",
+      "archive_bytes": 350244022,
+      "verified_complete_arrays": 47,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15060335799,
+      "parent_arrays_preserved_byte_identical": 47,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "06b98fcf84e08306d586c7ac69f6974f5d03852475f3feb335dc25e736d50512",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0cc408450c38ee6f62fcac90bdaae19746fdd9d24c8117966e5a4b2687050f1b",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "12bf5c24c18e3c7deacf8c31d94e114349cfb2f130ad6dea100ae10835278073",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1aa0bb9803b5ec5e5ec07548223ebddc58c64ff69ff326647b3c154ec37692a0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "21951477cb63b86678e04d68979b2b12d4b96a2e9511c451fc5824f0b8cadfd6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "276f267095eb5558c487d65479d448e58d4427f0d592f561854fbb8a652da89a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2d787c04321181704f8abe64447f8376574809c632a060941606688aef052b2d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3570c8b828270bb723de68a063c7bd9f62c21abca88f8f8e57ced43aa500c32c",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3c22ce24668e344edc9be78a4a5b31b14eb2d9f07780f277e2229f6ffcc4a5d9",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "41f4e99840bdf51a82c839c602ed1cbe4548a1a68d9b86eb0bcc25f4007f3d1d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "48d0466c29fc77aeebfb730a18f5c0f60651894cfb03901865b1178d38fbb577",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 66,
+      "passing_comparisons": 66
+    },
+    {
+      "shard_index": 29,
+      "run_id": 45332029602,
+      "job_id": 138298633319,
+      "artifact_id": 15067763177,
+      "archive_sha256": "sha256:bea86e5bdd33de6ece7db02414d006a27f0f339c5fc7ca691a2be3880fb4c83d",
+      "archive_bytes": 397399199,
+      "verified_complete_arrays": 55,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15067763177,
+      "parent_arrays_preserved_byte_identical": 55,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "06dfd71f6c4d4b63f6222d096b234f1f4664356c08ddcc34461bff4e22530d38",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0d286666ede638389014aaa56e6a78637981cd6d3ff2ff8ac57bd01b0760f7af",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1349ad1d9b2e728dae0524c805f53e7905931cc6888c271530558780b65faef6",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1b298474028ff801514723f42e9857b918e2ae27312480a9f2ab9ec30109a783",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "21a46e3296e9d343ea7f3ee3d25ac952b8fe2d4cae03b0fc339672d1a71a21c2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "27db3f017e84b9c26f37b6a28fe563d4e780a4c865eb628836f8e0475f12f69a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2e453318fcd0fc277cf905f89bb98010fbf087b11edf35e1738d3ec13be7b0d0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3576b00c28df6a9783fdcab784ad0bf23eede26338fadd1d8068c31d35ced6f4",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3c2d1f4b9cda7abef06d27bf3a7aeec8af703f58570be97febf884d2df823159",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4211cc1f860c67c2ff2f2d01e91aa834ceb71d0229fb9da7a370966e1d71f323",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "48e9b54ff3058fbf8dbc20d20de7aac34ca3c679b29fca5e2b99140264fd4611",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5058c76a8f3b1a0c4b7fceb44fba8179498dd925e3a76984c365cf854d5331b0",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5620ab5ba83cf243e9a5d268a80e60248e6ceb24e044306d2382852ceac9dcb6",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 78,
+      "passing_comparisons": 78
+    },
+    {
+      "shard_index": 30,
+      "run_id": 45332029602,
+      "job_id": 138298633255,
+      "artifact_id": 15069885797,
+      "archive_sha256": "sha256:52094b203d6d3785ebe3898920dee70341dd98e77b0e37d89ff1f7c77572b211",
+      "archive_bytes": 320132387,
+      "verified_complete_arrays": 42,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15069885797,
+      "parent_arrays_preserved_byte_identical": 42,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "071996e6a15c941c8fc31c9f5e48e643dda594664f32171b90c4064fdebd4aa3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0d5a7a0e78b4a0109018bbf331e4ec84e0d07a93481e2626e64422d4267b2da3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "13db3dea7b37119949a2d453ed9884bca8a501d7f1a99cfebea2a4b1ae4b8fc1",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1b79a4b352a1d5b27fac8edc26219995fb816f679577c0123a0ef6173dee6ac7",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "21c25845d46d6451820bb77b598c47d9f44e60df8a2fe52c9030e7c1a03731e2",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "27e1345bf19e48458eec1ea041dfc9da1550d8897187823eb1552109b09f9d76",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2e7d26e6adc5b40e6a7f8ec801f3183e7f4297203bfd6ceab78ada000060eb9f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "35e9054f538e07abefd19a5b416584271df9b43577970dc8864f7e189a990787",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3c9caf69d2e94d0e59c789d3208943a029c61df7aec4c9cbfa652f3af8e19618",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "42417d6c026ba0d0eb1e5ec84c7bb02c0e7e6b12fdea1bc2e097394d433eac80",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 60,
+      "passing_comparisons": 60
+    },
+    {
+      "shard_index": 31,
+      "run_id": 45332029602,
+      "job_id": 138298633400,
+      "artifact_id": 15072366749,
+      "archive_sha256": "sha256:d1062c07106f9b8e71bc523c5f5f9fc04212c8feb55afe35202250fc8c8a4163",
+      "archive_bytes": 508394816,
+      "verified_complete_arrays": 67,
+      "complete_selected_inventory": false,
+      "producer_status": "running",
+      "replaced": false,
+      "parent_artifact_id": 15072366749,
+      "parent_arrays_preserved_byte_identical": 67,
+      "new_complete_arrays": 0,
+      "audited_branches": [
+        {
+          "record_id": "073940b6accffa8848ba9858d2b60e078539a49b51e342c65a71a4d51068a072",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "0d6369ea29e992e69eb5ca7b1b124fbeb413d0fa43a487a0324b00bb9de643b5",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "13fa45fdd2b2898a612467e872244e0b40fd1403752ed5aedd352e90bce5c3c3",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "1b93b1ce3f6ac994b59d38cae0ec8b3ad3e42b048b0a7b4b397aa559fa89c09a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "21d5e0936cf702035998f2c4bb1d28b76c885664e8ac70fcd8f9310679ab1e03",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2806f7d78d0fb56b18376630f731758c05f1e9dce306dad037a23e97a8011c78",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "2e881a436ffabc215946ccaf9ae83f6874c38b562b015f3981cc56be19d44a5e",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "361ae2930c665c892dd1c05e78172b72ed9a7f8db32e879e7344897d1fd0b49f",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "3cdfc1a341ab3d1b3a8348705f7fe727bb06050746d618bb2038d5ccba1c4337",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "424cb3ae4a5a8e14264fd2b0f4e44657e0a95efb919b28588958288c588b5c2a",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "4966c00adda20c2b4a60d39c0b9e9f0629a6476d7b0f425e75a701851833b476",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "50b9c49d908382c1d52ca9b5442a6a2b66f27df6fd97614df7d8f8296f2bc6ee",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "564793a93fa26fbd42488edac6e0c8ef8dd612ae09585c26c9dbfa76fa559bc9",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "5bf05238f8da1deefae926d37ebb4cd0ccc9882d8d69ac21c91322a449046416",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "61981d309b38ea44d6eb3d9a890701e5454e48e5dc8dc6f1ac06089d50b4a32d",
+          "status": "confirmed"
+        },
+        {
+          "record_id": "66d85d3ab871a5593f071dff4a8e208757eccea9977bfed6e4141c0d3753574d",
+          "status": "confirmed"
+        }
+      ],
+      "comparisons": 96,
+      "passing_comparisons": 96
+    }
+  ],
+  "case_recovery_claimed": false,
+  "whole_model_pass_claimed": false,
+  "numerical_integrations_performed": 0
+}

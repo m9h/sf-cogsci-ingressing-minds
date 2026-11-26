@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T20:41:58Z",
+  "checked_at": "2026-11-26T22:26:16.318415+00:00",
   "observations": [
     {
       "run_id": 45700337838,
@@ -63,6 +63,7 @@
       "checked_at": "2026-11-26T20:41:58Z"
     },
     {
+      "checked_at": "2026-11-26T22:00:06Z",
       "run_id": 45703326499,
       "head_sha": "fcf7fd8cf975bc9171370e05789661d9da4d35b4",
       "workflow_id": 426200969,
@@ -374,10 +375,10 @@
         }
       ],
       "run_snapshot_sha256": "171057c7d7446141a4cfd6802ea46fdb5c34eaeb21de48b04037cb6898871a2f",
-      "jobs_snapshot_sha256": "17e939ccf7425385b59b73f0d9b1cf9dcd29e5eb2103c37923196823a0142cbe",
-      "checked_at": "2026-11-26T20:41:58Z"
+      "jobs_snapshot_sha256": "17e939ccf7425385b59b73f0d9b1cf9dcd29e5eb2103c37923196823a0142cbe"
     },
     {
+      "checked_at": "2026-11-26T22:00:06Z",
       "run_id": 45761582215,
       "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
       "workflow_id": 420439895,
@@ -385,9 +386,9 @@
       "conclusion": null,
       "job_status_counts": {
         "completed_success": 1,
-        "in_progress": 5,
-        "completed_failure": 5,
-        "queued": 20
+        "in_progress": 4,
+        "completed_failure": 7,
+        "queued": 19
       },
       "jobs": [
         {
@@ -411,8 +412,8 @@
         {
           "id": 139728925645,
           "name": "scipy-case-partition-10",
-          "status": "in_progress",
-          "conclusion": null,
+          "status": "completed",
+          "conclusion": "failure",
           "run_id": 45761582215,
           "run_attempt": 1,
           "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026"
@@ -474,8 +475,8 @@
         {
           "id": 139728925679,
           "name": "scipy-case-partition-1",
-          "status": "in_progress",
-          "conclusion": null,
+          "status": "completed",
+          "conclusion": "failure",
           "run_id": 45761582215,
           "run_attempt": 1,
           "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026"
@@ -528,7 +529,7 @@
         {
           "id": 139728925709,
           "name": "scipy-case-partition-16",
-          "status": "queued",
+          "status": "in_progress",
           "conclusion": null,
           "run_id": 45761582215,
           "run_attempt": 1,
@@ -671,10 +672,10 @@
         }
       ],
       "run_snapshot_sha256": "32beb3009bafe88c7f4767455fff6f955a40a825a9b9240aa76c151be9a22eb5",
-      "jobs_snapshot_sha256": "d73e6e143a0e9a620d80c87c61237ce2dfb4633619188b899d9b6c22e0ac2335",
-      "checked_at": "2026-11-26T20:41:58Z"
+      "jobs_snapshot_sha256": "157b80fa8f59fac7ae0cf2f82ee2ac1e75a16d053229d92c4c45a78beac4140d"
     },
     {
+      "checked_at": "2026-11-26T22:00:06Z",
       "run_id": 45761594168,
       "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
       "workflow_id": 420439895,
@@ -705,10 +706,10 @@
         }
       ],
       "run_snapshot_sha256": "4f523e45b0f4dc62784bdd742a4af4544f3b7d0e90a69334f5bb60452f11c130",
-      "jobs_snapshot_sha256": "ebf603f2bb550cb425e598c918061acd33cf573202201bc1d46b2a23c3ea4bbf",
-      "checked_at": "2026-11-26T20:41:58Z"
+      "jobs_snapshot_sha256": "ebf603f2bb550cb425e598c918061acd33cf573202201bc1d46b2a23c3ea4bbf"
     },
     {
+      "checked_at": "2026-11-26T22:00:06Z",
       "run_id": 45761615797,
       "head_sha": "1e09feb192eed1c7be6e59f5771518e49906f026",
       "workflow_id": 420439895,
@@ -739,8 +740,7 @@
         }
       ],
       "run_snapshot_sha256": "8c213c273992327f4eb044e4d47b796f7782f9dd70faba05a09f31394d86a2da",
-      "jobs_snapshot_sha256": "df710d2560b07a0467ea35bd1b495dcbce7f04f3394a175a0bd708af3b901ab4",
-      "checked_at": "2026-11-26T20:41:58Z"
+      "jobs_snapshot_sha256": "df710d2560b07a0467ea35bd1b495dcbce7f04f3394a175a0bd708af3b901ab4"
     },
     {
       "run_id": 45761626752,
@@ -795,6 +795,7 @@
       "checked_at": "2026-11-26T20:41:58Z"
     },
     {
+      "checked_at": "2026-11-26T22:00:06Z",
       "run_id": 45892778117,
       "head_sha": "b19f222cb6a83f4f4f07ec4b639adc0359b7cbfd",
       "workflow_id": 431229481,
@@ -815,11 +816,10 @@
         }
       ],
       "run_snapshot_sha256": "3c4c0b0319685dfe6d308d2e1fab9c2d74b433e44a38b019e27dde282f3875f3",
-      "jobs_snapshot_sha256": "f916d97e454caddb045890ea33a4141d5201698cf2badc9698aedc8b20483a73",
-      "checked_at": "2026-11-26T20:41:58Z"
+      "jobs_snapshot_sha256": "f916d97e454caddb045890ea33a4141d5201698cf2badc9698aedc8b20483a73"
     },
     {
-      "checked_at": "2026-11-26T20:56:17Z",
+      "checked_at": "2026-11-26T22:00:06Z",
       "run_id": 45893802753,
       "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
       "workflow_id": 416944455,
@@ -839,10 +839,11 @@
           "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089"
         }
       ],
-      "compute_jobs_not_bound_yet": true
+      "run_snapshot_sha256": "3d0373ad68dad5ea5f3e14fcc581f026787bab6027e9df567e94c5976c4c2a94",
+      "jobs_snapshot_sha256": "87bd0f86dae4a6d25e1cbc85ad6a200f9380b779f55ce372b8fcb48d86894b50"
     },
     {
-      "checked_at": "2026-11-26T20:56:17Z",
+      "checked_at": "2026-11-26T22:00:06Z",
       "run_id": 45893805245,
       "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
       "workflow_id": 424428602,
@@ -862,15 +863,474 @@
           "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed"
         }
       ],
-      "compute_jobs_not_bound_yet": true
+      "run_snapshot_sha256": "d9e84d19c03445c0cdc15e4ece13a4c10aa8d175e25da1313295a518b9fc84d0",
+      "jobs_snapshot_sha256": "97da09e2e1a68a4842196dbe63a64babe92642ca2f54c2c05716f8d8e5153e2d"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45901252228,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140187294714,
+          "name": "marhl-full-precision",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45901252228,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "ac7dcfe36579fee60176db2fa1f8d4ea1452f75d9adf04e420c4bc0689d089d4",
+      "jobs_snapshot_sha256": "d4c5de4ed1a7b6ca068ce7172cc4760417096500f79b9d69fb2822aff204c4c0"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45901319362,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140187516767,
+          "name": "marhl-full-precision",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45901319362,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "2bca33533683f5677be15504845321a15f96b0b1edccbecc28c04b63c8d72f2a",
+      "jobs_snapshot_sha256": "eec7585f4b29d89a31c75ebedff66a08b6e46dacd48947bd07deb81842d9f0e1"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45901326344,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140187536842,
+          "name": "marhl-full-precision",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45901326344,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "f0e1d373297a7bccb1d9b79b29137f368ea5497f765ff2a27a7465b152aed3a4",
+      "jobs_snapshot_sha256": "682fff3a361d92ff807776e5d4d86e9d7950cb4711fe2f4e54ca5f4382314d1e"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45901332600,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140187559407,
+          "name": "marhl-full-precision",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45901332600,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "2a470ec201b3caee7de0966c6f11b3ee9183d025c13a2d0b5d9b5122757eaec6",
+      "jobs_snapshot_sha256": "6901b9c790efc3a20fa76da85312338889c65e4970c94835086036f07acd735b"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45901385197,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140187728759,
+          "name": "marhl-full-precision",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45901385197,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "c0fec65cdc02544df26acaba1a0dad26843e20b9a4b305cae8e38fce35441ef4",
+      "jobs_snapshot_sha256": "5e33a7bcc727c950a08d45dd97e2b0a53dacdfbda357f3ebec785e933506074a"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45901798759,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140189116520,
+          "name": "marhl-full-precision",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45901798759,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "8692eef34b087df0fba45f536dc677db2d47f10905bd31d6a515230e7828751d",
+      "jobs_snapshot_sha256": "d8ce8f2200e9097a11cc3747e6c79bbd93e5bba37ecd85683c68b84c82e47946"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45336593648,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "completed_success": 1,
+        "completed_failure": 4,
+        "completed_cancelled": 4,
+        "queued": 4
+      },
+      "jobs": [
+        {
+          "id": 138250022259,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285764,
+          "name": "marhl-precision-task-15",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285770,
+          "name": "marhl-precision-task-35",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285789,
+          "name": "marhl-precision-task-6",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285806,
+          "name": "marhl-precision-task-39",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285808,
+          "name": "marhl-precision-task-7",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285822,
+          "name": "marhl-precision-task-14",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285845,
+          "name": "marhl-precision-task-23",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285853,
+          "name": "marhl-precision-task-19",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285854,
+          "name": "marhl-precision-task-43",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285857,
+          "name": "marhl-precision-task-22",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006285868,
+          "name": "marhl-precision-task-38",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 139006286101,
+          "name": "marhl-precision-task-42",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45336593648,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "9830d67c16d8fc881a27e1cb303927354d7accc54cccfaa8054cc4b01b52a909",
+      "jobs_snapshot_sha256": "9a48967bce839e9450ecf1bfbe5f8af64ea83696be3a31c53cb22631be7f88a1"
+    },
+    {
+      "checked_at": "2026-11-26T22:00:24Z",
+      "run_id": 45699963490,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+      "workflow_id": 424197967,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "completed_success": 1,
+        "queued": 17
+      },
+      "jobs": [
+        {
+          "id": 139507192216,
+          "name": "marhl-full-precision",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642027,
+          "name": "marhl-precision-task-267",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642036,
+          "name": "marhl-precision-task-274",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642084,
+          "name": "marhl-precision-task-278",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642085,
+          "name": "marhl-precision-task-270",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642088,
+          "name": "marhl-precision-task-262",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642102,
+          "name": "marhl-precision-task-275",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642103,
+          "name": "marhl-precision-task-290",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642108,
+          "name": "marhl-precision-task-279",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642127,
+          "name": "marhl-precision-task-282",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642129,
+          "name": "marhl-precision-task-271",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642137,
+          "name": "marhl-precision-task-298",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642152,
+          "name": "marhl-precision-task-291",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642161,
+          "name": "marhl-precision-task-283",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642176,
+          "name": "marhl-precision-task-294",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642211,
+          "name": "marhl-precision-task-263",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642212,
+          "name": "marhl-precision-task-299",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        },
+        {
+          "id": 140164642253,
+          "name": "marhl-precision-task-295",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45699963490,
+          "run_attempt": 1,
+          "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+        }
+      ],
+      "run_snapshot_sha256": "42d400ea2e6003e1d014f2d727ac57b73a0eb9f5dbedfd5dec0b399755f5860c",
+      "jobs_snapshot_sha256": "87f48ffa79cf551daac1bc856bbb8877e9f0a45a6dc6e7ff01398898868b8a9a"
     }
   ],
-  "numerical_integrations_performed": 0,
   "local_workers": {
     "paused_workers": 9,
     "verified_state": "T",
     "restarted": false,
-    "checked_at": "2026-11-26T20:38:50Z"
+    "checked_at": "2026-11-26T22:26:16.318467+00:00"
   },
-  "updated_at": "2026-11-26T20:56:17Z"
+  "numerical_integrations_performed": 0,
+  "collection_errors": [],
+  "updated_at": "2026-11-26T22:27:04.668042+00:00"
 }

@@ -1,0 +1,44 @@
+{
+  "request_accepted": true,
+  "post_exit_code": 0,
+  "run_id": 45901798759,
+  "parent_run": 45336593648,
+  "task_indices": [
+    7,
+    15,
+    19,
+    35
+  ],
+  "producer_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+  "do_not_repeat_post": true,
+  "parent_selection_sha256": "544f4c93f6d9abc6c339e4f6e591dcf0ac63450bbc77a6dae5b02ce0141a469d",
+  "parent_audit_sha256": "b5f1458774a8eb08b040fe93718f627b3787dbe7a536ed920190d2f1f45816cd",
+  "request_sha256": "937f43d960965e1aebafc829aec7b84504fbb72e7c97003e47e409ab4d84225e",
+  "full_task_count": 1520,
+  "continued_indices": [
+    7,
+    15,
+    19,
+    35
+  ],
+  "no_overlap_with_queue_recovery": [
+    6,
+    14,
+    22,
+    23
+  ],
+  "numerical_source_or_settings_changed": false,
+  "checked_at": "2026-11-26T22:27:04.668042+00:00",
+  "jobs": [
+    {
+      "id": 140189116520,
+      "name": "marhl-full-precision",
+      "status": "queued",
+      "conclusion": null,
+      "head_sha": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022"
+    }
+  ],
+  "matching_linux_validation_required_before_compute": true,
+  "actual_compute_jobs_bound": false,
+  "earlier52_tasks_remain_required": true
+}

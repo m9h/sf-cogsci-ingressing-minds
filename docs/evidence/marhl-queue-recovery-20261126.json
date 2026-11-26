@@ -1,0 +1,127 @@
+{
+  "prepared_at": "2026-11-26T21:53:54.950615+00:00",
+  "reason": "Verified 24-hour runner-queue expiry; no numerical output for any replaced task.",
+  "source_revision": "a3778b8cbb8bfdc16a9ddd4bbe84dd213fdf1022",
+  "workflow_id": 424197967,
+  "full_task_count": 1520,
+  "replacement_task_count": 31,
+  "parent_selection_sha256": "e417b6cfaad95d0e0848aa7a856164bb1750b3dc870b255120c5665a590040cf",
+  "unchanged_live_batch1_run": 45699963490,
+  "unchanged_live_initial_tasks": [
+    38,
+    39,
+    42,
+    43
+  ],
+  "completed_initial_tasks_needing_collection": [
+    7,
+    15,
+    19,
+    35
+  ],
+  "no_numerical_source_or_settings_changed": true,
+  "local_workers_restarted": false,
+  "checked_at": "2026-11-26T21:57:22.884147+00:00",
+  "workflows_dispatched": 5,
+  "actual_compute_jobs_bound": false,
+  "runs": [
+    {
+      "batch": 0,
+      "expired_run": 45336593648,
+      "parent_run": 44608641889,
+      "task_indices": [
+        6,
+        14,
+        22,
+        23
+      ],
+      "request_sha256": "2b75880414f94117c0cf93a22c7daa5ec5834c00f7c763924c0c728c01a119b3",
+      "run_id": 45901252228,
+      "validation_job_id": 140187294714,
+      "status": "queued",
+      "request_accepted": true,
+      "do_not_repeat_post": true
+    },
+    {
+      "batch": 2,
+      "expired_run": 45700017245,
+      "parent_run": 44625023792,
+      "task_indices": [
+        518,
+        519,
+        527,
+        530,
+        531,
+        539,
+        543,
+        546,
+        547
+      ],
+      "request_sha256": "12d4e83217d6cf9e422421944babcd77dedd20c193c50e43a59711f2cc49f85f",
+      "run_id": 45901319362,
+      "validation_job_id": 140187516767,
+      "status": "queued",
+      "request_accepted": true,
+      "do_not_repeat_post": true
+    },
+    {
+      "batch": 3,
+      "expired_run": 45700022954,
+      "parent_run": 44625203552,
+      "task_indices": [
+        775,
+        787,
+        790,
+        791
+      ],
+      "request_sha256": "6a0a07c39f8f42269a5b87555abb512a91ba9f2123f64b6014c48bf2bc303b0a",
+      "run_id": 45901326344,
+      "validation_job_id": 140187536842,
+      "status": "queued",
+      "request_accepted": true,
+      "do_not_repeat_post": true
+    },
+    {
+      "batch": 4,
+      "expired_run": 45700028511,
+      "parent_run": 44657098734,
+      "task_indices": [
+        1026,
+        1027,
+        1031,
+        1034,
+        1035,
+        1050,
+        1051
+      ],
+      "request_sha256": "7e91eb45c36d2cb531baa06474ebad0476ddde50e8308ef7429ceaeb9d45ad6e",
+      "run_id": 45901332600,
+      "validation_job_id": 140187559407,
+      "status": "queued",
+      "request_accepted": true,
+      "do_not_repeat_post": true
+    },
+    {
+      "batch": 5,
+      "expired_run": 45700032793,
+      "parent_run": 44657261295,
+      "task_indices": [
+        1282,
+        1283,
+        1286,
+        1287,
+        1291,
+        1310,
+        1311
+      ],
+      "request_sha256": "3a0dda9a808743fb853c4c5d02388067d67148b537ff0904c911f2cebac57ff8",
+      "run_id": 45901385197,
+      "validation_job_id": 140187728759,
+      "status": "queued",
+      "request_accepted": true,
+      "do_not_repeat_post": true
+    }
+  ],
+  "all_requests_accepted_and_uniquely_bound": true,
+  "next_action": "Bind actual compute jobs only after each matching Linux validation gate passes; retain all 1520 tasks and original parent lineages."
+}
