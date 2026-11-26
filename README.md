@@ -90,7 +90,7 @@ scientific result. Missing evidence and unfinished integrations still require
 work; completion does not mean forcing every comparison to pass.
 
 The eight models without a passing whole-model breaking audit have different
-remaining issues. Cloud job states below were checked at 20:42 UTC on 26 November;
+remaining issues. Cloud observations are dated in the [execution evidence](docs/evidence/cloud-execution-status-20261126.json);
 terminal jobs are not scientific results until their outputs are audited:
 
 | Model | Current gap |
@@ -100,8 +100,8 @@ terminal jobs are not scientific results until their outputs are audited:
 | Fuss (8) | [All 32 current outputs audited](docs/evidence/fuss-continuation-audit-20261126.json): 1,539 complete trajectories, including all 1,283 parent trajectories unchanged and 256 additional completions. Their 363 complete branches agree across all 2,178 comparisons. The next full 32-partition continuation has five terminal jobs awaiting collection, five running and 22 queued. The full 1,309-branch control scope and eighteen-case replay remain open. |
 | François (25) | The separate Linux inventory covers all 118 cases, with 38 failures and six unresolved conditional decisions. The [published evidence bundle](https://github.com/m9h/GRN_ODE/releases/tag/kinetics-francois-inventory-20261125) preserves all sixteen original archives and a reproduction guide. A [fresh download reproduces the recorded audit](docs/evidence/francois-release-verification-20261125.json); raw full trajectory arrays are unavailable. |
 | Ciliberto (28) | Three of 260 first-stage diagnostic branches retain mismatches; later controls and the full 74-case audit remain open. The [05:32 UTC archive inventory](docs/evidence/ciliberto-storage-and-streaming-20261126.json) contains 177 original ZIPs totaling 434 GB. A bounded-storage audit and durable archive transport are implemented; the corrected one-archive pilot is queued. No new scientific result is claimed from transport tests. |
-| Marhl (30) | [179 full trajectories and 22 agreeing branches are verified](docs/evidence/marhl-recovery-audit-20261126.json). Task 34 reached all 221,001 samples; all earlier samples in the four recovered checkpoints remain bitwise unchanged. The next three-task continuation is terminal and awaits collection. Earlier 56-task continuation work also remains to be consolidated. Full scope remains 1,520 tasks, 380 branches and twelve cases. |
-| Vilar (32) | Breaking validation and three paired cases remain unresolved. [Four precision checkpoints advanced another 409–516 samples](docs/evidence/vilar-checkpoint-progress-20261125.json), preserving earlier samples exactly. All four jobs in their next continuation are terminal and await collection. No completed integration is claimed from unaudited output. |
+| Marhl (30) | [180 full trajectories and 23 agreeing branches are verified](docs/evidence/marhl-recovery-audit-20261126.json), with all 138 comparisons passing. Task 1047 has joined task 34 at all 221,001 samples, preserving every earlier sample. [Only tasks 1042 and 1043 were continued in this recovery batch](docs/evidence/checkpoint-continuations-20261126T2051.json); their gate is queued. Earlier 56-task continuation work still needs consolidation. Full scope remains 1,520 tasks, 380 branches and twelve cases. |
+| Vilar (32) | The [retained evidence release](https://github.com/m9h/GRN_ODE/releases/tag/precision-vilar-retained-20261126) preserves 27 original ZIPs and the full 17-partition precision selection. A [fresh audit reproduces 39 complete trajectories](docs/evidence/vilar-retained-release-verification-20261126.json): four diagnostics agree, including the baseline, and nine retain native mismatches despite Taylor precision convergence. Four unfinished checkpoints advanced 510–516 samples, preserving every earlier sample; their next continuation is queued. Breaking validation and three paired cases remain unresolved. |
 | Rohwer (35) | [All 32 first-stage continuation outputs audited](docs/evidence/rohwer-checkpoint-audit-20261125.json): 2,027 verified trajectories, including all 1,369 parent trajectories unchanged. There are 477 terminal diagnostics: 384 agreements, 34 mismatches and 59 recorded integration failures. The next continuation has 17 terminal jobs awaiting collection, one running and fourteen queued. The [197-output later-control audit](docs/evidence/rohwer-later-audit-20261126.json) verifies 5,324 trajectories and 1,216 terminal diagnostics: 1,141 agreements, 43 mismatches and 32 recorded integration failures. All 512 later-control partitions and the full case replay remain required. |
 
 Our active goal extends the kinetics and memory computations to all **35
@@ -249,16 +249,17 @@ preparation audit, import restoration proof and continuation plan byte for byte.
 Its [uv reproduction guide](https://github.com/m9h/GRN_ODE/blob/07568199b113fee32f99d3feefed38e6d845b01c/python/results/catalog-breaking-ueda-continuation-20261118/RELEASE.md)
 requires no new ODE integrations; the complete recovery above builds on these
 preserved inputs.
-The [current execution table](FORKS.md#current-execution) records the next Fuss
-case-control continuations, Tyson evidence restoration and Vilar precision checkpoints. The
-four latest Vilar checkpoints are collected and verified: they add 373–409
-samples each with every old sample preserved bit-for-bit, but no integration
-has yet finished in those four partitions. François's full
-Linux inventory is audited. The four earlier
-local collection and audit watchers have finished. No local numerical worker
-has been resumed.
+The [current execution table](FORKS.md#current-execution) records the latest
+verified evidence and cloud continuations. Tyson's initial inventory is restored
+and published. The [latest Vilar checkpoint audit](docs/evidence/vilar-checkpoint-progress-20261126.json)
+adds 510–516 samples per unfinished partition with every earlier sample preserved
+bit-for-bit. The [retained Vilar release](https://github.com/m9h/GRN_ODE/releases/tag/precision-vilar-retained-20261126)
+now preserves the full seventeen-partition selection and its ancestors; fresh
+downloads reproduce all thirteen complete diagnostics and retain the four
+unfinished checkpoints. The legacy and segment-checkpoint source versions are
+both pinned explicitly. No local numerical worker has been resumed.
 
-The [latest Fuss audit](docs/evidence/fuss-checkpoint-audit-20261121.json)
+The [21 November Fuss snapshot](docs/evidence/fuss-checkpoint-audit-20261121.json)
 checks all 31 available original ZIPs and 1,016 complete trajectories. All
 760 parent trajectories remain unchanged, with 256 new ones; 234 complete
 branches pass all 1,404 comparisons. Partition 11 lost its hosted runner's
@@ -267,7 +268,7 @@ reaudited separately, preserving 34 trajectories. The
 [two new continuation scopes](docs/evidence/fuss-continuations-20261121.json)
 cover all 32 original partitions exactly once, using the appropriate verified
 parent for each. [Both gates passed and all 32 actual jobs are bound](docs/evidence/fuss-job-bindings-20261123.json).
-The runs are now terminal and their latest checkpoint collection is pending.
+Those runs subsequently finished; the current audit and continuation state are in the table above.
 No complete case or whole-model recovery is claimed.
 
 The [new cloud collection record](docs/evidence/cloud-collection-20261119.json)

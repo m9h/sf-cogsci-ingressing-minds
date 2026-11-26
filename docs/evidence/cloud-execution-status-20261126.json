@@ -59,7 +59,8 @@
         }
       ],
       "run_snapshot_sha256": "b98ef70bba693199bc8d1225a157ba7f8e60bcdac9ae0a710980140ac5028322",
-      "jobs_snapshot_sha256": "dd61302de9cd71d5ccc51130d756fb3831a875b03bbfba5fa633cd51ab6e619d"
+      "jobs_snapshot_sha256": "dd61302de9cd71d5ccc51130d756fb3831a875b03bbfba5fa633cd51ab6e619d",
+      "checked_at": "2026-11-26T20:41:58Z"
     },
     {
       "run_id": 45703326499,
@@ -373,7 +374,8 @@
         }
       ],
       "run_snapshot_sha256": "171057c7d7446141a4cfd6802ea46fdb5c34eaeb21de48b04037cb6898871a2f",
-      "jobs_snapshot_sha256": "17e939ccf7425385b59b73f0d9b1cf9dcd29e5eb2103c37923196823a0142cbe"
+      "jobs_snapshot_sha256": "17e939ccf7425385b59b73f0d9b1cf9dcd29e5eb2103c37923196823a0142cbe",
+      "checked_at": "2026-11-26T20:41:58Z"
     },
     {
       "run_id": 45761582215,
@@ -669,7 +671,8 @@
         }
       ],
       "run_snapshot_sha256": "32beb3009bafe88c7f4767455fff6f955a40a825a9b9240aa76c151be9a22eb5",
-      "jobs_snapshot_sha256": "d73e6e143a0e9a620d80c87c61237ce2dfb4633619188b899d9b6c22e0ac2335"
+      "jobs_snapshot_sha256": "d73e6e143a0e9a620d80c87c61237ce2dfb4633619188b899d9b6c22e0ac2335",
+      "checked_at": "2026-11-26T20:41:58Z"
     },
     {
       "run_id": 45761594168,
@@ -702,7 +705,8 @@
         }
       ],
       "run_snapshot_sha256": "4f523e45b0f4dc62784bdd742a4af4544f3b7d0e90a69334f5bb60452f11c130",
-      "jobs_snapshot_sha256": "ebf603f2bb550cb425e598c918061acd33cf573202201bc1d46b2a23c3ea4bbf"
+      "jobs_snapshot_sha256": "ebf603f2bb550cb425e598c918061acd33cf573202201bc1d46b2a23c3ea4bbf",
+      "checked_at": "2026-11-26T20:41:58Z"
     },
     {
       "run_id": 45761615797,
@@ -735,7 +739,8 @@
         }
       ],
       "run_snapshot_sha256": "8c213c273992327f4eb044e4d47b796f7782f9dd70faba05a09f31394d86a2da",
-      "jobs_snapshot_sha256": "df710d2560b07a0467ea35bd1b495dcbce7f04f3394a175a0bd708af3b901ab4"
+      "jobs_snapshot_sha256": "df710d2560b07a0467ea35bd1b495dcbce7f04f3394a175a0bd708af3b901ab4",
+      "checked_at": "2026-11-26T20:41:58Z"
     },
     {
       "run_id": 45761626752,
@@ -786,7 +791,8 @@
         }
       ],
       "run_snapshot_sha256": "9292e69ff4d22be9de6949351a3ed240a82601f650d897206600085a90fcdf93",
-      "jobs_snapshot_sha256": "842cb740ed043c07bacaf090df6beea13e0384087d234785f0b7fa871a6c84fd"
+      "jobs_snapshot_sha256": "842cb740ed043c07bacaf090df6beea13e0384087d234785f0b7fa871a6c84fd",
+      "checked_at": "2026-11-26T20:41:58Z"
     },
     {
       "run_id": 45892778117,
@@ -809,7 +815,54 @@
         }
       ],
       "run_snapshot_sha256": "3c4c0b0319685dfe6d308d2e1fab9c2d74b433e44a38b019e27dde282f3875f3",
-      "jobs_snapshot_sha256": "f916d97e454caddb045890ea33a4141d5201698cf2badc9698aedc8b20483a73"
+      "jobs_snapshot_sha256": "f916d97e454caddb045890ea33a4141d5201698cf2badc9698aedc8b20483a73",
+      "checked_at": "2026-11-26T20:41:58Z"
+    },
+    {
+      "checked_at": "2026-11-26T20:56:17Z",
+      "run_id": 45893802753,
+      "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+      "workflow_id": 416944455,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140162635582,
+          "name": "precision-checkpoints",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45893802753,
+          "run_attempt": 1,
+          "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089"
+        }
+      ],
+      "compute_jobs_not_bound_yet": true
+    },
+    {
+      "checked_at": "2026-11-26T20:56:17Z",
+      "run_id": 45893805245,
+      "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+      "workflow_id": 424428602,
+      "status": "queued",
+      "conclusion": null,
+      "job_status_counts": {
+        "queued": 1
+      },
+      "jobs": [
+        {
+          "id": 140162641873,
+          "name": "marhl-full-precision",
+          "status": "queued",
+          "conclusion": null,
+          "run_id": 45893805245,
+          "run_attempt": 1,
+          "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed"
+        }
+      ],
+      "compute_jobs_not_bound_yet": true
     }
   ],
   "numerical_integrations_performed": 0,
@@ -818,5 +871,6 @@
     "verified_state": "T",
     "restarted": false,
     "checked_at": "2026-11-26T20:38:50Z"
-  }
+  },
+  "updated_at": "2026-11-26T20:56:17Z"
 }

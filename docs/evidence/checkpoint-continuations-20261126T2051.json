@@ -1,0 +1,142 @@
+{
+  "prepared_at": "2026-11-26T20:51:00Z",
+  "full_scopes_retained": {
+    "vilar_partitions": 17,
+    "marhl_tasks": 1520,
+    "marhl_branches": 380,
+    "marhl_cases": 12
+  },
+  "marhl_completed_tasks_retained": [
+    34,
+    1047
+  ],
+  "requests": [
+    {
+      "kind": "vilar",
+      "request": {
+        "ref": "precision-segment-checkpoints",
+        "inputs": {
+          "operation": "compute",
+          "model": "35",
+          "resume_run": "45700337838",
+          "partition_indices": "[8,9,11,16]",
+          "migrate_segments": "false"
+        }
+      },
+      "receipt": {
+        "status": "accepted_identity_recorded",
+        "exit_code": 0,
+        "run_id": 45893802753,
+        "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+        "workflow_id": 416944455,
+        "request": {
+          "ref": "precision-segment-checkpoints",
+          "inputs": {
+            "operation": "compute",
+            "model": "35",
+            "resume_run": "45700337838",
+            "partition_indices": "[8,9,11,16]",
+            "migrate_segments": "false"
+          }
+        },
+        "workflow_dispatches": 1,
+        "no_repeat_post": true
+      },
+      "latest_jobs": {
+        "total_count": 1,
+        "jobs": [
+          {
+            "id": 140162635582,
+            "run_id": 45893802753,
+            "workflow_name": "Taylor checkpoint validation",
+            "head_branch": "precision-segment-checkpoints",
+            "run_url": "https://api.github.com/repos/m9h/GRN_ODE/actions/runs/45893802753",
+            "run_attempt": 1,
+            "node_id": "CR_kwDOVmo1l88AAAAgolgXPg",
+            "head_sha": "09c5285fc1e7ec5a6aa99e19d2608729309e0089",
+            "url": "https://api.github.com/repos/m9h/GRN_ODE/actions/jobs/140162635582",
+            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45893802753/job/140162635582",
+            "status": "queued",
+            "conclusion": null,
+            "created_at": "2026-11-26T20:49:27Z",
+            "started_at": "2026-11-26T20:49:27Z",
+            "completed_at": null,
+            "name": "precision-checkpoints",
+            "steps": [],
+            "check_run_url": "https://api.github.com/repos/m9h/GRN_ODE/check-runs/140162635582",
+            "labels": [
+              "ubuntu-24.04"
+            ],
+            "runner_id": 0,
+            "runner_name": "",
+            "runner_group_id": 0,
+            "runner_group_name": ""
+          }
+        ]
+      },
+      "parent_proof_sha256": "3b2fc86c8ef75890c23e247571732627e52ae08b5717ff08045578bcce1482b6"
+    },
+    {
+      "kind": "marhl",
+      "request": {
+        "ref": "kinetics-marhl-no-output-recovery",
+        "inputs": {
+          "operation": "compute",
+          "resume_run": "45761626752",
+          "task_indices": "[1042,1043]"
+        }
+      },
+      "receipt": {
+        "status": "accepted_identity_recorded",
+        "exit_code": 0,
+        "run_id": 45893805245,
+        "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+        "workflow_id": 424428602,
+        "request": {
+          "ref": "kinetics-marhl-no-output-recovery",
+          "inputs": {
+            "operation": "compute",
+            "resume_run": "45761626752",
+            "task_indices": "[1042,1043]"
+          }
+        },
+        "workflow_dispatches": 1,
+        "no_repeat_post": true
+      },
+      "latest_jobs": {
+        "total_count": 1,
+        "jobs": [
+          {
+            "id": 140162641873,
+            "run_id": 45893805245,
+            "workflow_name": "Marhl missing-output recovery and complete case audit",
+            "head_branch": "kinetics-marhl-no-output-recovery",
+            "run_url": "https://api.github.com/repos/m9h/GRN_ODE/actions/runs/45893805245",
+            "run_attempt": 1,
+            "node_id": "CR_kwDOVmo1l88AAAAgolgv0Q",
+            "head_sha": "cf4d5edd56a0e7cc6c822da93ab6e9aec380aaed",
+            "url": "https://api.github.com/repos/m9h/GRN_ODE/actions/jobs/140162641873",
+            "html_url": "https://github.com/m9h/GRN_ODE/actions/runs/45893805245/job/140162641873",
+            "status": "queued",
+            "conclusion": null,
+            "created_at": "2026-11-26T20:49:28Z",
+            "started_at": "2026-11-26T20:49:28Z",
+            "completed_at": null,
+            "name": "marhl-full-precision",
+            "steps": [],
+            "check_run_url": "https://api.github.com/repos/m9h/GRN_ODE/check-runs/140162641873",
+            "labels": [
+              "ubuntu-24.04"
+            ],
+            "runner_id": 0,
+            "runner_name": "",
+            "runner_group_id": 0,
+            "runner_group_name": ""
+          }
+        ]
+      },
+      "parent_proof_sha256": "f23bef8fb6a448ee9507fb626b9dc855512142402184d2ef82a21f3a08c3f442"
+    }
+  ],
+  "numerical_integrations_performed_locally": 0
+}

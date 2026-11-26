@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-11-26T20:48:02.168454+00:00",
+  "run_id": 45700337838,
+  "parent_run_id": 45508141808,
+  "vilar": [
+    {
+      "partition": 8,
+      "artifact_id": 15091348640,
+      "archive_sha256": "sha256:ab89912bd3fa676228f58550a74fc7dc7d1317335c504549ac0a2d84e1c616d1",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "ebc00b5479696903b38ecfd55869027d78658cf600ecdf14b8cc216625079b1e",
+      "parent_checkpoint_sha256": "76a86028a144fe0cdabe99bc2f28daac332b8e6f126e2fa52c83f0b12d116a3f",
+      "parent_samples": 13188,
+      "saved_samples": 13698,
+      "new_samples": 510,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 940842296,
+      "steps": 1026842296,
+      "active_time": [
+        "1.369772536536571187704375093303834342921e+2",
+        "2.154520275783353743458229467933655207576e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 9,
+      "artifact_id": 15081605809,
+      "archive_sha256": "sha256:476265f6ef5321fee7809a8c7767809ec3b6a7b958f55a8f61d58cb2b496d6a5",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "817a8421f190ab41a447bd3c12f86f2fed0e1a67790c7dcbace1f023f56d8ee6",
+      "parent_checkpoint_sha256": "77d0161f63036edcb70137c4f37a608e8e6498709460e4880976df58b64e40bd",
+      "parent_samples": 13331,
+      "saved_samples": 13846,
+      "new_samples": 515,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 964842296,
+      "steps": 1051842296,
+      "active_time": [
+        "1.384595232287701237227956222900423053894e+2",
+        "-3.254268058191133728389737686281505074706e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 11,
+      "artifact_id": 15092555490,
+      "archive_sha256": "sha256:8640cf019aef8f1f18bfa07a30e8ffd30dac60bcf338d468549302526f405d5f",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "046daa494b64c4047d521af650d6da3642ec0ab1391c3c483b43abe44e7555b6",
+      "parent_checkpoint_sha256": "511957622209787786aa7ff82d631159869d9d28d17351332a463c73eabf100f",
+      "parent_samples": 13200,
+      "saved_samples": 13716,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 942842296,
+      "steps": 1029842296,
+      "active_time": [
+        "1.371551255374263409124124979011364121282e+2",
+        "-2.987854432551217353922804646752445452291e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    },
+    {
+      "partition": 16,
+      "artifact_id": 15088130439,
+      "archive_sha256": "sha256:985f526893b0527c057a9b408b4fd79b85e4eeb9db12f09d87a297abe546d890",
+      "all_zip_members_verified": 8,
+      "checkpoint_sha256": "df181572aee710b18ea0ed5552a489caa72e3482deedaa219235ac140e438100",
+      "parent_checkpoint_sha256": "1f93bebc810544f8fe5467d6a46cb3111fb440b47db264e1fbe08b98d7f2a4fc",
+      "parent_samples": 12969,
+      "saved_samples": 13485,
+      "new_samples": 516,
+      "original_prefix_bitwise_equal": true,
+      "checkpoint_metadata_checksums_verified": true,
+      "parent_steps": 903842296,
+      "steps": 990842296,
+      "active_time": [
+        "1.348428009452965085177080015186137316882e+2",
+        "-2.001344174243815350863529414991346459588e-37"
+      ],
+      "complete_integrations": 0,
+      "mpfr_state_validation": "Deferred to matching Linux runtime before resume"
+    }
+  ],
+  "numerical_integrations_performed_locally": 0,
+  "new_complete_cases": 0,
+  "new_complete_models": 0,
+  "full_required_partitions": 17,
+  "current_collector_source": "f189ca3145d4be660af67e9c5451203946008c4c",
+  "full_case_recovery_claimed": false
+}
