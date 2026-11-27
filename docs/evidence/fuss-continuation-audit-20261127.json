@@ -1,0 +1,346 @@
+{
+  "checked_at": "2026-11-27T02:15:39.876847+00:00",
+  "network": 8,
+  "model_id": "BIOMD0000000069",
+  "snapshot_sha256": "810af805d994aa1aa1c4eeb90c3832754897eeee23214bd16e2299e1f93d5437",
+  "selection_sha256": "fa5cc57faf8eb319d4d119bab1a3807c122050f6cc0b7ae26ac783fa360e888e",
+  "requested_selection_sha256": "9cec492de9f99beee74da985d760c03b3359815cf0d4874d36e8d9be4cf4a000",
+  "full_selected_partitions": 32,
+  "full_required_case_control_branches": 1309,
+  "full_required_trajectories": 5236,
+  "required_cases": 18,
+  "replaced_indices": [
+    9,
+    12
+  ],
+  "retained_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "pending_requested_indices": [
+    0,
+    4,
+    6,
+    7,
+    8,
+    11,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "verified_arrays": 1591,
+  "parent_arrays_preserved_byte_identical": 1584,
+  "new_arrays": 7,
+  "complete_audited_branches": 377,
+  "branch_statuses": {
+    "confirmed": 377
+  },
+  "comparisons": 2262,
+  "passing_comparisons": 2262,
+  "preservation": [
+    {
+      "index": 0,
+      "replaced": false,
+      "parent_artifact_id": 14993048273,
+      "artifact_id": 14993048273,
+      "parent_arrays_preserved": 31,
+      "new_arrays": 0
+    },
+    {
+      "index": 1,
+      "replaced": false,
+      "parent_artifact_id": 15155226820,
+      "artifact_id": 15155226820,
+      "parent_arrays_preserved": 50,
+      "new_arrays": 0
+    },
+    {
+      "index": 2,
+      "replaced": false,
+      "parent_artifact_id": 15150132998,
+      "artifact_id": 15150132998,
+      "parent_arrays_preserved": 47,
+      "new_arrays": 0
+    },
+    {
+      "index": 3,
+      "replaced": false,
+      "parent_artifact_id": 15135827608,
+      "artifact_id": 15135827608,
+      "parent_arrays_preserved": 34,
+      "new_arrays": 0
+    },
+    {
+      "index": 4,
+      "replaced": false,
+      "parent_artifact_id": 14935444081,
+      "artifact_id": 14935444081,
+      "parent_arrays_preserved": 46,
+      "new_arrays": 0
+    },
+    {
+      "index": 5,
+      "replaced": false,
+      "parent_artifact_id": 15127927712,
+      "artifact_id": 15127927712,
+      "parent_arrays_preserved": 42,
+      "new_arrays": 0
+    },
+    {
+      "index": 6,
+      "replaced": false,
+      "parent_artifact_id": 14962832957,
+      "artifact_id": 14962832957,
+      "parent_arrays_preserved": 34,
+      "new_arrays": 0
+    },
+    {
+      "index": 7,
+      "replaced": false,
+      "parent_artifact_id": 14934687252,
+      "artifact_id": 14934687252,
+      "parent_arrays_preserved": 55,
+      "new_arrays": 0
+    },
+    {
+      "index": 8,
+      "replaced": false,
+      "parent_artifact_id": 15087890157,
+      "artifact_id": 15087890157,
+      "parent_arrays_preserved": 74,
+      "new_arrays": 0
+    },
+    {
+      "index": 9,
+      "replaced": true,
+      "parent_artifact_id": 14956902799,
+      "artifact_id": 15165449483,
+      "parent_arrays_preserved": 43,
+      "new_arrays": 4
+    },
+    {
+      "index": 10,
+      "replaced": false,
+      "parent_artifact_id": 15153548376,
+      "artifact_id": 15153548376,
+      "parent_arrays_preserved": 67,
+      "new_arrays": 0
+    },
+    {
+      "index": 11,
+      "replaced": false,
+      "parent_artifact_id": 14924422971,
+      "artifact_id": 14924422971,
+      "parent_arrays_preserved": 55,
+      "new_arrays": 0
+    },
+    {
+      "index": 12,
+      "replaced": true,
+      "parent_artifact_id": 14985450003,
+      "artifact_id": 15164863151,
+      "parent_arrays_preserved": 55,
+      "new_arrays": 3
+    },
+    {
+      "index": 13,
+      "replaced": false,
+      "parent_artifact_id": 14985293989,
+      "artifact_id": 14985293989,
+      "parent_arrays_preserved": 63,
+      "new_arrays": 0
+    },
+    {
+      "index": 14,
+      "replaced": false,
+      "parent_artifact_id": 15148254409,
+      "artifact_id": 15148254409,
+      "parent_arrays_preserved": 54,
+      "new_arrays": 0
+    },
+    {
+      "index": 15,
+      "replaced": false,
+      "parent_artifact_id": 15148621076,
+      "artifact_id": 15148621076,
+      "parent_arrays_preserved": 55,
+      "new_arrays": 0
+    },
+    {
+      "index": 16,
+      "replaced": false,
+      "parent_artifact_id": 14970752997,
+      "artifact_id": 14970752997,
+      "parent_arrays_preserved": 59,
+      "new_arrays": 0
+    },
+    {
+      "index": 17,
+      "replaced": false,
+      "parent_artifact_id": 14998311254,
+      "artifact_id": 14998311254,
+      "parent_arrays_preserved": 46,
+      "new_arrays": 0
+    },
+    {
+      "index": 18,
+      "replaced": false,
+      "parent_artifact_id": 15000737307,
+      "artifact_id": 15000737307,
+      "parent_arrays_preserved": 35,
+      "new_arrays": 0
+    },
+    {
+      "index": 19,
+      "replaced": false,
+      "parent_artifact_id": 15008241702,
+      "artifact_id": 15008241702,
+      "parent_arrays_preserved": 75,
+      "new_arrays": 0
+    },
+    {
+      "index": 20,
+      "replaced": false,
+      "parent_artifact_id": 15019742308,
+      "artifact_id": 15019742308,
+      "parent_arrays_preserved": 43,
+      "new_arrays": 0
+    },
+    {
+      "index": 21,
+      "replaced": false,
+      "parent_artifact_id": 15027581221,
+      "artifact_id": 15027581221,
+      "parent_arrays_preserved": 47,
+      "new_arrays": 0
+    },
+    {
+      "index": 22,
+      "replaced": false,
+      "parent_artifact_id": 15036570193,
+      "artifact_id": 15036570193,
+      "parent_arrays_preserved": 35,
+      "new_arrays": 0
+    },
+    {
+      "index": 23,
+      "replaced": false,
+      "parent_artifact_id": 15043869714,
+      "artifact_id": 15043869714,
+      "parent_arrays_preserved": 43,
+      "new_arrays": 0
+    },
+    {
+      "index": 24,
+      "replaced": false,
+      "parent_artifact_id": 15045930214,
+      "artifact_id": 15045930214,
+      "parent_arrays_preserved": 27,
+      "new_arrays": 0
+    },
+    {
+      "index": 25,
+      "replaced": false,
+      "parent_artifact_id": 15048145891,
+      "artifact_id": 15048145891,
+      "parent_arrays_preserved": 55,
+      "new_arrays": 0
+    },
+    {
+      "index": 26,
+      "replaced": false,
+      "parent_artifact_id": 15057484308,
+      "artifact_id": 15057484308,
+      "parent_arrays_preserved": 43,
+      "new_arrays": 0
+    },
+    {
+      "index": 27,
+      "replaced": false,
+      "parent_artifact_id": 15059481935,
+      "artifact_id": 15059481935,
+      "parent_arrays_preserved": 60,
+      "new_arrays": 0
+    },
+    {
+      "index": 28,
+      "replaced": false,
+      "parent_artifact_id": 15060335799,
+      "artifact_id": 15060335799,
+      "parent_arrays_preserved": 47,
+      "new_arrays": 0
+    },
+    {
+      "index": 29,
+      "replaced": false,
+      "parent_artifact_id": 15067763177,
+      "artifact_id": 15067763177,
+      "parent_arrays_preserved": 55,
+      "new_arrays": 0
+    },
+    {
+      "index": 30,
+      "replaced": false,
+      "parent_artifact_id": 15069885797,
+      "artifact_id": 15069885797,
+      "parent_arrays_preserved": 42,
+      "new_arrays": 0
+    },
+    {
+      "index": 31,
+      "replaced": false,
+      "parent_artifact_id": 15072366749,
+      "artifact_id": 15072366749,
+      "parent_arrays_preserved": 67,
+      "new_arrays": 0
+    }
+  ],
+  "earlier_numeric_audits_recomputed": false,
+  "original_archive_and_payload_bytes_rechecked": true,
+  "collection_errors": [],
+  "case_recovery_claimed": false,
+  "whole_model_pass_claimed": false,
+  "numerical_integrations_performed": 0
+}

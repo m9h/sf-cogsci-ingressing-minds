@@ -1,0 +1,42 @@
+{
+  "case_recovery_claimed": false,
+  "checked_at": "2026-11-27T02:19:45.032333+00:00",
+  "complete_agreeing_branches": 27,
+  "fresh_original_zip_bytes": 2480359990,
+  "fresh_original_zip_sha256": "34563316467317e855eea753709f5aaefe4a50e2638b5fd658b3e924fa475299",
+  "fresh_release_asset_sha256": {
+    "798533710": "5b4eaccd416680fb0562f6e249cb670f2cfee4509bc4efbf19cb75f6b8d25f44",
+    "798542946": "0d76813c5933052a9119ff6316226f96ee49341d0771fffe58b46b9782076a16",
+    "798553166": "34b130eea738efb96966b3297396764405c340431dbbd814e323c2ccfcd701d3",
+    "798562324": "00a179e46963676d8af26cf6c02b44204b8e416d88a7b2d45aadee4690600b09",
+    "798573718": "11dded83720f0b3966a20151e9de42fa6d29ac779d3639d0a987e9dc51bf2b7f",
+    "798587504": "0e6e3e0fa19d58025a9266f7af7b3547b153fecd91eea8eff3cd017af4ece8f4"
+  },
+  "fresh_scientific_audit_sha256": "3b4430fdce369ff77f3ca9cbdd4cd4fa0bf5599025d44232bc10718fb8107002",
+  "full_partitions": 256,
+  "goal_complete": false,
+  "model_id": "BIOMD0000000697",
+  "numerical_integrations_performed": 0,
+  "original_payload_file_hashes_reproduced": true,
+  "original_scientific_audit_sha256": "8048575010357ae2f33e1581078c0a94b773e418e41c906a435f282bc64ee0b0",
+  "partition": 194,
+  "passing_comparisons": 162,
+  "receipt": {
+    "archive_bytes": 2480359990,
+    "archive_sha256": "sha256:34563316467317e855eea753709f5aaefe4a50e2638b5fd658b3e924fa475299",
+    "artifact_id": 15156719852,
+    "fresh_download_verified": true,
+    "manifest_asset_id": 798587504,
+    "manifest_bytes": 1823,
+    "manifest_sha256": "0e6e3e0fa19d58025a9266f7af7b3547b153fecd91eea8eff3cd017af4ece8f4",
+    "release_id": 460057345,
+    "release_tag": "kinetics-ciliberto-archives-20261126-g06"
+  },
+  "release_id": 460057345,
+  "release_url": "https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-archives-20261126-g06",
+  "required_cases": 74,
+  "required_full_branches": 7334,
+  "required_stage_branches": 6859,
+  "verified_arrays": 108,
+  "whole_model_pass_claimed": false
+}

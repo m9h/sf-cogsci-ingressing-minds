@@ -1,0 +1,453 @@
+{
+  "checked_at": "2026-11-27T02:04:19.644939+00:00",
+  "model_id": "BIOMD0000000038",
+  "network": 35,
+  "generation": 3,
+  "run_id": 45703326499,
+  "producer_revision": "fcf7fd8cf975bc9171370e05789661d9da4d35b4",
+  "binding_sha256": "700ff6ac98c8caf12111527e508b6cc8a0f803a2068f2eaa3cf22c714960bb76",
+  "selection_sha256": "71b8f9685a16e392a090787327a2a340f62a04ff8b3d95c692bd4abb738b7575",
+  "new_partition": 16,
+  "new_partition_stats": {
+    "partitions": 1,
+    "branches": 23,
+    "verified_arrays": 79,
+    "complete_terminal_diagnostics": 19,
+    "branch_status_counts": {
+      "confirmed": 13,
+      "incomplete": 4,
+      "mismatch": 2,
+      "interrupted": 4
+    },
+    "terminal_status_counts": {
+      "confirmed": 13,
+      "incomplete": 4,
+      "mismatch": 2
+    },
+    "available_comparisons": 104,
+    "passing_available_comparisons": 96,
+    "max_scaled_error": 2.519778315015603
+  },
+  "parent_partition_stats": {
+    "partitions": 1,
+    "branches": 23,
+    "verified_arrays": 67,
+    "complete_terminal_diagnostics": 16,
+    "branch_status_counts": {
+      "confirmed": 12,
+      "incomplete": 2,
+      "mismatch": 2,
+      "interrupted": 3,
+      "not_started": 4
+    },
+    "terminal_status_counts": {
+      "confirmed": 12,
+      "incomplete": 2,
+      "mismatch": 2
+    },
+    "available_comparisons": 91,
+    "passing_available_comparisons": 83,
+    "max_scaled_error": 2.519778315015603
+  },
+  "parent_arrays_preserved": 67,
+  "partition_audit_sha256": "158c243a9c8c0d6123091f2aacd1891cf8d534db2bfd6f9c2d96736dd49bbc7b",
+  "previous_arrays_preserved": 2223,
+  "all_retained_original_zip_and_payload_bytes_rechecked": true,
+  "new_complete_arrays": 12,
+  "latest_available_full_first_stage": {
+    "partitions": 32,
+    "branches": 750,
+    "verified_arrays": 2235,
+    "complete_terminal_diagnostics": 531,
+    "branch_status_counts": {
+      "interrupted": 81,
+      "confirmed": 427,
+      "incomplete": 68,
+      "not_started": 138,
+      "mismatch": 36
+    },
+    "terminal_status_counts": {
+      "confirmed": 427,
+      "incomplete": 68,
+      "mismatch": 36
+    },
+    "available_comparisons": 3097,
+    "passing_available_comparisons": 2932,
+    "max_scaled_error": 3.6459785314179936
+  },
+  "selected_generation_counts": {
+    "2": 14,
+    "3": 18
+  },
+  "generation3_collected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "generation3_pending_indices": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "full_first_stage_partitions": 32,
+  "full_first_stage_branches": 750,
+  "required_full_case_branches": 11674,
+  "required_cases": 123,
+  "latest_available_registry": [
+    {
+      "index": 0,
+      "generation": 3,
+      "job_id": 139546687823,
+      "artifact_id": 15094552301,
+      "archive_sha256": "sha256:2eb6b212897b633ca963a1c404bac3e0f3f7a6e825729cf6c996a0674402b8b4",
+      "execution_sha256": "a0e8a1829a3ee717cde22990152f2a8a5bff5126b2bac13e78fcd3073792461e",
+      "verified_arrays": 65,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15094552301/evidence"
+    },
+    {
+      "index": 1,
+      "generation": 3,
+      "job_id": 139546687782,
+      "artifact_id": 15101987709,
+      "archive_sha256": "sha256:b948d46f52f402dabe9cdc3ff95b20f234588df10262779cf229d2eb98df55ea",
+      "execution_sha256": "0c57d10997d73cc8397e1d5a18ecacba61f0db49f942c46d94d153216a4a49df",
+      "verified_arrays": 84,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15101987709/evidence"
+    },
+    {
+      "index": 2,
+      "generation": 3,
+      "job_id": 139546687649,
+      "artifact_id": 15095403656,
+      "archive_sha256": "sha256:64ff61d9c929e7c14b2fed963526e59b385975f85b81b6cb957348403fc8fbe6",
+      "execution_sha256": "191c857b8bdd83cb1383256479f7e4629565bf65b24d396041653a3a03180d93",
+      "verified_arrays": 84,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15095403656/evidence"
+    },
+    {
+      "index": 3,
+      "generation": 3,
+      "job_id": 139546687828,
+      "artifact_id": 15096643912,
+      "archive_sha256": "sha256:f73164bfec1da643f59c5d012d1749399e27728a7c8fb1583fdb4d8ee5d8c7f8",
+      "execution_sha256": "c66f09b424e4a1b10b5cfe23fd2a0c74e8819904f05d05de66b389f50309f114",
+      "verified_arrays": 80,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15096643912/evidence"
+    },
+    {
+      "index": 4,
+      "generation": 3,
+      "job_id": 139546687617,
+      "artifact_id": 15089373003,
+      "archive_sha256": "sha256:ff21fe70b4ccb321f7110ab417cf84037c37fe8d292923a102fe77fa1cd3cea6",
+      "execution_sha256": "7b2efbb2e5f9ecf1bc2fb2f8c6af5a0ca08ef105dd044e730e3fc79e4550d291",
+      "verified_arrays": 74,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15089373003/evidence"
+    },
+    {
+      "index": 5,
+      "generation": 3,
+      "job_id": 139546687606,
+      "artifact_id": 15085590882,
+      "archive_sha256": "sha256:898e006548761c684e0ce464fada509c519a2ebde5c62698a67e16af75b3e235",
+      "execution_sha256": "5c10025fa66a26e668f21323758f8cb33007c32b85195d7bcaf61e96d64fe6a9",
+      "verified_arrays": 62,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15085590882/evidence"
+    },
+    {
+      "index": 6,
+      "generation": 3,
+      "job_id": 139546687684,
+      "artifact_id": 15086290257,
+      "archive_sha256": "sha256:a40eced114a26744f3eba452adbc663de28274ef659220dfc061b5e221612ad1",
+      "execution_sha256": "b8c7c4f8ce9ff59953688855772b00cf348ee46e81f5fd7eacfdb7a7e0412810",
+      "verified_arrays": 73,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15086290257/evidence"
+    },
+    {
+      "index": 7,
+      "generation": 3,
+      "job_id": 139546687666,
+      "artifact_id": 15089298656,
+      "archive_sha256": "sha256:33462e962fce593bec3cbcf504a24475a446ea566475c8a339e81da5cec67d78",
+      "execution_sha256": "00476211567223ba8e39ab0fa026ecf9a574b32e5a36dd898134d599c902a974",
+      "verified_arrays": 94,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15089298656/evidence"
+    },
+    {
+      "index": 8,
+      "generation": 3,
+      "job_id": 139546687710,
+      "artifact_id": 15127416725,
+      "archive_sha256": "sha256:1990f0d7b91aa492c2b1da4683f044c408925b19a8afb00ffa5276df3415d931",
+      "execution_sha256": "9c8e1a0a72f4e72b5a7db147df89780dcf27ba2d04a67cbe2ee673ed11ed44d4",
+      "verified_arrays": 65,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15127416725/evidence"
+    },
+    {
+      "index": 9,
+      "generation": 3,
+      "job_id": 139546687680,
+      "artifact_id": 15126798805,
+      "archive_sha256": "sha256:7f141edc1d8b1e5e9667c0bc5ca7685511afda8f810cf58dbbab70e8d51c30ec",
+      "execution_sha256": "8c38f2dcdbdee0bcdd322f2d39e2495dae3eabed2dd40c474921883266f3b23a",
+      "verified_arrays": 43,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15126798805/evidence"
+    },
+    {
+      "index": 10,
+      "generation": 3,
+      "job_id": 139546687708,
+      "artifact_id": 15141151594,
+      "archive_sha256": "sha256:74cdabb977f72d1ea33ee18406c5dc11c097e8ce3a16b47b3df5d4db3b0f6ef4",
+      "execution_sha256": "d307ba6776ba67bad2ed2ca2c6a05f62192384dd0ed50f94281b7a2d7e33404f",
+      "verified_arrays": 84,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15141151594/evidence"
+    },
+    {
+      "index": 11,
+      "generation": 3,
+      "job_id": 139546687667,
+      "artifact_id": 15139487743,
+      "archive_sha256": "sha256:1ccc7b85e7da378d585d9a8170cfdc63768ba0f8a929c2992ad6ebeb1b68eaf9",
+      "execution_sha256": "1131fbe365e4e2717edde13b37e339e1546eea19bf58552b27184ba925f4fb66",
+      "verified_arrays": 92,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15139487743/evidence"
+    },
+    {
+      "index": 12,
+      "generation": 3,
+      "job_id": 139546687750,
+      "artifact_id": 15120561594,
+      "archive_sha256": "sha256:f6e3192d828a994fdd8200ff849b4c1d83b4941e489ce54574ee5f4b2be92156",
+      "execution_sha256": "d3fdb0596c9c00ee1498b1f7f909dba1e7d3bf71ec763a0f634f5b87a0cc7e10",
+      "verified_arrays": 93,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15120561594/evidence"
+    },
+    {
+      "index": 13,
+      "generation": 3,
+      "job_id": 139546687811,
+      "artifact_id": 15122649478,
+      "archive_sha256": "sha256:9020010d966c7f25904831164b284fa1f605aa3722148a7fb03478be09fb37a7",
+      "execution_sha256": "b4bd4735159a2178de118dd4eb32417d01516430dec3ff59b929c6a7c68d4342",
+      "verified_arrays": 96,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15122649478/evidence"
+    },
+    {
+      "index": 14,
+      "generation": 3,
+      "job_id": 139546687751,
+      "artifact_id": 15150457542,
+      "archive_sha256": "sha256:8778f82fcde3f8ec67b59e44416f8ce1398bef146c2ef1b69cbec92b29cf7705",
+      "execution_sha256": "b44c42e9e363cd31819ae779a07e231dc3f58b3a4b2b9013ad87b236b8068a4e",
+      "verified_arrays": 88,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15150457542/evidence"
+    },
+    {
+      "index": 15,
+      "generation": 3,
+      "job_id": 139546687946,
+      "artifact_id": 15142673289,
+      "archive_sha256": "sha256:7cf1d84ef6ab7393457af70332ab8d9c01cebe909a63c506522e98254446f91c",
+      "execution_sha256": "bff469e09e7229a4f80d21083119a1767a59982d012982fc24669c53366bfe02",
+      "verified_arrays": 87,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15142673289/evidence"
+    },
+    {
+      "index": 16,
+      "generation": 3,
+      "job_id": 139546687698,
+      "artifact_id": 15160733801,
+      "archive_sha256": "sha256:bd23b8bbf3b727462c6d022ce2464e20ab7ad806e87ab04f73a30910a720979c",
+      "execution_sha256": "aa0aa2c902af3e0ad88e7e2ef88d1ae8f9bc61d5d405e87aefe608670166e090",
+      "verified_arrays": 79,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-output16-observed-20261127T0118/evidence"
+    },
+    {
+      "index": 17,
+      "generation": 3,
+      "job_id": 139546687705,
+      "artifact_id": 15150927466,
+      "archive_sha256": "sha256:daa1e53b5c912ab282dd9fa0208d01b71c70a12765a2b3d22a83d14dd64424a8",
+      "execution_sha256": "477dc670962990235f24e8b7c2d36579198c42e08e0604fb51f2c4c15ce6ddb7",
+      "verified_arrays": 87,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-generation3-collection-20261126T2105/collection/45703326499/attempt-1/artifact-15150927466/evidence"
+    },
+    {
+      "index": 18,
+      "generation": 2,
+      "job_id": 138284070403,
+      "artifact_id": 15005627042,
+      "archive_sha256": "sha256:e9de12bded65cefd05b88dd732e8debe36b95e8dc05bfb464ee3c26740387866",
+      "execution_sha256": "8bf447f47fb628ae6b835439643ce9aa90cc01b78ad259e16622d282399fd296",
+      "verified_arrays": 34,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15005627042/evidence"
+    },
+    {
+      "index": 19,
+      "generation": 2,
+      "job_id": 138284070448,
+      "artifact_id": 15007627161,
+      "archive_sha256": "sha256:d861831b422baceeb6baf12b15d5e45098dde08efcc548968713992160a7e295",
+      "execution_sha256": "8d6d3357c52fbd9380faa0b0ac1c6432b44ab90f5c6402400e5b40ab99a9aa33",
+      "verified_arrays": 43,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15007627161/evidence"
+    },
+    {
+      "index": 20,
+      "generation": 2,
+      "job_id": 138284070653,
+      "artifact_id": 15008882713,
+      "archive_sha256": "sha256:71214c0caf321b72d10c1c5846e5b5197925b054390a052109cb735e905d15bb",
+      "execution_sha256": "4996bd6fecc7eb40c481816a64ad36d7346ad1e869de80def1169a1940249f38",
+      "verified_arrays": 33,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15008882713/evidence"
+    },
+    {
+      "index": 21,
+      "generation": 2,
+      "job_id": 138284070493,
+      "artifact_id": 15009024674,
+      "archive_sha256": "sha256:c0e75423c43832701c761d98846a9a65e219ace062180b462d003e163ec94b11",
+      "execution_sha256": "d9c3b0e7eca62d55a69819158bb989ce0f73806bdc446c3266a9c6092d43def9",
+      "verified_arrays": 28,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15009024674/evidence"
+    },
+    {
+      "index": 22,
+      "generation": 2,
+      "job_id": 138284070622,
+      "artifact_id": 15010917065,
+      "archive_sha256": "sha256:115aa897bcf325b194bd029aa4f0c0741e3db770d7c187e469e08d91a337c642",
+      "execution_sha256": "755ee2298408b957c33e841c2b955cc3deb1f3b401d3d40eb5a885e3cebc5fe1",
+      "verified_arrays": 84,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15010917065/evidence"
+    },
+    {
+      "index": 23,
+      "generation": 2,
+      "job_id": 138284070676,
+      "artifact_id": 15022983241,
+      "archive_sha256": "sha256:7ab0cedae6f308cd8f21368dd22a33f83c6a6de7b945f24194b6f0a43695f924",
+      "execution_sha256": "98e5f1835b4bbff14ddb51eeb10806301b9645790a658ad98485bbd42f37724c",
+      "verified_arrays": 41,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15022983241/evidence"
+    },
+    {
+      "index": 24,
+      "generation": 2,
+      "job_id": 138284070823,
+      "artifact_id": 15026226250,
+      "archive_sha256": "sha256:7d0c7ebbccdc72f43ef0a300434ee7db8525ce82b8332f13003b029809cc2fbf",
+      "execution_sha256": "4847480dd50eb806d312acb0f8c327b14e6972438df46666b74b970822ae6a3f",
+      "verified_arrays": 87,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15026226250/evidence"
+    },
+    {
+      "index": 25,
+      "generation": 2,
+      "job_id": 138284070916,
+      "artifact_id": 15031810402,
+      "archive_sha256": "sha256:0a9cdcb509dfa0b6f3f69cba2b336a20984cc3c0b20295b5b5ee39f14c61ed26",
+      "execution_sha256": "2fda97911299ce68e35d1a7c4880045d5f6dfb313e5894210dacdfecee224478",
+      "verified_arrays": 35,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15031810402/evidence"
+    },
+    {
+      "index": 26,
+      "generation": 2,
+      "job_id": 138284070898,
+      "artifact_id": 15034480096,
+      "archive_sha256": "sha256:4afd96c43dacb0d47fc5d94b289e545f0525d301fdd819f9aa8ebc923beaf097",
+      "execution_sha256": "a8ba1488c0e137d24329e0a9ebd8cdfb5c4132f80b059188f3b0fbb22a731c4e",
+      "verified_arrays": 75,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15034480096/evidence"
+    },
+    {
+      "index": 27,
+      "generation": 2,
+      "job_id": 138284071047,
+      "artifact_id": 15034271582,
+      "archive_sha256": "sha256:5cf3480834cad8cf476fdbf08a1b01752158b22883a7bd750a87a592219fc390",
+      "execution_sha256": "5ebb2c783ad77c57b68258925de816098d29870c1cf32bde5ce1bb1a03dfca0e",
+      "verified_arrays": 81,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15034271582/evidence"
+    },
+    {
+      "index": 28,
+      "generation": 2,
+      "job_id": 138284072209,
+      "artifact_id": 15020589559,
+      "archive_sha256": "sha256:7314055c8514542cac18b71b196dd86ec191276e564d21ba8a8329999dfe8a18",
+      "execution_sha256": "ec0be6512269ddbaf41f183d0ec3812d9d54101cdda15ba1365d74df4ca782b0",
+      "verified_arrays": 89,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15020589559/evidence"
+    },
+    {
+      "index": 29,
+      "generation": 2,
+      "job_id": 138284072500,
+      "artifact_id": 15041142979,
+      "archive_sha256": "sha256:139243323110ddbda0f30207e0db7fa1608fb761672970fda94b0d72b5fa1fbd",
+      "execution_sha256": "65bf3404f08520245d76334e9d726d09c628940d585d5c0beed4ba32502e3e35",
+      "verified_arrays": 56,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15041142979/evidence"
+    },
+    {
+      "index": 30,
+      "generation": 2,
+      "job_id": 138284072451,
+      "artifact_id": 15055119402,
+      "archive_sha256": "sha256:dd122832cb8307f59ba34e664f5584c024db19d1276f1b2db1e3f25348d4025c",
+      "execution_sha256": "236464342a583768ab3858eb848abf6225f6210172d90ae669da577de54f125f",
+      "verified_arrays": 49,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15055119402/evidence"
+    },
+    {
+      "index": 31,
+      "generation": 2,
+      "job_id": 138284072515,
+      "artifact_id": 15059880504,
+      "archive_sha256": "sha256:34fb02a916fbebf34be39815498f7afcaf28e699dc301d093b669f77ed7cbbcc",
+      "execution_sha256": "eec06094e8d07a520f80ac7291bf2681d280da18d61d6b287bda60efbabe1d41",
+      "verified_arrays": 70,
+      "evidence": "/Users/mhough/Workspace/grn-computation-evidence/rohwer-checkpoint-collection-20261124T2321/collection/45335934693/attempt-1/artifact-15059880504/evidence"
+    }
+  ],
+  "source_snapshot_sha256": {
+    "run": "171057c7d7446141a4cfd6802ea46fdb5c34eaeb21de48b04037cb6898871a2f",
+    "jobs": "4b6485994f12fd0018a0171722b0975140e3a5c99e948cb5d7e42e80cb9c144b",
+    "artifacts": "5ed43089bcb5bbfb185e68acba5b119e2724bfb3cba6fb9bb95b20b2427388fa"
+  },
+  "case_recovery_claimed": false,
+  "whole_model_pass_claimed": false,
+  "numerical_integrations_performed": 0,
+  "goal_complete": false
+}
