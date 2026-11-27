@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-11-27T01:17:15.590628+00:00",
+  "model_id": "BIOMD0000000038",
+  "network": 35,
+  "audit_process_completed": true,
+  "evidence_verification_errors": [],
+  "scientific_status": "incomplete",
+  "required_branches": 11674,
+  "required_cases": 123,
+  "verified_arrays": 8502,
+  "complete_branch_outcomes": 1960,
+  "missing_or_incomplete_branches": 9714,
+  "verified_stored_branch_audits": 5741,
+  "all_previous_selected_archives_payload_hashes_and_numerical_audit_outcomes_unchanged": true,
+  "origin_metadata_expansion": "Original full-case assembler replaces the later-control origin-kind string with the complete frozen provenance record; kind and complete record both checked.",
+  "selected_generation_counts": {
+    "2": 15,
+    "3": 17
+  },
+  "stages": {
+    "diagnostics": {
+      "audited_partitions": 32,
+      "branches_in_available_outputs": 750,
+      "verified_arrays": 2223,
+      "terminal_diagnostics": 528,
+      "terminal_status_counts": {
+        "confirmed": 426,
+        "mismatch": 36,
+        "incomplete": 66
+      },
+      "unfinished_status_counts": {
+        "not_started": 142,
+        "interrupted": 80
+      },
+      "pending_partitions": 0
+    },
+    "controls": {
+      "audited_partitions": 232,
+      "branches_in_available_outputs": 4991,
+      "verified_arrays": 6279,
+      "terminal_diagnostics": 1432,
+      "terminal_status_counts": {
+        "confirmed": 1348,
+        "mismatch": 48,
+        "incomplete": 36
+      },
+      "unfinished_status_counts": {
+        "not_started": 3328,
+        "interrupted": 230,
+        "no_checkpoint": 1
+      },
+      "pending_partitions": 280
+    }
+  },
+  "audit_sha256": "b4473d2802cc96c759b58d7e781f9b850c004703dbf999f393f48130050e0e52",
+  "scope_sha256": "f160378dcbccabbeaf0c2ab5a823ccc3aa2b5db29a3f7652e84b1a38d50bce99",
+  "branch_index_sha256": "b00d5922c6f24d0f4f170b0d2f8fdbc39b2cc6e3165dc88ba88e423a2eeab933",
+  "source_descriptor_sha256": "ec9f7456b40800fb1ec7b21f4b6812dfe41ca97e7d9bc30d728d2aae5e5ee4fc",
+  "input_validation": {
+    "manifest_sha256": "dd1f300d0fc760743a39d6360cb0aae19ff0ee69a3f6b991aada12493045fe0f",
+    "complete_input_scope_verified": true,
+    "selected_cases": 123,
+    "potential_branches": 11674,
+    "queued_diagnostic_branches": 750,
+    "later_control_branches": 10924,
+    "original_observed_branch_specifications": 10826,
+    "original_branch_records_across_partitions": 11247,
+    "generated_potential_branches": 848,
+    "cases_with_missing_original_controls": 15,
+    "sample_count": 221001,
+    "observables": 17,
+    "numerical_runtime_checked": false,
+    "numerical_integrations_performed": 0,
+    "case_recovery_claimed": false,
+    "full_model_coverage_claimed": false
+  },
+  "auditor_sha256": "de4c75fb571217aefdbcb18d534beb0640fa7ce0a681414b0d59391474f322e9",
+  "case_math_sha256": "0de4c611e96a63f08b737d18bbbd12771615910b2f0eb9a129821a71a7b84057",
+  "parent_collection_sha256": {
+    "generation3": "83f5905f1b97d8588d64a6eb379dd3b490ef7abe990284e137276c4d23d0f2d8",
+    "generation2": "cd7ddfd789c03e37daaba54875485605bba4b2d50e6ff80f20f2c642135436b1",
+    "controls": "5b372c33403dbf3351542a64cfa2b7adf9e1dde5193bcdf2c0a08787960b681a"
+  },
+  "independent_later_update": {
+    "collection": "rohwer-later-incremental-20261126T2337",
+    "additional_arrays": 38,
+    "additional_terminal_diagnostics": 8,
+    "included_in_this_combined_audit": false
+  },
+  "case_replay_performed": false,
+  "case_recovery_claimed": false,
+  "whole_model_pass_claimed": false,
+  "numerical_integrations_performed": 0,
+  "goal_complete": false
+}
