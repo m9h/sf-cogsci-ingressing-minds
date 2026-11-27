@@ -1,0 +1,63 @@
+{
+  "auditor_revision": "b19f222cb6a83f4f4f07ec4b639adc0359b7cbfd",
+  "case_recovery_claimed": false,
+  "checked_at": "2026-11-27T03:26:58.445145+00:00",
+  "complete_selected_diagnostics": true,
+  "courier_artifact": 15167054503,
+  "courier_run": 45892778117,
+  "expanded_bytes": 2480654055,
+  "fresh_original_zip_bytes": 2480718537,
+  "fresh_original_zip_sha256": "f5c9b4fbf9035c165a45abe6adf471ab4032503baf1f7bd9c4c99ed367519674",
+  "fresh_release_asset_sha256": {
+    "798645860": "e24aa384594dd351be8016f0e912f33fcffd40a1220a612082f48d0aa41be6f1",
+    "798647426": "b7aa37d0460b8ccbbec2dc93efc33bbc12d17923fda2b96c0e86099ba70cd56f",
+    "798648757": "1a059b731fffe0cd3613c7a6740fb169c695b1016625f69104372eeee6004f49",
+    "798650028": "af58977d64d9e78e54cc921643de4d925268faf32320c5de1bd424d487b3ced0",
+    "798651421": "8c9f292a07acbabfb71b8a9f4729b8dc6829ac21fe05ca890fa1ed8027895220",
+    "798652218": "c1600a523558af6826849ec21014699eb2615d3ac2d439896968a261e64c686f"
+  },
+  "full_partitions": 256,
+  "goal_complete": false,
+  "model_id": "BIOMD0000000697",
+  "network": 28,
+  "numerical_integrations_performed": 0,
+  "partial_comparisons": 0,
+  "partition": 0,
+  "partition_audit_sha256": "4c2b4bd0014bf06f494dc5fb1fbc3d525321938a3bdcc3e77d6a30b192d9d49c",
+  "passing_partial_comparisons": 0,
+  "passing_terminal_comparisons": 162,
+  "payload_files": 191,
+  "preparation_proof_sha256": "0e463cb5a8da6b6cf63445c5051d358d5ba2cca6f580de8ceef5963a8a0615d9",
+  "receipt": {
+    "archive_bytes": 2480718537,
+    "archive_sha256": "sha256:f5c9b4fbf9035c165a45abe6adf471ab4032503baf1f7bd9c4c99ed367519674",
+    "artifact_id": 14517099024,
+    "fresh_download_verified": true,
+    "manifest_asset_id": 798652218,
+    "manifest_bytes": 1821,
+    "manifest_sha256": "c1600a523558af6826849ec21014699eb2615d3ac2d439896968a261e64c686f",
+    "release_id": 459348903,
+    "release_tag": "kinetics-ciliberto-archives-20261126-g00"
+  },
+  "release_url": "https://github.com/m9h/GRN_ODE/releases/tag/kinetics-ciliberto-archives-20261126-g00",
+  "required_cases": 74,
+  "required_full_branches": 7334,
+  "required_stage_branches": 6859,
+  "selected_branches": 27,
+  "selection_sha256": "caea6504ee78b9f7bc26ebe2c08d0a4a4b1d1ae10c4ef7cc93b24f53077bdc0c",
+  "source_run": {
+    "head_sha": "05232fa83c4be917455dc2d143a11253cb7773e6",
+    "id": 44412503884,
+    "path": ".github/workflows/ciliberto-later-controls.yml",
+    "run_attempt": 1,
+    "workflow_id": 423180607
+  },
+  "terminal_comparisons": 162,
+  "terminal_diagnostics": 27,
+  "terminal_status_counts": {
+    "confirmed": 27
+  },
+  "unfinished_status_counts": {},
+  "verified_arrays": 108,
+  "whole_model_pass_claimed": false
+}

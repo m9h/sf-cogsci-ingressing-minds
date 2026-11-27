@@ -1,0 +1,140 @@
+{
+  "observed_between": ["2026-11-27T06:50:12Z", "2026-11-27T06:52:57Z"],
+  "partial_inventory": true,
+  "runs": [
+    {
+      "run": 45932929193,
+      "total_jobs": 1,
+      "captured_jobs": 1,
+      "counts": {
+        "queued": 1
+      }
+    },
+    {
+      "run": 45927750202,
+      "total_jobs": 1,
+      "captured_jobs": 1,
+      "counts": {
+        "queued": 1
+      }
+    },
+    {
+      "run": 45761582215,
+      "total_jobs": 31,
+      "captured_jobs": 31,
+      "counts": {
+        "completed_success": 1,
+        "completed_failure": 16,
+        "in_progress": 4,
+        "queued": 10
+      }
+    },
+    {
+      "run": 45761594168,
+      "total_jobs": 2,
+      "captured_jobs": 2,
+      "counts": {
+        "completed_success": 1,
+        "completed_failure": 1
+      }
+    },
+    {
+      "run": 45761615797,
+      "total_jobs": 2,
+      "captured_jobs": 2,
+      "counts": {
+        "completed_success": 1,
+        "in_progress": 1
+      }
+    },
+    {
+      "run": 45703326499,
+      "total_jobs": 33,
+      "captured_jobs": 33,
+      "counts": {
+        "completed_success": 1,
+        "completed_failure": 19,
+        "in_progress": 5,
+        "queued": 8
+      }
+    },
+    {
+      "run": 45893802753,
+      "total_jobs": 5,
+      "captured_jobs": 5,
+      "counts": {
+        "completed_success": 1,
+        "in_progress": 3,
+        "completed_failure": 1
+      }
+    },
+    {
+      "run": 45910304847,
+      "total_jobs": 5,
+      "captured_jobs": 5,
+      "counts": {
+        "completed_success": 1,
+        "queued": 4
+      }
+    },
+    {
+      "run": 45906265133,
+      "total_jobs": 2,
+      "captured_jobs": 2,
+      "counts": {
+        "completed_success": 1,
+        "queued": 1
+      }
+    },
+    {
+      "run": 45907634050,
+      "total_jobs": 1,
+      "captured_jobs": 1,
+      "counts": {
+        "queued": 1
+      }
+    }
+  ],
+  "scientific_counts_not_advanced_by_job_status": true,
+  "new_unaudited_outputs": [
+    {
+      "model": "Fuss",
+      "run": 45761582215,
+      "indices": [
+        0,
+        4,
+        7,
+        13,
+        16,
+        17
+      ]
+    },
+    {
+      "model": "Fuss",
+      "run": 45761594168,
+      "indices": [
+        8
+      ],
+      "artifact_id": 15176289494
+    },
+    {
+      "model": "Rohwer",
+      "run": 45703326499,
+      "indices": [
+        18
+      ],
+      "artifact_id": 15170449364
+    },
+    {
+      "model": "Vilar",
+      "run": 45893802753,
+      "indices": [
+        9
+      ],
+      "artifact_id": 15174853228
+    }
+  ],
+  "no_numerical_jobs_dispatched_this_turn": true,
+  "local_numerical_workers_restarted": false,
+  "goal_complete": false
+}
