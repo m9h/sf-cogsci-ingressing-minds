@@ -1,0 +1,167 @@
+{
+  "checked_at": "2026-11-27T02:33:54.091320+00:00",
+  "network": 30,
+  "model_id": "BIOMD0000000039",
+  "required_tasks": 1520,
+  "required_branches": 380,
+  "required_cases": 12,
+  "requested_selection_sha256": "8103c40b9b6d9e91cb53b228cef6430ca002aa9864ab2e4283169dc6fad567a4",
+  "available_selection_sha256": "544f4c93f6d9abc6c339e4f6e591dcf0ac63450bbc77a6dae5b02ce0141a469d",
+  "parent_requested_selection_sha256": "915719801b6f8047d8e6fd1841f8e7d7f0073bb9c006c1316a81419f183f4375",
+  "parent_scientific_audit_sha256": "22e1df1d8d4fe922f3af74464b6188e0331ff6be4942d08639045124203cfb82",
+  "new_actual_job_bindings": [
+    {
+      "index": 1042,
+      "run_id": 45893805245,
+      "job_id": 140244210837,
+      "job_status": "queued",
+      "parent_run_id": 45761626752,
+      "parent_job_id": 139728043516,
+      "parent_artifact_id": 15106357168,
+      "parent_archive_sha256": "sha256:a9d511c88d784c180081a291924afe4ac5d88663cd48278e0a9a5e260a89da00",
+      "checkpoint_sha256": "d1a3ab737bb051ae6b18d4fdc66f7ef13f0d5ee4409fdb173cb52fce4f65a9d0",
+      "saved_samples": 168220,
+      "request_label": "mpmath128",
+      "all_parent_payload_bytes_rechecked": true,
+      "full_parent_lineage_retained": true
+    },
+    {
+      "index": 1043,
+      "run_id": 45893805245,
+      "job_id": 140244210923,
+      "job_status": "queued",
+      "parent_run_id": 45761626752,
+      "parent_job_id": 139728043474,
+      "parent_artifact_id": 15114884630,
+      "parent_archive_sha256": "sha256:2cc3d444a95025ffd13bd516556237bc7709c15efdd79d69c383fa0a80c58003",
+      "checkpoint_sha256": "f7960d236ca381c0ec777ebfe5549e8f6267a7bfdba0e6382ccbb76bd414ed56",
+      "saved_samples": 86220,
+      "request_label": "mpmath192",
+      "all_parent_payload_bytes_rechecked": true,
+      "full_parent_lineage_retained": true
+    }
+  ],
+  "unchanged_requested_task_bindings": 1518,
+  "retained_earlier_17_job_bindings": [
+    262,
+    263,
+    267,
+    270,
+    271,
+    274,
+    275,
+    278,
+    279,
+    282,
+    283,
+    290,
+    291,
+    294,
+    295,
+    298,
+    299
+  ],
+  "all_19_bound_continuations_preserve_available_parent_lineages": true,
+  "pending_validation_gates": [
+    {
+      "run_id": 45901252228,
+      "indices": [
+        6,
+        14,
+        22,
+        23
+      ],
+      "gate_job_id": 140187294714,
+      "status": "queued",
+      "do_not_repeat_accepted_dispatch": true
+    },
+    {
+      "run_id": 45901319362,
+      "indices": [
+        518,
+        519,
+        527,
+        530,
+        531,
+        539,
+        543,
+        546,
+        547
+      ],
+      "gate_job_id": 140187516767,
+      "status": "queued",
+      "do_not_repeat_accepted_dispatch": true
+    },
+    {
+      "run_id": 45901326344,
+      "indices": [
+        775,
+        787,
+        790,
+        791
+      ],
+      "gate_job_id": 140187536842,
+      "status": "queued",
+      "do_not_repeat_accepted_dispatch": true
+    },
+    {
+      "run_id": 45901332600,
+      "indices": [
+        1026,
+        1027,
+        1031,
+        1034,
+        1035,
+        1050,
+        1051
+      ],
+      "gate_job_id": 140187559407,
+      "status": "queued",
+      "do_not_repeat_accepted_dispatch": true
+    },
+    {
+      "run_id": 45901385197,
+      "indices": [
+        1282,
+        1283,
+        1286,
+        1287,
+        1291,
+        1310,
+        1311
+      ],
+      "gate_job_id": 140187728759,
+      "status": "queued",
+      "do_not_repeat_accepted_dispatch": true
+    },
+    {
+      "run_id": 45901798759,
+      "indices": [
+        7,
+        15,
+        19,
+        35
+      ],
+      "gate_job_id": 140189116520,
+      "status": "queued",
+      "do_not_repeat_accepted_dispatch": true
+    }
+  ],
+  "pending_actual_job_binding_tasks": 35,
+  "retained_completed_recovery_tasks": [
+    34,
+    1047
+  ],
+  "verified_complete_arrays_unchanged": 180,
+  "complete_branches_unchanged": 23,
+  "new_numerical_arrays": 0,
+  "accepted_dispatches_repeated": false,
+  "local_numerical_integrations_performed": 0,
+  "exact_restart_validation_required_on_matching_linux": true,
+  "frozen_collection_module_sha256": "197ce0585d1d3199eb70d399664d9be61a085682fa3b624951041c7888cc225b",
+  "frozen_recovery_module_sha256": "23cb63716005313a44f883d3b5a6eab644b49deef10ba53594991aa1c31ba39a",
+  "binding_script_sha256": "8a47c6a0532581a5c042f9cb133dd4299621dfefa88cec2d6eb4ea1619af7993",
+  "case_recovery_claimed": false,
+  "whole_model_pass_claimed": false,
+  "goal_complete": false
+}
